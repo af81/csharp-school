@@ -12,7 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
+        <link rel="canonical" href="https://af81.github.io/csharp-school/dl2/theorie/">
       
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../arbeitsauftrag/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -70,11 +76,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#wie-funktioniert-ein-computerprogramm" class="md-skip">
-          Zum Inhalt
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -276,18 +277,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -303,7 +306,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Lernstoff
@@ -379,6 +382,131 @@
   
     <li class="md-nav__item">
       <a href="../../dl1/arbeitsauftrag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arbeitsauftrag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DL2 Theoretische Einführung
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            DL2 Theoretische Einführung
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Theorie
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arbeitsauftrag/" class="md-nav__link">
         
   
   
@@ -515,80 +643,87 @@
 
 
 
-<h1 id="wie-funktioniert-ein-computerprogramm">💻 Wie funktioniert ein Computerprogramm?</h1>
-<p>Ein Computerprogramm ist im Kern eine <strong>Anleitung für den Computer</strong>, ähnlich wie ein Rezept in der Küche. Es beschreibt Schritt für Schritt, was der Computer tun soll, um ein bestimmtes Problem zu lösen oder eine Aufgabe auszuführen.</p>
-<hr />
-<h2 id="1-grundidee">1. Grundidee</h2>
-<ul>
-<li>Ein Programm besteht aus <strong>Anweisungen</strong> (Instruktionen).</li>
-<li>Diese Anweisungen sagen dem Computer: <em>„Nimm Daten, verarbeite sie nach diesen Regeln und liefere ein Ergebnis.“</em></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Das EVA-Prinzip</p>
-<p>Programme folgen immer dem Muster <strong>Eingabe → Verarbeitung → Ausgabe</strong>.</p>
-</div>
-<hr />
-<h2 id="2-sprachebene">2. Sprachebene</h2>
-<p>Programme werden in <strong>Programmiersprachen</strong> geschrieben.</p>
-<ul>
-<li><strong>Hochsprachen</strong> sind menschenlesbarer (z. B. Python, Java, C++).</li>
-<li><strong>Maschinensprache</strong> ist das, was der Computer wirklich versteht: eine Folge von 0 und 1 (<strong>Binärcode</strong>).</li>
-<li>Damit der Computer ein Programm ausführen kann, wird es <strong>übersetzt</strong> (durch einen <strong>Compiler</strong> oder <strong>Interpreter</strong>) von der Programmiersprache in Maschinencode.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Compiler vs. Interpreter – grob</p>
-<ul>
-<li><strong>Compiler</strong>: Übersetzt das ganze Programm vorab in Maschinencode.</li>
-<li><strong>Interpreter</strong>: Übersetzt und führt <strong>während</strong> der Ausführung schrittweise aus.</li>
-</ul>
-</div>
-<hr />
-<h2 id="3-ablauf-im-computer">3. Ablauf im Computer</h2>
-<p>Wenn ein Programm gestartet wird:</p>
-<ol>
-<li><strong>Laden</strong>: Das Programm wird vom Speicher (z. B. Festplatte) in den <strong>Arbeitsspeicher (RAM)</strong> geladen.</li>
-<li><strong>Ausführen</strong>: Die <strong>CPU</strong> liest nacheinander die Maschinenbefehle.</li>
-<li>Beispiele: „Addiere Wert X zu Wert Y“, „Vergleiche A mit B“, „Springe zu Anweisung Z“.</li>
-<li><strong>Steuerung</strong>: Durch <strong>Kontrollstrukturen</strong> (z. B. <em>Wenn–dann</em>, <em>Wiederhole bis</em>) kann das Programm je nach Datenlage unterschiedlich reagieren.</li>
-</ol>
-<hr />
-<h2 id="4-daten-und-variablen">4. Daten und Variablen</h2>
-<ul>
-<li>Programme arbeiten mit <strong>Daten</strong>: Zahlen, Text, Bilder, Signale usw.</li>
-<li>Diese werden in <strong>Variablen</strong> gespeichert – quasi kleine „Schubladen“ im Arbeitsspeicher.</li>
-<li>Befehle im Programm <strong>lesen</strong>, <strong>verändern</strong> oder <strong>kombinieren</strong> diese Daten.</li>
-</ul>
-<hr />
-<h2 id="5-logik-und-algorithmen">5. Logik und Algorithmen</h2>
-<ul>
-<li>Hinter jedem Programm steckt ein <strong>Algorithmus</strong>: eine präzise Abfolge von Schritten, um ein Problem zu lösen.</li>
-<li>Beispiel: Ein Programm zum <strong>Sortieren von Zahlen</strong> nimmt unsortierte Zahlen und ordnet sie der Reihe nach.</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Eigenschaften guter Algorithmen</p>
-<ul>
-<li><strong>Korrektheit</strong> (liefert richtige Ergebnisse)</li>
-<li><strong>Eindeutigkeit</strong> (klar definierte Schritte)</li>
-<li><strong>Endlichkeit</strong> (hört irgendwann auf)</li>
-<li><strong>Effizienz</strong> (benötigt vertretbare Zeit und Ressourcen)</li>
-</ul>
-</div>
-<hr />
-<h2 id="6-interaktion">6. Interaktion</h2>
-<p>Programme können:</p>
-<ul>
-<li><strong>Eingaben</strong> vom Menschen (Tastatur, Maus) oder von <strong>Geräten/Sensoren</strong> erhalten,</li>
-<li><strong>Entscheidungen</strong> treffen (Logik, Bedingungen),</li>
-<li><strong>Ergebnisse anzeigen</strong> oder <strong>speichern</strong> bzw. an andere Programme/Dienste weitergeben.</li>
-</ul>
-<hr />
-<h2 id="zusammenfassung">📝 Zusammenfassung</h2>
-<ul>
-<li>Ein Computerprogramm ist eine <strong>formal beschriebene Folge von Anweisungen</strong>, die von der <strong>CPU</strong> schrittweise ausgeführt wird.</li>
-<li>Der Quelltext wird per <strong>Compiler</strong> oder <strong>Interpreter</strong> in <strong>Maschinencode</strong> überführt.</li>
-<li>Das Arbeitsmuster bleibt stets: <strong>Eingabe → Verarbeitung → Ausgabe</strong>.
-Wenn du möchtest, packe ich das direkt in eine kleine MkDocs-Struktur (Dateiname, mkdocs.yml-Ausschnitt, Navigation) – sag einfach Bescheid.</li>
-</ul>
+  <h1>Theorie</h1>
+
+<p>Wird nach der Lektion angezeigt.</p>
+<!-- # 💻 Wie funktioniert ein Computerprogramm?
+
+Ein Computerprogramm ist im Kern eine **Anleitung für den Computer**, ähnlich wie ein Rezept in der Küche. Es beschreibt Schritt für Schritt, was der Computer tun soll, um ein bestimmtes Problem zu lösen oder eine Aufgabe auszuführen.
+
+---
+
+## 1. Grundidee
+
+- Ein Programm besteht aus **Anweisungen** (Instruktionen).
+- Diese Anweisungen sagen dem Computer: *„Nimm Daten, verarbeite sie nach diesen Regeln und liefere ein Ergebnis.“*
+
+!!! note "Das EVA-Prinzip"
+    Programme folgen immer dem Muster **Eingabe → Verarbeitung → Ausgabe**.
+
+---
+
+## 2. Sprachebene
+
+Programme werden in **Programmiersprachen** geschrieben.
+
+- **Hochsprachen** sind menschenlesbarer (z. B. Python, Java, C++).
+- **Maschinensprache** ist das, was der Computer wirklich versteht: eine Folge von 0 und 1 (**Binärcode**).
+- Damit der Computer ein Programm ausführen kann, wird es **übersetzt** (durch einen **Compiler** oder **Interpreter**) von der Programmiersprache in Maschinencode.
+
+!!! note "Compiler vs. Interpreter – grob"
+    - **Compiler**: Übersetzt das ganze Programm vorab in Maschinencode.
+    - **Interpreter**: Übersetzt und führt **während** der Ausführung schrittweise aus.
+
+---
+
+## 3. Ablauf im Computer
+
+Wenn ein Programm gestartet wird:
+
+1. **Laden**: Das Programm wird vom Speicher (z. B. Festplatte) in den **Arbeitsspeicher (RAM)** geladen.
+2. **Ausführen**: Die **CPU** liest nacheinander die Maschinenbefehle.
+   - Beispiele: „Addiere Wert X zu Wert Y“, „Vergleiche A mit B“, „Springe zu Anweisung Z“.
+3. **Steuerung**: Durch **Kontrollstrukturen** (z. B. *Wenn–dann*, *Wiederhole bis*) kann das Programm je nach Datenlage unterschiedlich reagieren.
+
+---
+
+## 4. Daten und Variablen
+
+- Programme arbeiten mit **Daten**: Zahlen, Text, Bilder, Signale usw.
+- Diese werden in **Variablen** gespeichert – quasi kleine „Schubladen“ im Arbeitsspeicher.
+- Befehle im Programm **lesen**, **verändern** oder **kombinieren** diese Daten.
+
+---
+
+## 5. Logik und Algorithmen
+
+- Hinter jedem Programm steckt ein **Algorithmus**: eine präzise Abfolge von Schritten, um ein Problem zu lösen.
+- Beispiel: Ein Programm zum **Sortieren von Zahlen** nimmt unsortierte Zahlen und ordnet sie der Reihe nach.
+
+!!! info "Eigenschaften guter Algorithmen"
+    - **Korrektheit** (liefert richtige Ergebnisse)
+    - **Eindeutigkeit** (klar definierte Schritte)
+    - **Endlichkeit** (hört irgendwann auf)
+    - **Effizienz** (benötigt vertretbare Zeit und Ressourcen)
+
+---
+
+## 6. Interaktion
+
+Programme können:
+
+- **Eingaben** vom Menschen (Tastatur, Maus) oder von **Geräten/Sensoren** erhalten,
+- **Entscheidungen** treffen (Logik, Bedingungen),
+- **Ergebnisse anzeigen** oder **speichern** bzw. an andere Programme/Dienste weitergeben.
+
+---
+
+## 📝 Zusammenfassung
+
+- Ein Computerprogramm ist eine **formal beschriebene Folge von Anweisungen**, die von der **CPU** schrittweise ausgeführt wird.
+- Der Quelltext wird per **Compiler** oder **Interpreter** in **Maschinencode** überführt.
+- Das Arbeitsmuster bleibt stets: **Eingabe → Verarbeitung → Ausgabe**.
+Wenn du möchtest, packe ich das direkt in eine kleine MkDocs-Struktur (Dateiname, mkdocs.yml-Ausschnitt, Navigation) – sag einfach Bescheid. -->
 
 
 
