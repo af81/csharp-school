@@ -26,7 +26,7 @@
     
     
       
-        <title>Wie funktioniert ein Computerprogramm? (Theorie) - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Theorie - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#theorie" class="md-skip">
+          Zum Inhalt
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Wie funktioniert ein Computerprogramm? (Theorie)
+              Theorie
             
           </span>
         </div>
@@ -481,6 +486,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Theorie
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -493,6 +513,112 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wie-funktioniert-ein-computerprogramm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wie funktioniert ein Computerprogramm?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithmus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ablauf-im-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablauf im Computer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiler-vs-interpreter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiler vs. Interpreter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binarcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binärcode
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binärcode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grundprinzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundprinzip:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umrechnungsarten-von-dezimal-zu-binar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Umrechnungsarten von Dezimal zu Binär
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-begriffe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wichtige Begriffe
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -643,96 +769,273 @@
 
 
 
-  <h1>Theorie</h1>
+<h1 id="theorie">Theorie</h1>
+<h2 id="wie-funktioniert-ein-computerprogramm">Wie funktioniert ein Computerprogramm?</h2>
+<p>Ein <strong>Computerprogramm</strong> ist eine Reihe von Anweisungen, die einem Computer sagen, was er tun soll. Programme folgen dabe immer dem Muster <strong>Eingabe → Verarbeitung → Ausgabe</strong> (EVA-Prinzip):</p>
+<ol>
+<li><strong>Eingabe</strong>: Der Benutzer oder ein anderes System liefert Daten (z.B. über Tastatur, Maus, Geräte, Sensoren etc.)</li>
+<li><strong>Verarbeitung</strong>: Das Programm führt Schritt für Schritt die Anweisungen aus (Berechnungen, Vergleiche, Logik).</li>
+<li><strong>Ausgabe</strong>: Die Ergebnisse werden dargestellt, gespeichert oder an andere Systeme weitergegeben.</li>
+</ol>
+<blockquote>
+<p>👉 Ein Programm funktioniert also wie ein Rezept: Es beschreibt präzise, welche Schritte in welcher Reihenfolge auszuführen sind, damit ein gewünschtes Ergebnis entsteht.</p>
+</blockquote>
+<p>Hier ein kleines Beispiel in <strong>Python</strong>, das zeigt, wie ein Programm Eingaben verarbeitet und eine Ausgabe erzeugt:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. Eingabe: Benutzer gibt seinen Namen ein</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wie heisst du? &quot;</span><span class="p">)</span>
 
-<p>Wird nach der Lektion angezeigt.</p>
-<!-- # 💻 Wie funktioniert ein Computerprogramm?
+<span class="c1"># 2. Verarbeitung: Text zusammensetzen</span>
+<span class="n">begrüssung</span> <span class="o">=</span> <span class="s2">&quot;Hallo, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;! Schön, dich zu sehen.&quot;</span>
 
-Ein Computerprogramm ist im Kern eine **Anleitung für den Computer**, ähnlich wie ein Rezept in der Küche. Es beschreibt Schritt für Schritt, was der Computer tun soll, um ein bestimmtes Problem zu lösen oder eine Aufgabe auszuführen.
+<span class="c1"># 3. Ausgabe: Ergebnis anzeigen</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">begrüssung</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="algorithmus">Algorithmus</h2>
+<ul>
+<li>Hinter jedem Programm steckt ein <strong>Algorithmus</strong>: eine präzise Abfolge von Schritten, um ein Problem zu lösen.</li>
+<li>Beispiel: Ein Programm zum <strong>Sortieren von Zahlen</strong> nimmt unsortierte Zahlen und ordnet sie der Reihe nach.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Eigenschaften guter Algorithmen</p>
+<ul>
+<li><strong>Korrektheit</strong> (liefert richtige Ergebnisse)</li>
+<li><strong>Eindeutigkeit</strong> (klar definierte Schritte)</li>
+<li><strong>Endlichkeit</strong> (hört irgendwann auf)</li>
+<li><strong>Effizienz</strong> (benötigt vertretbare Zeit und Ressourcen)</li>
+</ul>
+</div>
+<hr />
+<h2 id="ablauf-im-computer">Ablauf im Computer</h2>
+<p>Wenn ein Programm gestartet wird:</p>
+<ol>
+<li><strong>Laden</strong>: Das Programm wird vom Speicher (z. B. Festplatte) in den <strong>Arbeitsspeicher (RAM)</strong> geladen.</li>
+<li><strong>Ausführen</strong>: Die <strong>CPU</strong> liest nacheinander die Maschinenbefehle.</li>
+<li>Beispiele: „Addiere Wert X zu Wert Y“, „Vergleiche A mit B“, „Springe zu Anweisung Z“.</li>
+<li><strong>Steuerung</strong>: Durch <strong>Kontrollstrukturen</strong> (z. B. <em>Wenn–dann</em>, <em>Wiederhole bis</em>) kann das Programm je nach Datenlage unterschiedlich reagieren.</li>
+</ol>
+<hr />
+<h2 id="compiler-vs-interpreter">Compiler vs. Interpreter</h2>
+<p>Programme werden in <strong>Programmiersprachen</strong> geschrieben.</p>
+<ul>
+<li><strong>Hochsprachen</strong> sind menschenlesbarer (z. B. Python, Java, C++).</li>
+<li><strong>Maschinensprache</strong> ist das, was der Computer wirklich versteht: eine Folge von 0 und 1 (<strong>Binärcode</strong>).</li>
+<li>Damit der Computer ein Programm ausführen kann, wird es <strong>übersetzt</strong> (durch einen <strong>Compiler</strong> oder <strong>Interpreter</strong>) von der Programmiersprache in Maschinencode.</li>
+</ul>
+<p>Ein <strong>Compiler</strong> und ein <strong>Interpreter</strong> sind also Programme, die Quellcode (den der Programmierer schreibt) in etwas übersetzen, das der Computer verstehen und ausführen kann.</p>
+<p>Der Unterschied liegt vor allem in <strong>wann</strong> und <strong>wie</strong> die Übersetzung passiert.</p>
+<table>
+<thead>
+<tr>
+<th>Merkmal</th>
+<th>Compiler</th>
+<th>Interpreter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arbeitsweise</strong></td>
+<td>Übersetzt den gesamten Quellcode auf einmal in Maschinencode (eine ausführbare Datei).</td>
+<td>Liest und führt den Quellcode Schritt für Schritt direkt aus.</td>
+</tr>
+<tr>
+<td><strong>Geschwindigkeit</strong></td>
+<td>Ausführung ist meist schneller, da der Code vorher komplett übersetzt wurde.</td>
+<td>Langsamer, da die Übersetzung während der Laufzeit passiert.</td>
+</tr>
+<tr>
+<td><strong>Fehlererkennung</strong></td>
+<td>Meldet Fehler erst nach der vollständigen Übersetzung.</td>
+<td>Meldet Fehler sofort beim Ausführen der fehlerhaften Stelle.</td>
+</tr>
+<tr>
+<td><strong>Beispiele</strong></td>
+<td>C, C++ (meist kompiliert)</td>
+<td>Python, JavaScript (meist interpretiert)</td>
+</tr>
+<tr>
+<td><strong>Ausgabe</strong></td>
+<td>Erstellt eine separate, ausführbare Datei (.exe, .out etc.).</td>
+<td>Führt den Code direkt aus, ohne eine zusätzliche Datei zu erzeugen.</td>
+</tr>
+</tbody>
+</table>
+<p>👉 Zusammengefasst:
+- <strong>Compiler</strong> = „Übersetzer im Voraus“ (macht ein fertiges Programm).
+- <strong>Interpreter</strong> = „Übersetzer in Echtzeit“ (führt direkt aus).</p>
+<hr />
+<h2 id="binarcode">Binärcode</h2>
+<p><strong>Binärcode</strong> ist die Sprache, die ein Computer direkt versteht.
+Sie besteht nur aus <strong>zwei Zeichen</strong>: <code>0</code> und <code>1</code>. Jede Zahl oder jedes Zeichen wird damit dargestellt.</p>
+<h3 id="grundprinzip">Grundprinzip:</h3>
+<ul>
+<li>Jeder <strong>Bit</strong> (binary digit) kann entweder <code>0</code> oder <code>1</code> sein.</li>
+<li>Mehrere Bits zusammen bilden <strong>Bytes</strong> (meist 8 Bits = 1 Byte).</li>
+<li>Alles im Computer – Zahlen, Texte, Bilder, Musik – wird in <strong>Binärform</strong> gespeichert und verarbeitet.</li>
+</ul>
+<h3 id="beispiel">Beispiel:</h3>
+<ul>
+<li>Dezimalzahl 5 → Binär: <code>0101</code></li>
+<li>Buchstabe „A“ → ASCII-Binär: <code>01000001</code></li>
+</ul>
+<p>🔎 Erklärung:
+- Ein Computer kann nur elektrische Signale ein (<code>1</code>) oder aus (<code>0</code>) unterscheiden.
+- Durch Kombination vieler Bits können komplexe Informationen codiert werden.</p>
+<p>👉 Zusammengefasst: Binärcode ist die <strong>Grundsprache der Computer</strong>, auf der alle Programme und Daten letztlich basieren.</p>
+<h3 id="umrechnungsarten-von-dezimal-zu-binar">Umrechnungsarten von Dezimal zu Binär</h3>
+<p>Um eine Dezimalzahl wie 44 in eine Binärzahl umzuwandeln, gibt es grundsätzlich zwei gängige Rechenarten:</p>
+<p>1️⃣ <strong>Division durch 2 (Restmethode)</strong></p>
+<p>Hier teilst du die Dezimalzahl wiederholt <strong>durch 2</strong> und notierst die <strong>Reste</strong>. Danach liest du die Reste <strong>von unten nach oben</strong>, um die Binärzahl zu erhalten.</p>
+<table>
+<thead>
+<tr>
+<th>Dezimalzahl</th>
+<th>÷2</th>
+<th>Ergebnis</th>
+<th>Rest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>44</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+</tr>
+<tr>
+<td>22</td>
+<td>2</td>
+<td>11</td>
+<td>0</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>2️⃣ <strong>Subtraktion der Zweierpotenzen</strong></p>
+<p>Hier zerlegst du die Dezimalzahl in Summe von Zweierpotenzen (1, 2, 4, 8, 16, 32, …) und setzt an der jeweiligen Stelle eine 1, sonst 0.</p>
+<table>
+<thead>
+<tr>
+<th>32</th>
+<th>16</th>
+<th>8</th>
+<th>4</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Erklärung:</p>
+<ul>
+<li>Wir prüfen jede Potenz von links nach rechts, ob sie in die Zahl passt, bzw. ob die <strong>Zahl</strong> - <strong>Potenz</strong> &gt;=0 ist.</li>
+<li>Wenn ja, schreiben wir 1 und subtrahieren die Potenz, sonst 0. In unserem Beispiel also:<ul>
+<li><strong>44 - 32 = 12</strong> (wir notieren eine 1 bei 32 und merken uns den Rest von 12)</li>
+<li>dann <strong>12 - 16 = -4</strong> (wir notieren eine 0 bei 16 und fahren mit 12 weiter)</li>
+<li>dann <strong>12 - 8 = 4</strong> (wir notieren eine 1 bei 8 und merken uns den Rest von 4)</li>
+<li>...</li>
+</ul>
+</li>
+<li>So ergibt sich für 44: 101100</li>
+</ul>
+<hr />
+<h2 id="wichtige-begriffe">Wichtige Begriffe</h2>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IDE (Integrated Development Environment)</strong></td>
+<td>Eine Softwareumgebung zum Schreiben, Testen und Debuggen von Programmen, oft mit Editor, Compiler und Debugger integriert.</td>
+</tr>
+<tr>
+<td><strong>Quellcode</strong></td>
+<td>Der vom Menschen lesbare Programmtext, den Programmierer schreiben, z. B. in Python oder C.</td>
+</tr>
+<tr>
+<td><strong>Algorithmus</strong></td>
+<td>Eine klar definierte Schritt-für-Schritt-Anleitung, um ein Problem zu lösen oder eine Aufgabe zu erfüllen.</td>
+</tr>
+<tr>
+<td><strong>Syntax</strong></td>
+<td>Die Regeln einer Programmiersprache, die bestimmen, wie Programme korrekt geschrieben werden müssen. Fehler in der Syntax führen zu Fehlermeldungen.</td>
+</tr>
+<tr>
+<td><strong>Datentyp</strong></td>
+<td>Gibt an, welche Art von Daten eine Variable speichern kann, z. B. Zahl, Text oder Wahr/Falsch.</td>
+</tr>
+<tr>
+<td><strong>Variable</strong></td>
+<td>Ein benannter Speicherplatz für Daten, dessen Inhalt sich ändern kann.</td>
+</tr>
+<tr>
+<td><strong>Compiler / Interpreter</strong></td>
+<td>Ein Compiler übersetzt den Quellcode komplett in Maschinencode, bevor das Programm läuft, ein Interpreter führt den Quellcode direkt Zeile für Zeile aus.</td>
+</tr>
+<tr>
+<td><strong>Assembler</strong></td>
+<td>Ein Programm, das Assemblersprache (näher am Maschinencode) in Maschinencode übersetzt.</td>
+</tr>
+<tr>
+<td><strong>Maschinencode</strong></td>
+<td>Direkt ausführbare Befehle für die CPU, meist als Binärzahlen codiert.</td>
+</tr>
+<tr>
+<td><strong>CPU (Central Processing Unit)</strong></td>
+<td>Die zentrale Recheneinheit eines Computers, die Befehle ausführt und Berechnungen durchführt.</td>
+</tr>
+<tr>
+<td><strong>Speicher (RAM)</strong></td>
+<td>Temporärer Arbeitsspeicher eines Computers, in dem Programme und Daten während der Ausführung gespeichert werden; flüchtig, also gehen Daten beim Ausschalten verloren.</td>
+</tr>
+<tr>
+<td><strong>Output / Hardware</strong></td>
+<td>Das Ergebnis wird angezeigt, gespeichert oder an andere Hardware ausgegeben.</td>
+</tr>
+</tbody>
+</table>
 
----
-
-## 1. Grundidee
-
-- Ein Programm besteht aus **Anweisungen** (Instruktionen).
-- Diese Anweisungen sagen dem Computer: *„Nimm Daten, verarbeite sie nach diesen Regeln und liefere ein Ergebnis.“*
-
-!!! note "Das EVA-Prinzip"
-    Programme folgen immer dem Muster **Eingabe → Verarbeitung → Ausgabe**.
-
----
-
-## 2. Sprachebene
-
-Programme werden in **Programmiersprachen** geschrieben.
-
-- **Hochsprachen** sind menschenlesbarer (z. B. Python, Java, C++).
-- **Maschinensprache** ist das, was der Computer wirklich versteht: eine Folge von 0 und 1 (**Binärcode**).
-- Damit der Computer ein Programm ausführen kann, wird es **übersetzt** (durch einen **Compiler** oder **Interpreter**) von der Programmiersprache in Maschinencode.
-
-!!! note "Compiler vs. Interpreter – grob"
-    - **Compiler**: Übersetzt das ganze Programm vorab in Maschinencode.
-    - **Interpreter**: Übersetzt und führt **während** der Ausführung schrittweise aus.
-
----
-
-## 3. Ablauf im Computer
-
-Wenn ein Programm gestartet wird:
-
-1. **Laden**: Das Programm wird vom Speicher (z. B. Festplatte) in den **Arbeitsspeicher (RAM)** geladen.
-2. **Ausführen**: Die **CPU** liest nacheinander die Maschinenbefehle.
-   - Beispiele: „Addiere Wert X zu Wert Y“, „Vergleiche A mit B“, „Springe zu Anweisung Z“.
-3. **Steuerung**: Durch **Kontrollstrukturen** (z. B. *Wenn–dann*, *Wiederhole bis*) kann das Programm je nach Datenlage unterschiedlich reagieren.
-
----
-
-## 4. Daten und Variablen
-
-- Programme arbeiten mit **Daten**: Zahlen, Text, Bilder, Signale usw.
-- Diese werden in **Variablen** gespeichert – quasi kleine „Schubladen“ im Arbeitsspeicher.
-- Befehle im Programm **lesen**, **verändern** oder **kombinieren** diese Daten.
-
----
-
-## 5. Logik und Algorithmen
-
-- Hinter jedem Programm steckt ein **Algorithmus**: eine präzise Abfolge von Schritten, um ein Problem zu lösen.
-- Beispiel: Ein Programm zum **Sortieren von Zahlen** nimmt unsortierte Zahlen und ordnet sie der Reihe nach.
-
-!!! info "Eigenschaften guter Algorithmen"
-    - **Korrektheit** (liefert richtige Ergebnisse)
-    - **Eindeutigkeit** (klar definierte Schritte)
-    - **Endlichkeit** (hört irgendwann auf)
-    - **Effizienz** (benötigt vertretbare Zeit und Ressourcen)
-
----
-
-## 6. Interaktion
-
-Programme können:
-
-- **Eingaben** vom Menschen (Tastatur, Maus) oder von **Geräten/Sensoren** erhalten,
-- **Entscheidungen** treffen (Logik, Bedingungen),
-- **Ergebnisse anzeigen** oder **speichern** bzw. an andere Programme/Dienste weitergeben.
-
----
-
-## 📝 Zusammenfassung
-
-- Ein Computerprogramm ist eine **formal beschriebene Folge von Anweisungen**, die von der **CPU** schrittweise ausgeführt wird.
-- Der Quelltext wird per **Compiler** oder **Interpreter** in **Maschinencode** überführt.
-- Das Arbeitsmuster bleibt stets: **Eingabe → Verarbeitung → Ausgabe**.
-Wenn du möchtest, packe ich das direkt in eine kleine MkDocs-Struktur (Dateiname, mkdocs.yml-Ausschnitt, Navigation) – sag einfach Bescheid. -->
 
 
 
 
 
-
-
-  
-  
 
 
 
