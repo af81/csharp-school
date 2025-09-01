@@ -12,11 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/ressourcen/terminal/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/computer-programm/">
       
       
-        <link rel="prev" href="../../regeln/">
+        <link rel="prev" href="../../semesterplan/">
       
+      
+        <link rel="next" href="../git/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +26,7 @@
     
     
       
-        <title>Wichtige Terminal-Befehle - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Grundlagen Programmierung - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wichtige-terminal-befehle" class="md-skip">
+        <a href="#theoretische-grundlagen-programmieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Wichtige Terminal-Befehle
+              Grundlagen Programmierung
             
           </span>
         </div>
@@ -280,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -307,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Theorie
@@ -318,10 +322,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../theorie/computer-programm/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Grundlagen Programmierung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -332,6 +358,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wie-funktioniert-ein-computerprogramm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wie funktioniert ein Computerprogramm?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithmus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ablauf-im-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ablauf im Computer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiler-vs-interpreter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compiler vs. Interpreter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binarcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binärcode
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binärcode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grundprinzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grundprinzip:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beispiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beispiel:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umrechnungsarten-von-dezimal-zu-binar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Umrechnungsarten von Dezimal zu Binär
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-begriffe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wichtige Begriffe
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -344,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/git/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -576,20 +709,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -605,7 +736,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Ressourcen
@@ -616,32 +747,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Wichtige Terminal-Befehle
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ressourcen/terminal/" class="md-nav__link">
         
   
   
@@ -652,53 +761,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#navigation-im-dateisystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      📂 Navigation im Dateisystem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dateien-und-ordner-verwalten" class="md-nav__link">
-    <span class="md-ellipsis">
-      📁 Dateien und Ordner verwalten
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nutzliche-zusatzbefehle" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Nützliche Zusatzbefehle
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -727,142 +789,267 @@
 
 
 
-<h1 id="wichtige-terminal-befehle">🖥️ Wichtige Terminal-Befehle</h1>
-<p>Diese Übersicht hilft dir, dich im Terminal (Command Line Interface) zurechtzufinden.
-Die Befehle funktionieren in <strong>macOS</strong> und <strong>Linux</strong> fast gleich.
-Unter <strong>Windows</strong> kannst du PowerShell oder Git Bash verwenden.</p>
+<h1 id="theoretische-grundlagen-programmieren">📗 Theoretische Grundlagen Programmieren</h1>
+<h2 id="wie-funktioniert-ein-computerprogramm">Wie funktioniert ein Computerprogramm?</h2>
+<p>Ein <strong>Computerprogramm</strong> ist eine Reihe von Anweisungen, die einem Computer sagen, was er tun soll. Programme folgen dabe immer dem Muster <strong>Eingabe → Verarbeitung → Ausgabe</strong> (EVA-Prinzip):</p>
+<ol>
+<li><strong>Eingabe</strong>: Der Benutzer oder ein anderes System liefert Daten (z.B. über Tastatur, Maus, Geräte, Sensoren etc.)</li>
+<li><strong>Verarbeitung</strong>: Das Programm führt Schritt für Schritt die Anweisungen aus (Berechnungen, Vergleiche, Logik).</li>
+<li><strong>Ausgabe</strong>: Die Ergebnisse werden dargestellt, gespeichert oder an andere Systeme weitergegeben.</li>
+</ol>
+<blockquote>
+<p>👉 Ein Programm funktioniert also wie ein Rezept: Es beschreibt präzise, welche Schritte in welcher Reihenfolge auszuführen sind, damit ein gewünschtes Ergebnis entsteht.</p>
+</blockquote>
+<p>Hier ein kleines Beispiel in <strong>Python</strong>, das zeigt, wie ein Programm Eingaben verarbeitet und eine Ausgabe erzeugt:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. Eingabe: Benutzer gibt seinen Namen ein</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wie heisst du? &quot;</span><span class="p">)</span>
+
+<span class="c1"># 2. Verarbeitung: Text zusammensetzen</span>
+<span class="n">begrüssung</span> <span class="o">=</span> <span class="s2">&quot;Hallo, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;! Schön, dich zu sehen.&quot;</span>
+
+<span class="c1"># 3. Ausgabe: Ergebnis anzeigen</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">begrüssung</span><span class="p">)</span>
+</code></pre></div>
 <hr />
-<h2 id="navigation-im-dateisystem">📂 Navigation im Dateisystem</h2>
+<h2 id="algorithmus">Algorithmus</h2>
+<ul>
+<li>Hinter jedem Programm steckt ein <strong>Algorithmus</strong>: eine präzise Abfolge von Schritten, um ein Problem zu lösen.</li>
+<li>Beispiel: Ein Programm zum <strong>Sortieren von Zahlen</strong> nimmt unsortierte Zahlen und ordnet sie der Reihe nach.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Eigenschaften guter Algorithmen</p>
+<ul>
+<li><strong>Korrektheit</strong> (liefert richtige Ergebnisse)</li>
+<li><strong>Eindeutigkeit</strong> (klar definierte Schritte)</li>
+<li><strong>Endlichkeit</strong> (hört irgendwann auf)</li>
+<li><strong>Effizienz</strong> (benötigt vertretbare Zeit und Ressourcen)</li>
+</ul>
+</div>
+<hr />
+<h2 id="ablauf-im-computer">Ablauf im Computer</h2>
+<p>Wenn ein Programm gestartet wird:</p>
+<ol>
+<li><strong>Laden</strong>: Das Programm wird vom Speicher (z. B. Festplatte) in den <strong>Arbeitsspeicher (RAM)</strong> geladen.</li>
+<li><strong>Ausführen</strong>: Die <strong>CPU</strong> liest nacheinander die Maschinenbefehle.</li>
+<li>Beispiele: „Addiere Wert X zu Wert Y“, „Vergleiche A mit B“, „Springe zu Anweisung Z“.</li>
+<li><strong>Steuerung</strong>: Durch <strong>Kontrollstrukturen</strong> (z. B. <em>Wenn–dann</em>, <em>Wiederhole bis</em>) kann das Programm je nach Datenlage unterschiedlich reagieren.</li>
+</ol>
+<hr />
+<h2 id="compiler-vs-interpreter">Compiler vs. Interpreter</h2>
+<p>Programme werden in <strong>Programmiersprachen</strong> geschrieben.</p>
+<ul>
+<li><strong>Hochsprachen</strong> sind menschenlesbarer (z. B. Python, Java, C++).</li>
+<li><strong>Maschinensprache</strong> ist das, was der Computer wirklich versteht: eine Folge von 0 und 1 (<strong>Binärcode</strong>).</li>
+<li>Damit der Computer ein Programm ausführen kann, wird es <strong>übersetzt</strong> (durch einen <strong>Compiler</strong> oder <strong>Interpreter</strong>) von der Programmiersprache in Maschinencode.</li>
+</ul>
+<p>Ein <strong>Compiler</strong> und ein <strong>Interpreter</strong> sind also Programme, die Quellcode (den der Programmierer schreibt) in etwas übersetzen, das der Computer verstehen und ausführen kann.</p>
+<p>Der Unterschied liegt vor allem in <strong>wann</strong> und <strong>wie</strong> die Übersetzung passiert.</p>
 <table>
 <thead>
 <tr>
-<th>Befehl</th>
-<th>Bedeutung</th>
-<th>Beispiel</th>
+<th>Merkmal</th>
+<th>Compiler</th>
+<th>Interpreter</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>pwd</code></td>
-<td>Zeigt den aktuellen Ordner (Pfad) an</td>
-<td><code>pwd</code></td>
+<td><strong>Arbeitsweise</strong></td>
+<td>Übersetzt den gesamten Quellcode auf einmal in Maschinencode (eine ausführbare Datei).</td>
+<td>Liest und führt den Quellcode Schritt für Schritt direkt aus.</td>
 </tr>
 <tr>
-<td><code>ls</code></td>
-<td>Listet den Inhalt des aktuellen Ordners</td>
-<td><code>ls</code></td>
+<td><strong>Geschwindigkeit</strong></td>
+<td>Ausführung ist meist schneller, da der Code vorher komplett übersetzt wurde.</td>
+<td>Langsamer, da die Übersetzung während der Laufzeit passiert.</td>
 </tr>
 <tr>
-<td><code>ls -l</code></td>
-<td>Detaillierte Ansicht (inkl. Datum, Rechte, Größe)</td>
-<td><code>ls -l</code></td>
+<td><strong>Fehlererkennung</strong></td>
+<td>Meldet Fehler erst nach der vollständigen Übersetzung.</td>
+<td>Meldet Fehler sofort beim Ausführen der fehlerhaften Stelle.</td>
 </tr>
 <tr>
-<td><code>ls -a</code></td>
-<td>Zeigt auch versteckte Dateien (beginnen mit <code>.</code>)</td>
-<td><code>ls -a</code></td>
+<td><strong>Beispiele</strong></td>
+<td>C, C++ (meist kompiliert)</td>
+<td>Python, JavaScript (meist interpretiert)</td>
 </tr>
 <tr>
-<td><code>cd &lt;ordner&gt;</code></td>
-<td>In Ordner wechseln</td>
-<td><code>cd Projekte</code></td>
-</tr>
-<tr>
-<td><code>cd ..</code></td>
-<td>Einen Ordner nach oben gehen</td>
-<td><code>cd ..</code></td>
-</tr>
-<tr>
-<td><code>cd ~</code></td>
-<td>Zum Home-Verzeichnis wechseln</td>
-<td><code>cd ~</code></td>
+<td><strong>Ausgabe</strong></td>
+<td>Erstellt eine separate, ausführbare Datei (.exe, .out etc.).</td>
+<td>Führt den Code direkt aus, ohne eine zusätzliche Datei zu erzeugen.</td>
 </tr>
 </tbody>
 </table>
+<p>👉 Zusammengefasst:
+- <strong>Compiler</strong> = „Übersetzer im Voraus“ (macht ein fertiges Programm).
+- <strong>Interpreter</strong> = „Übersetzer in Echtzeit“ (führt direkt aus).</p>
 <hr />
-<h2 id="dateien-und-ordner-verwalten">📁 Dateien und Ordner verwalten</h2>
+<h2 id="binarcode">Binärcode</h2>
+<p><strong>Binärcode</strong> ist die Sprache, die ein Computer direkt versteht.
+Sie besteht nur aus <strong>zwei Zeichen</strong>: <code>0</code> und <code>1</code>. Jede Zahl oder jedes Zeichen wird damit dargestellt.</p>
+<h3 id="grundprinzip">Grundprinzip:</h3>
+<ul>
+<li>Jeder <strong>Bit</strong> (binary digit) kann entweder <code>0</code> oder <code>1</code> sein.</li>
+<li>Mehrere Bits zusammen bilden <strong>Bytes</strong> (meist 8 Bits = 1 Byte).</li>
+<li>Alles im Computer – Zahlen, Texte, Bilder, Musik – wird in <strong>Binärform</strong> gespeichert und verarbeitet.</li>
+</ul>
+<h3 id="beispiel">Beispiel:</h3>
+<ul>
+<li>Dezimalzahl 5 → Binär: <code>0101</code></li>
+<li>Buchstabe „A“ → ASCII-Binär: <code>01000001</code></li>
+</ul>
+<p>🔎 Erklärung:
+- Ein Computer kann nur elektrische Signale ein (<code>1</code>) oder aus (<code>0</code>) unterscheiden.
+- Durch Kombination vieler Bits können komplexe Informationen codiert werden.</p>
+<p>👉 Zusammengefasst: Binärcode ist die <strong>Grundsprache der Computer</strong>, auf der alle Programme und Daten letztlich basieren.</p>
+<h3 id="umrechnungsarten-von-dezimal-zu-binar">Umrechnungsarten von Dezimal zu Binär</h3>
+<p>Um eine Dezimalzahl wie 44 in eine Binärzahl umzuwandeln, gibt es grundsätzlich zwei gängige Rechenarten:</p>
+<p>1️⃣ <strong>Division durch 2 (Restmethode)</strong></p>
+<p>Hier teilst du die Dezimalzahl wiederholt <strong>durch 2</strong> und notierst die <strong>Reste</strong>. Danach liest du die Reste <strong>von unten nach oben</strong>, um die Binärzahl zu erhalten.</p>
 <table>
 <thead>
 <tr>
-<th>Befehl</th>
-<th>Bedeutung</th>
-<th>Beispiel</th>
+<th>Dezimalzahl</th>
+<th>÷2</th>
+<th>Ergebnis</th>
+<th>Rest</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>mkdir &lt;ordner&gt;</code></td>
-<td>Neuen Ordner erstellen</td>
-<td><code>mkdir Test</code></td>
+<td>44</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
 </tr>
 <tr>
-<td><code>touch &lt;datei&gt;</code></td>
-<td>Leere Datei erstellen</td>
-<td><code>touch main.py</code></td>
+<td>22</td>
+<td>2</td>
+<td>11</td>
+<td>0</td>
 </tr>
 <tr>
-<td><code>cp &lt;quelle&gt; &lt;ziel&gt;</code></td>
-<td>Datei kopieren</td>
-<td><code>cp test.py backup.py</code></td>
+<td>11</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
 </tr>
 <tr>
-<td><code>mv &lt;quelle&gt; &lt;ziel&gt;</code></td>
-<td>Datei verschieben/umbenennen</td>
-<td><code>mv test.py alt_test.py</code></td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
 </tr>
 <tr>
-<td><code>rm &lt;datei&gt;</code></td>
-<td>Datei löschen</td>
-<td><code>rm test.py</code></td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
 </tr>
 <tr>
-<td><code>rm -r &lt;ordner&gt;</code></td>
-<td>Ordner mit Inhalt löschen</td>
-<td><code>rm -r Test</code></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
-<p>⚠ <strong>Achtung:</strong> Gelöschte Dateien können im Terminal nicht einfach wiederhergestellt werden!</p>
-<hr />
-<h2 id="nutzliche-zusatzbefehle">🔍 Nützliche Zusatzbefehle</h2>
+<p>2️⃣ <strong>Subtraktion der Zweierpotenzen</strong></p>
+<p>Hier zerlegst du die Dezimalzahl in Summe von Zweierpotenzen (1, 2, 4, 8, 16, 32, …) und setzt an der jeweiligen Stelle eine 1, sonst 0.</p>
 <table>
 <thead>
 <tr>
-<th>Befehl</th>
-<th>Bedeutung</th>
-<th>Beispiel</th>
+<th>32</th>
+<th>16</th>
+<th>8</th>
+<th>4</th>
+<th>2</th>
+<th>1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>clear</code></td>
-<td>Terminal leeren</td>
-<td><code>clear</code></td>
-</tr>
-<tr>
-<td><code>history</code></td>
-<td>Zeigt vergangene Befehle</td>
-<td><code>history</code></td>
-</tr>
-<tr>
-<td><code>code .</code></td>
-<td>Öffnet aktuellen Ordner in VS Code</td>
-<td><code>code .</code></td>
-</tr>
-<tr>
-<td><code>python &lt;datei&gt;</code></td>
-<td>Python-Skript ausführen</td>
-<td><code>python main.py</code></td>
-</tr>
-<tr>
-<td><code>dotnet run</code></td>
-<td>C#-Projekt ausführen</td>
-<td><code>dotnet run</code></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody>
 </table>
+<p>Erklärung:</p>
+<ul>
+<li>Wir prüfen jede Potenz von links nach rechts, ob sie in die Zahl passt, bzw. ob die <strong>Zahl</strong> - <strong>Potenz</strong> &gt;=0 ist.</li>
+<li>Wenn ja, schreiben wir 1 und subtrahieren die Potenz, sonst 0. In unserem Beispiel also:<ul>
+<li><strong>44 - 32 = 12</strong> (wir notieren eine 1 bei 32 und merken uns den Rest von 12)</li>
+<li>dann <strong>12 - 16 = -4</strong> (wir notieren eine 0 bei 16 und fahren mit 12 weiter)</li>
+<li>dann <strong>12 - 8 = 4</strong> (wir notieren eine 1 bei 8 und merken uns den Rest von 4)</li>
+<li>...</li>
+</ul>
+</li>
+<li>So ergibt sich für 44: 101100</li>
+</ul>
 <hr />
-<p>💡 <strong>Tipp:</strong> Du kannst mit den Pfeiltasten <code>↑</code> und <code>↓</code> alte Befehle wiederholen.</p>
+<h2 id="wichtige-begriffe">Wichtige Begriffe</h2>
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IDE (Integrated Development Environment)</strong></td>
+<td>Eine Softwareumgebung zum Schreiben, Testen und Debuggen von Programmen, oft mit Editor, Compiler und Debugger integriert.</td>
+</tr>
+<tr>
+<td><strong>Quellcode</strong></td>
+<td>Der vom Menschen lesbare Programmtext, den Programmierer schreiben, z. B. in Python oder C.</td>
+</tr>
+<tr>
+<td><strong>Algorithmus</strong></td>
+<td>Eine klar definierte Schritt-für-Schritt-Anleitung, um ein Problem zu lösen oder eine Aufgabe zu erfüllen.</td>
+</tr>
+<tr>
+<td><strong>Syntax</strong></td>
+<td>Die Regeln einer Programmiersprache, die bestimmen, wie Programme korrekt geschrieben werden müssen. Fehler in der Syntax führen zu Fehlermeldungen.</td>
+</tr>
+<tr>
+<td><strong>Datentyp</strong></td>
+<td>Gibt an, welche Art von Daten eine Variable speichern kann, z. B. Zahl, Text oder Wahr/Falsch.</td>
+</tr>
+<tr>
+<td><strong>Variable</strong></td>
+<td>Ein benannter Speicherplatz für Daten, dessen Inhalt sich ändern kann.</td>
+</tr>
+<tr>
+<td><strong>Compiler / Interpreter</strong></td>
+<td>Ein Compiler übersetzt den Quellcode komplett in Maschinencode, bevor das Programm läuft, ein Interpreter führt den Quellcode direkt Zeile für Zeile aus.</td>
+</tr>
+<tr>
+<td><strong>Assembler</strong></td>
+<td>Ein Programm, das Assemblersprache (näher am Maschinencode) in Maschinencode übersetzt.</td>
+</tr>
+<tr>
+<td><strong>Maschinencode</strong></td>
+<td>Direkt ausführbare Befehle für die CPU, meist als Binärzahlen codiert.</td>
+</tr>
+<tr>
+<td><strong>CPU (Central Processing Unit)</strong></td>
+<td>Die zentrale Recheneinheit eines Computers, die Befehle ausführt und Berechnungen durchführt.</td>
+</tr>
+<tr>
+<td><strong>Speicher (RAM)</strong></td>
+<td>Temporärer Arbeitsspeicher eines Computers, in dem Programme und Daten während der Ausführung gespeichert werden; flüchtig, also gehen Daten beim Ausschalten verloren.</td>
+</tr>
+<tr>
+<td><strong>Output / Hardware</strong></td>
+<td>Das Ergebnis wird angezeigt, gespeichert oder an andere Hardware ausgegeben.</td>
+</tr>
+</tbody>
+</table>
 
 
 

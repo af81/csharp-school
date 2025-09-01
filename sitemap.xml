@@ -2,42 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://af81.github.io/csharp-school/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-01</lastmod>
     </url>
     <url>
          <loc>https://af81.github.io/csharp-school/regeln/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-01</lastmod>
     </url>
     <url>
          <loc>https://af81.github.io/csharp-school/semesterplan/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-01</lastmod>
     </url>
     <url>
-         <loc>https://af81.github.io/csharp-school/dl1/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <loc>https://af81.github.io/csharp-school/organisation/dl1/</loc>
+         <lastmod>2025-09-01</lastmod>
     </url>
     <url>
-         <loc>https://af81.github.io/csharp-school/dl1/arbeitsauftrag/</loc>
-         <lastmod>2025-08-27</lastmod>
-    </url>
-    <url>
-         <loc>https://af81.github.io/csharp-school/dl2/</loc>
-         <lastmod>2025-08-27</lastmod>
-    </url>
-    <url>
-         <loc>https://af81.github.io/csharp-school/dl2/arbeitsauftrag/</loc>
-         <lastmod>2025-08-27</lastmod>
-    </url>
-    <url>
-         <loc>https://af81.github.io/csharp-school/dl2/theorie/</loc>
-         <lastmod>2025-08-27</lastmod>
-    </url>
-    <url>
-         <loc>https://af81.github.io/csharp-school/dl4/theorie/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <loc>https://af81.github.io/csharp-school/organisation/dl2/</loc>
+         <lastmod>2025-09-01</lastmod>
     </url>
     <url>
          <loc>https://af81.github.io/csharp-school/ressourcen/terminal/</loc>
-         <lastmod>2025-08-27</lastmod>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/theorie/computer-programm/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/theorie/git/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/theorie/variablen/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/entwicklungsumgebung/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/git-change/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/git-commit/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/git/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/github-team/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/github/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/helloworld/</loc>
+         <lastmod>2025-09-01</lastmod>
     </url>
 </urlset>
