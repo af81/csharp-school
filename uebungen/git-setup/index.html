@@ -12,13 +12,9 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/uebungen/git-change/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/uebungen/git-setup/">
       
       
-        <link rel="prev" href="../git-commit/">
-      
-      
-        <link rel="next" href="../github/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Git - Änderungen rückgängig machen - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Git setup - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-anderungen-ruckgangig-machen" class="md-skip">
+        <a href="#setup-git-github-einrichten" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -113,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git - Änderungen rückgängig machen
+              Git setup
             
           </span>
         </div>
@@ -373,20 +369,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -402,7 +396,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Übungen
@@ -505,32 +499,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Git - Änderungen rückgängig machen
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../git-change/" class="md-nav__link">
         
   
   
@@ -541,35 +513,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#schritte" class="md-nav__link">
-    <span class="md-ellipsis">
-      🚀 Schritte
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -711,56 +654,42 @@
 
 
 
-<h1 id="git-anderungen-ruckgangig-machen">👩🏻‍💻 Git: Änderungen rückgängig machen</h1>
-<p>🎯 <strong>Ziel</strong>: Lerne, wie du Änderungen im Projekt zurücksetzen kannst – bevor oder nachdem du sie committest.</p>
-<hr />
-<h2 id="schritte">🚀 Schritte</h2>
-<p><strong>1. Projekt öffnen</strong></p>
-<p>Gehe wieder in dein <strong>HelloWorld</strong>-Projekt:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/Projekte/HelloWorld
-</code></pre></div>
-<p><strong>2. Neue Änderung machen (noch nicht speichern!)</strong></p>
-<ul>
-<li>Öffne wieder die Hauptdatei (programm.cs)</li>
-<li>Ergänze eine neue Zeile</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Oops! Das will ich eigentlich nicht behalten.&quot;</span><span class="p">);</span>
-</code></pre></div>
-<p><strong>3. Datei ändern</strong></p>
-<p>Prüfe den Status:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
-</code></pre></div>
-<p>Verwirf die Änderung:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>--&lt;dateiname&gt;
-</code></pre></div>
-<p>Prüfe erneut mit <code>git status</code>. Die Datei ist wieder unverändert.</p>
-<p><strong>4. Neue Änderung machen und zum Staging hinzufügen</strong></p>
-<p>Schreibe eine neue Zeile in deine <code>program.cs</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Diese Zeile stage ich erst und unstage sie dann.&quot;</span><span class="p">);</span>
-</code></pre></div>
-<p>Stage die Änderung:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-</code></pre></div>
-<p><strong>5. Staging zurücknehmen</strong></p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>.
-</code></pre></div>
-<p>➝ Jetzt ist die Datei wieder unstaged, aber die Änderung ist noch da.</p>
-<p><strong>6. Commit erstellen und zurückrollen</strong></p>
-<p>Mache einen Commit:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add experimental code&quot;</span>
-</code></pre></div>
-<p>Oh nein! Falsch commited? Gehe zurück zum letzten Zustand:</p>
-<p>``bash
-git reset --soft HEAD~1
-```</p>
-<p>➝ Der Commit wurde entfernt, die Änderungen bleiben aber erhalten.</p>
-<p>✅ <strong>Ziel erreicht, wenn …</strong></p>
-<ul>
-<li>Du eine Änderung am Code verworfen hast</li>
-<li>Du eine Datei aus dem Staging-Bereich zurückgeholt hast</li>
-<li>Du einen Commit rückgängig gemacht hast</li>
-</ul>
+  <h1>Git setup</h1>
+
+<h2 id="setup-git-github-einrichten">🦊 Setup: Git &amp; GitHub einrichten</h2>
+<h2 id="schritt-1-git-installieren">Schritt 1 – Git installieren</h2>
+<ol>
+<li>Öffne <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li>Installiere Git mit <strong>Standard-Einstellungen</strong>.</li>
+<li>Prüfen, ob Git funktioniert: <code>git --version</code></li>
+</ol>
+<p><img alt="git download page" src="../../img/git.png" /></p>
+<h2 id="schritt-2-github-account-erstellen">Schritt 2 – GitHub-Account erstellen</h2>
+<ol>
+<li>Öffne <a href="https://github.com/">https://github.com/</a></li>
+<li>Klicke auf <strong>Sign up</strong></li>
+<li>Benutzername, E-Mail und Passwort wählen</li>
+<li>E-Mail bestätigen</li>
+</ol>
+<p><img alt="github page" src="../../img/github.png" /></p>
+<h2 id="schritt-3-git-konfigurieren">Schritt 3 – Git konfigurieren</h2>
+<p>Führe diese Befehle im Terminal aus (ersetze mit deinen Daten):
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Vorname Nachname&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;deine@email.ch&quot;</span>
+</code></pre></div></p>
+<p>Mit <code>git config --list</code> kannst du überprüfen, ob du Git richtig konfiguriert hast.</p>
+<h2 id="schritt-4-verbindung-testen">Schritt 4 – Verbindung testen</h2>
+<ol>
+<li>Erstelle ein neues Repository auf GitHub</li>
+<li>Code lokal commiten und pushen:
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;First commit&quot;</span>
+git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/deinusername/test-repo.git
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div></li>
+</ol>
 
 
 

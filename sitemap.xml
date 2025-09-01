@@ -37,7 +37,7 @@
          <lastmod>2025-09-01</lastmod>
     </url>
     <url>
-         <loc>https://af81.github.io/csharp-school/uebungen/entwicklungsumgebung/</loc>
+         <loc>https://af81.github.io/csharp-school/uebungen/begriffe/</loc>
          <lastmod>2025-09-01</lastmod>
     </url>
     <url>
@@ -46,6 +46,10 @@
     </url>
     <url>
          <loc>https://af81.github.io/csharp-school/uebungen/git-commit/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/git-setup/</loc>
          <lastmod>2025-09-01</lastmod>
     </url>
     <url>
@@ -62,6 +66,10 @@
     </url>
     <url>
          <loc>https://af81.github.io/csharp-school/uebungen/helloworld/</loc>
+         <lastmod>2025-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://af81.github.io/csharp-school/uebungen/vscode-setup/</loc>
          <lastmod>2025-09-01</lastmod>
     </url>
 </urlset>
