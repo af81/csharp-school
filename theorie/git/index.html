@@ -434,6 +434,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#struktur-einer-guten-commit-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Struktur einer guten Commit-Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-typen-nach-conventional-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔤 Commit-Typen (nach Conventional Commits)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiele-fur-struktur-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Beispiele für Struktur-Commits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#git-wichtige-befehle" class="md-nav__link">
     <span class="md-ellipsis">
       🛠️ Git – Wichtige Befehle
@@ -752,9 +779,9 @@
 <p>Ein <em>Repository</em> (kurz: "Repo") ist dein <strong>Projekt mit Versionsgeschichte</strong>.</p>
 <p>Es enthält:</p>
 <ul>
-<li>Den aktuellen Code</li>
-<li>Alle bisherigen Versionsstände (Commits)</li>
-<li>Weitere Infos (z.B. Branches, Merget etc.)</li>
+<li>Den aktuellen <strong>Code</strong></li>
+<li>Alle bisherigen <strong>Versionsstände</strong> (Commits)</li>
+<li><strong>Weitere Infos</strong> (z.B. Branches, Merges etc.)</li>
 </ul>
 <blockquote>
 <p>📘 Ein Repository ist wie ein Tagebuch deines Codes.</p>
@@ -805,6 +832,111 @@
 <li>💾 <strong>Commit</strong> changes <code>git commit -m &lt;message&gt;</code></li>
 <li>🤜🏼 <strong>Push</strong> changes <code>git push</code></li>
 </ol>
+<hr />
+<h2 id="struktur-einer-guten-commit-message">🧠 Struktur einer guten Commit-Message</h2>
+<p>Eine Commit-Message folgt diesem Aufbau:</p>
+<div class="highlight"><pre><span></span><code>&lt;type&gt;(optional scope): kurze Beschreibung
+</code></pre></div>
+<p>Beispie:</p>
+<div class="highlight"><pre><span></span><code>chore: add folders for components and assets
+</code></pre></div>
+<h2 id="commit-typen-nach-conventional-commits">🔤 Commit-Typen (nach Conventional Commits)</h2>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Wann verwenden?</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>feat</td>
+<td>Neue Funktion</td>
+<td>feat: add login form with validation</td>
+</tr>
+<tr>
+<td>fix</td>
+<td>Bugfix</td>
+<td>fix: correct typo in function name</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>Dokumentation</td>
+<td>docs: update README</td>
+</tr>
+<tr>
+<td>style</td>
+<td>Nur Formatierung</td>
+<td>style: format code with Prettier</td>
+</tr>
+<tr>
+<td>refactor</td>
+<td>Code-/Strukturumbau ohne neues Verhalten</td>
+<td>refactor: move utils to lib folder</td>
+</tr>
+<tr>
+<td>test</td>
+<td>Tests hinzugefügt oder geändert</td>
+<td>test: add tests for login logic</td>
+</tr>
+<tr>
+<td>chore</td>
+<td>Setup, Struktur, Konfiguration</td>
+<td>chore: setup folder structure</td>
+</tr>
+<tr>
+<td>perf</td>
+<td>Performance-Verbesserung</td>
+<td>perf: cache API responses</td>
+</tr>
+</tbody>
+</table>
+<h2 id="beispiele-fur-struktur-commits">📁 Beispiele für Struktur-Commits</h2>
+<table>
+<thead>
+<tr>
+<th>Aktion</th>
+<th>Commit Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neue Ordnerstruktur</td>
+<td>chore: add initial folder structure</td>
+</tr>
+<tr>
+<td>Dateien verschoben/umbenannt</td>
+<td>refactor: move components to /ui/</td>
+</tr>
+<tr>
+<td>Platzhalterdateien angelegt</td>
+<td>chore: add placeholder README files</td>
+</tr>
+<tr>
+<td>Assets umorganisiert</td>
+<td>chore: move images to /assets/img/</td>
+</tr>
+<tr>
+<td>Nur Dokumentation</td>
+<td>docs: add API usage guide</td>
+</tr>
+</tbody>
+</table>
+<p>❌ Vermeide schlechte Messages wie:</p>
+<ul>
+<li>update</li>
+<li>more files</li>
+<li>final fix</li>
+<li>stuff</li>
+<li>changes (ohne Kontext)</li>
+</ul>
+<p>✅ Bonus-Tipps</p>
+<ul>
+<li>Schreibe in Englisch (auch im deutschsprachigen Team)</li>
+<li>Denk an Leser in 3 Monaten (auch du selbst!)</li>
+<li>Sag nicht nur, was du gemacht hast, sondern was sich am Projekt ändert</li>
+</ul>
 <hr />
 <h2 id="git-wichtige-befehle">🛠️ Git – Wichtige Befehle</h2>
 <table>
