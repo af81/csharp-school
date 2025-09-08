@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/variablen/">
       
       
+        <link rel="prev" href="../git/">
+      
+      
+        <link rel="next" href="../../aufgaben/vscode-setup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Variablen - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Variablen & Datentypen - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-daten-und-variablen" class="md-skip">
+        <a href="#variablen-datentypen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Variablen
+              Variablen & Datentypen
             
           </span>
         </div>
@@ -278,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -305,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Theorie
@@ -353,6 +359,257 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    C# Basics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            C# Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Variablen & Datentypen
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Variablen & Datentypen
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wert-einer-variable-zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wert einer Variable zuweisen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variablennamen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variablennamen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datentypen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datentypen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datentypen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#konvertieren-benutzereingaben-mit-consolereadline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konvertieren - Benutzereingaben mit Console.ReadLine()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-operationen" class="md-nav__link">
+    <span class="md-ellipsis">
+      String-Operationen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="String-Operationen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-einer-zeichenkette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index einer Zeichenkette
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#substrings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Substrings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeilenumbruch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zeilenumbruch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anfuhrungszeichen-innerhalb-eines-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anführungszeichen innerhalb eines Strings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lange-eines-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Länge eines Strings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings-zusammensetzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strings zusammensetzen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strings-einbetten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strings einbetten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gross-und-kleinschreibung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gross- und Kleinschreibung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weitere-nutzliche-string-funktionen-in-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weitere nützliche String-Funktionen in C
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -717,6 +974,121 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aufgaben/github-team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub im Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    C# Basics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            C# Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aufgaben/csharp-repo.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Repo einrichten
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aufgaben/block_1.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Block 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -838,14 +1210,232 @@
 
 
 
-  <h1>Variablen</h1>
+<h1 id="variablen-datentypen">🧮 Variablen &amp; Datentypen</h1>
+<h2 id="wert-einer-variable-zuweisen">Wert einer Variable zuweisen</h2>
+<p>Ohne Variablen kommt kein Programm aus. Variablen dienen als <strong>Datenspeicher</strong> und werden während der Ausführung des Programms im Arbeitsspeicher (RAM) abgelegt. Hier ein Beispiel:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span><span class="p">;</span>
+</code></pre></div>
+<p>Ganz zu Beginn steht der Datentyp <code>int</code> (integer / Ganzzahl). Dann folgt der Variablenname <code>number</code>. Diese Variable speicher den Wert <code>10</code>.</p>
+<p>Ein zweites Beispiel:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">modulName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Applikationen entwerfen und implementieren&quot;</span><span class="p">;</span>
+</code></pre></div>
+<p>Hier speichert die String-Variable <code>modul_name</code> die Zeichenkette <code>Applikationen entwerfen und implementieren</code>.</p>
+<p>Ich kann auch <strong>Werte an mehrere Variablen desselben Datentyps</strong> auf einmal vergeben.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
 
-<h2 id="4-daten-und-variablen">4. Daten und Variablen</h2>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1">// prints 5</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="c1">// prints 3</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="c1">// prints 2</span>
+</code></pre></div>
+<hr />
+<h2 id="variablennamen">Variablennamen</h2>
+<p>Beachte, dass Variablen mit einem <strong>Kleinbuchstaben</strong> beginnen, zusammengesetzte Begriffe im <strong>Lower-Camel-Case</strong> (z.B. firstName) verbunden werden und keine Sonderzeichen enthalten dürfen.</p>
+<table>
+    <tr>
+      <th>✅ Erlaubt</th>
+      <th>⛔️ Nicht erlaubt</th>
+    </tr>
+    <tr>
+      <td>number</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>firstName</td>
+      <td>first-name</td>
+    </tr>
+    <tr>
+      <td>speedInPercent</td>
+      <td>speedin%</td>
+    </tr>
+</table>
+
+<hr />
+<h2 id="datentypen">Datentypen</h2>
+<p>In C# musst du <strong>jeder Variable</strong> einen <strong>festen Datentyp</strong> zuweisen. Der Compiler prüft zur Übersetzungszeit (Compile-Time), ob der Wert mit dem Datentyp übereinstimmt.</p>
+<p>Folgende <strong>Datentypen</strong> solltest du kennen:</p>
+<table>
+<thead>
+<tr>
+<th>Typ 🇩🇪</th>
+<th>Typ 🇬🇧</th>
+<th>C# Datentyp</th>
+<th>Speichergröße</th>
+<th>Wertebereich / Zahlenraum</th>
+<th>Beispiele</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeichenkette</td>
+<td>String</td>
+<td><code>string</code></td>
+<td>abhängig vom Inhalt</td>
+<td>bis zu 2 GB (max. Länge ~2 Mrd. Zeichen)</td>
+<td>"Hallo", "abc123", "Mein Name"</td>
+</tr>
+<tr>
+<td>Zeichen</td>
+<td>Character</td>
+<td><code>char</code></td>
+<td>2 Byte (16 Bit)</td>
+<td>Ein einzelnes Unicode-Zeichen</td>
+<td>'A', '9', '?'</td>
+</tr>
+<tr>
+<td>Ganzzahlen (kurz)</td>
+<td>Short Integer</td>
+<td><code>short</code></td>
+<td>2 Byte (16 Bit)</td>
+<td>-32,768 bis 32,767</td>
+<td>-100, 0, 250</td>
+</tr>
+<tr>
+<td>Ganzzahlen</td>
+<td>Integer</td>
+<td><code>int</code></td>
+<td>4 Byte (32 Bit)</td>
+<td>-2,147,483,648 bis 2,147,483,647</td>
+<td>-5, 0, 1000</td>
+</tr>
+<tr>
+<td>Ganzzahlen (lang)</td>
+<td>Long Integer</td>
+<td><code>long</code></td>
+<td>8 Byte (64 Bit)</td>
+<td>-9,223,372,036,854,775,808 bis 9,223,372,036,854,775,807</td>
+<td>1234567890, -5000000000</td>
+</tr>
+<tr>
+<td>Fliesskommazahl</td>
+<td>Float</td>
+<td><code>float</code></td>
+<td>4 Byte (32 Bit)</td>
+<td>ca. ±1.5 × 10⁻⁴⁵ bis ±3.4 × 10³⁸, 7 Stellen Genauigkeit</td>
+<td>3.14f, -0.01f</td>
+</tr>
+<tr>
+<td>Fliesskommazahl</td>
+<td>Double</td>
+<td><code>double</code></td>
+<td>8 Byte (64 Bit)</td>
+<td>ca. ±5.0 × 10⁻³²⁴ bis ±1.7 × 10³⁰⁸, 15–16 Stellen Genauigkeit</td>
+<td>-1.25, 7.6543</td>
+</tr>
+<tr>
+<td>Dezimalzahl</td>
+<td>Decimal</td>
+<td><code>decimal</code></td>
+<td>16 Byte (128 Bit)</td>
+<td>±1.0 × 10⁻²⁸ bis ±7.9 × 10²⁸, 28–29 Stellen Genauigkeit</td>
+<td>3.141592653589793238m</td>
+</tr>
+<tr>
+<td>Wahrheitswerte</td>
+<td>Boolean</td>
+<td><code>bool</code></td>
+<td>1 Byte</td>
+<td><code>true</code> oder <code>false</code></td>
+<td>true, false</td>
+</tr>
+</tbody>
+</table>
+<p>Um den Datentyp einer Variable herauszufinden, kannst du die <strong>Funktion</strong> <code>.GetType()</code> verwenden.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Naruto&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">name</span><span class="p">.</span><span class="n">GetType</span><span class="p">());</span><span class="w"> </span><span class="c1">// System.String</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">age</span><span class="p">.</span><span class="n">GetType</span><span class="p">());</span><span class="w"> </span><span class="c1">// System.Int32</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">hero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">hero</span><span class="p">.</span><span class="n">GetType</span><span class="p">());</span><span class="w"> </span><span class="c1">// System.Boolean</span>
+</code></pre></div>
+<hr />
+<h3 id="konvertieren-benutzereingaben-mit-consolereadline">Konvertieren -  Benutzereingaben mit Console.ReadLine()</h3>
+<p>Es ist wichtig zu wissen, dass der <strong>Console.ReadLine()-Befehl</strong> immer einen <em>Zeichenkette</em> (String) einliest. Selbst wenn die Eingabe eine <em>Ganzzahl</em> (Integer), z.B. 16, ist.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Wie alt bist du? [in Jahren]: &quot;</span><span class="p">);</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Dein Alter: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Datentyp von age: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="p">.</span><span class="n">GetType</span><span class="p">());</span>
+</code></pre></div>
+<p>Damit wir mit der Variable <em>age</em> rechnen können, müssen wir sie zuerst in einen Zahlentyp wie Integer oder Float konvertieren (umwandeln). Das machen wir mithilfe der <strong>int.Parse()-</strong> oder <strong>Convert.ToInt32()-Funtkion</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Pars</span><span class="p">(</span><span class="n">age</span><span class="p">);</span>
+
+<span class="c1">// oder</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">age</span><span class="p">);</span>
+</code></pre></div>
+<p>Hier wird der der Datentyp der Benutzereingabe von String zu Integer konvertiert.</p>
+<hr />
+<h2 id="string-operationen">String-Operationen</h2>
+<p>Es gibt verschiedene Möglichkeiten Strings umzuformen, zu verkürzen und oder sie zusammenzusetzen.</p>
+<h3 id="index-einer-zeichenkette">Index einer Zeichenkette</h3>
+<p>Strings bestehen aus Zeichen, die ab Index 0 nummeriert sind.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;HACKER&quot;</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span><span class="w"> </span><span class="c1">// H</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="m">5</span><span class="p">]);</span><span class="w"> </span><span class="c1">// R</span>
+</code></pre></div>
+<h3 id="substrings">Substrings</h3>
+<p>Um einzelne Zeichen oder Teile eines Strings zu erhalten, verwendet man die Methode <code>Substring(startIndex, length)</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;HACKER&quot;</span><span class="p">;</span>
+
+<span class="c1">// Einzelnes Zeichen</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">ch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="p">[</span><span class="m">3</span><span class="p">];</span><span class="w"> </span><span class="c1">// K</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">ch</span><span class="p">);</span>
+
+<span class="c1">// Substring: &quot;ACK&quot;</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// startIndex=1, Länge=3</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">sub</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="zeilenumbruch">Zeilenumbruch</h3>
+<p>In Strings erzeugst du einen Zeilenumbruch mit <code>\n</code> oder <code>Environment.NewLine</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Erste Zeile.\nZweite Zeile.&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
+
+<span class="c1">// Oder plattformunabhängig</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">text2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Erste Zeile.&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Environment</span><span class="p">.</span><span class="n">NewLine</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;Zweite Zeile.&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text2</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="anfuhrungszeichen-innerhalb-eines-strings">Anführungszeichen innerhalb eines Strings</h3>
+<p>Willst du Anführungszeichen im String, benutzt du <code>\"</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Der \&quot;FCL\&quot; ist mein Lieblingsclub.&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="lange-eines-strings">Länge eines Strings</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Gorilla&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span><span class="w"> </span><span class="c1">// 7</span>
+</code></pre></div>
+<h3 id="strings-zusammensetzen">Strings zusammensetzen</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; World&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hello World!</span>
+
+<span class="kt">string</span><span class="w"> </span><span class="n">text1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="p">;</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">text2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;World!&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">text2</span><span class="p">);</span><span class="w">     </span><span class="c1">// Hello World!</span>
+</code></pre></div>
+<h3 id="strings-einbetten">Strings einbetten</h3>
+<p>In C# nutzt man Interpolated Strings mit <code>$</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Kim&quot;</span><span class="p">;</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;C#&quot;</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;My name is {name} and I am learning {language}.&quot;</span><span class="p">);</span>
+<span class="c1">// My name is Kim and I am learning C#.</span>
+</code></pre></div>
+<h3 id="gross-und-kleinschreibung">Gross- und Kleinschreibung</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Ringo&quot;</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">name</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">());</span><span class="w"> </span><span class="c1">// RINGO</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">name</span><span class="p">.</span><span class="n">ToLower</span><span class="p">());</span><span class="w"> </span><span class="c1">// ringo</span>
+</code></pre></div>
+<h3 id="weitere-nutzliche-string-funktionen-in-c">Weitere nützliche String-Funktionen in C</h3>
 <ul>
-<li>Programme arbeiten mit <strong>Daten</strong>: Zahlen, Text, Bilder, Signale usw.</li>
-<li>Diese werden in <strong>Variablen</strong> gespeichert – quasi kleine „Schubladen“ im Arbeitsspeicher.</li>
-<li>Befehle im Programm <strong>lesen</strong>, <strong>verändern</strong> oder <strong>kombinieren</strong> diese Daten.</li>
+<li>StartsWith("H") / EndsWith("r") – Prüft Anfang/Ende</li>
+<li>Contains("ACK") – Prüft, ob Substring enthalten ist</li>
+<li>Replace("A", "X") – Zeichen oder Substring ersetzen</li>
+<li>Trim() – Leerzeichen am Anfang/Ende entfernen</li>
+<li>Split(' ') – String aufteilen in Array</li>
 </ul>
+<p>Offizielle Dokumentation: <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/">https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/</a></p>
 
 
 
