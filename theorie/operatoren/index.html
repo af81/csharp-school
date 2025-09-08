@@ -12,13 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/git/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/operatoren/">
       
       
-        <link rel="prev" href="../computer-programm/">
+        <link rel="prev" href="../rechnen/">
       
       
-        <link rel="next" href="../variablen/">
+        <link rel="next" href="../../aufgaben/vscode-setup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Git und GitHub - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Operatoren - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-github" class="md-skip">
+        <a href="#operatoren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git und GitHub
+              Operatoren
             
           </span>
         </div>
@@ -345,32 +345,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Git und GitHub
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -381,98 +359,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#was-ist-ein-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 Was ist ein Repository?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zwei-typen-von-repositories" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔄 Zwei Typen von Repositories
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-ist-ein-commit" class="md-nav__link">
-    <span class="md-ellipsis">
-      🤔 Was ist ein Commit?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#der-git-commit-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      💧 Der Git-Commit-Workflow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#struktur-einer-guten-commit-messagek" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 Struktur einer guten Commit-Messagek
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-typen-nach-conventional-commits" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔤 Commit-Typen (nach Conventional Commits)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#beispiele-fur-struktur-commits" class="md-nav__link">
-    <span class="md-ellipsis">
-      📁 Beispiele für Struktur-Commits
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-wichtige-befehle" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Git – Wichtige Befehle
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -482,18 +368,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -509,7 +397,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             C# Basics
@@ -566,10 +454,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../operatoren/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Operatoren
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -580,6 +490,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vergleichsoperatoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vergleichsoperatoren
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logische-operatoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logische Operatoren
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logische Operatoren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND (&amp;&amp;)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or" class="md-nav__link">
+    <span class="md-ellipsis">
+      OR (||)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xor" class="md-nav__link">
+    <span class="md-ellipsis">
+      XOR (^)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOT (!)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-aufgaben-operatoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coding-Aufgaben "Operatoren"
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1188,227 +1187,93 @@
 
 
 
-<h1 id="git-github">🦊 Git &amp; Github</h1>
-<h2 id="was-ist-ein-repository">📦 Was ist ein Repository?</h2>
-<p>Ein <em>Repository</em> (kurz: "Repo") ist dein <strong>Projekt mit Versionsgeschichte</strong>.</p>
-<p>Es enthält:</p>
-<ul>
-<li>Den aktuellen <strong>Code</strong></li>
-<li>Alle bisherigen <strong>Versionsstände</strong> (Commits)</li>
-<li><strong>Weitere Infos</strong> (z.B. Branches, Merges etc.)</li>
-</ul>
-<blockquote>
-<p>📘 Ein Repository ist wie ein Tagebuch deines Codes.</p>
-</blockquote>
-<hr />
-<h2 id="zwei-typen-von-repositories">🔄 Zwei Typen von Repositories</h2>
-<p><img alt="" src="../../img/repos.png" /></p>
+<h1 id="operatoren">⚙️ Operatoren</h1>
+<h2 id="vergleichsoperatoren">Vergleichsoperatoren</h2>
+<p>Mit <strong>Vergleichsoperatoren</strong> können wir Werte miteinander vergleichen. Das Ergebnis eines Vergleichs ist ein Wahrheitswert vom Datentyp <code>bool</code>, also entweder <code>true</code> oder <code>false</code>.</p>
 <table>
-<thead>
-<tr>
-<th>Typ</th>
-<th>Beschreibung</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Lokales Repo</strong></td>
-<td>Auf deinem Computer mit</td>
-<td><code>~/Projekte/mein-app/</code></td>
-</tr>
-<tr>
-<td><strong>Remote Repo</strong></td>
-<td>Auf GitHub, GitLab usw.</td>
-<td><code>https://github.com/deinname/mein-app</code></td>
-</tr>
-</tbody>
+    <tr>
+      <th>Operator</th>
+      <th>Bedeutung</th>
+    </tr>
+    <tr>
+      <td>a < b</td>
+      <td>a kleiner als b</td>
+    </tr>
+    <tr>
+      <td>a <= b</td>
+      <td>a kleiner oder gleich b</td>
+    </tr>
+    <tr>
+      <td>a == b</td>
+      <td>a gleich b</td>
+    </tr>
+    <tr>
+      <td>a != b</td>
+      <td>a ungleich b</td>
+    </tr>
+    <tr>
+      <td>a >= b</td>
+      <td>a grösser gleich b</td>
+    </tr>
+    <tr>
+      <td>a > b</td>
+      <td>a grösser als b</td>
+    </tr>
 </table>
-<blockquote>
-<p>💡 Nutze <code>git init</code>, um ein lokales Repo zu starten – oder <code>git clone</code>, um ein Remote-Repo zu holen.</p>
-</blockquote>
-<hr />
-<h2 id="was-ist-ein-commit">🤔 Was ist ein Commit?</h2>
-<p>Ein <em>Commit</em> ist ein <strong>Speicherpunkt</strong> im Projekt.</p>
-<p>Er enthält:</p>
-<ul>
-<li><strong>Was</strong> wurde geändert?</li>
-<li><strong>Wer</strong> hat es geändert?</li>
-<li><strong>Wann</strong>?</li>
-<li><strong>Warum</strong>? (→ <strong>Commit Message</strong>)</li>
-</ul>
-<hr />
-<h2 id="der-git-commit-workflow">💧 Der Git-Commit-Workflow</h2>
-<p><img alt="" src="../../img/workflow.png" /></p>
-<ol>
-<li>📝 <strong>Make</strong> changes</li>
-<li>📦 <strong>Stage</strong> changes <code>git add .</code></li>
-<li>💾 <strong>Commit</strong> changes <code>git commit -m &lt;message&gt;</code></li>
-<li>🤜🏼 <strong>Push</strong> changes <code>git push</code></li>
-</ol>
-<hr />
-<h2 id="struktur-einer-guten-commit-messagek">🧠 Struktur einer guten Commit-Messagek</h2>
-<p>Eine Commit-Message folgt diesem Aufbau:</p>
-<div class="highlight"><pre><span></span><code>&lt;type&gt;(optional scope): kurze Beschreibung
+
+<p>Hier ein paar Beispiele:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">7.6</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">1</span><span class="p">);</span><span class="w">      </span><span class="c1">// True, weil 7.6 grösser als 1 ist</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">34</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">34</span><span class="p">);</span><span class="w">     </span><span class="c1">// True, weil 34 grösser oder gleich 34 ist</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">7</span><span class="p">);</span><span class="w">       </span><span class="c1">// False, weil 5 nicht gleich 7 ist</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">50</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">78</span><span class="p">);</span><span class="w">     </span><span class="c1">// True, weil 50 ungleich 78 ist</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">0.5</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0.3</span><span class="p">);</span><span class="w">    </span><span class="c1">// False, weil 0.5 nicht kleiner als 0.3 ist</span>
 </code></pre></div>
-<p>Beispie:</p>
-<div class="highlight"><pre><span></span><code>chore: add folders for components and assets
+<p>Man kann auch <strong>Strings</strong> miteinander vergleichen.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Password123&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Password321&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// False</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Juliana&quot;</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;Julianna&quot;</span><span class="p">);</span><span class="w">         </span><span class="c1">// True</span>
 </code></pre></div>
-<h2 id="commit-typen-nach-conventional-commits">🔤 Commit-Typen (nach Conventional Commits)</h2>
-<table>
-<thead>
-<tr>
-<th>Typ</th>
-<th>Wann verwenden?</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>feat</td>
-<td>Neue Funktion</td>
-<td>feat: add login form with validation</td>
-</tr>
-<tr>
-<td>fix</td>
-<td>Bugfix</td>
-<td>fix: correct typo in function name</td>
-</tr>
-<tr>
-<td>docs</td>
-<td>Dokumentation</td>
-<td>docs: update README</td>
-</tr>
-<tr>
-<td>style</td>
-<td>Nur Formatierung</td>
-<td>style: format code with Prettier</td>
-</tr>
-<tr>
-<td>refactor</td>
-<td>Code-/Strukturumbau ohne neues Verhalten</td>
-<td>refactor: move utils to lib folder</td>
-</tr>
-<tr>
-<td>test</td>
-<td>Tests hinzugefügt oder geändert</td>
-<td>test: add tests for login logic</td>
-</tr>
-<tr>
-<td>chore</td>
-<td>Setup, Struktur, Konfiguration</td>
-<td>chore: setup folder structure</td>
-</tr>
-<tr>
-<td>perf</td>
-<td>Performance-Verbesserung</td>
-<td>perf: cache API responses</td>
-</tr>
-</tbody>
-</table>
-<h2 id="beispiele-fur-struktur-commits">📁 Beispiele für Struktur-Commits</h2>
-<table>
-<thead>
-<tr>
-<th>Aktion</th>
-<th>Commit Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Neue Ordnerstruktur</td>
-<td>chore: add initial folder structure</td>
-</tr>
-<tr>
-<td>Dateien verschoben/umbenannt</td>
-<td>refactor: move components to /ui/</td>
-</tr>
-<tr>
-<td>Platzhalterdateien angelegt</td>
-<td>chore: add placeholder README files</td>
-</tr>
-<tr>
-<td>Assets umorganisiert</td>
-<td>chore: move images to /assets/img/</td>
-</tr>
-<tr>
-<td>Nur Dokumentation</td>
-<td>docs: add API usage guide</td>
-</tr>
-</tbody>
-</table>
-<p>❌ Vermeide schlechte Messages wie:</p>
-<ul>
-<li>update</li>
-<li>more files</li>
-<li>final fix</li>
-<li>stuff</li>
-<li>changes (ohne Kontext)</li>
-</ul>
-<p>✅ Bonus-Tipps</p>
-<ul>
-<li>Schreibe in Englisch (auch im deutschsprachigen Team)</li>
-<li>Denk an Leser in 3 Monaten (auch du selbst!)</li>
-<li>Sag nicht nur, was du gemacht hast, sondern was sich am Projekt ändert</li>
-</ul>
 <hr />
-<h2 id="git-wichtige-befehle">🛠️ Git – Wichtige Befehle</h2>
-<table>
-<thead>
-<tr>
-<th>Befehl</th>
-<th>Bedeutung</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>git init</code></td>
-<td>Neues lokales Git-Repo erstellen</td>
-<td><code>git init</code></td>
-</tr>
-<tr>
-<td><code>git clone &lt;url&gt;</code></td>
-<td>Repo von GitHub klonen</td>
-<td><code>git clone https://github.com/user/repo.git</code></td>
-</tr>
-<tr>
-<td><code>git status</code></td>
-<td>Aktuellen Status anzeigen</td>
-<td><code>git status</code></td>
-</tr>
-<tr>
-<td><code>git add &lt;datei&gt;</code></td>
-<td>Datei zur Staging-Area hinzufügen</td>
-<td><code>git add main.py</code></td>
-</tr>
-<tr>
-<td><code>git add .</code></td>
-<td>Alle Änderungen hinzufügen</td>
-<td><code>git add .</code></td>
-</tr>
-<tr>
-<td><code>git commit -m "Nachricht"</code></td>
-<td>Änderungen speichern (lokal)</td>
-<td><code>git commit -m "Funktion hinzugefügt"</code></td>
-</tr>
-<tr>
-<td><code>git push</code></td>
-<td>Änderungen zu GitHub hochladen</td>
-<td><code>git push</code></td>
-</tr>
-<tr>
-<td><code>git pull</code></td>
-<td>Änderungen von GitHub herunterladen</td>
-<td><code>git pull</code></td>
-</tr>
-<tr>
-<td><code>git log</code></td>
-<td>Commit-Historie anzeigen</td>
-<td><code>git log</code></td>
-</tr>
-</tbody>
-</table>
+<h2 id="logische-operatoren">Logische Operatoren</h2>
+<p>Mit <strong>logischen Operatoren</strong> kann man Wahrheitswerte verknüpfen und vergleichen.</p>
+<h3 id="and">AND (&amp;&amp;)</h3>
+<p>Das Ergebnis ist true, wenn beide Bedingungen true sind.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// True, beide Bedingungen sind True</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// False, da 4 == 2 nicht stimmt</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// False, beide Bedingungen sind False</span>
+</code></pre></div>
+<h3 id="or">OR (||)</h3>
+<p>Das Ergebnis ist true, wenn mindestens eine Bedingung true ist.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// True, beide Bedingungen True</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// True, da 8 &gt; 5 True ist</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// False, beide Bedingungen False</span>
+</code></pre></div>
+<h3 id="xor">XOR (^)</h3>
+<p>Das Ergebnis ist true, wenn genau eine Bedingung true ist (aber nicht beide).</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// True, da nur 8 &gt; 5 True ist</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// False, beide False</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// False, beide True</span>
+</code></pre></div>
+<h3 id="not">NOT (!)</h3>
+<p>Negiert einen Wahrheitswert (true → false, false → true).</p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">3</span><span class="p">);</span><span class="w">           </span><span class="c1">// True</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;John&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;John&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// True</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="m">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">3</span><span class="p">));</span><span class="w">        </span><span class="c1">// False, da True negiert wird</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;John&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Pam&quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// True, da Vergleich False, und negiert wird</span>
+</code></pre></div>
+<hr />
+<h2 id="coding-aufgaben-operatoren">Coding-Aufgaben "Operatoren"</h2>
+<p>Löse in Block 1 die <strong>Aufgaben 7, 8 und 9</strong>.</p>
 
 
 
