@@ -12,13 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/operatoren/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/kontrollstrukturen/">
       
       
-        <link rel="prev" href="../rechnen/">
+        <link rel="prev" href="../operatoren/">
       
       
-        <link rel="next" href="../kontrollstrukturen/">
+        <link rel="next" href="../../aufgaben/vscode-setup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Operatoren - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Kontrollstrukturen - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#operatoren" class="md-skip">
+        <a href="#kontrollstrukturen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Operatoren
+              Kontrollstrukturen
             
           </span>
         </div>
@@ -454,6 +454,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../operatoren/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Operatoren
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -471,7 +494,7 @@
   
   
   <span class="md-ellipsis">
-    Operatoren
+    Kontrollstrukturen
     
   </span>
   
@@ -484,7 +507,7 @@
   
   
   <span class="md-ellipsis">
-    Operatoren
+    Kontrollstrukturen
     
   </span>
   
@@ -507,55 +530,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vergleichsoperatoren" class="md-nav__link">
+  <a href="#ubersicht" class="md-nav__link">
     <span class="md-ellipsis">
-      Vergleichsoperatoren
+      Übersicht
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#logische-operatoren" class="md-nav__link">
+  <a href="#verzweigungen" class="md-nav__link">
     <span class="md-ellipsis">
-      Logische Operatoren
+      Verzweigungen 🔀
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Logische Operatoren">
+    <nav class="md-nav" aria-label="Verzweigungen 🔀">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#and" class="md-nav__link">
+  <a href="#if-einseitige-auswahl" class="md-nav__link">
     <span class="md-ellipsis">
-      AND (&amp;&amp;)
+      if | Einseitige Auswahl
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#or" class="md-nav__link">
+  <a href="#if-else-zweiseitige-auswahl" class="md-nav__link">
     <span class="md-ellipsis">
-      OR (||)
+      if-else | Zweiseitige Auswahl
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#xor" class="md-nav__link">
+  <a href="#verschachtelung" class="md-nav__link">
     <span class="md-ellipsis">
-      XOR (^)
+      Verschachtelung
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#not" class="md-nav__link">
+  <a href="#switch-mehrstufige-auswahl" class="md-nav__link">
     <span class="md-ellipsis">
-      NOT (!)
+      switch | Mehrstufige Auswahl
     </span>
   </a>
   
@@ -567,9 +590,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#coding-aufgaben-operatoren" class="md-nav__link">
+  <a href="#schleifen-wiederholungen" class="md-nav__link">
     <span class="md-ellipsis">
-      Coding-Aufgaben "Operatoren"
+      Schleifen (Wiederholungen) 🔁
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schleifen (Wiederholungen) 🔁">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#while-kopfgesteuerte-schleife" class="md-nav__link">
+    <span class="md-ellipsis">
+      while | Kopfgesteuerte Schleife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-while-fussgesteuerte-schleife" class="md-nav__link">
+    <span class="md-ellipsis">
+      do-while | Fussgesteuerte Schleife
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-zahlergesteuerte-wiederholung" class="md-nav__link">
+    <span class="md-ellipsis">
+      for | Zählergesteuerte Wiederholung
     </span>
   </a>
   
@@ -579,29 +635,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kontrollstrukturen/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Kontrollstrukturen
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1233,93 +1266,102 @@
 
 
 
-<h1 id="operatoren">⚙️ Operatoren</h1>
-<h2 id="vergleichsoperatoren">Vergleichsoperatoren</h2>
-<p>Mit <strong>Vergleichsoperatoren</strong> können wir Werte miteinander vergleichen. Das Ergebnis eines Vergleichs ist ein Wahrheitswert vom Datentyp <code>bool</code>, also entweder <code>true</code> oder <code>false</code>.</p>
-<table>
-    <tr>
-      <th>Operator</th>
-      <th>Bedeutung</th>
-    </tr>
-    <tr>
-      <td>a < b</td>
-      <td>a kleiner als b</td>
-    </tr>
-    <tr>
-      <td>a <= b</td>
-      <td>a kleiner oder gleich b</td>
-    </tr>
-    <tr>
-      <td>a == b</td>
-      <td>a gleich b</td>
-    </tr>
-    <tr>
-      <td>a != b</td>
-      <td>a ungleich b</td>
-    </tr>
-    <tr>
-      <td>a >= b</td>
-      <td>a grösser gleich b</td>
-    </tr>
-    <tr>
-      <td>a > b</td>
-      <td>a grösser als b</td>
-    </tr>
-</table>
-
-<p>Hier ein paar Beispiele:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">7.6</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">1</span><span class="p">);</span><span class="w">      </span><span class="c1">// True, weil 7.6 grösser als 1 ist</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">34</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">34</span><span class="p">);</span><span class="w">     </span><span class="c1">// True, weil 34 grösser oder gleich 34 ist</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">7</span><span class="p">);</span><span class="w">       </span><span class="c1">// False, weil 5 nicht gleich 7 ist</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">50</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">78</span><span class="p">);</span><span class="w">     </span><span class="c1">// True, weil 50 ungleich 78 ist</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">0.5</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0.3</span><span class="p">);</span><span class="w">    </span><span class="c1">// False, weil 0.5 nicht kleiner als 0.3 ist</span>
-</code></pre></div>
-<p>Man kann auch <strong>Strings</strong> miteinander vergleichen.</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Password123&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Password321&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// False</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Juliana&quot;</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;Julianna&quot;</span><span class="p">);</span><span class="w">         </span><span class="c1">// True</span>
+<h1 id="kontrollstrukturen">Kontrollstrukturen 🔀🔁</h1>
+<h2 id="ubersicht">Übersicht</h2>
+<p>Kontrollstrukturen bestehen aus zwei Kategorien: Verzweigungen (z.B. if-then-else) und Schleifen (z.B. while). Bei Verzweigungen geht es prinzipiell darum, ob eine Anweisung oder ein Block von Anweisungen ausgeführt werden soll oder nicht. Bei Schleifen geht es darum, dass eine Anweisung oder ein Block von Anweisungen unter Umständen mehrmals ausgeführt werden soll.</p>
+<p><img alt="" src="../../img/kontrollstrukturen.png" /></p>
+<hr />
+<h2 id="verzweigungen">Verzweigungen 🔀</h2>
+<h3 id="if-einseitige-auswahl">if | Einseitige Auswahl</h3>
+<p>Bei vielen Problemstellungen ist die Verarbeitung von Anweisungen von Bedingungen abhängig. Nur wenn die Bedingung erfüllt ist, wird die betreffende Anweisung (bzw. der Anweisungsblock) ausgeführt. Anderenfalls wird die Anweisung übersprungen.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Das wird ausgeführt, wenn die Aussage x &gt; 10 wahr ist.&quot;</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="logische-operatoren">Logische Operatoren</h2>
-<p>Mit <strong>logischen Operatoren</strong> kann man Wahrheitswerte verknüpfen und vergleichen.</p>
-<h3 id="and">AND (&amp;&amp;)</h3>
-<p>Das Ergebnis ist true, wenn beide Bedingungen true sind.</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// True, beide Bedingungen sind True</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// False, da 4 == 2 nicht stimmt</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// False, beide Bedingungen sind False</span>
-</code></pre></div>
-<h3 id="or">OR (||)</h3>
-<p>Das Ergebnis ist true, wenn mindestens eine Bedingung true ist.</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// True, beide Bedingungen True</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// True, da 8 &gt; 5 True ist</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// False, beide Bedingungen False</span>
-</code></pre></div>
-<h3 id="xor">XOR (^)</h3>
-<p>Das Ergebnis ist true, wenn genau eine Bedingung true ist (aber nicht beide).</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// True, da nur 8 &gt; 5 True ist</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// False, beide False</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// False, beide True</span>
-</code></pre></div>
-<h3 id="not">NOT (!)</h3>
-<p>Negiert einen Wahrheitswert (true → false, false → true).</p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">3</span><span class="p">);</span><span class="w">           </span><span class="c1">// True</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;John&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;John&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// True</span>
-
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="m">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">3</span><span class="p">));</span><span class="w">        </span><span class="c1">// False, da True negiert wird</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;John&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Pam&quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// True, da Vergleich False, und negiert wird</span>
+<h3 id="if-else-zweiseitige-auswahl">if-else | Zweiseitige Auswahl</h3>
+<p>Im Gegensatz zur einseitigen Auswahl hat die zweiseitige Auswahl noch am Schluss einen else-Teil. Während die einseitigen Auswahl nur entschieden kann, ob eine Anweisung oder ein Block von Anweisungen ausgeführt werden soll oder nicht, kann die zweiseitige Auswahl entscheiden, welcher der beiden Teile (if oder else) ausgeführt werden soll.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Das wird ausgeführt, wenn die Aussage x &gt; 10 wahr ist.&quot;</span><span class="p">)</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Das wird ausgeführt, wenn die Aussage x &gt; 10 unwahr ist. &quot;</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="coding-aufgaben-operatoren">Coding-Aufgaben "Operatoren"</h2>
-<p>Löse in Block 1 die <strong>Aufgaben 7, 8 und 9</strong>.</p>
+<h3 id="verschachtelung">Verschachtelung</h3>
+<p>Eine mehrstufige Auswahl erreichen Sie in C#, indem Sie mehrere if- bzw. if-else-Anweisungen schachteln. Dazu schreiben Sie innerhalb eines Anweisungsblocks einer if- bzw. if-else-Anweisung eine weitere if- bzw. if-else-Anweisung.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">15</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;In diesem Fall muss x gleich 11, 12, 13 oder 14 sein.&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WritLine</span><span class="p">(</span><span class="s">&quot;In diesem Fall ist x mindestens 16 oder grösser.&quot;</span><span class="p">)</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;In diesem Fall ist x gleich 10 oder kleiner.&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="switch-mehrstufige-auswahl">switch | Mehrstufige Auswahl</h3>
+<p>Bei if-Konstruktionen lassen sich immer nur zwei alternative Programmteile ausführen, da eine Bedingung als logischer Ausdruck nur die Werte true bzw. false ergeben kann. Bei einer mehrseitigen Auswahl testen Sie den Wert einer Variablen oder eines komplexen Ausdrucks. Diese Variable bzw. dieser Ausdruck wird als Selektor bezeichnet. In Abhängigkeit vom Wert des Selektors können fallweise (case) verschiedene Anweisungsblöcke ausgeführt werden. Die mehrseitige Auswahl wird daher auch Selektion genannt.</p>
+<div class="highlight"><pre><span></span><code><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">month</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Januar&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Februar&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;März&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;1. Quartal&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;April&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;ungültiger Monatsname&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="schleifen-wiederholungen">Schleifen (Wiederholungen) 🔁</h2>
+<p>Eine Schleife besteht aus der <strong>Schleifensteuerung</strong> und dem <strong>Schleifenrumpf</strong>. Der Schleifenrumpf umfasst den Programmteil, der wiederholt werden soll. Die Schleifensteuerung legt fest, wie oft die Anweisungen im Schleifenrumpf wiederholt werden sollen bzw. nach welchen Kriterien entschieden wird, ob eine Wiederholung erfolgen soll.</p>
+<h3 id="while-kopfgesteuerte-schleife">while | Kopfgesteuerte Schleife</h3>
+<p>Bei der while-Anweisung handelt es sich um eine kopfgesteuerte Schleifenstruktur. Die Ausführung der Anweisungen im Schleifenrumpf ist von der Gültigkeit einer Bedingung abhängig, die gleich zu Beginn der Anweisung überprüft wird. Solange (while) die Bedingung erfüllt ist, werden die folgenden Anweisungen (Schleifenrumpf) ausgeführt. Anschliessend folgt der nächste Durchlauf der Schleife und die Bedingung wird erneut geprüft. Ist die Bedingung nicht erfüllt, wird das Programm hinter der while-Anweisung fortgesetzt.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">counter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">counter</span><span class="p">);</span>
+<span class="w">    </span><span class="n">counter</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="m">2</span><span class="p">;</span><span class="w">                   </span><span class="c1">// Erhöht die Variable counter jeweils um +2</span>
+<span class="p">}</span>
+
+<span class="c1">// Das Programm gibt die Zahlen 1, 3, 5, 7 und 9 aus.</span>
+</code></pre></div>
+<hr />
+<h3 id="do-while-fussgesteuerte-schleife">do-while | Fussgesteuerte Schleife</h3>
+<p>Die do-while-Anweisung ist eine fussgesteuerte Schleifenstruktur. Die Bedingung wird erst nach dem Durchlauf des Schleifenrumpfes ausgewertet. Dadurch wird der Schleifenkörper mindestens einmal ausgeführt. Wie bei der kopfgesteuerten while-Anweisung wird der Schleifenrumpf ausgeführt, solange die Bedingung erfüllt ist.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">presentValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000.0</span><span class="p">;</span><span class="w">       </span><span class="c1">// Der aktuelle Werte</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">futureValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10000.0</span><span class="p">;</span><span class="w">       </span><span class="c1">// Wert, den wir erreichen wollen</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">interestRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4.5</span><span class="w">     </span><span class="c1">// Zinssatz von 4,5%</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">presentValue</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="m">1.0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">interestRate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">100</span><span class="p">;</span><span class="w">   </span><span class="c1">// Startwert um Zinsen erhöhen</span>
+<span class="w">    </span><span class="n">year</span><span class="o">++</span><span class="p">;</span><span class="w">                                     </span><span class="c1">// Jahr um 1 erhöhen</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">presentValue</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">futureValue</span><span class="p">);</span><span class="w">     </span><span class="c1">// Die Schleife wird solange ausgeführt, bis der aktuelle Wert den angestrebten Zukunftswert übersteigt</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Um den Zukunftswert zu erreichen, brauchst du {year} Jahre&quot;</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h2 id="for-zahlergesteuerte-wiederholung">for | Zählergesteuerte Wiederholung</h2>
+<p>Wenn bereits zu Begin der Schleife genau bekannt ist, wie oft der Schleifenrumpf (eine Anweisung oder ein Anweisungsblock) wiederholt werden soll, ist die Verwendung der for-Schleife die kompakteste Form.</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hallo!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Hier wird 4x Hallo! ausgegeben</span>
+</code></pre></div>
 
 
 
