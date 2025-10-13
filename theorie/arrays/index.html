@@ -12,13 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/aufgaben/git-setup/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/theorie/arrays/">
       
       
-        <link rel="prev" href="../vscode-setup/">
+        <link rel="prev" href="../kontrollstrukturen/">
       
       
-        <link rel="next" href="../begriffe/">
+        <link rel="next" href="../lists/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Git & GitHub - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Arrays - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-git-github-einrichten" class="md-skip">
+        <a href="#arrays" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git & GitHub
+              Arrays
             
           </span>
         </div>
@@ -282,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -309,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Theorie
@@ -323,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/computer-programm/" class="md-nav__link">
+      <a href="../computer-programm/" class="md-nav__link">
         
   
   
@@ -346,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/git/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -366,18 +368,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -393,7 +397,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             C# Basics
@@ -407,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/variablen/" class="md-nav__link">
+      <a href="../variablen/" class="md-nav__link">
         
   
   
@@ -430,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/rechnen/" class="md-nav__link">
+      <a href="../rechnen/" class="md-nav__link">
         
   
   
@@ -453,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/operatoren/" class="md-nav__link">
+      <a href="../operatoren/" class="md-nav__link">
         
   
   
@@ -476,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/kontrollstrukturen/" class="md-nav__link">
+      <a href="../kontrollstrukturen/" class="md-nav__link">
         
   
   
@@ -496,10 +500,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../theorie/arrays/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -510,6 +536,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#was-ist-ein-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      Was ist ein Array?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigenschaften-von-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigenschaften von Arrays
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deklaration-und-initialisierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deklaration und Initialisierung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zugriff-auf-arrayelemente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zugriff auf Arrayelemente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wichtige-eigenschaften-und-methoden" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wichtige Eigenschaften und Methoden
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#durchlaufen-eines-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Durchlaufen eines Arrays
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mehrdimensionale-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mehrdimensionale Arrays
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -522,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../theorie/lists/" class="md-nav__link">
+      <a href="../lists/" class="md-nav__link">
         
   
   
@@ -557,20 +666,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -586,7 +693,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Aufgaben
@@ -597,20 +704,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -626,7 +731,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -640,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vscode-setup/" class="md-nav__link">
+      <a href="../../aufgaben/vscode-setup/" class="md-nav__link">
         
   
   
@@ -660,30 +765,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Git & GitHub
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../aufgaben/git-setup/" class="md-nav__link">
         
   
   
@@ -694,69 +779,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setup-git-github-einrichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      🦊 Setup: Git &amp; GitHub einrichten
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schritt-1-git-installieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schritt 1 – Git installieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schritt-2-github-account-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schritt 2 – GitHub-Account erstellen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schritt-3-git-konfigurieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schritt 3 – Git konfigurieren
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schritt-4-verbindung-testen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schritt 4 – Verbindung testen
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -815,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../begriffe/" class="md-nav__link">
+      <a href="../../aufgaben/begriffe/" class="md-nav__link">
         
   
   
@@ -838,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../helloworld/" class="md-nav__link">
+      <a href="../../aufgaben/helloworld/" class="md-nav__link">
         
   
   
@@ -907,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../aufgaben/git/" class="md-nav__link">
         
   
   
@@ -930,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git-commit/" class="md-nav__link">
+      <a href="../../aufgaben/git-commit/" class="md-nav__link">
         
   
   
@@ -953,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git-change/" class="md-nav__link">
+      <a href="../../aufgaben/git-change/" class="md-nav__link">
         
   
   
@@ -976,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github/" class="md-nav__link">
+      <a href="../../aufgaben/github/" class="md-nav__link">
         
   
   
@@ -999,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github-team/" class="md-nav__link">
+      <a href="../../aufgaben/github-team/" class="md-nav__link">
         
   
   
@@ -1068,7 +1090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../csharp-repo/" class="md-nav__link">
+      <a href="../../aufgaben/csharp-repo/" class="md-nav__link">
         
   
   
@@ -1091,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../block_1/" class="md-nav__link">
+      <a href="../../aufgaben/block_1/" class="md-nav__link">
         
   
   
@@ -1114,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../block_2/" class="md-nav__link">
+      <a href="../../aufgaben/block_2/" class="md-nav__link">
         
   
   
@@ -1137,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../block_3/" class="md-nav__link">
+      <a href="../../aufgaben/block_3/" class="md-nav__link">
         
   
   
@@ -1274,42 +1296,121 @@
 
 
 
-  <h1>Git & GitHub</h1>
+<h1 id="arrays">Arrays 📦</h1>
+<h2 id="was-ist-ein-array">Was ist ein Array?</h2>
+<p>Ein Array ist eine Datenstruktur, die mehrere Elemente des gleichen Datentyps speichert.
+Jedes Element ist über einen Index erreichbar, der bei 0 beginnt.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">zahlen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">5</span><span class="p">];</span>
+</code></pre></div>
+<p>→ Erstellt ein Array für 5 Ganzzahlen (int).</p>
+<hr />
+<h2 id="eigenschaften-von-arrays">Eigenschaften von Arrays</h2>
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fester Datentyp</strong></td>
+<td>Alle Elemente haben denselben Typ (z. B. <code>int</code>, <code>string</code>, <code>double</code>, …).</td>
+</tr>
+<tr>
+<td><strong>Feste Grösse</strong></td>
+<td>Die Grösse wird bei der Erstellung festgelegt und kann später nicht mehr geändert werden.</td>
+</tr>
+<tr>
+<td><strong>Indexbasiert</strong></td>
+<td>Der Zugriff erfolgt über Indizes, beginnend bei <code>0</code>.</td>
+</tr>
+<tr>
+<td><strong>Referenztyp</strong></td>
+<td>Arrays sind Referenztypen – sie liegen auf dem Heap, auch wenn sie primitive Datentypen enthalten.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deklaration-und-initialisierung">Deklaration und Initialisierung</h2>
+<p>Ein Array wird folgendermassen deklariert:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">zahlen</span><span class="p">;</span>
+</code></pre></div>
+<p>Einen Array mit einer festen Grösse erstellt man so:</p>
+<div class="highlight"><pre><span></span><code><span class="n">zahlen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">3</span><span class="p">];</span>
+</code></pre></div>
+<p>Ein Array mit definierten Werten wird so erstellt:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">noten</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="p">};</span>
+</code></pre></div>
+<hr />
+<h2 id="zugriff-auf-arrayelemente">Zugriff auf Arrayelemente</h2>
+<p>Will man auf ein bestimmtes Element innerhalb eines Arrays zugreifen, benutzt man den Index und []. Zum Beispiel:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">noten</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="p">};</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">noten</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Ausgabe: 1</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">noten</span><span class="p">[</span><span class="m">2</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Ausgabe: 3</span>
 
-<h2 id="setup-git-github-einrichten">🦊 Setup: Git &amp; GitHub einrichten</h2>
-<h2 id="schritt-1-git-installieren">Schritt 1 – Git installieren</h2>
-<ol>
-<li>Öffne <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
-<li>Installiere Git mit <strong>Standard-Einstellungen</strong>.</li>
-<li>Prüfen, ob Git funktioniert: <code>git --version</code></li>
-</ol>
-<p><img alt="git download page" src="../../img/git.png" /></p>
-<h2 id="schritt-2-github-account-erstellen">Schritt 2 – GitHub-Account erstellen</h2>
-<ol>
-<li>Öffne <a href="https://github.com/">https://github.com/</a></li>
-<li>Klicke auf <strong>Sign up</strong></li>
-<li>Benutzername, E-Mail und Passwort wählen</li>
-<li>E-Mail bestätigen</li>
-</ol>
-<p><img alt="github page" src="../../img/github.png" /></p>
-<h2 id="schritt-3-git-konfigurieren">Schritt 3 – Git konfigurieren</h2>
-<p>Führe diese Befehle im Terminal aus (ersetze mit deinen Daten):
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Vorname Nachname&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;deine@email.ch&quot;</span>
-</code></pre></div></p>
-<p>Mit <code>git config --list</code> kannst du überprüfen, ob du Git richtig konfiguriert hast.</p>
-<h2 id="schritt-4-verbindung-testen">Schritt 4 – Verbindung testen</h2>
-<ol>
-<li>Erstelle ein neues Repository auf GitHub</li>
-<li>Code lokal commiten und pushen:
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
-git<span class="w"> </span>add<span class="w"> </span>.
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;First commit&quot;</span>
-git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
-git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/deinusername/test-repo.git
-git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
-</code></pre></div></li>
-</ol>
+<span class="n">noten</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// Wert an Index 2 ändern</span>
+</code></pre></div>
+<blockquote>
+<p>⚠️ Achtung: Der Zugriff auf einen Index ausserhalb des Bereichs führt zu einer IndexOutOfRangeException.</p>
+</blockquote>
+<hr />
+<h2 id="wichtige-eigenschaften-und-methoden">Wichtige Eigenschaften und Methoden</h2>
+<table>
+<thead>
+<tr>
+<th>Eigenschaft / Methode</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Length</code></td>
+<td>Gibt die Länge (Anzahl der Elemente) zurück</td>
+<td><code>zahlen.Length</code></td>
+</tr>
+<tr>
+<td><code>Array.Sort()</code></td>
+<td>Sortiert das Array aufsteigend</td>
+<td><code>Array.Sort(zahlen)</code></td>
+</tr>
+<tr>
+<td><code>Array.Reverse()</code></td>
+<td>Dreht die Reihenfolge um</td>
+<td><code>Array.Reverse(zahlen)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="durchlaufen-eines-arrays">Durchlaufen eines Arrays</h2>
+<p>Mit <code>for</code>-Schleife:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">zahlen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">};</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">zahlen</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">zahlen</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Mit <code>foreach</code>-Schleife:</p>
+<div class="highlight"><pre><span></span><code><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zahlen</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">zahl</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="mehrdimensionale-arrays">Mehrdimensionale Arrays</h2>
+<p>2D-Array (Matrix)</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[,]</span><span class="w"> </span><span class="n">matrix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">]</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="p">}</span>
+<span class="p">};</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Ausgabe: 6</span>
+</code></pre></div>
+<p>3D-Array (optional; kein Prüfungsstoff)</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[,,]</span><span class="w"> </span><span class="n">würfel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">];</span>
+</code></pre></div>
 
 
 
