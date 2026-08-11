@@ -12,9 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/aufgaben/vscode-setup/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/variablen-1-handout/">
       
       
+        <link rel="prev" href="../git-github-grundlagen-handout/">
+      
+      
+        <link rel="next" href="../../lehrer/einfuehrung-organisation-skript/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>🧑🏼‍💻 Setup: VS Code & .NET SDK - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W4 - Variablen & Datentypen I - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-vs-code-net-sdk" class="md-skip">
+        <a href="#variablen-datentypen-12" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🧑🏼‍💻 Setup: VS Code &amp; .NET SDK
+              W4 - Variablen & Datentypen I
             
           </span>
         </div>
@@ -278,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -305,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Lernstoff
@@ -319,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/einfuehrung-organisation-handout/" class="md-nav__link">
+      <a href="../einfuehrung-organisation-handout/" class="md-nav__link">
         
   
   
@@ -342,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/theoretische-einfuehrung-handout/" class="md-nav__link">
+      <a href="../theoretische-einfuehrung-handout/" class="md-nav__link">
         
   
   
@@ -365,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/git-github-grundlagen-handout/" class="md-nav__link">
+      <a href="../git-github-grundlagen-handout/" class="md-nav__link">
         
   
   
@@ -385,10 +391,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../schueler/variablen-1-handout/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W4 - Variablen & Datentypen I
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -399,6 +427,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lernziel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-anwendung" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Anwendung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-uben" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Üben
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Üben">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-erstes-eigenes-variablen-programm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe: Erstes eigenes Variablen-Programm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-losungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Lösungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-weiterfuhrende-beispiele-und-gedanken" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Weiterführende Beispiele und Gedanken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -655,34 +781,168 @@
 
 
 
-<h1 id="setup-vs-code-net-sdk">🧑🏼‍💻 Setup: VS Code &amp; .NET SDK</h1>
-<h2 id="schritt-1-vs-code-installieren">Schritt 1 – VS Code installieren</h2>
+<h1 id="variablen-datentypen-12">Variablen &amp; Datentypen (1/2)</h1>
+<h2 id="lernziel">Lernziel</h2>
+<p>Am Ende dieser Lektion weisst du: was eine Variable ist und wie du ihr einen Wert zuweist, welche Regeln für Variablennamen gelten, welche Datentypen es gibt und wie du sie mit <code>type()</code> bestimmst, warum <code>input()</code> immer einen String liefert, wie du die wichtigsten String-Operationen anwendest, und wie ein einfacher Programmablauf als PAP aussieht.</p>
+<h2 id="1-einstieg">1. Einstieg</h2>
+<p><em>Warum ist das wichtig?</em></p>
+<ul>
+<li>Ohne Variablen kann ein Programm sich nichts merken – weder deinen Namen, noch einen Punktestand, noch das Ergebnis einer Berechnung.</li>
+<li>Jede App, die sich etwas "merkt" (Kontostand, Highscore, Warenkorb), tut dies mit Variablen im Hintergrund.</li>
+</ul>
+<h2 id="2-grundlagen">2. Grundlagen</h2>
+<p><em>Um was geht es? Was musst du wissen?</em></p>
+<p><strong>Variablen zuweisen</strong></p>
+<p>Eine Variable ist ein benannter Speicherplatz im Arbeitsspeicher (RAM), dessen Inhalt sich ändern kann.</p>
+<div class="highlight"><pre><span></span><code><span class="n">number</span> <span class="o">=</span> <span class="mi">18</span>
+</code></pre></div>
+<p>Du kannst auch mehrere Variablen auf einmal zuweisen:</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="c1"># 5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>  <span class="c1"># 3.2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>  <span class="c1"># Hello</span>
+</code></pre></div>
+<p><strong>Variablennamen</strong></p>
+<p>Variablen beginnen mit einem Kleinbuchstaben, zusammengesetzte Begriffe werden mit <code>_</code> verbunden, keine Sonderzeichen.</p>
+<table>
+<thead>
+<tr>
+<th>✅ Erlaubt</th>
+<th>⛔️ Nicht erlaubt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>number</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>first_name</td>
+<td>first-name</td>
+</tr>
+<tr>
+<td>speed_in_percent</td>
+<td>speedin%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Datentypen</strong></p>
+<p>In Python musst du den Datentyp nicht selbst festlegen – er wird automatisch erkannt.</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Kurz</th>
+<th>Beispiele</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeichenkette</td>
+<td>str</td>
+<td>"Hallo", "abc123"</td>
+</tr>
+<tr>
+<td>Ganzzahl</td>
+<td>int</td>
+<td>-5, 0, 54</td>
+</tr>
+<tr>
+<td>Fliesskommazahl</td>
+<td>float</td>
+<td>-1.25, 7.65</td>
+</tr>
+<tr>
+<td>Wahrheitswert</td>
+<td>bool</td>
+<td>True, False</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Naruto&quot;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>   <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>    <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>🤓 Bei langen Zahlen wie 1000000 kannst du zur besseren Lesbarkeit <code>_</code> verwenden: <code>1_000_000</code>. Der Wert ändert sich dadurch nicht.</p>
+</blockquote>
+<p><strong>PAP (Programmablaufplan)</strong></p>
+<p><img alt="" src="../img/pap-basics.png" /></p>
+<p>Beispiel für "zwei Zahlen einlesen und die Summe ausgeben":</p>
+<p><strong>Konvertieren</strong></p>
+<p><code>input()</code> liefert <strong>immer</strong> eine Zeichenkette (String) – auch wenn eine Zahl eingegeben wird.</p>
+<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wie alt bist du? &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>   <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wie alt bist du? &quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>   <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+</code></pre></div>
+<p><strong>String-Operationen</strong></p>
+<p>Zeichen und Indizes: Zählung beginnt bei 0.</p>
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;HACKER&quot;</span>
+<span class="n">text</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>      <span class="c1"># K</span>
+<span class="n">text</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>    <span class="c1"># ACK  (Endindex ist nicht mehr enthalten)</span>
+</code></pre></div>
+<p>Weitere nützliche Operationen:</p>
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Erste Zeile.</span><span class="se">\n</span><span class="s2">Zweite Zeile.&quot;</span>   <span class="c1"># \n = Zeilenumbruch</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Der </span><span class="se">\&quot;</span><span class="s2">FCL</span><span class="se">\&quot;</span><span class="s2"> ist mein Lieblingsclub.&quot;</span>   <span class="c1"># \&quot; für Anführungszeichen im String</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Gorilla&quot;</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>            <span class="c1"># 7 (Länge des Strings)</span>
+<span class="n">text</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>      <span class="c1"># 2 (Position des ersten &quot;r&quot;)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span> <span class="o">+</span> <span class="s2">&quot; World&quot;</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>   <span class="c1"># Verkettung mit +</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Kim&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ich heisse </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>      <span class="c1"># f-String: Variable in {} einbetten</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>   <span class="c1"># KIM</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>   <span class="c1"># kim</span>
+</code></pre></div>
+<h2 id="3-anwendung">3. Anwendung</h2>
+<p><em>Wie funktioniert es? Schritt für Schritt am Beispiel</em></p>
+<ul>
+<li>Schritt 1: Lege eine Variable an: <code>age = input("Wie alt bist du? ")</code> und gib mit <code>print(type(age))</code> den Datentyp aus – du siehst <code>&lt;class 'str'&gt;</code>.</li>
+<li>Schritt 2: Wandle die Eingabe um: <code>age = int(input("Wie alt bist du? "))</code> und gib den Datentyp erneut aus – jetzt siehst du <code>&lt;class 'int'&gt;</code>.</li>
+<li>Schritt 3: Jetzt kannst du mit <code>age</code> rechnen, z.B. <code>print(age + 1)</code>.</li>
+</ul>
+<h2 id="4-uben">4. Üben</h2>
+<p><em>Aufgaben zum Vertiefen</em></p>
+<h3 id="aufgabe-erstes-eigenes-variablen-programm">Aufgabe: Erstes eigenes Variablen-Programm</h3>
 <ol>
-<li>Öffne <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>Lade die Version für dein Betriebssystem herunter</li>
-<li>Installiere mit Standard-Einstellungen</li>
-<li>Sprache <strong>Deutsch</strong> aktivieren (optional über "German Language Pack")</li>
+<li>Deklariere drei Variablen (eine Ganzzahl, eine Kommazahl, einen Text) und gib jeweils den Datentyp mit <code>type()</code> aus.</li>
+<li>Lies zusätzlich mit <code>input()</code> eine Zahl ein, wandle sie mit <code>int()</code> um, addiere 10 dazu und gib das Ergebnis aus.</li>
+<li>Baue mit einem f-String einen Satz, der alle drei Variablen (z.B. Name, Alter, Lieblingszahl) enthält.</li>
 </ol>
-<p><img alt="vs code screenshot" src="../../img/vscode.png" /></p>
-<h2 id="schritt-2-net-sdk-installieren">Schritt 2 - .NET SDK installieren</h2>
-<p>Damit C#-Programme ausgeführt werden können, benötigst du das <strong>.NET SDK</strong>.</p>
-<ol>
-<li>Öffne <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a></li>
-<li>Wähle die aktuelle <strong>Long Term Support (LTS)</strong> Version (z. B. .NET 8 LTS).</li>
-<li>Lade das passende Paket für dein Betriebssystem herunter.</li>
-<li>Installiere mit den Standard-Einstellungen.</li>
-<li>Prüfen, ob alles funktioniert:<code>dotnet --version</code></li>
-</ol>
-<p><img alt="csharp download site" src="../../img/csharp.png" /></p>
-<h2 id="schritt-3-vs-code-erweiterungen-installieren">Schritt 3 – VS Code Erweiterungen installieren</h2>
-<ol>
-<li>Öffne Visual Studio Code.</li>
-<li>Drücke <code>Strg + Shift + X</code> (Windows/Linux) oder <code>Cmd + Shift + X</code> (macOS), um den Erweiterungs-Manager zu öffnen. Alternativ kannst du auch über das Menü mit <code>Code &gt; Preferences &gt; Erweiterungen</code>gehen.</li>
-<li>Suche nach "C#"</li>
-<li>Installiere die Erweiterung "C# Dev Kit" von Microsoft.</li>
-</ol>
-<p><img alt="csharp extensions" src="../../img/csharp-ext.png" /></p>
-<hr />
+<h2 id="5-losungen">5. Lösungen</h2>
+<p><strong>Beispiel zu 1:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">zahl</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">kommazahl</span> <span class="o">=</span> <span class="mf">3.5</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hallo&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">zahl</span><span class="p">))</span>       <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">kommazahl</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>       <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
+</code></pre></div></p>
+<p><strong>Beispiel zu 2:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">zahl</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Gib eine Zahl ein: &quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zahl</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
+</code></pre></div></p>
+<p><strong>Beispiel zu 3:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Kim&quot;</span>
+<span class="n">alter</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">lieblingszahl</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ich heisse </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, bin </span><span class="si">{</span><span class="n">alter</span><span class="si">}</span><span class="s2"> Jahre alt und meine Lieblingszahl ist </span><span class="si">{</span><span class="n">lieblingszahl</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="6-weiterfuhrende-beispiele-und-gedanken">6. Weiterführende Beispiele und Gedanken</h2>
+<p><em>Transfer</em></p>
+<ul>
+<li>Achtung, typische Stolperfalle: Wer mit einer über <code>input()</code> eingelesenen Zahl direkt rechnet, ohne sie zu konvertieren, bekommt einen Fehler oder ein unerwartetes Ergebnis (Strings werden mit <code>+</code> aneinandergehängt statt addiert).</li>
+<li>Nächste Lektion: Ihr vertieft Variablen und Datentypen anhand einer grösseren Sammlung von Übungsaufgaben – Ein-/Ausgabe, Grundrechenarten, Vergleichsoperatoren, logische Operatoren und mehr.</li>
+<li>Überlege: Welche der heute gezeigten String-Operationen (Verkettung, f-Strings, upper/lower) könntest du bereits jetzt in einem eigenen kleinen Programm einsetzen?</li>
+</ul>
 
 
 

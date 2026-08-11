@@ -12,9 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/aufgaben/vscode-setup/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/git-github-grundlagen-handout/">
       
       
+        <link rel="prev" href="../theoretische-einfuehrung-handout/">
+      
+      
+        <link rel="next" href="../variablen-1-handout/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>🧑🏼‍💻 Setup: VS Code & .NET SDK - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W3 - Git & Github - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-vs-code-net-sdk" class="md-skip">
+        <a href="#git-github-grundlagen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🧑🏼‍💻 Setup: VS Code &amp; .NET SDK
+              W3 - Git & Github
             
           </span>
         </div>
@@ -278,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -305,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Lernstoff
@@ -319,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/einfuehrung-organisation-handout/" class="md-nav__link">
+      <a href="../einfuehrung-organisation-handout/" class="md-nav__link">
         
   
   
@@ -342,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/theoretische-einfuehrung-handout/" class="md-nav__link">
+      <a href="../theoretische-einfuehrung-handout/" class="md-nav__link">
         
   
   
@@ -362,10 +368,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../schueler/git-github-grundlagen-handout/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W3 - Git & Github
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -376,6 +404,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lernziel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-anwendung" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Anwendung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-uben" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Üben
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Üben">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1-erstes-repository-lokal-anlegen-und-committen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1: Erstes Repository lokal anlegen und committen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2-verbindung-zu-github-herstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2: Verbindung zu GitHub herstellen
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-losungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Lösungen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-weiterfuhrende-beispiele-und-gedanken" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Weiterführende Beispiele und Gedanken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -388,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/variablen-1-handout/" class="md-nav__link">
+      <a href="../variablen-1-handout/" class="md-nav__link">
         
   
   
@@ -655,34 +790,87 @@
 
 
 
-<h1 id="setup-vs-code-net-sdk">🧑🏼‍💻 Setup: VS Code &amp; .NET SDK</h1>
-<h2 id="schritt-1-vs-code-installieren">Schritt 1 – VS Code installieren</h2>
+<h1 id="git-github-grundlagen">Git &amp; GitHub Grundlagen</h1>
+<h2 id="lernziel">Lernziel</h2>
+<p>Am Ende dieser Lektion weisst du: was <strong>Git</strong> ist und wozu es dient, wie du Git installierst und konfigurierst, was der Unterschied zwischen einem <strong>lokalen</strong> und einem <strong>Remote-Repository</strong> ist, wie du <strong>Commit, Push und Pull</strong> mit aussagekräftigen <strong>Commit-Messages</strong> durchführst, und wie du einen Commit bei Bedarf rückgängig machst.</p>
+<h2 id="1-einstieg">1. Einstieg</h2>
+<p><em>Warum ist das wichtig?</em></p>
+<ul>
+<li>Ohne Versionskontrolle geht Arbeit schnell verloren, wenn mehrere Personen gleichzeitig am selben Code arbeiten oder du selbst frühere Zwischenstände wiederherstellen möchtest.</li>
+<li>Git verhindert genau das Chaos von Dateinamen wie "Endgueltig_v2_FINAL_wirklich.docx", indem es jeden Stand deines Codes nachvollziehbar und wiederherstellbar speichert.</li>
+<li>Praktisch jedes professionelle Software-Team arbeitet mit Git – die Grundlagen aus dieser Lektion sind direkt im Lehrbetrieb und in späteren Projekten einsetzbar.</li>
+</ul>
+<h2 id="2-grundlagen">2. Grundlagen</h2>
+<p><em>Um was geht es? Was musst du wissen?</em></p>
+<ul>
+<li>Git speichert <strong>Schnappschüsse</strong> (Commits) deines Codes über die Zeit – es überschreibt Dateien nicht einfach, sondern merkt sich jeden Zwischenstand.</li>
+<li>Ein <strong>lokales Repository</strong> liegt auf deinem eigenen Rechner. Ein <strong>Remote-Repository</strong> liegt auf einem Server, z.B. auf GitHub, und ist dort für dich (und ggf. andere) erreichbar.</li>
+<li>Die wichtigsten Befehle:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>init<span class="w">                        </span><span class="c1"># neues Repository anlegen</span>
+git<span class="w"> </span>status<span class="w">                      </span><span class="c1"># zeigt, was geändert/noch nicht versioniert ist</span>
+git<span class="w"> </span>add<span class="w"> </span>hello.py<span class="w">                 </span><span class="c1"># Änderung zum Commit vormerken</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Erster Commit&quot;</span><span class="w">    </span><span class="c1"># Schnappschuss erstellen</span>
+git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w">                </span><span class="c1"># Commit-Historie kompakt anzeigen</span>
+git<span class="w"> </span>push<span class="w">                         </span><span class="c1"># lokale Commits zu GitHub hochladen</span>
+git<span class="w"> </span>pull<span class="w">                         </span><span class="c1"># Änderungen von GitHub herunterladen</span>
+git<span class="w"> </span>clone<span class="w"> </span>&lt;URL&gt;<span class="w">                  </span><span class="c1"># bestehendes Repository lokal kopieren</span>
+</code></pre></div>
+<ul>
+<li>Der Kreislauf, mit dem du in diesem Kurs meistens arbeiten wirst: <strong>Ändern → Stagen (<code>git add</code>) → Committen (<code>git commit</code>) → Pushen (<code>git push</code>)</strong>.</li>
+<li>Eine gute Commit-Message ist kurz und sagt präzise, was sich am Projekt ändert, z.B. <code>fix: Tippfehler in Begrüssung korrigiert</code>. Schlechte Beispiele wie <code>update</code> oder <code>changes</code> helfen dir (und anderen) später nicht weiter.</li>
+</ul>
+<h2 id="3-anwendung">3. Anwendung</h2>
+<p><em>Wie funktioniert es? Schritt für Schritt am Beispiel</em></p>
+<ul>
+<li>Schritt 0: Git über <a href="https://git-scm.com/downloads">git-scm.com</a> mit Standard-Einstellungen installieren, mit <code>git --version</code> prüfen, danach mit <code>git config --global user.name "Vorname Nachname"</code> und <code>git config --global user.email "deine@email.ch"</code> konfigurieren.</li>
+<li>Schritt 1: Im Setup-Ordner aus Lektion 1 im Terminal <code>git init</code> ausführen, um ein neues lokales Repository anzulegen.</li>
+<li>Schritt 2: Die Datei <code>hello.py</code> mit <code>git add hello.py</code> zum Commit vormerken.</li>
+<li>Schritt 3: Mit <code>git commit -m "Erster Commit: Hello World"</code> einen Schnappschuss erstellen.</li>
+<li>Schritt 4: Das lokale Repository mit <code>git remote add origin &lt;URL&gt;</code> mit dem eigenen GitHub-Repository verbinden und mit <code>git push -u origin main</code> hochladen.</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>init
+git<span class="w"> </span>add<span class="w"> </span>hello.py
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Erster Commit: Hello World&quot;</span>
+git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;URL&gt;
+git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+Nach diesen Schritten ist dein Code sowohl lokal als auch auf GitHub sichtbar.</p>
+<h2 id="4-uben">4. Üben</h2>
+<p><em>Aufgaben zum Vertiefen</em></p>
+<h3 id="aufgabe-1-erstes-repository-lokal-anlegen-und-committen">Aufgabe 1: Erstes Repository lokal anlegen und committen</h3>
+<p>Initialisiere in deinem Setup-Ordner ein <strong>lokales Git-Repository</strong>, erstelle eine Datei und committe sie.</p>
 <ol>
-<li>Öffne <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>Lade die Version für dein Betriebssystem herunter</li>
-<li>Installiere mit Standard-Einstellungen</li>
-<li>Sprache <strong>Deutsch</strong> aktivieren (optional über "German Language Pack")</li>
+<li>Führe die Befehle aus Abschnitt 3 exakt aus und lass dir die Commit-Meldung im Terminal von der Lehrperson oder einem Klassenkameraden bestätigen.</li>
+<li>Nimm eine zweite Änderung an deiner Datei vor und erstelle einen zweiten Commit mit einer eigenen, aussagekräftigen Commit-Message.</li>
+<li>Mache einen dritten Commit und mache ihn danach mit <code>git reset --soft HEAD~1</code> wieder rückgängig – die Änderung selbst bleibt dabei erhalten. Beschreibe in eigenen Worten, was passiert ist.</li>
 </ol>
-<p><img alt="vs code screenshot" src="../../img/vscode.png" /></p>
-<h2 id="schritt-2-net-sdk-installieren">Schritt 2 - .NET SDK installieren</h2>
-<p>Damit C#-Programme ausgeführt werden können, benötigst du das <strong>.NET SDK</strong>.</p>
+<h3 id="aufgabe-2-verbindung-zu-github-herstellen">Aufgabe 2: Verbindung zu GitHub herstellen</h3>
+<p>Verbinde dein lokales Repository mit deinem <strong>GitHub-Repository</strong> aus Lektion 1 und <strong>lade deinen Code hoch</strong>.</p>
 <ol>
-<li>Öffne <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a></li>
-<li>Wähle die aktuelle <strong>Long Term Support (LTS)</strong> Version (z. B. .NET 8 LTS).</li>
-<li>Lade das passende Paket für dein Betriebssystem herunter.</li>
-<li>Installiere mit den Standard-Einstellungen.</li>
-<li>Prüfen, ob alles funktioniert:<code>dotnet --version</code></li>
+<li>Führe die Befehle nach Anleitung aus und kontrolliere gemeinsam mit der Lehrperson oder einer Klassenkameradin, dass der Code auf GitHub sichtbar ist.</li>
+<li>Nimm direkt auf GitHub eine kleine Änderung an der README vor und synchronisiere sie danach lokal mit <code>git pull</code>.</li>
+<li>Sieh dir mit <code>git log --oneline</code> die gesamte Historie aus beiden Aufgaben an und erkläre, in welcher Reihenfolge die Commits entstanden sind.</li>
 </ol>
-<p><img alt="csharp download site" src="../../img/csharp.png" /></p>
-<h2 id="schritt-3-vs-code-erweiterungen-installieren">Schritt 3 – VS Code Erweiterungen installieren</h2>
-<ol>
-<li>Öffne Visual Studio Code.</li>
-<li>Drücke <code>Strg + Shift + X</code> (Windows/Linux) oder <code>Cmd + Shift + X</code> (macOS), um den Erweiterungs-Manager zu öffnen. Alternativ kannst du auch über das Menü mit <code>Code &gt; Preferences &gt; Erweiterungen</code>gehen.</li>
-<li>Suche nach "C#"</li>
-<li>Installiere die Erweiterung "C# Dev Kit" von Microsoft.</li>
-</ol>
-<p><img alt="csharp extensions" src="../../img/csharp-ext.png" /></p>
-<hr />
+<p><em>Kontrollgrösse:</em> Dein Code ist sowohl lokal (<code>git log --oneline</code> zeigt mindestens einen Commit) als auch auf GitHub sichtbar.</p>
+<h2 id="5-losungen">5. Lösungen</h2>
+<p><strong>Erstes Repository lokal anlegen und committen:</strong></p>
+<ul>
+<li>[ ] <code>git log --oneline</code> zeigt nach den Schritten mindestens zwei Commits mit den jeweiligen Commit-Messages.</li>
+<li>[ ] Nach <code>git reset --soft HEAD~1</code> zeigt <code>git log --oneline</code> einen Commit weniger, die Datei selbst enthält die Änderung aber weiterhin (sichtbar z.B. mit <code>git status</code>, wo die Änderung wieder als "staged" erscheint).</li>
+</ul>
+<p><strong>Verbindung zu GitHub herstellen:</strong></p>
+<ul>
+<li>[ ] Nach <code>git push</code> ist die Datei <code>hello.py</code> im GitHub-Repository sichtbar; nach der README-Änderung auf GitHub und <code>git pull</code> ist die aktualisierte README auch lokal vorhanden.</li>
+<li>[ ] <code>git log --oneline</code> zeigt alle Commits chronologisch von neu (oben) nach alt (unten), inklusive der Commits aus der ersten Aufgabe.</li>
+</ul>
+<h2 id="6-weiterfuhrende-beispiele-und-gedanken">6. Weiterführende Beispiele und Gedanken</h2>
+<p><em>Transfer</em></p>
+<ul>
+<li>Überlege: Wie könnte Git helfen, wenn zwei Personen gleichzeitig am selben Projekt arbeiten, ohne sich gegenseitig Code zu überschreiben?</li>
+<li>Nächste Themen: Variablen und Datentypen. Vertiefende Git-Themen wie Branches und die Zusammenarbeit mehrerer Personen im selben Repository folgen später in einem anderen Modul.</li>
+<li>Zusätzlicher Gedanke: Praktisch jedes grössere Software-Team der Welt arbeitet mit demselben Grundprinzip, das du heute gelernt hast – die Werkzeuge (GitHub, GitLab, Bitbucket) unterscheiden sich, aber Commit/Push/Pull bleiben gleich.</li>
+</ul>
 
 
 

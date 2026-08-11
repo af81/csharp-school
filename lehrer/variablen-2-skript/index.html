@@ -12,7 +12,7 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/aufgaben/vscode-setup/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/lehrer/variablen-2-skript/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>🧑🏼‍💻 Setup: VS Code & .NET SDK - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>Variablen & Datentypen (2/2) – Übungen - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-vs-code-net-sdk" class="md-skip">
+        <a href="#variablen-datentypen-22-ubungen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🧑🏼‍💻 Setup: VS Code &amp; .NET SDK
+              Variablen &amp; Datentypen (2/2) – Übungen
             
           </span>
         </div>
@@ -456,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/einfuehrung-organisation-skript/" class="md-nav__link">
+      <a href="../einfuehrung-organisation-skript/" class="md-nav__link">
         
   
   
@@ -479,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/theoretische-einfuehrung-skript/" class="md-nav__link">
+      <a href="../theoretische-einfuehrung-skript/" class="md-nav__link">
         
   
   
@@ -502,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/git-github-grundlagen-skript/" class="md-nav__link">
+      <a href="../git-github-grundlagen-skript/" class="md-nav__link">
         
   
   
@@ -525,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/variablen-1-skript/" class="md-nav__link">
+      <a href="../variablen-1-skript/" class="md-nav__link">
         
   
   
@@ -655,34 +655,34 @@
 
 
 
-<h1 id="setup-vs-code-net-sdk">🧑🏼‍💻 Setup: VS Code &amp; .NET SDK</h1>
-<h2 id="schritt-1-vs-code-installieren">Schritt 1 – VS Code installieren</h2>
-<ol>
-<li>Öffne <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>Lade die Version für dein Betriebssystem herunter</li>
-<li>Installiere mit Standard-Einstellungen</li>
-<li>Sprache <strong>Deutsch</strong> aktivieren (optional über "German Language Pack")</li>
-</ol>
-<p><img alt="vs code screenshot" src="../../img/vscode.png" /></p>
-<h2 id="schritt-2-net-sdk-installieren">Schritt 2 - .NET SDK installieren</h2>
-<p>Damit C#-Programme ausgeführt werden können, benötigst du das <strong>.NET SDK</strong>.</p>
-<ol>
-<li>Öffne <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a></li>
-<li>Wähle die aktuelle <strong>Long Term Support (LTS)</strong> Version (z. B. .NET 8 LTS).</li>
-<li>Lade das passende Paket für dein Betriebssystem herunter.</li>
-<li>Installiere mit den Standard-Einstellungen.</li>
-<li>Prüfen, ob alles funktioniert:<code>dotnet --version</code></li>
-</ol>
-<p><img alt="csharp download site" src="../../img/csharp.png" /></p>
-<h2 id="schritt-3-vs-code-erweiterungen-installieren">Schritt 3 – VS Code Erweiterungen installieren</h2>
-<ol>
-<li>Öffne Visual Studio Code.</li>
-<li>Drücke <code>Strg + Shift + X</code> (Windows/Linux) oder <code>Cmd + Shift + X</code> (macOS), um den Erweiterungs-Manager zu öffnen. Alternativ kannst du auch über das Menü mit <code>Code &gt; Preferences &gt; Erweiterungen</code>gehen.</li>
-<li>Suche nach "C#"</li>
-<li>Installiere die Erweiterung "C# Dev Kit" von Microsoft.</li>
-</ol>
-<p><img alt="csharp extensions" src="../../img/csharp-ext.png" /></p>
-<hr />
+<h1 id="variablen-datentypen-22-ubungen">Variablen &amp; Datentypen (2/2) – Übungen</h1>
+<p><strong>Lernziel:</strong> Die Lernenden festigen Variablen, Datentypen, Konvertierung und String-Operationen durch praktisches Üben, zeichnen einen einfachen PAP selbst, lesen und interpretieren fremden Code, finden und beheben typische Fehler, und besprechen die Lösungen anschliessend gemeinsam.</p>
+<h2 id="1-ruckblick-5-min">1. Rückblick (5 Min)</h2>
+<ul>
+<li>Kurz drei Fragen an die Klasse stellen, um das Vorwissen aus DL4 zu aktivieren: Was macht die Funktion <code>type()</code>? Warum muss eine Eingabe mit <code>input()</code> oft konvertiert werden? Welche Grundsymbole hat ein PAP?</li>
+<li>Den Ablauf der Doppellektion transparent machen: Die erste Hälfte arbeiten die Lernenden selbständig an den Aufgaben, in der zweiten Hälfte werden die Lösungen gemeinsam besprochen.</li>
+</ul>
+<h2 id="2-pflichtprogramm-und-zusatzaufgaben-ca-40-min-selbstandige-arbeit">2. Pflichtprogramm und Zusatzaufgaben (ca. 40 Min, selbständige Arbeit)</h2>
+<p>Den Lernenden die Struktur der Aufgaben erklären: Ein Pflichtteil (PAP-Aufgabe, Code lesen, Fehler finden, sowie die Aufgaben 1–6 aus dem Aufgabenblock) und ein Zusatzteil (Aufgaben 7–12) für alle, die schneller vorankommen. Da der Zeitrahmen mit zwölf Coding-Aufgaben plus drei Zusatzaufgaben knapp ist, wird diese Priorisierung offen kommuniziert, damit alle Lernenden zumindest den Pflichtteil sicher schaffen.</p>
+<ul>
+<li><strong>PAP-Aufgabe:</strong> Die Lernenden zeichnen einen PAP für ein Lohnberechnungs-Programm (Bruttolohn und Steuersatz eingeben, Nettolohn berechnen und ausgeben) – siehe Handout für die genaue Aufgabenstellung und Musterlösung.</li>
+<li><strong>Code lesen:</strong> Die Lernenden lesen einen kurzen Code-Ausschnitt und sagen die Ausgabe voraus, bevor sie ihn testen (Fokus: Verwechslung von String- und Zahlen-Multiplikation).</li>
+<li><strong>Fehler finden:</strong> Die Lernenden erhalten einen fehlerhaften Code-Ausschnitt (fehlende Typkonvertierung bei <code>input()</code>) und müssen den Fehler finden und beheben.</li>
+<li><strong>Aufgaben 1–6</strong> (Pflicht): Einfache Ein-/Ausgabe, Variablen &amp; Datentypen, String-Operationen, Grundrechenarten, Inkrementieren/Dekrementieren, Potenzieren/Division/Modulo.</li>
+<li><strong>Aufgaben 7–12</strong> (Zusatz, für schnelle Lernende): Vergleichsoperatoren, logische Operatoren, Passwort-Checker, Unterwegs, Body Mass Index, Around the clock.</li>
+</ul>
+<p><strong>Hinweis zu den Aufgaben 7–9:</strong> Diese setzen bereits einfache <code>if</code>-Bedingungen voraus, die formal erst im nächsten Block behandelt werden. Da in DL4 bereits der Datentyp <code>bool</code> eingeführt wurde, kann kurz und pragmatisch gezeigt werden, wie ein einfaches <code>if ... else</code> aussieht (siehe Lösung im Handout) – als bewusster kleiner Vorgriff für die Lernenden, die bis dorthin vorankommen, nicht als verpflichtender neuer Stoff für alle.</p>
+<h2 id="3-losungsbesprechung-ca-40-min">3. Lösungsbesprechung (ca. 40 Min)</h2>
+<ul>
+<li>Gemeinsam mit der Klasse den Pflichtteil durchgehen: PAP-Aufgabe an der Tafel vergleichen, Code-lesen- und Fehler-finden-Aufgabe auflösen, danach die Aufgaben 1–6 anhand der Musterlösungen im Handout besprechen.</li>
+<li>Je nach Klassenfortschritt einzelne Zusatzaufgaben (7–12) exemplarisch mit denjenigen besprechen, die dazu gekommen sind – nicht zwingend alle im Plenum, um Zeit zu sparen.</li>
+<li>Häufige Fehlerquellen ansprechen, die bei diesen Aufgaben typischerweise auftreten: fehlende Konvertierung bei <code>input()</code>, Verwechslung von <code>/</code> und <code>//</code>, Rundungsfehler bei <code>round()</code>.</li>
+</ul>
+<h2 id="4-transfer">4. Transfer</h2>
+<ul>
+<li>Kurz reflektieren lassen: Welche Aufgabe war am anspruchsvollsten, und warum?</li>
+<li>Ausblick auf die nächste Doppellektion geben: Bedingungen (if/else), die bei den Zusatzaufgaben schon kurz angeschnitten wurden, folgen dort systematisch.</li>
+</ul>
 
 
 

@@ -12,9 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/aufgaben/vscode-setup/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/lehrer/variablen-1-skript/">
       
       
+        <link rel="prev" href="../git-github-grundlagen-skript/">
+      
+      
+        <link rel="next" href="../../ressourcen/terminal/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>🧑🏼‍💻 Setup: VS Code & .NET SDK - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W4 - Variablen & Datentypen I - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-vs-code-net-sdk" class="md-skip">
+        <a href="#variablen-datentypen-12" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🧑🏼‍💻 Setup: VS Code &amp; .NET SDK
+              W4 - Variablen & Datentypen I
             
           </span>
         </div>
@@ -415,18 +419,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -442,7 +448,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Lehrer-Skripts
@@ -456,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/einfuehrung-organisation-skript/" class="md-nav__link">
+      <a href="../einfuehrung-organisation-skript/" class="md-nav__link">
         
   
   
@@ -479,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/theoretische-einfuehrung-skript/" class="md-nav__link">
+      <a href="../theoretische-einfuehrung-skript/" class="md-nav__link">
         
   
   
@@ -502,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/git-github-grundlagen-skript/" class="md-nav__link">
+      <a href="../git-github-grundlagen-skript/" class="md-nav__link">
         
   
   
@@ -522,10 +528,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lehrer/variablen-1-skript/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W4 - Variablen & Datentypen I
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -536,6 +564,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-anwendung" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Anwendung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Transfer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -655,34 +739,36 @@
 
 
 
-<h1 id="setup-vs-code-net-sdk">🧑🏼‍💻 Setup: VS Code &amp; .NET SDK</h1>
-<h2 id="schritt-1-vs-code-installieren">Schritt 1 – VS Code installieren</h2>
-<ol>
-<li>Öffne <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>Lade die Version für dein Betriebssystem herunter</li>
-<li>Installiere mit Standard-Einstellungen</li>
-<li>Sprache <strong>Deutsch</strong> aktivieren (optional über "German Language Pack")</li>
-</ol>
-<p><img alt="vs code screenshot" src="../../img/vscode.png" /></p>
-<h2 id="schritt-2-net-sdk-installieren">Schritt 2 - .NET SDK installieren</h2>
-<p>Damit C#-Programme ausgeführt werden können, benötigst du das <strong>.NET SDK</strong>.</p>
-<ol>
-<li>Öffne <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a></li>
-<li>Wähle die aktuelle <strong>Long Term Support (LTS)</strong> Version (z. B. .NET 8 LTS).</li>
-<li>Lade das passende Paket für dein Betriebssystem herunter.</li>
-<li>Installiere mit den Standard-Einstellungen.</li>
-<li>Prüfen, ob alles funktioniert:<code>dotnet --version</code></li>
-</ol>
-<p><img alt="csharp download site" src="../../img/csharp.png" /></p>
-<h2 id="schritt-3-vs-code-erweiterungen-installieren">Schritt 3 – VS Code Erweiterungen installieren</h2>
-<ol>
-<li>Öffne Visual Studio Code.</li>
-<li>Drücke <code>Strg + Shift + X</code> (Windows/Linux) oder <code>Cmd + Shift + X</code> (macOS), um den Erweiterungs-Manager zu öffnen. Alternativ kannst du auch über das Menü mit <code>Code &gt; Preferences &gt; Erweiterungen</code>gehen.</li>
-<li>Suche nach "C#"</li>
-<li>Installiere die Erweiterung "C# Dev Kit" von Microsoft.</li>
-</ol>
-<p><img alt="csharp extensions" src="../../img/csharp-ext.png" /></p>
-<hr />
+<h1 id="variablen-datentypen-12">Variablen &amp; Datentypen (1/2)</h1>
+<p><em>Kontext: Berufsschule (Informatik-Grundkurs) · Dauer: 90 Min · Zielgruppe: Lernanfänger ca. 16 Jahre, Setup/Git aus DL1–3 vorhanden</em></p>
+<p><strong>Lernziel:</strong> Die Lernenden kennen Variablen als Datenspeicher, können Werte zuweisen und Datentypen (str, int, float, bool) mit <code>type()</code> bestimmen, verstehen die Notwendigkeit von Typkonvertierung bei <code>input()</code>, beherrschen grundlegende String-Operationen und können einen einfachen Programmablauf als PAP darstellen.</p>
+<h2 id="1-einstieg">1. Einstieg</h2>
+<ul>
+<li>Fragen, wo die Lernenden im Alltag Dinge speichern, die sich ändern können – z.B. Kontostand auf der Bank-App, Highscore in einem Spiel, Punktestand beim Sport.</li>
+<li>Die Brücke zum Programmieren schlagen: Genau das macht eine Variable in einem Programm – sie merkt sich einen Wert, der sich im Verlauf des Programms ändern kann.</li>
+<li>Ausblick geben: Heute lernen die Lernenden, wie sie solche "Gedächtnisplätze" in Python anlegen und mit unterschiedlichen Datentypen füllen.</li>
+</ul>
+<h2 id="2-grundlagen">2. Grundlagen</h2>
+<ul>
+<li>Eine Variable als benannten Speicherplatz im Arbeitsspeicher (RAM) einführen, dessen Inhalt sich während der Programmausführung ändern kann. Am Beispiel <code>number = 18</code> zeigen, dass links der Variablenname und rechts der zugewiesene Wert steht.</li>
+<li>Zeigen, dass sich mit <code>a, b, c = 5, 3.2, "Hello"</code> mehrere Variablen auf einmal zuweisen lassen, und die Ausgabe mit <code>print()</code> live nachvollziehen.</li>
+<li>Die Regeln für Variablennamen erklären: Variablen beginnen mit einem Kleinbuchstaben, zusammengesetzte Begriffe werden mit <code>_</code> verbunden (snake_case), Sonderzeichen sind nicht erlaubt. Anhand der Beispieltabelle (erlaubt: <code>number</code>, <code>first_name</code>, <code>speed_in_percent</code> – nicht erlaubt: <code>Number</code>, <code>first-name</code>, <code>speedin%</code>) verfestigen.</li>
+<li>Die vier zentralen Datentypen vorstellen: Zeichenkette (str), Ganzzahl (int), Fliesskommazahl (float) und Wahrheitswert (bool), jeweils mit Beispielen. Betonen, dass Python den Datentyp automatisch erkennt – im Gegensatz zu manchen anderen Sprachen muss er nicht explizit deklariert werden. Mit der Funktion <code>type()</code> live zeigen, wie sich der Datentyp einer Variable bestimmen lässt.</li>
+<li><strong>PAP einführen:</strong> Die Grundsymbole erklären – Oval für Start/Ende, Parallelogramm für Eingabe/Ausgabe, Rechteck für Verarbeitung. Anschliessend gemeinsam mit der Klasse den PAP für ein einfaches Programm aufbauen (an der Tafel oder mit der Folie): "Zwei Zahlen einlesen → Summe berechnen → Ergebnis ausgeben". Diesen Ablauf bewusst mit dem EVA-Prinzip aus Lektion 2 verknüpfen.</li>
+<li>Konvertieren erklären: <code>input()</code> liefert in Python immer eine Zeichenkette (String) zurück, selbst wenn eine Zahl eingegeben wird. Live zeigen, dass <code>type(age)</code> nach <code>age = input(...)</code> <code>str</code> ausgibt, und dass erst <code>int(input(...))</code> bzw. <code>float(input(...))</code> eine Zahl liefert, mit der gerechnet werden kann.</li>
+<li>String-Operationen einführen: Zeichen und Indizes am Beispiel <code>HACKER</code> erklären (Zählung beginnt bei 0), Zugriff mit <code>text[3]</code>, Slicing mit <code>text[1:4]</code> (Endindex nicht im Ergebnis enthalten). Ergänzend kurz zeigen: Zeilenumbruch mit <code>\n</code>, Anführungszeichen escapen mit <code>\"</code>, Länge mit <code>len()</code>, Position eines Zeichens mit <code>.index()</code>, Verkettung mit <code>+</code>, Variablen einbetten mit f-Strings (<code>f"..."</code>), sowie <code>upper()</code>/<code>lower()</code> zur Gross-/Kleinschreibung.</li>
+</ul>
+<h2 id="3-anwendung">3. Anwendung</h2>
+<ul>
+<li><strong>Erstes eigenes Variablen-Programm:</strong> Die Lernenden wenden das Gelernte in einer kurzen, geführten Aufgabe an. Basic deklariert drei Variablen (eine Ganzzahl, eine Kommazahl, einen Text) und gibt deren Datentyp mit <code>type()</code> aus. Intermediate ergänzt zusätzlich eine Typkonvertierung: liest mit <code>input()</code> eine Zahl ein, wandelt sie mit <code>int()</code> um, addiert 10 dazu und gibt das Ergebnis aus. Advanced baut einen f-String, der alle drei Variablen (z.B. Name, Alter, Lieblingszahl) in einem einzigen Satz ausgibt.</li>
+<li>Da die Hauptübungsphase erst in der nächsten Doppellektion folgt, bleibt diese Aufgabe bewusst kurz gehalten – Ziel ist ein erster praktischer Kontakt mit Variablen, Datentypen und Konvertierung, nicht eine vollständige Vertiefung.</li>
+</ul>
+<h2 id="4-transfer">4. Transfer</h2>
+<ul>
+<li>Eine typische Stolperfalle ansprechen: Wer versucht, mit einer über <code>input()</code> eingelesenen Zahl direkt zu rechnen, ohne sie zu konvertieren, erhält einen Fehler oder eine unerwartete Verkettung von Strings statt einer Addition.</li>
+<li>Einen Ausblick auf die nächste Doppellektion geben: Dort vertiefen die Lernenden Variablen und Datentypen anhand einer grösseren Sammlung von Übungsaufgaben (Ein-/Ausgabe, Grundrechenarten, Vergleichsoperatoren, logische Operatoren u.a.).</li>
+<li>Zur Reflexion anregen: Welche der heute gezeigten String-Operationen könnten in einem eigenen kleinen Programm (z.B. einer Begrüssung oder einem Namensgenerator) bereits jetzt nützlich sein?</li>
+</ul>
 
 
 

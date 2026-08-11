@@ -12,9 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/aufgaben/vscode-setup/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/lehrer/theoretische-einfuehrung-skript/">
       
       
+        <link rel="prev" href="../einfuehrung-organisation-skript/">
+      
+      
+        <link rel="next" href="../git-github-grundlagen-skript/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>🧑🏼‍💻 Setup: VS Code & .NET SDK - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W2 - Theoretische Einführung - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-vs-code-net-sdk" class="md-skip">
+        <a href="#theoretische-einfuhrung-wie-funktioniert-ein-programm" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🧑🏼‍💻 Setup: VS Code &amp; .NET SDK
+              W2 - Theoretische Einführung
             
           </span>
         </div>
@@ -415,18 +419,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -442,7 +448,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Lehrer-Skripts
@@ -456,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/einfuehrung-organisation-skript/" class="md-nav__link">
+      <a href="../einfuehrung-organisation-skript/" class="md-nav__link">
         
   
   
@@ -476,10 +482,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../lehrer/theoretische-einfuehrung-skript/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W2 - Theoretische Einführung
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -490,6 +518,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-anwendung" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Anwendung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Transfer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -502,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/git-github-grundlagen-skript/" class="md-nav__link">
+      <a href="../git-github-grundlagen-skript/" class="md-nav__link">
         
   
   
@@ -525,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lehrer/variablen-1-skript/" class="md-nav__link">
+      <a href="../variablen-1-skript/" class="md-nav__link">
         
   
   
@@ -655,34 +739,34 @@
 
 
 
-<h1 id="setup-vs-code-net-sdk">🧑🏼‍💻 Setup: VS Code &amp; .NET SDK</h1>
-<h2 id="schritt-1-vs-code-installieren">Schritt 1 – VS Code installieren</h2>
-<ol>
-<li>Öffne <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>Lade die Version für dein Betriebssystem herunter</li>
-<li>Installiere mit Standard-Einstellungen</li>
-<li>Sprache <strong>Deutsch</strong> aktivieren (optional über "German Language Pack")</li>
-</ol>
-<p><img alt="vs code screenshot" src="../../img/vscode.png" /></p>
-<h2 id="schritt-2-net-sdk-installieren">Schritt 2 - .NET SDK installieren</h2>
-<p>Damit C#-Programme ausgeführt werden können, benötigst du das <strong>.NET SDK</strong>.</p>
-<ol>
-<li>Öffne <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a></li>
-<li>Wähle die aktuelle <strong>Long Term Support (LTS)</strong> Version (z. B. .NET 8 LTS).</li>
-<li>Lade das passende Paket für dein Betriebssystem herunter.</li>
-<li>Installiere mit den Standard-Einstellungen.</li>
-<li>Prüfen, ob alles funktioniert:<code>dotnet --version</code></li>
-</ol>
-<p><img alt="csharp download site" src="../../img/csharp.png" /></p>
-<h2 id="schritt-3-vs-code-erweiterungen-installieren">Schritt 3 – VS Code Erweiterungen installieren</h2>
-<ol>
-<li>Öffne Visual Studio Code.</li>
-<li>Drücke <code>Strg + Shift + X</code> (Windows/Linux) oder <code>Cmd + Shift + X</code> (macOS), um den Erweiterungs-Manager zu öffnen. Alternativ kannst du auch über das Menü mit <code>Code &gt; Preferences &gt; Erweiterungen</code>gehen.</li>
-<li>Suche nach "C#"</li>
-<li>Installiere die Erweiterung "C# Dev Kit" von Microsoft.</li>
-</ol>
-<p><img alt="csharp extensions" src="../../img/csharp-ext.png" /></p>
-<hr />
+<h1 id="theoretische-einfuhrung-wie-funktioniert-ein-programm">Theoretische Einführung – Wie funktioniert ein Programm?</h1>
+<p><em>Kontext: Berufsschule (Informatik-Grundkurs) · Dauer: 90 Min · Zielgruppe: Lernanfänger ca. 16 Jahre, erste Woche mit eingerichtetem Setup</em></p>
+<p><strong>Lernziel:</strong> Die Lernenden verstehen das EVA-Prinzip und den Ablauf eines Programms im Computer, kennen den Algorithmus-Begriff mit seinen vier Eigenschaften, können den Unterschied zwischen Compiler und Interpreter erklären, wissen, dass Computer auf Binärcode basieren, und kennen die zentralen Fachbegriffe (Quellcode, Maschinencode, Syntax, Datentyp, Variable, IDE, CPU, RAM u.a.).</p>
+<h2 id="1-einstieg">1. Einstieg</h2>
+<ul>
+<li>Mit einer kurzen Geschichte einsteigen: Eine Entwicklerin sucht stundenlang einen Fehler, weil sie den Unterschied zwischen einem Syntaxfehler (wird schon beim Übersetzen erkannt) und einem Laufzeitfehler (zeigt sich erst während der Ausführung) nicht kennt.</li>
+<li>Die Klasse fragen, was ihrer Meinung nach passiert, wenn man in VS Code auf "Run" drückt – zwei Minuten mit der Sitznachbarin oder dem Sitznachbarn austauschen lassen, danach zwei bis drei Wortmeldungen sammeln.</li>
+</ul>
+<h2 id="2-grundlagen">2. Grundlagen</h2>
+<ul>
+<li>Das EVA-Prinzip als Grundmuster jedes Programms einführen: Eingabe (Benutzer oder System liefert Daten), Verarbeitung (das Programm führt Schritt für Schritt Berechnungen, Vergleiche und Logik aus) und Ausgabe (das Ergebnis wird angezeigt, gespeichert oder weitergegeben). Am Rezept-Bild aus Lektion 1 anknüpfen und live an einem kleinen Python-Beispiel zeigen: Der Benutzer gibt seinen Namen ein, das Programm setzt eine Begrüssung zusammen, und das Ergebnis wird ausgegeben.</li>
+<li>Den Begriff Algorithmus einführen: eine präzise Abfolge von Schritten, um ein Problem zu lösen. Anhand eines Sortier-Beispiels die vier Eigenschaften guter Algorithmen erklären: Korrektheit (liefert richtige Ergebnisse), Eindeutigkeit (klar definierte Schritte), Endlichkeit (hört irgendwann auf) und Effizienz (benötigt vertretbare Zeit und Ressourcen).</li>
+<li>Den Ablauf eines Programms im Computer skizzieren: Beim Start wird das Programm vom Speicher in den Arbeitsspeicher (RAM) geladen, danach liest die CPU nacheinander die Maschinenbefehle (z.B. "Addiere Wert X zu Wert Y", "Vergleiche A mit B"), und Kontrollstrukturen wie Wenn-Dann oder Wiederhole-Bis steuern, wie das Programm je nach Datenlage unterschiedlich reagiert.</li>
+<li>Den Weg vom Quellcode zur Ausführung erklären: Bei einer kompilierten Sprache wird der gesamte Quellcode im Voraus in Maschinencode übersetzt und dann ausgeführt; bei einer interpretierten Sprache wird der Code Zeile für Zeile übersetzt und direkt ausgeführt. Die Begriffe anhand einer Alltagsanalogie festigen: Ein Simultanübersetzer bei einer Konferenz entspricht einem Interpreter, ein im Voraus übersetztes Buch entspricht einem Compiler. Konkret an Python zeigen, dass es sich um eine interpretierte Sprache handelt, indem ein einfaches Skript im Terminal Zeile für Zeile ausgeführt und die Ausgabe live nachvollzogen wird.</li>
+<li>Binärcode als Grundsprache des Computers kurz einführen: Ein Computer kennt nur elektrische Signale ein (1) und aus (0); mehrere Bits zusammen bilden ein Byte; alles im Computer – Zahlen, Texte, Bilder, Musik – wird letztlich binär dargestellt (Beispiel: die Dezimalzahl 5 entspricht binär 0101, der Buchstabe "A" entspricht im ASCII-Binärcode 01000001). An dieser Stelle bewusst nur das Konzept vermitteln, keine Umrechnungsübung durchführen – die Umrechnungstechnik Dezimal/Binär wird in einem anderen Modul vertieft.</li>
+<li>Die zentralen Fachbegriffe der Lektion als Überblick festigen: IDE, Quellcode, Syntax, Datentyp, Variable, Assembler, Maschinencode, CPU, RAM – als Glossar-Referenz, die auch für die Prüfung relevant ist.</li>
+</ul>
+<h2 id="3-anwendung">3. Anwendung</h2>
+<ul>
+<li><strong>Code von Hand ausführen:</strong> Die Lernenden verfolgen einen gegebenen Python-Code Zeile für Zeile und bestimmen die Ausgabe, bevor sie ihn laufen lassen. Basic sagt die Ausgabe der ersten drei Zeilen korrekt voraus. Intermediate sagt die Ausgabe des gesamten Codes voraus und überprüft sie danach im Terminal. Advanced erweitert den Code um eine eigene Variable und Berechnung, sodass ein selbst gewähltes Ergebnis entsteht, und erklärt den Denkweg.</li>
+<li><strong>Compiler oder Interpreter?:</strong> Die Lernenden ordnen die Sprachen Python, C, Java und JavaScript danach ein, ob sie eher kompiliert oder interpretiert ausgeführt werden, und begründen dies anhand der besprochenen Merkmale. Basic ordnet anhand der vorgegebenen Merkmalsliste im Handout zu. Intermediate nennt zusätzlich für zwei Sprachen einen Vor- und einen Nachteil des jeweiligen Ansatzes. Advanced recherchiert, wie Java als Hybridfall funktioniert (Bytecode und JVM), und erklärt dies in eigenen Worten.</li>
+</ul>
+<h2 id="4-transfer">4. Transfer</h2>
+<ul>
+<li>Als Transferfrage stellen: Welche Programmiersprache würde man für eine mobile App wählen, welche für ein eingebettetes Steuergerät im Auto – und warum?</li>
+<li>Einen Ausblick auf die nächste Lektion geben: Git und GitHub – wie der eigene Code über die Zeit verwaltet wird.</li>
+<li>Zur Reflexion anregen: Wo im bisherigen Alltag mit Apps oder Spielen könnte das Wissen über Compiler und Interpreter relevant sein?</li>
+</ul>
 
 
 
