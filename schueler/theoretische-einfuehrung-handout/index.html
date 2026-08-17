@@ -464,27 +464,29 @@
 <ul>
 <li><strong>EVA-Prinzip:</strong> Jedes Programm folgt dem Muster <strong>Eingabe → Verarbeitung → Ausgabe</strong>. Eingabe: Daten kommen von aussen (Tastatur, Maus, Sensor). Verarbeitung: Das Programm rechnet, vergleicht, wendet Logik an. Ausgabe: Das Ergebnis wird angezeigt, gespeichert oder weitergegeben.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># 1. Eingabe</span>
-<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wie heisst du? &quot;</span><span class="p">)</span>
-<span class="c1"># 2. Verarbeitung</span>
-<span class="n">begruessung</span> <span class="o">=</span> <span class="s2">&quot;Hallo, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;! Schön, dich zu sehen.&quot;</span>
-<span class="c1"># 3. Ausgabe</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">begruessung</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="m">1.</span><span class="w"> </span><span class="n">Eingabe</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Wie heisst du?: &quot;</span><span class="p">);</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+
+<span class="err">#</span><span class="w"> </span><span class="m">2.</span><span class="w"> </span><span class="n">Verarbeitung</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">begruessung</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hallo, &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;! Schön, dich zu sehen.&quot;</span><span class="p">;</span>
+
+<span class="err">#</span><span class="w"> </span><span class="m">3.</span><span class="w"> </span><span class="n">Ausgabe</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">begruessung</span><span class="p">);</span>
 </code></pre></div>
 <ul>
 <li><strong>Algorithmus:</strong> eine präzise Abfolge von Schritten, um ein Problem zu lösen (z.B. ein Programm, das unsortierte Zahlen der Reihe nach ordnet). Ein guter Algorithmus ist: <strong>korrekt</strong> (liefert richtige Ergebnisse), <strong>eindeutig</strong> (klar definierte Schritte), <strong>endlich</strong> (hört irgendwann auf) und <strong>effizient</strong> (braucht vertretbare Zeit/Ressourcen).</li>
 <li><strong>Ablauf im Computer:</strong> Beim Start wird das Programm vom Speicher in den Arbeitsspeicher (RAM) geladen. Danach liest die CPU nacheinander die Maschinenbefehle (z.B. "Addiere X zu Y", "Vergleiche A mit B"). Kontrollstrukturen wie Wenn-Dann oder Wiederhole-Bis steuern, wie das Programm je nach Daten unterschiedlich reagiert.</li>
-<li><strong>Quellcode</strong> ist der Text, den du selbst schreibst (z.B. dein <code>.py</code>-File). <strong>Maschinencode</strong> ist das, was der Prozessor tatsächlich versteht und ausführt.</li>
+<li><strong>Quellcode</strong> ist der Text, den du selbst schreibst (z.B. dein <code>program.cs</code>-File). <strong>Maschinencode</strong> ist das, was der Prozessor tatsächlich versteht und ausführt.</li>
 <li>Ein <strong>Compiler</strong> übersetzt den gesamten Quellcode im Voraus vollständig in Maschinencode, bevor das Programm läuft – wie ein Buch, das komplett im Voraus übersetzt wird.</li>
 <li>Ein <strong>Interpreter</strong> übersetzt den Code Zeile für Zeile und führt jede Zeile sofort aus – wie ein Simultanübersetzer bei einer Konferenz.</li>
-<li>Python ist eine <strong>interpretierte Sprache</strong>. Das siehst du daran, dass du ein Skript direkt ausführen kannst, ohne einen separaten Übersetzungsschritt.</li>
+<li>C# ist eine kompilierte Sprache – genauer gesagt eine hybride Sprache. Der C#-Compiler übersetzt deinen Quellcode zuerst in eine Zwischensprache namens Intermediate Language (IL). Erst wenn du das Programm startest, übersetzt die .NET-Laufzeitumgebung (die Common Language Runtime, CLR) diese IL mittels Just-in-Time-Kompilierung (JIT) in echten Maschinencode. Anders als bei Python kannst du eine .cs-Datei deshalb nicht direkt ausführen – sie muss zuerst kompiliert werden (z.B. mit <code>dotnet build</code> oder <code>dotnet run</code>).</li>
 <li><strong>Binärcode:</strong> Ein Computer kennt nur elektrische Signale ein (1) und aus (0). Mehrere Bits ergeben ein Byte. Alles im Computer – Zahlen, Texte, Bilder, Musik – wird letztlich binär dargestellt (Beispiel: Dezimalzahl 5 = Binär <code>0101</code>, Buchstabe "A" = ASCII-Binär <code>01000001</code>). Wie man zwischen Dezimal- und Binärzahlen umrechnet, lernst du in einem anderen Modul.</li>
 </ul>
-<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div>
-Python liest Zeile 1, führt sie aus, liest Zeile 2, führt sie aus – und so weiter, bis Zeile 3 "8" ausgibt.</p>
 <p><strong>Glossar zum Nachschlagen:</strong></p>
 <table>
 <thead>
@@ -529,18 +531,18 @@ Python liest Zeile 1, führt sie aus, liest Zeile 2, führt sie aus – und so w
 <ul>
 <li>Schritt 1: Nimm den Code oben und lies ihn Zeile für Zeile, ohne ihn auszuführen.</li>
 <li>Schritt 2: Notiere dir, welchen Wert <code>a</code> und <code>b</code> nach jeder Zeile haben.</li>
-<li>Schritt 3: Führe den Code danach im Terminal aus und vergleiche mit deiner Vorhersage: <code>print(a + b)</code> gibt <code>8</code> aus.</li>
+<li>Schritt 3: Führe den Code danach im Terminal aus und vergleiche mit deiner Vorhersage: <code>Console.WriteLine(a + b)</code> gibt <code>8</code> aus.</li>
 </ul>
 <h2 id="4-uben">4. Üben</h2>
 <p><em>Aufgaben zum Vertiefen</em></p>
 <h3 id="aufgabe-1-code-von-hand-ausfuhren">Aufgabe 1: Code von Hand ausführen</h3>
-<p>Verfolge den folgenden Code Zeile für Zeile und bestimme die Ausgabe, bevor du ihn laufen lässt.
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
-</code></pre></div></p>
+<p>Verfolge den folgenden Code Zeile für Zeile und bestimme die Ausgabe, bevor du ihn laufen lässt.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
 <ol>
 <li>Sage die Ausgabe der ersten drei Zeilen voraus und notiere sie.</li>
 <li>Sage die Ausgabe des gesamten Codes voraus, überprüfe danach im Terminal.</li>
@@ -561,7 +563,7 @@ Python liest Zeile 1, führt sie aus, liest Zeile 2, führt sie aus – und so w
 <td>wird direkt Zeile für Zeile ausgeführt</td>
 </tr>
 <tr>
-<td>C</td>
+<td>C#</td>
 <td>wird vor der Ausführung vollständig in Maschinencode übersetzt</td>
 </tr>
 <tr>
@@ -583,12 +585,12 @@ Python liest Zeile 1, führt sie aus, liest Zeile 2, führt sie aus – und so w
 <p><strong>Code von Hand ausführen:</strong></p>
 <ul>
 <li>[ ] Ausgabe Zeile 3: <code>8</code></li>
-<li>[ ] Ausgabe Zeile 5: <code>a</code> ist nach der Verdopplung <code>10</code>, also gibt <code>print(a - b)</code> den Wert <code>7</code> aus.</li>
+<li>[ ] Ausgabe Zeile 5: <code>a</code> ist nach der Verdopplung <code>10</code>, also gibt <code>Console.WriteLine(a - b)</code> den Wert <code>7</code> aus.</li>
 <li>[ ] Beliebige korrekte Erweiterung ist richtig, solange die eigene Vorhersage nachvollziehbar mit dem tatsächlichen Ergebnis übereinstimmt.</li>
 </ul>
 <p><strong>Compiler oder Interpreter?</strong></p>
 <ul>
-<li>[ ] Python: interpretiert. C: kompiliert. Java: hybrid (Bytecode, von der JVM interpretiert/just-in-time kompiliert). JavaScript: interpretiert (bzw. JIT-kompiliert durch moderne Engines).</li>
+<li>[ ] Python: interpretiert. C#: kompiliert. Java: hybrid (Bytecode, von der JVM interpretiert/just-in-time kompiliert). JavaScript: interpretiert (bzw. JIT-kompiliert durch moderne Engines).</li>
 <li>[ ] Vor-/Nachteile (Beispiel): Kompilierte Sprachen laufen meist schneller, aber jede Änderung erfordert einen neuen Übersetzungsschritt; interpretierte Sprachen sind flexibler zum schnellen Testen, aber tendenziell langsamer zur Laufzeit.</li>
 </ul>
 <h2 id="6-weiterfuhrende-beispiele-und-gedanken">6. Weiterführende Beispiele und Gedanken</h2>
@@ -629,7 +631,7 @@ Python liest Zeile 1, führt sie aus, liest Zeile 2, führt sie aus – und so w
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 Dr. Andreas Fischer
+      Copyright &copy; 2026 Dr. Andreas Fischer
     </div>
   
   
