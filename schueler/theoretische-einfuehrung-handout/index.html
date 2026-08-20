@@ -452,15 +452,15 @@
 <h1 id="theoretische-einfuhrung-wie-funktioniert-ein-programm">Theoretische Einführung – Wie funktioniert ein Programm?</h1>
 <h2 id="lernziel">Lernziel</h2>
 <p>Am Ende dieser Lektion weisst du: was das <strong>EVA-Prinzip</strong> ist und was beim Ausführen eines Programms im Hintergrund passiert, was ein <strong>Algorithmus</strong> ist und welche Eigenschaften ihn auszeichnen, was der Unterschied zwischen <strong>Compiler und Interpreter</strong> ist, dass Computer letztlich mit <strong>Binärcode</strong> arbeiten, und was die wichtigsten Fachbegriffe (Quellcode, Maschinencode, Syntax, Datentyp, Variable, IDE, CPU, RAM u.a.) bedeuten.</p>
+<hr />
 <h2 id="1-einstieg">1. Einstieg</h2>
-<p><em>Warum ist das wichtig?</em></p>
 <ul>
-<li>Wer den Unterschied zwischen einem Syntaxfehler (wird schon beim Übersetzen erkannt) und einem Laufzeitfehler (zeigt sich erst während der Ausführung) nicht kennt, verliert bei der Fehlersuche wertvolle Zeit.</li>
-<li>Zu wissen, was im Hintergrund passiert, wenn ein Programm läuft, hilft dir, Fehler gezielter zu finden und Code bewusster zu schreiben.</li>
-<li>Die Begriffe aus dieser Lektion (Algorithmus, Compiler, Interpreter, Binärcode) sind Grundvokabular der Informatik und werden in der Prüfung sowie in späteren Modulen vorausgesetzt.</li>
+<li>Wer den Unterschied zwischen einem <strong>Syntaxfehler</strong> (wird schon beim Übersetzen erkannt) und einem <strong>Laufzeitfehler</strong> (zeigt sich erst während der Ausführung) nicht kennt, verliert bei der Fehlersuche wertvolle Zeit.</li>
+<li>Zu wissen, <strong>was im Hintergrund passiert</strong>, wenn ein Programm läuft, hilft dir, Fehler gezielter zu finden und Code bewusster zu schreiben.</li>
+<li>Die <strong>Begriffe</strong> aus dieser Lektion (Algorithmus, Compiler, Interpreter, Binärcode) sind <strong>Grundvokabular der Informatik</strong> und werden in der Prüfung sowie in späteren Modulen vorausgesetzt.</li>
 </ul>
+<hr />
 <h2 id="2-grundlagen">2. Grundlagen</h2>
-<p><em>Um was geht es? Was musst du wissen?</em></p>
 <ul>
 <li><strong>EVA-Prinzip:</strong> Jedes Programm folgt dem Muster <strong>Eingabe → Verarbeitung → Ausgabe</strong>. Eingabe: Daten kommen von aussen (Tastatur, Maus, Sensor). Verarbeitung: Das Programm rechnet, vergleicht, wendet Logik an. Ausgabe: Das Ergebnis wird angezeigt, gespeichert oder weitergegeben.</li>
 </ul>
@@ -477,16 +477,11 @@
 <ul>
 <li><strong>Algorithmus:</strong> eine präzise Abfolge von Schritten, um ein Problem zu lösen (z.B. ein Programm, das unsortierte Zahlen der Reihe nach ordnet). Ein guter Algorithmus ist: <strong>korrekt</strong> (liefert richtige Ergebnisse), <strong>eindeutig</strong> (klar definierte Schritte), <strong>endlich</strong> (hört irgendwann auf) und <strong>effizient</strong> (braucht vertretbare Zeit/Ressourcen).</li>
 <li><strong>Ablauf im Computer:</strong> Beim Start wird das Programm vom Speicher in den Arbeitsspeicher (RAM) geladen. Danach liest die CPU nacheinander die Maschinenbefehle (z.B. "Addiere X zu Y", "Vergleiche A mit B"). Kontrollstrukturen wie Wenn-Dann oder Wiederhole-Bis steuern, wie das Programm je nach Daten unterschiedlich reagiert.</li>
-<li><strong>Quellcode</strong> ist der Text, den du selbst schreibst (z.B. dein <code>program.cs</code>-File). <strong>Maschinencode</strong> ist das, was der Prozessor tatsächlich versteht und ausführt.</li>
+<li><strong>Quellcode</strong> ist der Text, den du selbst schreibst (z.B. dein <code>.py</code>-File). <strong>Maschinencode</strong> ist das, was der Prozessor tatsächlich versteht und ausführt.</li>
 <li>Ein <strong>Compiler</strong> übersetzt den gesamten Quellcode im Voraus vollständig in Maschinencode, bevor das Programm läuft – wie ein Buch, das komplett im Voraus übersetzt wird.</li>
 <li>Ein <strong>Interpreter</strong> übersetzt den Code Zeile für Zeile und führt jede Zeile sofort aus – wie ein Simultanübersetzer bei einer Konferenz.</li>
-<li>C# ist eine kompilierte Sprache – genauer gesagt eine hybride Sprache. Der C#-Compiler übersetzt deinen Quellcode zuerst in eine Zwischensprache namens Intermediate Language (IL). Erst wenn du das Programm startest, übersetzt die .NET-Laufzeitumgebung (die Common Language Runtime, CLR) diese IL mittels Just-in-Time-Kompilierung (JIT) in echten Maschinencode. Anders als bei Python kannst du eine .cs-Datei deshalb nicht direkt ausführen – sie muss zuerst kompiliert werden (z.B. mit <code>dotnet build</code> oder <code>dotnet run</code>).</li>
 <li><strong>Binärcode:</strong> Ein Computer kennt nur elektrische Signale ein (1) und aus (0). Mehrere Bits ergeben ein Byte. Alles im Computer – Zahlen, Texte, Bilder, Musik – wird letztlich binär dargestellt (Beispiel: Dezimalzahl 5 = Binär <code>0101</code>, Buchstabe "A" = ASCII-Binär <code>01000001</code>). Wie man zwischen Dezimal- und Binärzahlen umrechnet, lernst du in einem anderen Modul.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">;</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
-</code></pre></div>
 <p><strong>Glossar zum Nachschlagen:</strong></p>
 <table>
 <thead>
@@ -505,12 +500,12 @@
 <td>Die Regeln einer Programmiersprache; Fehler darin führen zu Fehlermeldungen</td>
 </tr>
 <tr>
-<td>Datentyp</td>
-<td>Gibt an, welche Art von Daten eine Variable speichert (Zahl, Text, Wahr/Falsch)</td>
-</tr>
-<tr>
 <td>Variable</td>
 <td>Ein benannter Speicherplatz für Daten, dessen Inhalt sich ändern kann</td>
+</tr>
+<tr>
+<td>Datentyp</td>
+<td>Gibt an, welche Art von Daten eine Variable speichert (Zahl, Text, Wahr/Falsch)</td>
 </tr>
 <tr>
 <td>Assembler</td>
@@ -526,79 +521,61 @@
 </tr>
 </tbody>
 </table>
-<h2 id="3-anwendung">3. Anwendung</h2>
-<p><em>Wie funktioniert es? Schritt für Schritt am Beispiel</em></p>
+<hr />
+<h2 id="3-aufgaben">3. Aufgaben</h2>
+<h3 id="1-wie-funktioniert-software">1. Wie funktioniert Software?</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/69PxzpW3GN8?si=TYnlo2oJ8sewW4u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Beantwortet folgende Fragen zum Video:</p>
 <ul>
-<li>Schritt 1: Nimm den Code oben und lies ihn Zeile für Zeile, ohne ihn auszuführen.</li>
-<li>Schritt 2: Notiere dir, welchen Wert <code>a</code> und <code>b</code> nach jeder Zeile haben.</li>
-<li>Schritt 3: Führe den Code danach im Terminal aus und vergleiche mit deiner Vorhersage: <code>Console.WriteLine(a + b)</code> gibt <code>8</code> aus.</li>
+<li>Was ist eine Software in einem Satz?</li>
+<li>Was muss man tun, damit der Computer unsere Anweisungen versteht?</li>
+<li>Welche zwei Arten von Software werden erwähnt? Mache je zwei Beispiele.</li>
+<li>Was muss passieren, damit Benutzereingaben vom Computer verarbeitet werden können?</li>
+<li>Was ist typischerweise der Entstehungsprozess von Software?</li>
 </ul>
-<h2 id="4-uben">4. Üben</h2>
-<p><em>Aufgaben zum Vertiefen</em></p>
-<h3 id="aufgabe-1-code-von-hand-ausfuhren">Aufgabe 1: Code von Hand ausführen</h3>
+<hr />
+<h3 id="2-compiler-vs-interpreter">2. Compiler vs. Interpreter</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DYsQj5bJaZI?si=MdOtsVIIlktcN2-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Beantwortet folgende Fragen zum Video:</p>
+<ul>
+<li>Was macht ein Compiler?</li>
+<li>Was sind Vor- und Nachteile eines Compilers?</li>
+<li>Was macht ein Interpreter?</li>
+<li>Was sind Vor- und Nachteile eines Interpreters?</li>
+<li>Wo werden Compiler und Interpreter eingesetzt? Welche Programmiersprachen werden kompiliert, werlche interpretiert?</li>
+</ul>
+<hr />
+<h3 id="3-frontend-vs-backend">3. Frontend vs. Backend</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KoTv9Ab5v9M?si=7pVvqH6H8olo_kM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Beantwortet folgende Fragen zum Video:</p>
+<ul>
+<li>Was ist das Frontend? Wo wird das Frontend ausgeführt?</li>
+<li>Was ist das Backend? Wo wird das Backend ausgeführt?</li>
+<li>Wie nennt man einen Entwickler, der sich um Frontend und Backend kümmert?</li>
+<li>Welche Programmiersprache kann man im Frontend und im Backend einsetzen?</li>
+<li>Welche Skills (Fähigkeiten) braucht es für das Frontend? Welche für das Backend?</li>
+</ul>
+<hr />
+<h3 id="4-code-von-hand-ausfuhren">4. Code von Hand ausführen</h3>
 <p>Verfolge den folgenden Code Zeile für Zeile und bestimme die Ausgabe, bevor du ihn laufen lässt.</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">;</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 <span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
 </code></pre></div>
 <ol>
 <li>Sage die Ausgabe der ersten drei Zeilen voraus und notiere sie.</li>
 <li>Sage die Ausgabe des gesamten Codes voraus, überprüfe danach im Terminal.</li>
 <li>Erweitere den Code um eine eigene Variable und Berechnung, sodass ein von dir gewähltes Ergebnis herauskommt, und erkläre deinen Denkweg.</li>
 </ol>
-<h3 id="aufgabe-2-compiler-oder-interpreter">Aufgabe 2: Compiler oder Interpreter?</h3>
-<p>Ordne die Sprachen Python, C, Java und JavaScript danach ein, ob sie eher kompiliert oder interpretiert ausgeführt werden.</p>
-<table>
-<thead>
-<tr>
-<th>Sprache</th>
-<th>Merkmal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Python</td>
-<td>wird direkt Zeile für Zeile ausgeführt</td>
-</tr>
-<tr>
-<td>C#</td>
-<td>wird vor der Ausführung vollständig in Maschinencode übersetzt</td>
-</tr>
-<tr>
-<td>Java</td>
-<td>wird in Bytecode übersetzt und von der JVM ausgeführt</td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td>wird vom Browser/der Engine direkt interpretiert</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Ordne anhand der Tabelle oben zu, ob eher kompiliert oder interpretiert.</li>
-<li>Nenne zusätzlich für zwei Sprachen einen Vor- und einen Nachteil des jeweiligen Ansatzes.</li>
-<li>Recherchiere, wie Java als Hybridfall funktioniert (Bytecode + JVM), und erkläre dies in eigenen Worten.</li>
-</ol>
-<h2 id="5-losungen">5. Lösungen</h2>
-<p><strong>Code von Hand ausführen:</strong></p>
-<ul>
-<li>[ ] Ausgabe Zeile 3: <code>8</code></li>
-<li>[ ] Ausgabe Zeile 5: <code>a</code> ist nach der Verdopplung <code>10</code>, also gibt <code>Console.WriteLine(a - b)</code> den Wert <code>7</code> aus.</li>
-<li>[ ] Beliebige korrekte Erweiterung ist richtig, solange die eigene Vorhersage nachvollziehbar mit dem tatsächlichen Ergebnis übereinstimmt.</li>
-</ul>
-<p><strong>Compiler oder Interpreter?</strong></p>
-<ul>
-<li>[ ] Python: interpretiert. C#: kompiliert. Java: hybrid (Bytecode, von der JVM interpretiert/just-in-time kompiliert). JavaScript: interpretiert (bzw. JIT-kompiliert durch moderne Engines).</li>
-<li>[ ] Vor-/Nachteile (Beispiel): Kompilierte Sprachen laufen meist schneller, aber jede Änderung erfordert einen neuen Übersetzungsschritt; interpretierte Sprachen sind flexibler zum schnellen Testen, aber tendenziell langsamer zur Laufzeit.</li>
-</ul>
 <h2 id="6-weiterfuhrende-beispiele-und-gedanken">6. Weiterführende Beispiele und Gedanken</h2>
-<p><em>Transfer</em></p>
 <ul>
 <li>Überlege: Welche Programmiersprache würdest du für eine mobile App wählen, welche für ein eingebettetes Steuergerät im Auto – und warum?</li>
 <li>Nächste Lektion: Git und GitHub – wie dein eigener Code über die Zeit verwaltet wird.</li>
-<li>Zusätzlicher Gedanke: Auch Python selbst nutzt intern einen Zwischenschritt (Kompilierung zu Bytecode, der von der Python-Laufzeitumgebung interpretiert wird) – die Grenze zwischen "rein kompiliert" und "rein interpretiert" ist in der Praxis oft fliessend.</li>
 </ul>
 
 
