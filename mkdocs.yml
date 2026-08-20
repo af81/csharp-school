@@ -38,7 +38,7 @@ nav:
   - Semesterplan: semesterplan.md
   - Lernstoff:
       - W1 - Einführung & Setup: schueler/einfuehrung-organisation-handout.md
-      # - W2 - Theoretische Einführung: schueler/theoretische-einfuehrung-handout.md
+      - W2 - Theoretische Einführung: schueler/theoretische-einfuehrung-handout.md
       # - W3 - Git & Github: schueler/git-github-grundlagen-handout.md
       # - W4 - Variablen & Datentypen I: schueler/variablen-1-handout.md
   # - Lehrer-Skripts:
