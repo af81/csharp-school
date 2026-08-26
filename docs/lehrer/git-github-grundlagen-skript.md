@@ -19,11 +19,11 @@
 - Anhand eines Gegenbeispiels erklären, was eine gute Commit-Message ausmacht: kurz, präzise und beschreibt, was sich am Projekt ändert – "fix: Tippfehler in Begrüssung korrigiert" statt nicht aussagekräftiger Meldungen wie "update" oder "changes".
 - Kurz ankündigen, dass sich ein Commit bei Bedarf auch wieder rückgängig machen lässt – das wird in der Übung ausprobiert.
 
-## 3. Anwendung
+## 3. Aufgabe
 
-- **Vorbereitung – Git installieren und konfigurieren:** Bevor die eigentlichen Aufgaben starten, installieren die Lernenden Git über git-scm.com mit Standard-Einstellungen und prüfen die Installation mit `git --version`. Danach konfigurieren sie ihren Namen und ihre E-Mail-Adresse mit `git config --global user.name "Vorname Nachname"` und `git config --global user.email "deine@email.ch"`, was sich mit `git config --list` überprüfen lässt.
-- **Erstes Repository lokal anlegen und committen:** Die Lernenden initialisieren in ihrem HelloWorld-Projektordner aus Lektion 1 ein lokales Git-Repository, erstellen bzw. ändern eine Datei und committen sie. Basic führt die gezeigten Befehle exakt nach Anleitung aus und lässt die Commit-Meldung im Terminal kontrollieren. Intermediate nimmt eine zweite Änderung vor und erstellt einen zweiten Commit mit eigener, aussagekräftiger Commit-Message. Advanced macht einen dritten Commit und macht ihn anschliessend mit `git reset --soft HEAD~1` wieder rückgängig, wobei die Änderungen selbst erhalten bleiben – und beschreibt in eigenen Worten, was dabei passiert ist.
-- **Verbindung zu GitHub herstellen:** Die Lernenden verbinden ihr lokales Repository mit dem in Lektion 1 erstellten GitHub-Repository und laden ihren Code hoch. Basic führt die Befehle nach Anleitung aus und kontrolliert das Ergebnis gemeinsam mit der Lehrperson auf der GitHub-Seite. Intermediate nimmt direkt auf GitHub eine kleine Änderung an der README vor und synchronisiert diese anschliessend lokal mit `git pull`. Advanced betrachtet mit `git log --oneline` die kombinierte Historie aus beiden Commit-Runden und erklärt, in welcher Reihenfolge die Commits entstanden sind.
+- Die Lernenden arbeiten die Aufgabe im Skript komplett durch.
+- Am Ende reichen die LE den Link zum Github-Repo in der Teamsaufgabe ein. (Repo muss public sein)
+- Wenn jemand besonders schnell ist, kann er noch das unter Grundlagen verlinkte YouTube-Video schauen.
 
 ## 4. Transfer
 
