@@ -12,7 +12,7 @@
 |-------|-------|---------|---------|
 | **17.8. / 18.8.** | Einführung & Organisation | Setup, GitHub, Hello World, Diskussion "Programmieren trotz KI" | [W1](schueler/einfuehrung-organisation-handout.md) |
 | **24.8. / 25.8** | Theoretische Einführung | Wie funktioniert ein Programm? Compiler vs. Interpreter, Begriffe, Programmiersprachen | [W2](schueler/theoretische-einfuehrung-handout.md) |
-| **31.8. / 1.9.** | Git & GitHub Grundlagen | Git-Prinzip, lokale/remote Repos, Commit, Push, Pull | - |
+| **31.8. / 1.9.** | Git & GitHub Grundlagen | Git-Prinzip, lokale/remote Repos, Commit, Push, Pull | [W3](schueler/git-github-grundlagen-handout.md) |
 | **7.9. / 8.9.** | Variablen & Datentypen I | Variablen, Datentypen, Casting, PAP zu einfachen Abläufen | - |
 | **14.9. / 15.9.** | Variablen & Datentypen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - | - |
 | **21.9. / 22.9.** | <span style="color:red;">**Prüfung 1 (schriftlich)**</span> | Theorie, Git, EVA-Prinzip, Variablen, Datentypen | - |
