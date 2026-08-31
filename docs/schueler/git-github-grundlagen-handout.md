@@ -89,9 +89,9 @@ dotnet new gitignore
 ```
 Das erstellt automatisch eine `.gitignore`-Datei mit den für .NET-Projekte üblichen Ausschlüssen.
 
-#### Schritt 6 – Verbindung testen
-1. Erstelle ein neues öffentliches (public) Repository auf GitHub
-2. Code lokal commiten und pushen:
+#### Schritt 6 – Verbindung zwischen Lokal und Github erstellen
+1. Erstelle ein neues öffentliches (public) Repository auf GitHub mit dem Namen `MeinGitProjekt`
+2. Den angezeigten Code kopieren und lokal (über Terminal im VSCode) commiten und pushen. Sieht etwa so aus:
 ```bash
 git init
 git add .
