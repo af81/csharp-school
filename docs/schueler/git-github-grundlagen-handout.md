@@ -67,7 +67,9 @@ git config --global user.email "deine@email.ch"
 Mit `git config --list` kannst du überprüfen, ob du Git richtig konfiguriert hast.
 
 #### Schritt 4 – C#-Projekt anlegen
-1. Öffne das Terminal im gewünschten Ordner und erstelle ein neues Konsolenprojekt:
+1. Lege (über Explorer oder Finder) einen Ordner an, in dem du alle deine C#-Projekte speichern willst (z.B. "M319")
+2. Öffne diesen Ordner in VS Code
+3. Erstelle ein neues Konsolenprojekt:
 ```bash
 dotnet new console -n MeinGitProjekt
 cd MeinGitProjekt
