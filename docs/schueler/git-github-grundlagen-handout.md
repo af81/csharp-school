@@ -151,4 +151,3 @@ Nach diesen Schritten kennst du den kompletten Grundzyklus in einem C#-Projekt: 
 - Überlege: Wie könnte Git helfen, wenn zwei Personen gleichzeitig am selben Projekt arbeiten, ohne sich gegenseitig Code zu überschreiben?
 - Nächste Themen: Variablen und Datentypen. Vertiefende Git-Themen wie Branches und die Zusammenarbeit mehrerer Personen im selben Repository folgen später in einem anderen Modul.
 - Zusätzlicher Gedanke: Praktisch jedes grössere Software-Team der Welt arbeitet mit demselben Grundprinzip, das du heute gelernt hast – die Werkzeuge (GitHub, GitLab, Bitbucket) unterscheiden sich, aber Commit/Push/Pull bleiben gleich.
-asdfasdfa
