@@ -38,7 +38,7 @@ git reset --soft HEAD~1         # macht einen fehlerhaften Commit rückgängig
 
 ---
 
-## 3. Aufgaben
+## 3. Übungen
 
 ### 🦊 Setup: Git & GitHub einrichten
 
