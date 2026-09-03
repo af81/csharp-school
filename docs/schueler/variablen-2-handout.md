@@ -14,6 +14,8 @@ Am Ende dieser Lektion weisst du: wie Vergleichs- und logische Operatoren funkti
 
 ## 2. Grundlagen
 
+**Vergleichsoperatoren**
+
 | Operator | Bedeutung |
 |---|---|
 | `<` | kleiner als |
@@ -28,12 +30,18 @@ Console.WriteLine(7.6 > 1);      // True
 Console.WriteLine("Anna" == "Anna");  // True
 ```
 
+**Logische Operatoren**
+
 ```csharp
 Console.WriteLine(8 > 5 && 4 != 2);  // && = UND: True, wenn beide wahr sind
 Console.WriteLine(8 > 5 || 4 == 2);  // || = ODER: True, wenn mind. eine wahr ist
 Console.WriteLine(8 > 5 ^ 4 == 2);   // ^  = XOR: True, wenn genau eine wahr ist
 Console.WriteLine(!(3 == 3));        // !  = NICHT: negiert den Wahrheitswert
 ```
+
+---
+
+## 3. Übungen
 
 > 🤓 Bei den folgenden Aufgaben brauchst du eine einfache `if`-Bedingung. Das lernen wir systematisch erst in der nächsten Doppellektion – als Vorschau:
 > ```csharp
@@ -46,10 +54,6 @@ Console.WriteLine(!(3 == 3));        // !  = NICHT: negiert den Wahrheitswert
 >     // wird ausgeführt, wenn bedingung false ist
 > }
 > ```
-
----
-
-## 3. Übungen
 
 ### 1. Vergleichsoperatoren
 1. Lasse den Benutzer zwei Zahlen eingeben. Überprüfe, ob die erste grösser ist als die zweite, ob sie gleich sind oder ob die zweite grösser ist.

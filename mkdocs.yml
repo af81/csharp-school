@@ -41,7 +41,7 @@ nav:
       - W2 - Theoretische Einführung: schueler/theoretische-einfuehrung-handout.md
       - W3 - Git & Github: schueler/git-github-grundlagen-handout.md
       - W4 - Variablen & Datentypen: schueler/variablen-1-handout.md
-      - W5 - Operatoren & Vertiefung: schueler/variablen-2-handout.md
+      #- W5 - Operatoren & Vertiefung: schueler/variablen-2-handout.md
   # - Lehrer-Skripts:
   #     - W1 - Einführung & Setup: lehrer/einfuehrung-organisation-skript.md
   #     - W2 - Theoretische Einführung: lehrer/theoretische-einfuehrung-skript.md
