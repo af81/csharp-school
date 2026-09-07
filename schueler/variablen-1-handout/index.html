@@ -738,7 +738,7 @@
 <h2 id="1-einstieg">1. Einstieg</h2>
 <ul>
 <li>C# prüft schon beim Kompilieren, ob die Datentypen zusammenpassen – ein falscher Datentyp fällt dir damit früher auf als in vielen anderen Sprachen.</li>
-<li>Wer den Unterschied zwischen <code>int</code> und <code>double</code> bei einer Division nicht kennt, produziert eines der häufigsten Anfänger-Bugs in C#.</li>
+<li>Wer den Unterschied zwischen <code>int</code> und <code>float</code> bei einer Division nicht kennt, produziert eines der häufigsten Anfänger-Bugs in C#.</li>
 <li>Alles, was du heute lernst, brauchst du danach in praktisch jedem C#-Programm.</li>
 </ul>
 <hr />
@@ -794,8 +794,8 @@
 </tr>
 <tr>
 <td>Fliesskommazahl</td>
-<td><code>double</code></td>
-<td>7.6543</td>
+<td><code>float</code></td>
+<td>7.6543f</td>
 </tr>
 <tr>
 <td>Wahrheitswert</td>
@@ -817,7 +817,7 @@
 <p><strong>Divisionen</strong></p>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 3   int / int = int</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1   ⚠️ Nachkommastellen gehen verloren!</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4.0</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1.5 mindestens ein double nötig</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4.0</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1.5 mindestens ein float nötig</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">9</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1 (Rest) / Modulo</span>
 </code></pre></div>
 <p><strong>Runden</strong></p>
@@ -865,7 +865,7 @@
 <h3 id="7-grundrechenarten">7. Grundrechenarten</h3>
 <ol>
 <li>Lasse den Benutzer zwei beliebige Zahlen eingeben und gib die Ergebnisse für Addition, Subtraktion, Multiplikation und Division aus. Runde auf 2 Stellen nach dem Komma.</li>
-<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen einer Division zweier <code>int</code>-Werte und einer Division, bei der mindestens ein Operand ein <code>double</code> ist?</li>
+<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen einer Division zweier <code>int</code>-Werte und einer Division, bei der mindestens ein Operand ein <code>float</code> ist?</li>
 </ol>
 <h3 id="8-inkrementieren-dekrementieren">8. Inkrementieren &amp; Dekrementieren</h3>
 <ol>
