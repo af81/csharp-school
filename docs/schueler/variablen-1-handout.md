@@ -8,7 +8,7 @@ Am Ende dieser Lektion weisst du: wie du Variablen mit korrektem Datentyp deklar
 ## 1. Einstieg
 
 - C# prüft schon beim Kompilieren, ob die Datentypen zusammenpassen – ein falscher Datentyp fällt dir damit früher auf als in vielen anderen Sprachen.
-- Wer den Unterschied zwischen `int` und `double` bei einer Division nicht kennt, produziert eines der häufigsten Anfänger-Bugs in C#.
+- Wer den Unterschied zwischen `int` und `float` bei einer Division nicht kennt, produziert eines der häufigsten Anfänger-Bugs in C#.
 - Alles, was du heute lernst, brauchst du danach in praktisch jedem C#-Programm.
 
 ---
@@ -40,7 +40,7 @@ Variablennamen in lowerCamelCase, keine Sonderzeichen:
 |---|---|---|
 | Zeichenkette | `string` | "Hallo" |
 | Ganzzahl | `int` | -5, 0, 54 |
-| Fliesskommazahl | `double` | 7.6543 |
+| Fliesskommazahl | `float` | 7.6543f |
 | Wahrheitswert | `bool` | true, false |
 
 ```csharp
@@ -65,7 +65,7 @@ int ageNumber = int.Parse(age);
 ```csharp
 Console.WriteLine(6 / 2);     // 3   int / int = int
 Console.WriteLine(6 / 4);     // 1   ⚠️ Nachkommastellen gehen verloren!
-Console.WriteLine(6 / 4.0);   // 1.5 mindestens ein double nötig
+Console.WriteLine(6 / 4.0);   // 1.5 mindestens ein float nötig
 Console.WriteLine(9 % 2);     // 1 (Rest) / Modulo
 ```
 
@@ -128,7 +128,7 @@ Console.WriteLine(a / b);
 
 ### 7. Grundrechenarten
 1. Lasse den Benutzer zwei beliebige Zahlen eingeben und gib die Ergebnisse für Addition, Subtraktion, Multiplikation und Division aus. Runde auf 2 Stellen nach dem Komma.
-2. **Wissensfrage:** Was ist der Unterschied zwischen einer Division zweier `int`-Werte und einer Division, bei der mindestens ein Operand ein `double` ist?
+2. **Wissensfrage:** Was ist der Unterschied zwischen einer Division zweier `int`-Werte und einer Division, bei der mindestens ein Operand ein `float` ist?
 
 ### 8. Inkrementieren & Dekrementieren
 1. Lege eine Variable `x = 5` an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.
