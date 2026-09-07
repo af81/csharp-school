@@ -21,7 +21,7 @@ Am Ende dieser Lektion weisst du: wie du Variablen mit korrektem Datentyp deklar
 
 ```csharp
 int number = 18;
-int a, b, c = 5, 3, 2;
+int a = 5, b = 3, c = 2;
 ```
 
 **Variablennamen**
