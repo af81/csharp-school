@@ -49,5 +49,6 @@ nav:
   #     - W4 - Variablen & Datentypen I: lehrer/variablen-1-skript.md
   - Ressourcen:
       - Wichtige Terminal-Befehle: ressourcen/terminal.md
+      - C#-Programm anlegen und ausführen: ressourcen/csharp-projekt.md
       - Klassenregeln: ressourcen/regeln.md
-      - Lösungen: ressourcen/loesungen.md
+  #    - Lösungen: ressourcen/loesungen.md
