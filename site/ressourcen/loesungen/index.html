@@ -388,12 +388,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../schueler/variablen-1-handout/" class="md-nav__link">
+      <a href="../../schueler/variablen-datentypen-handout/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     W4 - Variablen & Datentypen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schueler/rechnen-operatoren-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W5 - Rechnen & Operatoren
     
   </span>
   
@@ -583,6 +606,152 @@ Console.WriteLine($"Hallo {name}! Schön, dass es dich gibt.");</p>
 <hr />
 <h3 id="aufgabe-5">Aufgabe 5</h3>
 <p><img alt="" src="../../img/aufgabe5.png" /></p>
+<hr />
+<h2 id="rechnen-operatoren">Rechnen &amp; Operatoren</h2>
+<h3 id="aufgabe-1_1">Aufgabe 1</h3>
+<p><code>2 // Bei der Integer-Divsion wird der Nachkommateil abgeschnitten.</code></p>
+<hr />
+<h3 id="aufgabe-2_1">Aufgabe 2</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Zwei Zahlen einlesen</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Bitte gib zwei beliebige Zahlen ein:&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Zahl 1: &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">zahl1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Zahl 2: &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="c1">// Mathematische Operationen</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">resultatAddition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">zahl2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">resultatSubtraktion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">zahl2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">resultatMultiplikation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">zahl2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">resultatDivision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">zahl2</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+
+<span class="c1">// Ausgabe der Resultate</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{zahl1} + {zahl2} = {resultatAddition}&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{zahl1} - {zahl2} = {resultatSubtraktion}&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{zahl1} * {zahl2} = {resultatMultiplikation}&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{zahl1} / {zahl2} = {resultatDivision}&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>Werden zwei int-Werte dividiert, findet eine <strong>Ganzzahldivision</strong> statt. Das Ergebnis ist ebenfalls ein int; der Nachkommateil wird abgeschnitten. Ist mindestens ein Operand vom Typ decimal, findet eine <strong>Dezimaldivision</strong> statt und das Ergebnis ist ein decimal.</p>
+<hr />
+<h3 id="aufgabe-3_1">Aufgabe 3</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
+<span class="n">x</span><span class="o">++</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="n">x</span><span class="o">--</span><span class="p">;</span>
+<span class="n">x</span><span class="o">--</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-4_1">Aufgabe 4</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">decimal</span><span class="w"> </span><span class="n">preis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3.20</span><span class="n">m</span><span class="p">;</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">budget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20.00</span><span class="n">m</span><span class="p">;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">anzahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">budget</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">preis</span><span class="p">);</span><span class="w"> </span><span class="c1">// Cast führt dazu, dass Nachkommastelle abgeschnitten wird</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">rest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">budget</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">preis</span><span class="p">;</span><span class="w"> </span><span class="c1">// Alternativ ohne Modulo: decimal rest = budget - (anzahl * preis);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Anzahl Riegel: {anzahl}&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Restbetrag: {rest:F2} Franken&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// rest:F2 rundet auf zwei Stellen nach dem Komma</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-5_1">Aufgabe 5</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Erste Zahl: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">zahl1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Zweite Zahl: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">zahl2</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Die erste Zahl ist grösser.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl2</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Die beiden Zahlen sind gleich.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Die zweite Zahl ist grösser.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Wissensfrage</strong>: Ein Vergleich wie 5 &lt; 10 liefert einen booleschen Wert (bool). In diesem Fall also <code>true</code>, da 5 kleiner als 10 ist.</p>
+<hr />
+<h3 id="aufgabe-6">Aufgabe 6</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Zahl eingeben: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">20</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Die Zahl liegt zwischen 10 und 20.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">100</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Die Zahl liegt ausserhalb von 0 bis 100.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Wissensfrage:</strong>
+- &amp;&amp; (UND) → beide Bedingungen müssen true sein.
+- || (ODER) → mindestens eine Bedingung muss true sein.</p>
+<hr />
+<h3 id="aufgabe-7">Aufgabe 7</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Passwort eingeben: &quot;</span><span class="p">);</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">passwort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">passwort</span><span class="p">.</span><span class="n">Length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">8</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Das Passwort ist lang genug.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Das Passwort ist zu kurz.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-8">Aufgabe 8</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Durchschnittliche Geschwindigkeit (km/h): &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">geschwindigkeit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Verbrauch (Liter pro 100 km): &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">verbrauch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Distanz (km): &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">distanz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="kt">decimal</span><span class="w"> </span><span class="n">fahrzeit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">distanz</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">geschwindigkeit</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">60</span><span class="p">;</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">benzin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">distanz</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">verbrauch</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Fahrzeit: {fahrzeit:F1} Minuten&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Benzinverbrauch: {benzin:F2} Liter&quot;</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-9">Aufgabe 9</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Körpergewicht in kg: &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">gewicht</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Körpergrösse in m: &quot;</span><span class="p">);</span>
+<span class="kt">decimal</span><span class="w"> </span><span class="n">groesse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">decimal</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="kt">decimal</span><span class="w"> </span><span class="n">bmi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gewicht</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">groesse</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">groesse</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Dein BMI beträgt: {bmi:F1}&quot;</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-10">Aufgabe 10</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Stunden: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">stunden</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Minuten: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">minuten</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Sekunden: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sekunden</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="kt">decimal</span><span class="w"> </span><span class="n">dezimalStunden</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stunden</span>
+<span class="w">                       </span><span class="o">+</span><span class="w"> </span><span class="n">minuten</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">60</span><span class="n">m</span>
+<span class="w">                       </span><span class="o">+</span><span class="w"> </span><span class="n">sekunden</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">3600</span><span class="n">m</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Zeit in Stunden: {dezimalStunden} h&quot;</span><span class="p">);</span>
+</code></pre></div>
 
 
 

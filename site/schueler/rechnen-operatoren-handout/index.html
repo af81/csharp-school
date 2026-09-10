@@ -12,9 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/variablen-2-handout/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/rechnen-operatoren-handout/">
       
       
+        <link rel="prev" href="../variablen-datentypen-handout/">
+      
+      
+        <link rel="next" href="../../ressourcen/terminal/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Operatoren & Vertiefung (2/2) - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W5 - Rechnen & Operatoren - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#operatoren-vertiefung-22" class="md-skip">
+        <a href="#operatoren-vertiefung" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Operatoren &amp; Vertiefung (2/2)
+              W5 - Rechnen & Operatoren
             
           </span>
         </div>
@@ -278,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -305,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Lernstoff
@@ -388,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variablen-1-handout/" class="md-nav__link">
+      <a href="../variablen-datentypen-handout/" class="md-nav__link">
         
   
   
@@ -399,6 +405,236 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W5 - Rechnen & Operatoren
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    W5 - Rechnen & Operatoren
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lernziel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Grundlagen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-rechnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      A - Rechnen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-operatoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      B - Operatoren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Übungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Übungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-code-lesen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Code lesen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-grundrechenarten" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundrechenarten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-inkrementieren-dekrementieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Inkrementieren &amp; Dekrementieren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-potenzieren-division-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Potenzieren, Division &amp; Modulo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-vergleichsoperatoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Vergleichsoperatoren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-logische-operatoren" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Logische Operatoren
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-passwort-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Passwort-Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-unterwegs" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Unterwegs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-body-mass-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Body Mass Index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-around-the-clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Around the clock
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-weiterfuhrende-beispiele-und-gedanken" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Weiterführende Beispiele und Gedanken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -541,9 +777,9 @@
 
 
 
-<h1 id="operatoren-vertiefung-22">Operatoren &amp; Vertiefung (2/2)</h1>
+<h1 id="operatoren-vertiefung">Operatoren &amp; Vertiefung</h1>
 <h2 id="lernziel">Lernziel</h2>
-<p>Am Ende dieser Lektion weisst du: wie Vergleichs- und logische Operatoren funktionieren, und kannst dein bisheriges Wissen (Variablen, Rechnen, Operatoren) in komplexeren Aufgaben kombinieren.</p>
+<p>Am Ende dieser Lektion weisst du, wie du <strong>Grundrechenarten, Runden, Inkrementieren, Potenzieren und Modulo</strong> korrekt anwendest und wie <strong>Vergleichs- und logische Operatoren</strong> funktionieren, und kannst dein bisheriges Wissen (Variablen, Rechnen, Operatoren) in komplexeren Aufgaben kombinieren.</p>
 <hr />
 <h2 id="1-einstieg">1. Einstieg</h2>
 <ul>
@@ -552,6 +788,25 @@
 </ul>
 <hr />
 <h2 id="2-grundlagen">2. Grundlagen</h2>
+<h3 id="a-rechnen">A - Rechnen</h3>
+<p><strong>Divisionen</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 3   int / int = int</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1   ⚠️ Nachkommastellen gehen verloren!</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4.0</span><span class="n">m</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1.5 mindestens ein decimal nötig</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">9</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1 (Rest) / Modulo</span>
+</code></pre></div>
+<p><strong>Runden</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="m">3.12568</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">));</span><span class="w">  </span><span class="c1">// 3.13, auf 2 Stellen gerundet</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="m">3.5</span><span class="p">));</span><span class="w">  </span><span class="c1">// 4, ab .5 wird aufgerundet, &quot;Bankers-Round&quot;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Floor</span><span class="p">(</span><span class="m">3.5</span><span class="p">));</span><span class="w">  </span><span class="c1">// 3, wird immer auf die nächste Ganzzahl abgerundet</span>
+</code></pre></div>
+<p><strong>Inkrementieren &amp; Dekrementieren</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">number2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span><span class="p">;</span>
+<span class="n">number2</span><span class="o">++</span><span class="p">;</span><span class="w">      </span><span class="c1">// 19</span>
+<span class="n">number2</span><span class="o">--</span><span class="p">;</span><span class="w">      </span><span class="c1">// 18</span>
+</code></pre></div>
+<hr />
+<h3 id="b-operatoren">B - Operatoren</h3>
 <p><strong>Vergleichsoperatoren</strong></p>
 <table>
 <thead>
@@ -598,6 +853,25 @@
 </code></pre></div>
 <hr />
 <h2 id="3-ubungen">3. Übungen</h2>
+<h3 id="1-code-lesen">1. Code lesen</h3>
+<p><em>Wie lautet der Output?:</em>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+</code></pre></div></p>
+<h3 id="2-grundrechenarten">2. Grundrechenarten</h3>
+<ol>
+<li>Lasse den Benutzer zwei beliebige Zahlen eingeben und gib die Ergebnisse für Addition, Subtraktion, Multiplikation und Division aus. Runde auf 2 Stellen nach dem Komma.</li>
+<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen einer Division zweier <code>int</code>-Werte und einer Division, bei der mindestens ein Operand ein <code>decimal</code> ist?</li>
+</ol>
+<h3 id="3-inkrementieren-dekrementieren">3. Inkrementieren &amp; Dekrementieren</h3>
+<ol>
+<li>Lege eine Variable <code>x = 5</code> an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.</li>
+</ol>
+<h3 id="4-potenzieren-division-modulo">4. Potenzieren, Division &amp; Modulo</h3>
+<ol>
+<li>Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?</li>
+</ol>
 <blockquote>
 <p>🤓 Bei den folgenden Aufgaben brauchst du eine einfache <code>if</code>-Bedingung. Das lernen wir systematisch erst in der nächsten Doppellektion – als Vorschau:
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bedingung</span><span class="p">)</span>
@@ -610,31 +884,31 @@
 <span class="p">}</span>
 </code></pre></div></p>
 </blockquote>
-<h3 id="1-vergleichsoperatoren">1. Vergleichsoperatoren</h3>
+<h3 id="5-vergleichsoperatoren">5. Vergleichsoperatoren</h3>
 <ol>
 <li>Lasse den Benutzer zwei Zahlen eingeben. Überprüfe, ob die erste grösser ist als die zweite, ob sie gleich sind oder ob die zweite grösser ist.</li>
 <li><strong>Wissensfrage:</strong> Welchen Wert liefert ein Vergleich wie <code>5 &lt; 10</code>?</li>
 </ol>
-<h3 id="2-logische-operatoren">2. Logische Operatoren</h3>
+<h3 id="6-logische-operatoren">6. Logische Operatoren</h3>
 <ol>
 <li>Schreibe ein Programm, das prüft, ob eine eingegebene Zahl <strong>zwischen 10 und 20</strong> liegt (Hinweis: <code>&amp;&amp;</code>).</li>
 <li>Prüfe in einem zweiten Schritt, ob die Zahl <strong>kleiner als 0 oder grösser als 100</strong> ist (Hinweis: <code>||</code>).</li>
 <li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen <code>&amp;&amp;</code> und <code>||</code>?</li>
 </ol>
-<h3 id="3-passwort-checker">3. Passwort-Checker</h3>
+<h3 id="7-passwort-checker">7. Passwort-Checker</h3>
 <ol>
 <li>Erstelle ein kleines „Passwortprogramm“: Der Benutzer gibt ein Passwort ein. Das Programm prüft, ob es länger als 8 Zeichen ist (Hinweis: <code>.Length</code>).</li>
 </ol>
-<h3 id="4-unterwegs">4. Unterwegs</h3>
+<h3 id="8-unterwegs">8. Unterwegs</h3>
 <ul>
 <li>Frage den Benutzer, wie schnell sein Auto durchschnittlich fährt (km/h) und wie hoch der Verbrauch in Liter Benzin pro 100 km ist.</li>
 <li>Frage ihn danach nach der zu fahrenden Distanz (km) und gib die Fahrzeit in Minuten sowie den gesamten Benzinverbrauch aus.</li>
 </ul>
-<h3 id="5-body-mass-index">5. Body Mass Index</h3>
+<h3 id="9-body-mass-index">9. Body Mass Index</h3>
 <ul>
 <li>Recherchiere im Internet die Formel zur Berechnung des BMI und realisiere ein Programm, das nach den nötigen Werten fragt und den BMI berechnet.</li>
 </ul>
-<h3 id="6-around-the-clock">6. Around the clock</h3>
+<h3 id="10-around-the-clock">10. Around the clock</h3>
 <ul>
 <li>Ein Benutzer gibt drei ganzzahlige Werte für Stunden, Minuten und Sekunden ein. Rechne die Werte in das metrische System mit der Masseinheit Stunden um (z.B. 5 Stunden / 30 Minuten / 0 Sekunden → 5.5 Stunden).</li>
 </ul>

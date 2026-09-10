@@ -14,7 +14,7 @@
 | **24.8. / 25.8** | Theoretische Einführung | Wie funktioniert ein Programm? Compiler vs. Interpreter, Begriffe, Programmiersprachen | [W2](schueler/theoretische-einfuehrung-handout.md) |
 | **31.8. / 1.9.** | Git & GitHub Grundlagen | Git-Prinzip, lokale/remote Repos, Commit, Push, Pull | [W3](schueler/git-github-grundlagen-handout.md) |
 | **7.9. / 8.9.** | Variablen & Datentypen | Variablen, Datentypen, Casting, PAP zu einfachen Abläufen | [W4](schueler/variablen-datentypen-handout.md) |
-| **14.9. / 15.9.** | Rechnen & Operatoren | Grundrechenarten, spezielle Divisionen, Operatoren | - | [W5](schueler/rechnen-operatoren-handout.md) |
+| **14.9. / 15.9.** | Rechnen & Operatoren | Grundrechenarten, spezielle Divisionen, Operatoren | [W5](schueler/rechnen-operatoren-handout.md) |
 | **21.9. / 22.9.** | <span style="color:red;">**Prüfung 1 (schriftlich)**</span> | Theorie, Git, EVA-Prinzip, Variablen, Datentypen, Rechnen, Operatoren | - |
 | **28.9. / 29.9.** | Herbstferien | 🏔️ | - | - |
 | **5.10. / 6.10.** | Herbstferien | 🏔️ | - | - |

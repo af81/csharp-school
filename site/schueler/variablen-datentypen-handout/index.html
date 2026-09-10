@@ -12,13 +12,13 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/variablen-1-handout/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/variablen-datentypen-handout/">
       
       
         <link rel="prev" href="../git-github-grundlagen-handout/">
       
       
-        <link rel="next" href="../../ressourcen/terminal/">
+        <link rel="next" href="../rechnen-operatoren-handout/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#variablen-rechnen-12" class="md-skip">
+        <a href="#variablen-datentypen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -481,18 +481,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-rechnen" class="md-nav__link">
+  <a href="#b-programmablaufplane-pap" class="md-nav__link">
     <span class="md-ellipsis">
-      B - Rechnen
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c-programmablaufplane-pap" class="md-nav__link">
-    <span class="md-ellipsis">
-      C - Programmablaufpläne (PAP)
+      B - Programmablaufpläne (PAP)
     </span>
   </a>
   
@@ -558,42 +549,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#6-code-lesen" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Code lesen
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-grundrechenarten" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Grundrechenarten
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-inkrementieren-dekrementieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Inkrementieren &amp; Dekrementieren
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-potenzieren-division-modulo" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Potenzieren, Division &amp; Modulo
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -612,6 +567,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rechnen-operatoren-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W5 - Rechnen & Operatoren
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -754,9 +732,9 @@
 
 
 
-<h1 id="variablen-rechnen-12">Variablen &amp; Rechnen (1/2)</h1>
+<h1 id="variablen-datentypen">Variablen &amp; Datentypen</h1>
 <h2 id="lernziel">Lernziel</h2>
-<p>Am Ende dieser Lektion weisst du: wie du Variablen mit korrektem Datentyp deklarierst, wie ein PAP aussieht, wie du Konsoleneingaben konvertierst, und wie du Grundrechenarten, Runden, Inkrementieren, Potenzieren und Modulo korrekt anwendest.</p>
+<p>Am Ende dieser Lektion weisst du: wie du Variablen mit korrektem Datentyp deklarierst, wie ein PAP aussieht und wie du Konsoleneingaben konvertierst.</p>
 <hr />
 <h2 id="1-einstieg">1. Einstieg</h2>
 <ul>
@@ -830,30 +808,19 @@
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span><span class="p">;</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">age</span><span class="p">.</span><span class="n">GetType</span><span class="p">());</span><span class="w">   </span><span class="c1">// System.Int32</span>
 </code></pre></div>
-<p><strong>Konvertieren</strong></p>
+<p><strong>Konvertieren &amp; Casten</strong></p>
 <p><code>Console.ReadLine()</code> liefert <strong>immer</strong> einen String.</p>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Wie alt bist du? &quot;</span><span class="p">);</span>
 <span class="kt">string</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">ageNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">age</span><span class="p">);</span>
 </code></pre></div>
-<h3 id="b-rechnen">B - Rechnen</h3>
-<p><strong>Divisionen</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 3   int / int = int</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1   ⚠️ Nachkommastellen gehen verloren!</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4.0</span><span class="n">m</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1.5 mindestens ein decimal nötig</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">9</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1 (Rest) / Modulo</span>
-</code></pre></div>
-<p><strong>Runden</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="m">3.12568</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">));</span><span class="w">  </span><span class="c1">// 3.13, auf 2 Stellen gerundet</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="m">3.5</span><span class="p">));</span><span class="w">  </span><span class="c1">// 4, ab .5 wird aufgerundet, &quot;Bankers-Round&quot;</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Floor</span><span class="p">(</span><span class="m">3.5</span><span class="p">));</span><span class="w">  </span><span class="c1">// 3, wird immer auf die nächste Ganzzahl abgerundet</span>
-</code></pre></div>
-<p><strong>Inkrementieren &amp; Dekrementieren</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">number2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span><span class="p">;</span>
-<span class="n">number2</span><span class="o">++</span><span class="p">;</span><span class="w">      </span><span class="c1">// 19</span>
-<span class="n">number2</span><span class="o">--</span><span class="p">;</span><span class="w">      </span><span class="c1">// 18</span>
-</code></pre></div>
-<h3 id="c-programmablaufplane-pap">C - Programmablaufpläne (PAP)</h3>
+<ul>
+<li><code>int.Parse()</code> → String in int umwandeln</li>
+<li><code>Convert.To...()</code> → Wert in einen anderen Datentyp konvertieren (z.B. Convert.ToInt32())</li>
+<li><code>(int)</code> → numerischen Wert in int umwandeln; Nachkommateil wird abgeschnitten (Cast)</li>
+</ul>
+<hr />
+<h3 id="b-programmablaufplane-pap">B - Programmablaufpläne (PAP)</h3>
 <p><img alt="" src="../../img/pap-basics.png" />
 <img alt="" src="../../img/pap-example.png" /></p>
 <hr />
@@ -879,25 +846,6 @@
 </ol>
 <h3 id="5-pap-zeichnen">5. PAP zeichnen</h3>
 <p><em>PAP-Aufgabe:</em> Zeichne den PAP für: Der Benutzer gibt seinen Bruttolohn und den Steuersatz (in %) ein. Das Programm berechnet den Nettolohn und gibt ihn aus.</p>
-<h3 id="6-code-lesen">6. Code lesen</h3>
-<p><em>Wie lautet der Output?:</em>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
-</code></pre></div></p>
-<h3 id="7-grundrechenarten">7. Grundrechenarten</h3>
-<ol>
-<li>Lasse den Benutzer zwei beliebige Zahlen eingeben und gib die Ergebnisse für Addition, Subtraktion, Multiplikation und Division aus. Runde auf 2 Stellen nach dem Komma.</li>
-<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen einer Division zweier <code>int</code>-Werte und einer Division, bei der mindestens ein Operand ein <code>decimal</code> ist?</li>
-</ol>
-<h3 id="8-inkrementieren-dekrementieren">8. Inkrementieren &amp; Dekrementieren</h3>
-<ol>
-<li>Lege eine Variable <code>x = 5</code> an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.</li>
-</ol>
-<h3 id="9-potenzieren-division-modulo">9. Potenzieren, Division &amp; Modulo</h3>
-<ol>
-<li>Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?</li>
-</ol>
 <hr />
 <h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
 <ul>
