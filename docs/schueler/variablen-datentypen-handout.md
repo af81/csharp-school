@@ -1,7 +1,7 @@
-# Variablen & Rechnen (1/2)
+# Variablen & Datentypen
 
 ## Lernziel
-Am Ende dieser Lektion weisst du: wie du Variablen mit korrektem Datentyp deklarierst, wie ein PAP aussieht, wie du Konsoleneingaben konvertierst, und wie du Grundrechenarten, Runden, Inkrementieren, Potenzieren und Modulo korrekt anwendest.
+Am Ende dieser Lektion weisst du: wie du Variablen mit korrektem Datentyp deklarierst, wie ein PAP aussieht und wie du Konsoleneingaben konvertierst.
 
 ---
 
@@ -48,7 +48,7 @@ int age = 16;
 Console.WriteLine(age.GetType());   // System.Int32
 ```
 
-**Konvertieren**
+**Konvertieren & Casten**
 
 `Console.ReadLine()` liefert **immer** einen String.
 
@@ -58,34 +58,13 @@ string age = Console.ReadLine();
 int ageNumber = int.Parse(age);
 ```
 
-### B - Rechnen
+- `int.Parse()` → String in int umwandeln
+- `Convert.To...()` → Wert in einen anderen Datentyp konvertieren (z.B. Convert.ToInt32())
+- `(int)` → numerischen Wert in int umwandeln; Nachkommateil wird abgeschnitten (Cast)
 
-**Divisionen**
+---
 
-```csharp
-Console.WriteLine(6 / 2);     // 3   int / int = int
-Console.WriteLine(6 / 4);     // 1   ⚠️ Nachkommastellen gehen verloren!
-Console.WriteLine(6 / 4.0m);   // 1.5 mindestens ein decimal nötig
-Console.WriteLine(9 % 2);     // 1 (Rest) / Modulo
-```
-
-**Runden**
-
-```csharp
-Console.WriteLine(Math.Round(3.12568, 2));  // 3.13, auf 2 Stellen gerundet
-Console.WriteLine(Math.Round(3.5));  // 4, ab .5 wird aufgerundet, "Bankers-Round"
-Console.WriteLine(Math.Floor(3.5));  // 3, wird immer auf die nächste Ganzzahl abgerundet
-```
-
-**Inkrementieren & Dekrementieren**
-
-```csharp
-int number2 = 18;
-number2++;      // 19
-number2--;      // 18
-```
-
-### C - Programmablaufpläne (PAP)
+### B - Programmablaufpläne (PAP)
 
 ![](../img/pap-basics.png)
 ![](../img/pap-example.png)
@@ -117,24 +96,6 @@ Console.WriteLine("Nächstes Jahr bist du " + naechstesJahr);
 
 ### 5. PAP zeichnen
 *PAP-Aufgabe:* Zeichne den PAP für: Der Benutzer gibt seinen Bruttolohn und den Steuersatz (in %) ein. Das Programm berechnet den Nettolohn und gibt ihn aus.
-
-### 6. Code lesen
-*Wie lautet der Output?:*
-```csharp
-int a = 5;
-int b = 2;
-Console.WriteLine(a / b);
-```
-
-### 7. Grundrechenarten
-1. Lasse den Benutzer zwei beliebige Zahlen eingeben und gib die Ergebnisse für Addition, Subtraktion, Multiplikation und Division aus. Runde auf 2 Stellen nach dem Komma.
-2. **Wissensfrage:** Was ist der Unterschied zwischen einer Division zweier `int`-Werte und einer Division, bei der mindestens ein Operand ein `decimal` ist?
-
-### 8. Inkrementieren & Dekrementieren
-1. Lege eine Variable `x = 5` an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.
-
-### 9. Potenzieren, Division & Modulo
-1. Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?
 
 ---
 

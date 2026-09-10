@@ -1,4 +1,4 @@
-# Variablen & Datentypen (1/2)
+# Variablen & Datentypen
 
 *Kontext: Berufsschule (Informatik-Grundkurs) · Dauer: 90 Min · Zielgruppe: Lernanfänger ca. 16 Jahre, Setup/Git aus DL1–3 vorhanden*
 
