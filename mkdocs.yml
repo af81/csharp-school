@@ -51,4 +51,4 @@ nav:
       - Wichtige Terminal-Befehle: ressourcen/terminal.md
       - C#-Programm anlegen und ausführen: ressourcen/csharp-projekt.md
       - Klassenregeln: ressourcen/regeln.md
-  #    - Lösungen: ressourcen/loesungen.md
+      - Lösungen: ressourcen/loesungen.md

@@ -23,9 +23,11 @@ Console.WriteLine(name.GetType());
 
 ### Aufgabe 2
 
+```csharp
 Console.Write("Wie heisst du?: ");
 string name = Console.ReadLine();
 Console.WriteLine($"Hallo {name}! Schön, dass es dich gibt.");
+```
 
 ---
 
@@ -126,7 +128,7 @@ decimal rest = budget % preis; // Alternativ ohne Modulo: decimal rest = budget 
 Console.WriteLine($"Anzahl Riegel: {anzahl}");
 Console.WriteLine($"Restbetrag: {rest:F2} Franken"); // rest:F2 rundet auf zwei Stellen nach dem Komma
 ```
-
+<!--
 ---
 
 ### Aufgabe 5
@@ -251,4 +253,4 @@ decimal dezimalStunden = stunden
                        + sekunden / 3600m;
 
 Console.WriteLine($"Zeit in Stunden: {dezimalStunden} h");
-```
+``` -->
