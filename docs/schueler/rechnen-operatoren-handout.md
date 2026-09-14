@@ -92,6 +92,8 @@ Console.WriteLine(a / b);
 ### 4. Potenzieren, Division & Modulo
 1. Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?
 
+---
+
 > 🤓 Bei den folgenden Aufgaben brauchst du eine einfache `if`-Bedingung. Das lernen wir systematisch erst in der nächsten Doppellektion – als Vorschau:
 > ```csharp
 > if (bedingung)
