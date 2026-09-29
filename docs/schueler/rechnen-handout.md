@@ -14,8 +14,6 @@ Am Ende dieser Lektion weisst du, wie du **Grundrechenarten, Runden, Inkrementie
 
 ## 2. Grundlagen
 
-### A - Rechnen
-
 **Divisionen**
 
 ```csharp
@@ -39,35 +37,6 @@ Console.WriteLine(Math.Floor(3.5));  // 3, wird immer auf die nächste Ganzzahl 
 int number2 = 18;
 number2++;      // 19
 number2--;      // 18
-```
-
----
-
-### B - Operatoren
-
-**Vergleichsoperatoren**
-
-| Operator | Bedeutung |
-|---|---|
-| `<` | kleiner als |
-| `<=` | kleiner oder gleich |
-| `==` | gleich |
-| `!=` | ungleich |
-| `>=` | grösser oder gleich |
-| `>` | grösser als |
-
-```csharp
-Console.WriteLine(7.6 > 1);      // True
-Console.WriteLine("Anna" == "Anna");  // True
-```
-
-**Logische Operatoren**
-
-```csharp
-Console.WriteLine(8 > 5 && 4 != 2);  // && = UND: True, wenn beide wahr sind
-Console.WriteLine(8 > 5 || 4 == 2);  // || = ODER: True, wenn mind. eine wahr ist
-Console.WriteLine(8 > 5 ^ 4 == 2);   // ^  = XOR: True, wenn genau eine wahr ist
-Console.WriteLine(!(3 == 3));        // !  = NICHT: negiert den Wahrheitswert
 ```
 
 ---

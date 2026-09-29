@@ -68,7 +68,7 @@ Console.WriteLine($"{firstWord}{secondWord}");
 
 ---
 
-## Rechnen & Operatoren
+## Rechnen
 
 ### Aufgabe 1
 
@@ -253,4 +253,183 @@ decimal dezimalStunden = stunden
                        + sekunden / 3600m;
 
 Console.WriteLine($"Zeit in Stunden: {dezimalStunden} h");
-``` -->
+```
+-->
+
+<!---
+
+---
+
+## Bedingungen I
+
+### Aufgabe 1 - PAP zeichnen
+
+![](../img/zahl-positiv.png)
+
+---
+
+### Aufgabe 2 - Code lesen
+
+- a) Zahl1 = 6, Zahl2 = 3
+- b) Zahl1 = 7, Zahl2 = 7
+
+---
+
+### Aufgabe 3 - Fehler erkennen
+
+- **Kompilierfehler Zeile 9**: if (wert1 > wert2 && > wert3) — nach && fehlt ein vollständiger boolescher Ausdruck. Korrektur: if (wert1 > wert2 && wert1 > wert3)
+- **Zweiter Fehler Zeile 15**: else (wert3 > wert2) — ein else darf keine eigene Bedingung in Klammern haben. Korrektur: einfaches else (reicht hier, da nur noch zwei Fälle übrig sind)
+
+---
+
+### Aufgabe 4 - Ringen 🤼‍♂️
+
+```csharp
+Console.Write("Geschlecht [m/w]: ");
+string geschlecht = Console.ReadLine();
+Console.Write("Gewicht [in Kg]: ");
+double gewicht = Convert.ToDouble(Console.ReadLine());
+
+string klasse;
+if (geschlecht == "m")
+{
+    if (gewicht <= 55) klasse = "Fliegengewicht";
+    else if (gewicht <= 66) klasse = "Leichtgewicht";
+    else if (gewicht <= 84) klasse = "Mittelgewicht";
+    else klasse = "Schwergewicht";
+}
+else
+{
+    if (gewicht <= 48) klasse = "Fliegengewicht";
+    else if (gewicht <= 55) klasse = "Leichtgewicht";
+    else if (gewicht <= 63) klasse = "Mittelgewicht";
+    else klasse = "Schwergewicht";
+}
+Console.WriteLine("Gewichtsklasse: " + klasse);
+```
+
+---
+
+## Bedingungen II
+
+### Aufgabe 1 - Jahreszeiten 🌼
+
+```csharp
+Console.Write("Monat [1-12]: ");
+int monat = Convert.ToInt32(Console.ReadLine());
+
+switch (monat)
+{
+    case 3:
+    case 4:
+    case 5:
+        Console.WriteLine("Frühling"); break;
+    case 6:
+    case 7:
+    case 8:
+        Console.WriteLine("Sommer"); break;
+    case 9:
+    case 10:
+    case 11:
+        Console.WriteLine("Herbst"); break;
+    case 12:
+    case 1:
+    case 2:
+        Console.WriteLine("Winter"); break;
+    default:
+        Console.WriteLine("Ungültiger Monat"); break;
+}
+```
+
+---
+
+### Aufgabe 2 - Code lesen
+
+anzahl ist in allen drei Fällen 2.
+
+- a) Note1 = 4.2, Note2 = 3.5: Schnitt = 3.85 → kleiner 4, note1>=4 wahr → **Typ 1**
+- b) Note1 = 5.2, Note2 = 5.8: Schnitt = 5.5 → mind. 4, durchschnitt=(int)(11.0)=11, (11+1)/2=6 → nicht 4, nicht 5 → **Typ 4**
+- c) Note1 = 3.8, Note2 = 3.3: Schnitt = 3.55 → kleiner 4, beide Noten < 4 → **Typ 0**
+
+---
+
+### Aufgabe 3 - Wochentag ermitteln 📅
+
+```csharp
+  Console.Write("Tag: ");
+  int t = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Monat: ");
+  int m = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Jahr: ");
+  int j = Convert.ToInt32(Console.ReadLine());
+
+  if (m <= 2)
+  {
+      m += 10;
+      j -= 1;
+  }
+  else
+  {
+      m -= 2;
+  }
+
+  int c = j / 100;
+  j = j % 100;
+
+  int h = (((26 * m - 2) / 10) + t + j + j / 4 + c / 4 - 2 * c) % 7;
+  if (h < 0)
+      h += 7;
+
+  string wochentag;
+  switch (h)
+  {
+      case 0: wochentag = "Sonntag"; break;
+      case 1: wochentag = "Montag"; break;
+      case 2: wochentag = "Dienstag"; break;
+      case 3: wochentag = "Mittwoch"; break;
+      case 4: wochentag = "Donnerstag"; break;
+      case 5: wochentag = "Freitag"; break;
+      case 6: wochentag = "Samstag"; break;
+      default: wochentag = "unbekannt"; break;
+  }
+
+  Console.WriteLine("Der " + t + "." + m + "." + j + " ist ein " + wochentag);
+```
+
+---
+
+### Aufgabe 4 - Ostersonntag 🐣
+
+```csharp
+  Console.Write("Jahr: ");
+  int jahr = Convert.ToInt32(Console.ReadLine());
+
+  int m = (8 * (jahr / 100) + 13) / 25 - 2;
+  int s = jahr / 100 - jahr / 400 - 2;
+  m = (15 + s - m) % 30;
+  int n = (6 + s) % 7;
+
+  int a = jahr % 19;
+  int b = jahr % 4;
+  int c = jahr % 7;
+  int d = (19 * a + m) % 30;
+  if (d == 29)
+      d = 28;
+  else if (d == 28 && a >= 11)
+      d = 27;
+  int e = (2 * b + 4 * c + 6 * d + n) % 7;
+
+  int ostertag = 22 + d + e;
+  string monat = "März";
+  if (ostertag > 31)
+  {
+      ostertag = ostertag % 31;
+      monat = "April";
+  }
+
+  Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
+  ```
+
+  ---
+
+-->

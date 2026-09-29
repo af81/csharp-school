@@ -14,12 +14,12 @@
 | **24.8. / 25.8** | Theoretische Einführung | Wie funktioniert ein Programm? Compiler vs. Interpreter, Begriffe, Programmiersprachen | [W2](schueler/theoretische-einfuehrung-handout.md), [Slides](slides/dl2.pdf) |
 | **31.8. / 1.9.** | Git & GitHub Grundlagen | Git-Prinzip, lokale/remote Repos, Commit, Push, Pull | [W3](schueler/git-github-grundlagen-handout.md), [Slides](slides/dl3.pdf) |
 | **7.9. / 8.9.** | Variablen & Datentypen | Variablen, Datentypen, Casting, PAP zu einfachen Abläufen | [W4](schueler/variablen-datentypen-handout.md), [Slides](slides/dl4.pdf) |
-| **14.9. / 15.9.** | Rechnen & Operatoren | Grundrechenarten, spezielle Divisionen, Operatoren | [W5](schueler/rechnen-operatoren-handout.md), [Slides](slides/dl5.pdf) |
+| **14.9. / 15.9.** | Rechnen | Grundrechenarten, spezielle Divisionen | [W5](schueler/rechnen-handout.md), [Slides](slides/dl5.pdf) |
 | **21.9. / 22.9.** | <span style="color:red;">**Prüfung 1 (schriftlich)**</span> | Theorie, Git, EVA-Prinzip, Variablen, Datentypen, Rechnen, Operatoren | - |
 | **28.9. / 29.9.** | Herbstferien | 🏔️ | - | - |
 | **5.10. / 6.10.** | Herbstferien | 🏔️ | - | - |
-| **12.10. / 13.10.** | Bedingungen / Kontrollstrukturen I | if/else, logische Operatoren, PAP mit Verzweigungen | - |
-| **19.10. / 20.10.** | Bedingungen / Kontrollstrukturen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
+| **12.10. / 13.10.** | Bedingungen I | if/else, Operatoren, PAP mit Verzweigungen | [W6](schueler/bedingungen-handout.md) |
+| **19.10. / 20.10.** | Bedingungen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | [W7](schueler/bedingungen2-handout.md) |
 | **26.10. / 27.10.** | Schleifen I | for, while, PAP mit Schleifenkonstrukten | - |
 | **2.11. / 3.11.** | Schleifen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
 | **9.11. / 10.11.** | <span style="color:red;">**Prüfung 2 (schriftlich)**</span> | Bedingungen & Schleifen | - |
