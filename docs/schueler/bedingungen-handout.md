@@ -216,7 +216,7 @@ b) Am Dienstag ist Kinotag. Alle Personen ab 12 Jahren bezahlen dann CHF 12.-, K
 
 ---
 
-## 6. Weiterführende Beispiele und Gedanken
+## 4. Weiterführende Beispiele und Gedanken
 
 - Achtung, typische Stolperfalle: Ein `else` ohne eigene Bedingung fängt einfach "alles andere" auf – ein `else (bedingung)` ist ungültige Syntax.
 - Nächste Lektion: switch-case als Alternative zu langen `else if`-Ketten, sowie komplexere Algorithmen mit mehreren Bedingungen.
