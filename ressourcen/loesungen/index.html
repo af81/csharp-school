@@ -1078,6 +1078,47 @@
 
 ---
 
+### Aufgabe 5 - Kino 🍿
+
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Alter: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">()</span><span class="o">!</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Studierende/r [j/n]: &quot;</span><span class="p">);</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;j&quot;</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;In Begleitung einer erwachsenen Person [j/n]: &quot;</span><span class="p">);</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">begleitung</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;j&quot;</span><span class="p">;</span>
+
+<span class="c1">// Zutritt: ab 12 oder ab 9 mit Begleitung</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">zutritt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">alter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">9</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">begleitung</span><span class="p">);</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">zutritt</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Kein Zutritt&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">preis</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">alter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">12</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">preis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">((</span><span class="n">alter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">17</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">65</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">preis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">13</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">preis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Eintritt: CHF {preis}.–&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+---
+
 ## Bedingungen II
 
 ### Aufgabe 1 - Jahreszeiten 🌼
