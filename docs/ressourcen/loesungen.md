@@ -310,6 +310,48 @@ Console.WriteLine("Gewichtsklasse: " + klasse);
 
 ---
 
+### Aufgabe 5 - Kino 🍿
+
+```csharp
+Console.Write("Alter: ");
+int alter = int.Parse(Console.ReadLine()!);
+
+Console.Write("Studierende/r [j/n]: ");
+bool student = Console.ReadLine() == "j";
+
+Console.Write("In Begleitung einer erwachsenen Person [j/n]: ");
+bool begleitung = Console.ReadLine() == "j";
+
+// Zutritt: ab 12 oder ab 9 mit Begleitung
+bool zutritt = alter >= 12 || (alter >= 9 && begleitung);
+
+if (!zutritt)
+{
+    Console.WriteLine("Kein Zutritt");
+}
+else
+{
+    int preis;
+
+    if (alter < 12)
+    {
+        preis = 10;
+    }
+    else if ((alter >= 12 && alter <= 17) || student || alter >= 65)
+    {
+        preis = 13;
+    }
+    else
+    {
+        preis = 18;
+    }
+
+    Console.WriteLine($"Eintritt: CHF {preis}.–");
+}
+```
+
+---
+
 ## Bedingungen II
 
 ### Aufgabe 1 - Jahreszeiten 🌼

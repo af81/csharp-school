@@ -177,7 +177,7 @@ Das folgende Programm sollte drei Werte (Wert 1, Wert 2 und Wert 3) vom Benutzer
 18		Console.WriteLine("Der grösste Wert ist:"+ Convert.ToString(max));
 ```
 
-### 4. Ringen
+### 4. Ringen 🤼‍♀️
 Beim Ringen wird in verschiedenen Gewichtsklassen gerungen:
 
 | Gewichtsklasse | Männer | Frauen |
@@ -193,7 +193,30 @@ Beispiel: Geschlecht = m, Gewicht = 75 → Ausgabe: Gewichtsklasse: Mittelgewich
 
 ---
 
-## 4. Weiterführende Beispiele und Gedanken
+### 5. Kino 🍿 (optional)
+Im Kino Luxor läuft ein Film, der ab 12 Jahren freigegeben ist. Kinder ab 9 Jahren dürfen den Film trotzdem sehen, wenn sie von einer erwachsenen Person begleitet werden.
+
+Für den Eintritt gelten folgende Preise:
+
+| Kategorie | Bedingung | Preis |
+|---|---|---|
+| Kinder | unter 12 Jahren | CHF 10.– |
+| Ermässigt | 12 bis 17 Jahre oder Studierende oder ab 65 Jahren | CHF 13.– |
+| Erwachsene | alle anderen | CHF 18.– |
+
+Schreibe ein Programm, das den Benutzer nach drei Informationen fragt:
+
+- Alter [in Jahren]
+- Studierende/r [j/n]
+- In Begleitung einer erwachsenen Person [j/n]
+
+a) Prüfe zuerst mit Hilfe von logischen Operatoren, ob die Person den Film sehen darf. Darf sie den Filme **nicht** sehen, gib in der Konsole "Kein Zutritt" aus. Andernfalls ermittelst du den passenden Eintrittspreis und gibst ihn aus (z.B. "Eintritt: CHF 13.-").
+
+b) Am Dienstag ist Kinotag. Alle Personen ab 12 Jahren bezahlen dann CHF 12.-, Kinder bleiben bei CHF 10.-. Erweitere dein Programm um die Eingabe des Wochentags.
+
+---
+
+## 6. Weiterführende Beispiele und Gedanken
 
 - Achtung, typische Stolperfalle: Ein `else` ohne eigene Bedingung fängt einfach "alles andere" auf – ein `else (bedingung)` ist ungültige Syntax.
 - Nächste Lektion: switch-case als Alternative zu langen `else if`-Ketten, sowie komplexere Algorithmen mit mehreren Bedingungen.

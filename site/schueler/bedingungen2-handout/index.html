@@ -12,10 +12,10 @@
         <meta name="author" content="Dr. Andreas Fischer">
       
       
-        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/rechnen-operatoren-handout/">
+        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/bedingungen2-handout/">
       
       
-        <link rel="prev" href="../variablen-datentypen-handout/">
+        <link rel="prev" href="../bedingungen-handout/">
       
       
         <link rel="next" href="../../ressourcen/terminal/">
@@ -26,7 +26,7 @@
     
     
       
-        <title>W5 - Rechnen & Operatoren - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W7 - Bedingungen (switch) - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#operatoren-vertiefung" class="md-skip">
+        <a href="#bedingungen-22" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              W5 - Rechnen & Operatoren
+              W7 - Bedingungen (switch)
             
           </span>
         </div>
@@ -414,6 +414,52 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../rechnen-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W5 - Rechnen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bedingungen-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W6 - Bedingungen (if-else)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -431,7 +477,7 @@
   
   
   <span class="md-ellipsis">
-    W5 - Rechnen & Operatoren
+    W7 - Bedingungen (switch)
     
   </span>
   
@@ -444,7 +490,7 @@
   
   
   <span class="md-ellipsis">
-    W5 - Rechnen & Operatoren
+    W7 - Bedingungen (switch)
     
   </span>
   
@@ -495,18 +541,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-rechnen" class="md-nav__link">
+  <a href="#a-switch-case" class="md-nav__link">
     <span class="md-ellipsis">
-      A - Rechnen
+      A - switch-case
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-operatoren" class="md-nav__link">
+  <a href="#b-bedingungen-in-komplexeren-algorithmen" class="md-nav__link">
     <span class="md-ellipsis">
-      B - Operatoren
+      B - Bedingungen in komplexeren Algorithmen
     </span>
   </a>
   
@@ -528,90 +574,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-code-lesen" class="md-nav__link">
+  <a href="#1-jahreszeiten" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Code lesen
+      1. Jahreszeiten
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-grundrechenarten" class="md-nav__link">
+  <a href="#2-code-lesen-ii" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Grundrechenarten
+      2. Code lesen II
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-inkrementieren-dekrementieren" class="md-nav__link">
+  <a href="#3-wochentag-ermitteln-pflicht" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Inkrementieren &amp; Dekrementieren
+      3. Wochentag ermitteln (Pflicht)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-potenzieren-division-modulo" class="md-nav__link">
+  <a href="#4-ostersonntag-zusatz" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Potenzieren, Division &amp; Modulo
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-vergleichsoperatoren" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Vergleichsoperatoren
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-logische-operatoren" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Logische Operatoren
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-passwort-checker" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Passwort-Checker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-unterwegs" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Unterwegs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-body-mass-index" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Body Mass Index
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-around-the-clock" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Around the clock
+      4. Ostersonntag (Zusatz)
     </span>
   </a>
   
@@ -800,148 +792,140 @@
 
 
 
-<h1 id="operatoren-vertiefung">Operatoren &amp; Vertiefung</h1>
+<h1 id="bedingungen-22">Bedingungen (2/2)</h1>
 <h2 id="lernziel">Lernziel</h2>
-<p>Am Ende dieser Lektion weisst du, wie du <strong>Grundrechenarten, Runden, Inkrementieren, Potenzieren und Modulo</strong> korrekt anwendest und wie <strong>Vergleichs- und logische Operatoren</strong> funktionieren, und kannst dein bisheriges Wissen (Variablen, Rechnen, Operatoren) in komplexeren Aufgaben kombinieren.</p>
+<p>Am Ende dieser Lektion setzt du switch-case als Alternative zu else-if-Ketten um und kombinierst Bedingungen, Berechnungen und Verzweigungen in etwas komplexeren Algorithmen.</p>
 <hr />
 <h2 id="1-einstieg">1. Einstieg</h2>
 <ul>
-<li>Vergleiche und logische Verknüpfungen brauchst du in praktisch jedem Programm, das auf unterschiedliche Situationen reagieren soll.</li>
-<li>Die heutigen Kombinationsaufgaben zeigen dir, wie viel du mit den Bausteinen der letzten Lektion bereits umsetzen kannst.</li>
+<li>Eine lange Kette von <code>else if</code> mit demselben Vergleichswert wird schnell unübersichtlich – <strong>switch-case</strong> schafft hier Klarheit.</li>
+<li>Reale Algorithmen (z.B. Datumsberechnungen) bestehen oft aus mehreren Schritten mit Bedingungen, Berechnungen und Zwischenwerten – genau das übst du heute.</li>
+<li>Diese Lektion schliesst den Block Bedingungen ab: Operatoren, if-else, Verschachtelung und switch-case kommen hier zusammen zur Anwendung.</li>
 </ul>
 <hr />
 <h2 id="2-grundlagen">2. Grundlagen</h2>
-<h3 id="a-rechnen">A - Rechnen</h3>
-<p><strong>Divisionen</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 3   int / int = int</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1   ⚠️ Nachkommastellen gehen verloren!</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4.0</span><span class="n">m</span><span class="p">);</span><span class="w">   </span><span class="c1">// 1.5 mindestens ein decimal nötig</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">9</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1 (Rest) / Modulo</span>
+<h3 id="a-switch-case">A - switch-case</h3>
+<div class="highlight"><pre><span></span><code><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">monat</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="m">12</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="m">1</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="m">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Winter&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="m">3</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="m">4</span><span class="p">:</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="m">5</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Frühling&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ungültiger Monat&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<p><strong>Runden</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="m">3.12568</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">));</span><span class="w">  </span><span class="c1">// 3.13, auf 2 Stellen gerundet</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="m">3.5</span><span class="p">));</span><span class="w">  </span><span class="c1">// 4, ab .5 wird aufgerundet, &quot;Bankers-Round&quot;</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">Floor</span><span class="p">(</span><span class="m">3.5</span><span class="p">));</span><span class="w">  </span><span class="c1">// 3, wird immer auf die nächste Ganzzahl abgerundet</span>
-</code></pre></div>
-<p><strong>Inkrementieren &amp; Dekrementieren</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">number2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span><span class="p">;</span>
-<span class="n">number2</span><span class="o">++</span><span class="p">;</span><span class="w">      </span><span class="c1">// 19</span>
-<span class="n">number2</span><span class="o">--</span><span class="p">;</span><span class="w">      </span><span class="c1">// 18</span>
-</code></pre></div>
-<hr />
-<h3 id="b-operatoren">B - Operatoren</h3>
-<p><strong>Vergleichsoperatoren</strong></p>
-<table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>Bedeutung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;</code></td>
-<td>kleiner als</td>
-</tr>
-<tr>
-<td><code>&lt;=</code></td>
-<td>kleiner oder gleich</td>
-</tr>
-<tr>
-<td><code>==</code></td>
-<td>gleich</td>
-</tr>
-<tr>
-<td><code>!=</code></td>
-<td>ungleich</td>
-</tr>
-<tr>
-<td><code>&gt;=</code></td>
-<td>grösser oder gleich</td>
-</tr>
-<tr>
-<td><code>&gt;</code></td>
-<td>grösser als</td>
-</tr>
-</tbody>
-</table>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">7.6</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">1</span><span class="p">);</span><span class="w">      </span><span class="c1">// True</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Anna&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;Anna&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// True</span>
-</code></pre></div>
-<p><strong>Logische Operatoren</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">  </span><span class="c1">// &amp;&amp; = UND: True, wenn beide wahr sind</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">  </span><span class="c1">// || = ODER: True, wenn mind. eine wahr ist</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="m">8</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// ^  = XOR: True, wenn genau eine wahr ist</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="m">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">3</span><span class="p">));</span><span class="w">        </span><span class="c1">// !  = NICHT: negiert den Wahrheitswert</span>
-</code></pre></div>
+<ul>
+<li>Sinnvoll, wenn <strong>eine Variable</strong> mit <strong>mehreren festen Werten</strong> verglichen wird.</li>
+<li><code>break</code> beendet den aktuellen Case.</li>
+<li><code>default</code> fängt alle übrigen Werte auf – vergleichbar mit einem abschliessenden <code>else</code>.</li>
+<li>Mehrere <code>case</code>-Zeilen ohne eigenen Code dazwischen teilen sich denselben Block.</li>
+</ul>
+<h3 id="b-bedingungen-in-komplexeren-algorithmen">B - Bedingungen in komplexeren Algorithmen</h3>
+<p>Ein Algorithmus kann mehrere Bedingungen, Berechnungen und Verzweigungen kombinieren – Schritt für Schritt, wie ein Kochrezept. Wichtig beim Übersetzen von Pseudocode in C#:</p>
+<ul>
+<li>Jede Variable braucht einen Datentyp.</li>
+<li>Ganzzahl-Division (<code>int / int</code>) beachten – Nachkommastellen gehen sonst verloren.</li>
+<li>Modulo <code>%</code> liefert den Rest einer Division und wird oft für solche Berechnungen gebraucht.</li>
+</ul>
 <hr />
 <h2 id="3-ubungen">3. Übungen</h2>
-<h3 id="1-code-lesen">1. Code lesen</h3>
-<p><em>Wie lautet der Output?:</em>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
-</code></pre></div></p>
-<h3 id="2-grundrechenarten">2. Grundrechenarten</h3>
-<ol>
-<li>Lasse den Benutzer zwei beliebige Zahlen eingeben und gib die Ergebnisse für Addition, Subtraktion, Multiplikation und Division aus. Runde auf 2 Stellen nach dem Komma.</li>
-<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen einer Division zweier <code>int</code>-Werte und einer Division, bei der mindestens ein Operand ein <code>decimal</code> ist?</li>
-</ol>
-<h3 id="3-inkrementieren-dekrementieren">3. Inkrementieren &amp; Dekrementieren</h3>
-<ol>
-<li>Lege eine Variable <code>x = 5</code> an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.</li>
-</ol>
-<h3 id="4-potenzieren-division-modulo">4. Potenzieren, Division &amp; Modulo</h3>
-<ol>
-<li>Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?</li>
-</ol>
-<hr />
-<blockquote>
-<p>🤓 Bei den folgenden Aufgaben brauchst du eine einfache <code>if</code>-Bedingung. Das lernen wir systematisch erst in der nächsten Doppellektion – als Vorschau:
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bedingung</span><span class="p">)</span>
+<h3 id="1-jahreszeiten">1. Jahreszeiten</h3>
+<p>Schreibe ein Programm, das den Benutzer zur Eingabe eines Monats auffordert (Zahl von 1 bis 12). Ermittle mit Hilfe einer mehrstufigen Verzweigung (switch-case), ob es sich um einen Frühlings-, Sommer-, Herbst- oder Wintermonat handelt, und gib das Ergebnis aus.</p>
+<h3 id="2-code-lesen-ii">2. Code lesen II</h3>
+<p>Was gibt das Programm aus, wenn folgende Werte eingegeben würden?</p>
+<ul>
+<li>a) Note 1 = 4.2, Note 2 = 3.5</li>
+<li>b) Note 1 = 5.2, Note 2 = 5.8</li>
+<li>c) Note 1 = 3.8, Note 2 = 3.3</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">anzahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">note1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="n">note2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Note 1:&quot;</span><span class="p">);</span>
+<span class="n">note1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToDouble</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="n">anzahl</span><span class="o">+=</span><span class="m">1</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Note 2:&quot;</span><span class="p">);</span>
+<span class="n">note2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToDouble</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="n">anzahl</span><span class="o">++</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">schnitt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">note1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">note2</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">anzahl</span><span class="p">;</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">schnitt</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">4</span><span class="p">)</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">// wird ausgeführt, wenn bedingung true ist</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;*****&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">durchschnitt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">schnitt</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
+<span class="w">    </span><span class="n">durchschnitt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">durchschnitt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">durchschnitt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">4</span><span class="p">)</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Typ 2&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">durchschnitt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
+<span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Typ 3&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">else</span>
+<span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Typ 4&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 <span class="k">else</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="c1">// wird ausgeführt, wenn bedingung false ist</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;-----&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">note1</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">note2</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">4</span><span class="p">)</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Typ 1&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Typ 0&quot;</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div></p>
-</blockquote>
-<h3 id="5-vergleichsoperatoren">5. Vergleichsoperatoren</h3>
-<ol>
-<li>Lasse den Benutzer zwei Zahlen eingeben. Überprüfe, ob die erste grösser ist als die zweite, ob sie gleich sind oder ob die zweite grösser ist.</li>
-<li><strong>Wissensfrage:</strong> Welchen Wert liefert ein Vergleich wie <code>5 &lt; 10</code>?</li>
-</ol>
-<h3 id="6-logische-operatoren">6. Logische Operatoren</h3>
-<ol>
-<li>Schreibe ein Programm, das prüft, ob eine eingegebene Zahl <strong>zwischen 10 und 20</strong> liegt (Hinweis: <code>&amp;&amp;</code>).</li>
-<li>Prüfe in einem zweiten Schritt, ob die Zahl <strong>kleiner als 0 oder grösser als 100</strong> ist (Hinweis: <code>||</code>).</li>
-<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen <code>&amp;&amp;</code> und <code>||</code>?</li>
-</ol>
-<h3 id="7-passwort-checker">7. Passwort-Checker</h3>
-<ol>
-<li>Erstelle ein kleines „Passwortprogramm“: Der Benutzer gibt ein Passwort ein. Das Programm prüft, ob es länger als 8 Zeichen ist (Hinweis: <code>.Length</code>).</li>
-</ol>
-<h3 id="8-unterwegs">8. Unterwegs</h3>
+</code></pre></div>
+<h3 id="3-wochentag-ermitteln-pflicht">3. Wochentag ermitteln (Pflicht)</h3>
+<p>Unten steht eine Anleitung in Textform, mit der man zu jedem beliebigen Datum den zugehörigen Wochentag ermitteln kann. Schreibe ein Programm, das vom Benutzer drei ganzzahlige Werte t (Tag), m (Monat) und j (Jahr) entgegennimmt und den Wochentag ausgibt.</p>
+<p><strong>Testdaten:</strong></p>
 <ul>
-<li>Frage den Benutzer, wie schnell sein Auto durchschnittlich fährt (km/h) und wie hoch der Verbrauch in Liter Benzin pro 100 km ist.</li>
-<li>Frage ihn danach nach der zu fahrenden Distanz (km) und gib die Fahrzeit in Minuten sowie den gesamten Benzinverbrauch aus.</li>
+<li>25.10.2021 → Montag</li>
+<li>24.12.1980 → Mittwoch</li>
+<li>07.04.2037 → Dienstag</li>
 </ul>
-<h3 id="9-body-mass-index">9. Body Mass Index</h3>
-<ul>
-<li>Recherchiere im Internet die Formel zur Berechnung des BMI und realisiere ein Programm, das nach den nötigen Werten fragt und den BMI berechnet.</li>
-</ul>
-<h3 id="10-around-the-clock">10. Around the clock</h3>
-<ul>
-<li>Ein Benutzer gibt drei ganzzahlige Werte für Stunden, Minuten und Sekunden ein. Rechne die Werte in das metrische System mit der Masseinheit Stunden um (z.B. 5 Stunden / 30 Minuten / 0 Sekunden → 5.5 Stunden).</li>
-</ul>
+<div class="highlight"><pre><span></span><code>1) Erstelle drei Variablen (t, m, j) vom Typ int und lese die drei Werte ein
+2) Berechne den Wochentag h nach dem folgenden Algorithmus:
+    - Falls m &lt;= 2, erhöhe m um 10 und erniedrige j um 1, andernfalls erniedrige m um 2.
+    - Berechne die ganzzahligen Werte c = j/100 und j = j Modulo 100 (Modulo -&gt; %)
+    - Berechne den ganzzahligen Wert: h = (((26*m-2)/10)+t+j+j/4+c/4-2*c) Modulo 7
+    - Falls h kleiner 0 ist, erhöhe h um 7
+    - Anschliessend hat h einen Wert zwischen 0 und 6, wobei die Werte 0, 1, ..., 6 den Tagen Sonntag, Montag, ..., Samstag entsprechen.
+3) Gib das Ergebnis in der Form &quot;Der 24.12.2001 ist ein Montag&quot; aus.
+</code></pre></div>
+<h3 id="4-ostersonntag-zusatz">4. Ostersonntag (Zusatz)</h3>
+<p>Ostern fällt immer auf den Sonntag nach dem ersten Vollmond im Frühling. Der Mathematiker Carl Friedrich Gauss (1777-1855) hat dieses Problem mathematisch gelöst. Schreibe mit der folgenden Anleitung ein Programm, das vom Benutzer eine Jahreszahl entgegennimmt und für das gewählte Jahr das Osterdatum ausgibt.</p>
+<div class="highlight"><pre><span></span><code>Teil 1 - Die Zwischenwerte m und n bestimmen
+
+01) m = (8*(Jahr/100) + 13) / 25 -2
+02) s = Jahr/100 - Jahr/400 - 2
+03) m = (15 + s - m) % 30
+04) n = (6 + s) % 7
+
+Teil 2 - Die Zwischenwerte d und e berechnen
+
+05) a = Jahr % 19
+06) b = Jahr % 4
+07) c = Jahr % 7
+08) d = (19 * a + m) % 30
+09) Falls d gleich 29 ist, setze d auf 28. Andernfalls: falls d=28 und a &gt;= 11 ist, setze d = 27
+10) e = (2 * b + 4 * c + 6 * d + n) % 7
+
+Teil 3 - Nun können Tag und Monat bestimmt werden
+
+11) Ostertag = am (22 + d + e)ten März
+12) Falls der Ostertag &gt; 31 ist, setze den Ostertag = Ostertag % 31 und Ostermonat auf April
+</code></pre></div>
+<p>Du kannst deine Berechnung überprüfen, indem du im Internet die Ostersonntage für die Jahre 2016, 2019 und 2026 recherchierst.</p>
 <hr />
 <h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
 <ul>
-<li>Überlege: Welche der Aufgaben war für dich am anspruchsvollsten, und warum?</li>
-<li>Nächste Lektion: Bedingungen (if/else) – systematisch, inklusive PAP mit Verzweigungen.</li>
-<li>Häufige Fehlerquellen bei diesen Aufgaben: fehlende Konvertierung bei <code>Console.ReadLine()</code>, Int-Division ohne <code>double</code>, falsche Reihenfolge der Berechnungsschritte.</li>
+<li>Merksatz: switch-case lohnt sich ab ca. 3-4 möglichen Werten einer einzelnen Variable – bei komplexen Bedingungen (Bereiche, mehrere Variablen) bleibt if-else die bessere Wahl.</li>
+<li>Rückblick: Operatoren → if/if-else → Verschachtelung → switch-case → komplexe Algorithmen – damit ist der Block Bedingungen abgeschlossen.</li>
+<li>Ausblick: Im nächsten Block (Schleifen) lernst du, wie sich viele der heutigen Aufgaben für mehrere Eingaben nacheinander wiederholen lassen, ohne den Code zu duplizieren.</li>
 </ul>
 
 
