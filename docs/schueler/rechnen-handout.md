@@ -58,44 +58,47 @@ Console.WriteLine(a / b);
 ### 3. Inkrementieren & Dekrementieren
 1. Lege eine Variable `x = 5` an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.
 
-### 4. Potenzieren, Division & Modulo
+### 4. Schokoriegel 🍫
 1. Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?
 
----
 
-> 🤓 Bei den folgenden Aufgaben brauchst du eine einfache `if`-Bedingung. Das lernen wir systematisch erst in der nächsten Doppellektion – als Vorschau:
-> ```csharp
-> if (bedingung)
-> {
->     // wird ausgeführt, wenn bedingung true ist
-> }
-> else
-> {
->     // wird ausgeführt, wenn bedingung false ist
-> }
-> ```
+### 5. Streaming-Rechner 🖥️ (optional)
+Lena hat in ihrem Handy-Abo für diesen Monat noch ein Restdatenvolumen. Sie möchte wissen, wie viele ganze Stunden sie unterwegs Videos streamen kann und wie viel Datenvolumen danach noch übrig bleibt.
 
-### 5. Vergleichsoperatoren
-1. Lasse den Benutzer zwei Zahlen eingeben. Überprüfe, ob die erste grösser ist als die zweite, ob sie gleich sind oder ob die zweite grösser ist.
-2. **Wissensfrage:** Welchen Wert liefert ein Vergleich wie `5 < 10`?
+Ihr Anbieter rechnet mit **1 GB = 1000 MB**.
 
-### 6. Logische Operatoren
-1. Schreibe ein Programm, das prüft, ob eine eingegebene Zahl **zwischen 10 und 20** liegt (Hinweis: `&&`).
-2. Prüfe in einem zweiten Schritt, ob die Zahl **kleiner als 0 oder grösser als 100** ist (Hinweis: `||`).
-3. **Wissensfrage:** Was ist der Unterschied zwischen `&&` und `||`?
+Schreibe ein C#-Programm, das:
 
-### 7. Passwort-Checker
-1. Erstelle ein kleines „Passwortprogramm“: Der Benutzer gibt ein Passwort ein. Das Programm prüft, ob es länger als 8 Zeichen ist (Hinweis: `.Length`).
+1. dem User mit einer kurzen Begrüssung erklärt, was das Programm macht,
+2. den User nach dem verbleibenden Datenvolumen in GB fragt (Kommazahl, z.B. 8.5),
+3. den User nach dem Verbrauch pro Stunde Video in MB fragt (ganze Zahl, z.B. 900),
+4. die Eingaben in passende Datentypen umwandelt,
+5. folgende Variablen deklariert und berechnet:
+    - `datenvolumenGB`
+    - `verbrauchProStundeMB`
+    - `datenvolumenMB`
+    - `anzahlStunden` (nur ganze Stunden)
+    - `restMB`
+6. die drei Resultate `datenvolumenMB`, `anzahlStunden` und `restMB` mit `Console.WriteLine` und Einheit ausgibt.
 
-### 8. Unterwegs
-- Frage den Benutzer, wie schnell sein Auto durchschnittlich fährt (km/h) und wie hoch der Verbrauch in Liter Benzin pro 100 km ist.
-- Frage ihn danach nach der zu fahrenden Distanz (km) und gib die Fahrzeit in Minuten sowie den gesamten Benzinverbrauch aus.
+Beispielablauf:
+```csharp
+=== Streaming-Rechner ===
+Dieses Programm berechnet, wie viele Stunden du mit deinem Datenvolumen streamen kannst.
 
-### 9. Body Mass Index
-- Recherchiere im Internet die Formel zur Berechnung des BMI und realisiere ein Programm, das nach den nötigen Werten fragt und den BMI berechnet.
+Wie viel Datenvolumen hast du noch (in GB)? 8
+Wie viele MB braucht eine Stunde Video? 900
 
-### 10. Around the clock
-- Ein Benutzer gibt drei ganzzahlige Werte für Stunden, Minuten und Sekunden ein. Rechne die Werte in das metrische System mit der Masseinheit Stunden um (z.B. 5 Stunden / 30 Minuten / 0 Sekunden → 5.5 Stunden).
+Dein Datenvolumen: 8000 MB
+Ganze Stunden Streaming: 8 h
+Restvolumen: 800 MB
+```
+
+**Zusatzaufgaben**
+
+- Z1: Berechne, wie viele Minuten Video mit dem Restvolumen noch möglich sind (`restMinuten`).
+- Z2: Gib das Restvolumen zusätzlich in GB aus, gerundet auf zwei Nachkommastellen (`{restGB:F2}`).
+- Z3: Ersetze die Zahl 1000 durch eine Konstante `MB_PRO_GB`. Begründe, warum das sinnvoll ist.
 
 ---
 

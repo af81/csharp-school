@@ -116,7 +116,7 @@ Console.WriteLine(x);
 
 ---
 
-### Aufgabe 4
+### Aufgabe 4 - Schokoriegel 🍫
 
 ```csharp
 decimal preis = 3.20m;
@@ -128,135 +128,42 @@ decimal rest = budget % preis; // Alternativ ohne Modulo: decimal rest = budget 
 Console.WriteLine($"Anzahl Riegel: {anzahl}");
 Console.WriteLine($"Restbetrag: {rest:F2} Franken"); // rest:F2 rundet auf zwei Stellen nach dem Komma
 ```
-<!--
----
-
-### Aufgabe 5
-
-```csharp
-Console.Write("Erste Zahl: ");
-int zahl1 = int.Parse(Console.ReadLine());
-
-Console.Write("Zweite Zahl: ");
-int zahl2 = int.Parse(Console.ReadLine());
-
-if (zahl1 > zahl2)
-{
-    Console.WriteLine("Die erste Zahl ist grösser.");
-}
-else if (zahl1 == zahl2)
-{
-    Console.WriteLine("Die beiden Zahlen sind gleich.");
-}
-else
-{
-    Console.WriteLine("Die zweite Zahl ist grösser.");
-}
-```
-
-**Wissensfrage**: Ein Vergleich wie 5 < 10 liefert einen booleschen Wert (bool). In diesem Fall also `true`, da 5 kleiner als 10 ist.
 
 ---
 
-### Aufgabe 6
+### Aufgabe 5 - Streaming-Rechner 🖥️
 
 ```csharp
-Console.Write("Zahl eingeben: ");
-int zahl = int.Parse(Console.ReadLine());
+// Begrüssung
+Console.WriteLine("=== Streaming-Rechner ===");
+Console.WriteLine("Dieses Programm berechnet, wie viele Stunden du mit deinem Datenvolumen streamen kannst.");
+Console.WriteLine();
 
-if (zahl >= 10 && zahl <= 20)
-{
-    Console.WriteLine("Die Zahl liegt zwischen 10 und 20.");
-}
+// Eingaben mit Konvertierung
+Console.Write("Wie viel Datenvolumen hast du noch (in GB)? ");
+double datenvolumenGB = double.Parse(Console.ReadLine());
 
-if (zahl < 0 || zahl > 100)
-{
-    Console.WriteLine("Die Zahl liegt ausserhalb von 0 bis 100.");
-}
+Console.Write("Wie viele MB braucht eine Stunde Video? ");
+int verbrauchProStundeMB = int.Parse(Console.ReadLine());
+
+// Berechnungen
+const int MB_PRO_GB = 1000;
+double datenvolumenMB = datenvolumenGB * MB_PRO_GB;
+int anzahlStunden = (int)(datenvolumenMB / verbrauchProStundeMB);
+double restMB = datenvolumenMB - anzahlStunden * verbrauchProStundeMB;
+
+// Zusatzaufgaben
+double restMinuten = restMB / verbrauchProStundeMB * 60;
+double restGB = restMB / MB_PRO_GB;
+
+// Ausgabe
+Console.WriteLine();
+Console.WriteLine($"Dein Datenvolumen: {datenvolumenMB} MB");
+Console.WriteLine($"Ganze Stunden Streaming: {anzahlStunden} h");
+Console.WriteLine($"Restvolumen: {restMB} MB");
+Console.WriteLine($"Damit reicht es noch für {restMinuten:F0} Minuten Video.");
+Console.WriteLine($"Restvolumen in GB: {restGB:F2} GB");
 ```
-
-**Wissensfrage:**
-- && (UND) → beide Bedingungen müssen true sein.
-- || (ODER) → mindestens eine Bedingung muss true sein.
-
----
-
-### Aufgabe 7
-
-```csharp
-Console.Write("Passwort eingeben: ");
-string passwort = Console.ReadLine();
-
-if (passwort.Length > 8)
-{
-    Console.WriteLine("Das Passwort ist lang genug.");
-}
-else
-{
-    Console.WriteLine("Das Passwort ist zu kurz.");
-}
-```
-
----
-
-### Aufgabe 8
-
-```csharp
-Console.Write("Durchschnittliche Geschwindigkeit (km/h): ");
-decimal geschwindigkeit = decimal.Parse(Console.ReadLine());
-
-Console.Write("Verbrauch (Liter pro 100 km): ");
-decimal verbrauch = decimal.Parse(Console.ReadLine());
-
-Console.Write("Distanz (km): ");
-decimal distanz = decimal.Parse(Console.ReadLine());
-
-decimal fahrzeit = distanz / geschwindigkeit * 60;
-decimal benzin = distanz / 100 * verbrauch;
-
-Console.WriteLine($"Fahrzeit: {fahrzeit:F1} Minuten");
-Console.WriteLine($"Benzinverbrauch: {benzin:F2} Liter");
-```
-
----
-
-### Aufgabe 9
-
-```csharp
-Console.Write("Körpergewicht in kg: ");
-decimal gewicht = decimal.Parse(Console.ReadLine());
-
-Console.Write("Körpergrösse in m: ");
-decimal groesse = decimal.Parse(Console.ReadLine());
-
-decimal bmi = gewicht / (groesse * groesse);
-
-Console.WriteLine($"Dein BMI beträgt: {bmi:F1}");
-```
-
----
-
-### Aufgabe 10
-
-```csharp
-Console.Write("Stunden: ");
-int stunden = int.Parse(Console.ReadLine());
-
-Console.Write("Minuten: ");
-int minuten = int.Parse(Console.ReadLine());
-
-Console.Write("Sekunden: ");
-int sekunden = int.Parse(Console.ReadLine());
-
-decimal dezimalStunden = stunden
-                       + minuten / 60m
-                       + sekunden / 3600m;
-
-Console.WriteLine($"Zeit in Stunden: {dezimalStunden} h");
-```
--->
-
-<!---
 
 ---
 
@@ -349,7 +256,7 @@ else
     Console.WriteLine($"Eintritt: CHF {preis}.–");
 }
 ```
-
+<!--
 ---
 
 ## Bedingungen II
