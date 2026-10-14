@@ -531,63 +531,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-potenzieren-division-modulo" class="md-nav__link">
+  <a href="#4-schokoriegel" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Potenzieren, Division &amp; Modulo
+      4. Schokoriegel 🍫
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-vergleichsoperatoren" class="md-nav__link">
+  <a href="#5-streaming-rechner-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Vergleichsoperatoren
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-logische-operatoren" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Logische Operatoren
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-passwort-checker" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Passwort-Checker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-unterwegs" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Unterwegs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-body-mass-index" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Body Mass Index
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-around-the-clock" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Around the clock
+      5. Streaming-Rechner 🖥️ (optional)
     </span>
   </a>
   
@@ -866,50 +821,45 @@
 <ol>
 <li>Lege eine Variable <code>x = 5</code> an. Erhöhe sie um 1, gib das Ergebnis aus. Erniedrige sie dann um 2 und gib das Ergebnis erneut aus.</li>
 </ol>
-<h3 id="4-potenzieren-division-modulo">4. Potenzieren, Division &amp; Modulo</h3>
+<h3 id="4-schokoriegel">4. Schokoriegel 🍫</h3>
 <ol>
 <li>Ein Protein-Schokoriegel kostet 3.20 Franken. Wie viele Riegel kannst du mit 20 Franken kaufen? Wie viel Geld bleibt übrig?</li>
 </ol>
-<hr />
-<blockquote>
-<p>🤓 Bei den folgenden Aufgaben brauchst du eine einfache <code>if</code>-Bedingung. Das lernen wir systematisch erst in der nächsten Doppellektion – als Vorschau:
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bedingung</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="c1">// wird ausgeführt, wenn bedingung true ist</span>
-<span class="p">}</span>
-<span class="k">else</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="c1">// wird ausgeführt, wenn bedingung false ist</span>
-<span class="p">}</span>
+<h3 id="5-streaming-rechner-optional">5. Streaming-Rechner 🖥️ (optional)</h3>
+<p>Lena hat in ihrem Handy-Abo für diesen Monat noch ein Restdatenvolumen. Sie möchte wissen, wie viele ganze Stunden sie unterwegs Videos streamen kann und wie viel Datenvolumen danach noch übrig bleibt.</p>
+<p>Ihr Anbieter rechnet mit <strong>1 GB = 1000 MB</strong>.</p>
+<p>Schreibe ein C#-Programm, das:</p>
+<ol>
+<li>dem User mit einer kurzen Begrüssung erklärt, was das Programm macht,</li>
+<li>den User nach dem verbleibenden Datenvolumen in GB fragt (Kommazahl, z.B. 8.5),</li>
+<li>den User nach dem Verbrauch pro Stunde Video in MB fragt (ganze Zahl, z.B. 900),</li>
+<li>die Eingaben in passende Datentypen umwandelt,</li>
+<li>folgende Variablen deklariert und berechnet:<ul>
+<li><code>datenvolumenGB</code></li>
+<li><code>verbrauchProStundeMB</code></li>
+<li><code>datenvolumenMB</code></li>
+<li><code>anzahlStunden</code> (nur ganze Stunden)</li>
+<li><code>restMB</code></li>
+</ul>
+</li>
+<li>die drei Resultate <code>datenvolumenMB</code>, <code>anzahlStunden</code> und <code>restMB</code> mit <code>Console.WriteLine</code> und Einheit ausgibt.</li>
+</ol>
+<p>Beispielablauf:
+<div class="highlight"><pre><span></span><code><span class="o">===</span><span class="w"> </span><span class="n">Streaming</span><span class="o">-</span><span class="n">Rechner</span><span class="w"> </span><span class="o">===</span>
+<span class="n">Dieses</span><span class="w"> </span><span class="n">Programm</span><span class="w"> </span><span class="n">berechnet</span><span class="p">,</span><span class="w"> </span><span class="n">wie</span><span class="w"> </span><span class="n">viele</span><span class="w"> </span><span class="n">Stunden</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">mit</span><span class="w"> </span><span class="n">deinem</span><span class="w"> </span><span class="n">Datenvolumen</span><span class="w"> </span><span class="n">streamen</span><span class="w"> </span><span class="n">kannst</span><span class="p">.</span>
+
+<span class="n">Wie</span><span class="w"> </span><span class="n">viel</span><span class="w"> </span><span class="n">Datenvolumen</span><span class="w"> </span><span class="n">hast</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="nf">noch</span><span class="w"> </span><span class="p">(</span><span class="k">in</span><span class="w"> </span><span class="n">GB</span><span class="p">)</span><span class="o">?</span><span class="w"> </span><span class="m">8</span>
+<span class="n">Wie</span><span class="w"> </span><span class="n">viele</span><span class="w"> </span><span class="n">MB</span><span class="w"> </span><span class="n">braucht</span><span class="w"> </span><span class="n">eine</span><span class="w"> </span><span class="n">Stunde</span><span class="w"> </span><span class="n">Video</span><span class="o">?</span><span class="w"> </span><span class="m">900</span>
+
+<span class="n">Dein</span><span class="w"> </span><span class="n">Datenvolumen</span><span class="p">:</span><span class="w"> </span><span class="m">8000</span><span class="w"> </span><span class="n">MB</span>
+<span class="n">Ganze</span><span class="w"> </span><span class="n">Stunden</span><span class="w"> </span><span class="n">Streaming</span><span class="p">:</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="n">h</span>
+<span class="n">Restvolumen</span><span class="p">:</span><span class="w"> </span><span class="m">800</span><span class="w"> </span><span class="n">MB</span>
 </code></pre></div></p>
-</blockquote>
-<h3 id="5-vergleichsoperatoren">5. Vergleichsoperatoren</h3>
-<ol>
-<li>Lasse den Benutzer zwei Zahlen eingeben. Überprüfe, ob die erste grösser ist als die zweite, ob sie gleich sind oder ob die zweite grösser ist.</li>
-<li><strong>Wissensfrage:</strong> Welchen Wert liefert ein Vergleich wie <code>5 &lt; 10</code>?</li>
-</ol>
-<h3 id="6-logische-operatoren">6. Logische Operatoren</h3>
-<ol>
-<li>Schreibe ein Programm, das prüft, ob eine eingegebene Zahl <strong>zwischen 10 und 20</strong> liegt (Hinweis: <code>&amp;&amp;</code>).</li>
-<li>Prüfe in einem zweiten Schritt, ob die Zahl <strong>kleiner als 0 oder grösser als 100</strong> ist (Hinweis: <code>||</code>).</li>
-<li><strong>Wissensfrage:</strong> Was ist der Unterschied zwischen <code>&amp;&amp;</code> und <code>||</code>?</li>
-</ol>
-<h3 id="7-passwort-checker">7. Passwort-Checker</h3>
-<ol>
-<li>Erstelle ein kleines „Passwortprogramm“: Der Benutzer gibt ein Passwort ein. Das Programm prüft, ob es länger als 8 Zeichen ist (Hinweis: <code>.Length</code>).</li>
-</ol>
-<h3 id="8-unterwegs">8. Unterwegs</h3>
+<p><strong>Zusatzaufgaben</strong></p>
 <ul>
-<li>Frage den Benutzer, wie schnell sein Auto durchschnittlich fährt (km/h) und wie hoch der Verbrauch in Liter Benzin pro 100 km ist.</li>
-<li>Frage ihn danach nach der zu fahrenden Distanz (km) und gib die Fahrzeit in Minuten sowie den gesamten Benzinverbrauch aus.</li>
-</ul>
-<h3 id="9-body-mass-index">9. Body Mass Index</h3>
-<ul>
-<li>Recherchiere im Internet die Formel zur Berechnung des BMI und realisiere ein Programm, das nach den nötigen Werten fragt und den BMI berechnet.</li>
-</ul>
-<h3 id="10-around-the-clock">10. Around the clock</h3>
-<ul>
-<li>Ein Benutzer gibt drei ganzzahlige Werte für Stunden, Minuten und Sekunden ein. Rechne die Werte in das metrische System mit der Masseinheit Stunden um (z.B. 5 Stunden / 30 Minuten / 0 Sekunden → 5.5 Stunden).</li>
+<li>Z1: Berechne, wie viele Minuten Video mit dem Restvolumen noch möglich sind (<code>restMinuten</code>).</li>
+<li>Z2: Gib das Restvolumen zusätzlich in GB aus, gerundet auf zwei Nachkommastellen (<code>{restGB:F2}</code>).</li>
+<li>Z3: Ersetze die Zahl 1000 durch eine Konstante <code>MB_PRO_GB</code>. Begründe, warum das sinnvoll ist.</li>
 </ul>
 <hr />
 <h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
