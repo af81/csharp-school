@@ -1,0 +1,1150 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Unterrichtsmaterial für das Modul 319 an der BBZW Sursee">
+      
+      
+        <meta name="author" content="Dr. Andreas Fischer">
+      
+      
+        <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/schleifen-handout/">
+      
+      
+        <link rel="prev" href="../bedingungen2-handout/">
+      
+      
+        <link rel="next" href="../schleifen2-handout/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>W8 - Schleifen (while / do-while) - Modul 319 – Programmieren Grundlagen in C#</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#schleifen-12" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="../.." title="Modul 319 – Programmieren Grundlagen in C#" class="md-header__button md-logo" aria-label="Modul 319 – Programmieren Grundlagen in C#" data-md-component="logo">
+      
+  <img src="../../img/csharp-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modul 319 – Programmieren Grundlagen in C#
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              W8 - Schleifen (while / do-while)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="pink"  aria-label="Dunkelmodus"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dunkelmodus" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="yellow" data-md-color-accent="pink"  aria-label="Hellmodus"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Hellmodus" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Teilen" aria-label="Teilen" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Modul 319 – Programmieren Grundlagen in C#" class="md-nav__button md-logo" aria-label="Modul 319 – Programmieren Grundlagen in C#" data-md-component="logo">
+      
+  <img src="../../img/csharp-logo.png" alt="logo">
+
+    </a>
+    Modul 319 – Programmieren Grundlagen in C#
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Übersicht
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semesterplan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Semesterplan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lernstoff
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lernstoff
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../einfuehrung-organisation-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W1 - Einführung & Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theoretische-einfuehrung-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W2 - Theoretische Einführung
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git-github-grundlagen-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W3 - Git & Github
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variablen-datentypen-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W4 - Variablen & Datentypen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rechnen-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W5 - Rechnen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bedingungen-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W6 - Bedingungen (if-else)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bedingungen2-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W7 - Bedingungen (switch)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W8 - Schleifen (while / do-while)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    W8 - Schleifen (while / do-while)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lernziel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Grundlagen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-die-while-schleife" class="md-nav__link">
+    <span class="md-ellipsis">
+      A - Die while-Schleife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-pap-schleife-mit-rucksprung" class="md-nav__link">
+    <span class="md-ellipsis">
+      B - PAP: Schleife mit Rücksprung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-die-do-while-schleife" class="md-nav__link">
+    <span class="md-ellipsis">
+      C - Die do-while-Schleife
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-eingaben-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      D - Eingaben prüfen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-while-oder-do-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      E - while oder do-while?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Übungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Übungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pap-zeichnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. PAP zeichnen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-code-lesen-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Code lesen I
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-countdown-und-summe" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Countdown und Summe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fehler-finden" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fehler finden
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-eingabeprufung" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Eingabeprüfung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-zahlenraten-zusatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Zahlenraten 🔮 (Zusatz)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-lotto-zusatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Lotto 🍀 (Zusatz)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-der-josefsrappen-zusatz" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Der Josefsrappen 🪙 (Zusatz)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-weiterfuhrende-beispiele-und-gedanken" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Weiterführende Beispiele und Gedanken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schleifen2-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W9 - Schleifen (for)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ressourcen
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ressourcen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressourcen/terminal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wichtige Terminal-Befehle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressourcen/csharp-projekt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C#-Programm anlegen und ausführen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressourcen/regeln/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Klassenregeln
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ressourcen/loesungen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lösungen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="schleifen-12">Schleifen (1/2)</h1>
+<h2 id="lernziel">Lernziel</h2>
+<p>Am Ende dieser Lektion setzt du Wiederholungen mit <strong>while</strong> und <strong>do-while</strong> um, stellst Schleifen im PAP dar, prüfst Benutzereingaben mit einer Schleife und erkennst Endlosschleifen.</p>
+<hr />
+<h2 id="1-einstieg">1. Einstieg</h2>
+<ul>
+<li>Ohne Schleifen müsste jede Wiederholung einzeln in den Code geschrieben werden. Eine Schleife ersetzt 1000 gleiche Zeilen durch wenige Zeilen.</li>
+<li>Mit Schleifen kann ein Programm so lange nach einer Eingabe fragen, bis sie gültig ist. Ohne diese Technik stürzt jedes Programm bei Fehleingaben ab oder rechnet mit falschen Werten.</li>
+<li>Eine Schleife, deren Bedingung nie falsch wird, läuft <strong>endlos</strong>. Das ist einer der häufigsten Anfängerfehler und lässt sich mit einer klaren Regel vermeiden.</li>
+</ul>
+<hr />
+<h2 id="2-grundlagen">2. Grundlagen</h2>
+<h3 id="a-die-while-schleife">A - Die while-Schleife</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hallo &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>Die Bedingung wird <strong>vor</strong> jedem Durchlauf geprüft.</li>
+<li>Solange sie wahr ist, wird der Block wiederholt.</li>
+<li>Ist sie schon beim ersten Mal falsch, läuft der Block gar nicht.</li>
+</ul>
+<p><strong>Typische Muster</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">summe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w">   </span><span class="c1">// Speicher für das Ergebnis</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w">       </span><span class="c1">// Zähler</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">summe</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w">  </span><span class="c1">// Summe aufbauen</span>
+<span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w">         </span><span class="c1">// Zähler erhöhen</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">summe</span><span class="p">);</span><span class="w">   </span><span class="c1">// 55</span>
+</code></pre></div>
+<p><strong>Endlosschleife</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hallo &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// i++ fehlt, die Bedingung wird nie falsch</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Regel: Innerhalb der Schleife muss sich etwas ändern, das die Bedingung irgendwann falsch macht. Notfalls brichst du ein laufendes Programm im Terminal mit <code>Ctrl + C</code> ab.</p>
+<hr />
+<h3 id="b-pap-schleife-mit-rucksprung">B - PAP: Schleife mit Rücksprung</h3>
+<p>Die Raute kennst du von den Bedingungen. Bei einer Schleife führt ein Ausgang (<strong>ja</strong>) über die Anweisungen <strong>zurück</strong> vor die Raute. Der andere Ausgang (<strong>nein</strong>) führt weiter zum Rest des Programms.</p>
+<p><img alt="" src="../img/pap-schleife.png" /></p>
+<hr />
+<h3 id="c-die-do-while-schleife">C - Die do-while-Schleife</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Zahl (0 = Ende): &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li>Der Block läuft <strong>mindestens einmal</strong>. Die Bedingung wird erst am Schluss geprüft.</li>
+<li>Das Semikolon nach <code>while (...)</code> ist hier Pflicht.</li>
+</ul>
+<hr />
+<h3 id="d-eingaben-prufen">D - Eingaben prüfen</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">alter</span><span class="p">;</span>
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Alter [0-120]: &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">alter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">alter</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">120</span><span class="p">);</span>
+</code></pre></div>
+<p>Die Schleife wiederholt die Eingabe, solange der Wert ungültig ist.</p>
+<hr />
+<h3 id="e-while-oder-do-while">E - while oder do-while?</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>while</th>
+<th>do-while</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prüfung</td>
+<td>am Anfang</td>
+<td>am Ende</td>
+</tr>
+<tr>
+<td>Mindestens 1 Durchlauf</td>
+<td>nein</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>Typisch für</td>
+<td>Zähler, Summen</td>
+<td>Eingaben prüfen</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-ubungen">3. Übungen</h2>
+<h3 id="1-pap-zeichnen">1. PAP zeichnen</h3>
+<p>Zeichne einen PAP für: Der Benutzer gibt so lange Zahlen ein, bis er 0 eingibt. Danach gibt das Programm die Summe aller eingegebenen Zahlen aus.</p>
+<hr />
+<h3 id="2-code-lesen-i">2. Code lesen I</h3>
+<p>Was gibt das Programm jeweils aus? Erstelle bei b) eine Tabelle mit den Werten von <code>a</code> und <code>b</code> nach jedem Durchlauf.</p>
+<p>a)
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">50</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ende: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+</code></pre></div></p>
+<p>b)
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="m">3</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;a = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, b = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span>
+</code></pre></div></p>
+<h3 id="3-countdown-und-summe">3. Countdown und Summe</h3>
+<ol>
+<li>Schreibe ein Programm, das von 10 bis 1 herunterzählt und danach "Start!" ausgibt.</li>
+<li>Erweitere das Programm: Der Benutzer gibt eine Zahl <code>n</code> ein. Das Programm berechnet die Summe aller Zahlen von 1 bis <code>n</code> und gibt sie aus.</li>
+</ol>
+<hr />
+<h3 id="4-fehler-finden">4. Fehler finden</h3>
+<p>Das Programm soll Zahlen aufsummieren, bis der Benutzer 0 eingibt. Es enthält <strong>zwei Fehler</strong>: einen Kompilierfehler und einen Fehler, der zu einem falschen Ergebnis führt. Finde beide und korrigiere sie.</p>
+<div class="highlight"><pre><span></span><code><span class="m">01</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">summe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="m">02</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="m">03</span><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="m">04</span><span class="w">  </span><span class="p">{</span>
+<span class="m">05</span><span class="w">      </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Zahl: &quot;</span><span class="p">);</span>
+<span class="m">06</span><span class="w">      </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="m">07</span><span class="w">      </span><span class="n">summe</span><span class="w"> </span><span class="o">=+</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="m">08</span><span class="w">  </span><span class="p">}</span>
+<span class="m">09</span><span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Summe: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">summe</span><span class="p">);</span>
+</code></pre></div>
+<p>Zusatzfrage: Welche Schleifenart würde hier besser passen und warum?</p>
+<hr />
+<h3 id="5-eingabeprufung">5. Eingabeprüfung</h3>
+<p>Schreibe ein Programm, das den Benutzer nach seinem Alter fragt (gültig sind 0 bis 120). Bei einer ungültigen Eingabe erscheint eine Meldung und die Frage wird wiederholt. Danach gibt das Programm das Alter aus.</p>
+<hr />
+<h3 id="6-zahlenraten-zusatz">6. Zahlenraten 🔮 (Zusatz)</h3>
+<p>Das Programm denkt sich eine Zahl zwischen 1 und 100 aus. Der Benutzer rät so lange, bis er die Zahl getroffen hat. Nach jedem Tipp meldet das Programm "Zu tief." oder "Zu hoch.". Am Schluss wird die Anzahl der Versuche ausgegeben.</p>
+<p>Hinweis: Eine Zufallszahl erhältst du so:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Random</span><span class="w"> </span><span class="n">zufall</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">geheim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">101</span><span class="p">);</span>
+</code></pre></div>
+<hr />
+<h3 id="7-lotto-zusatz">7. Lotto 🍀 (Zusatz)</h3>
+<p>Schreibe ein Programm, das dem Benutzer <strong>6 zufällige Zahlen</strong> im Bereich von 1 bis 42 und <strong>eine Glückszahl</strong> im Bereich von 1 bis 6 ausgibt. Der Lotto-Tipp darf <strong>keine doppelten Zahlen</strong> enthalten (die Glückszahl darf mit einer der 6 Zahlen übereinstimmen).</p>
+<p>Beispiele:</p>
+<ul>
+<li>Tipp: 41, 29, 22, 36, 24, 5 · Glückszahl: 3</li>
+<li>Tipp: 26, 12, 16, 25, 30, 18 · Glückszahl: 5</li>
+</ul>
+<p>Hinweis: Ziehe jede Zahl in einer do-while-Schleife und wiederhole die Ziehung, solange die Zahl bereits vorkommt.</p>
+<hr />
+<h3 id="8-der-josefsrappen-zusatz">8. Der Josefsrappen 🪙 (Zusatz)</h3>
+<p>Dein Freund Bonifacius Pfiffikus erzählt dir von der <strong>Theorie des Josefsrappens</strong>:</p>
+<p><em>Geld, das Zinseszinsen trägt, wächst anfangs langsam. Da aber durch den Zinseszinseffekt die Rate fortwährend wächst, wird sie nach einiger Zeit unvorstellbar schnell wachsen. Ein Rappen, ausgeliehen bei der Geburt von Jesus im Jahre 0 zu einem Zinssatz von 5 %, würde heute zu einer grösseren Summe herangewachsen sein, als 70 Milliarden Erden aus purem Gold entsprechen.</em></p>
+<p>Du kannst das kaum glauben und überprüfst die Aussage mit einem Programm. Der Benutzer gibt ein <strong>Startjahr</strong>, ein <strong>Zieljahr</strong>, einen <strong>Betrag</strong> (in CHF) und einen <strong>Zinssatz</strong> (in %) ein. Das Programm gibt den <strong>Betrag in CHF</strong> im Zieljahr und die Entsprechung in <strong>Anzahl Erden aus purem Gold</strong> aus.</p>
+<p>Hinweise:</p>
+<ul>
+<li>Der Wert einer Erde aus purem Gold beträgt ca. 2.09 · 10^30 CHF. Berechnung: Volumen der Erde 1.083 · 10^21 m³, Dichte von Gold 19'300 kg/m³, angenommener Goldpreis CHF 100'000 pro kg. In C# schreibst du das als <code>2.09e30</code>.</li>
+<li>Pro Jahr wächst der Betrag um den Zinssatz: <code>betrag = betrag * (1 + zinssatz / 100)</code>.</li>
+<li>Sehr grosse Zahlen gibst du mit <code>betrag.ToString("E3")</code> in Exponentialschreibweise aus.</li>
+<li>Teste mit Startjahr 0, Zieljahr 2026, Betrag 0.01 CHF (1 Rappen) und 5 %.</li>
+</ul>
+<hr />
+<h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
+<ul>
+<li>Typische Stolperfalle: <code>summe =+ zahl</code> kompiliert ohne Fehler, weist aber nur <code>+zahl</code> zu. Gemeint ist <code>summe += zahl</code>.</li>
+<li>Nächste Lektion: for-Schleife, <code>break</code> und <code>continue</code> sowie verschachtelte Schleifen.</li>
+<li>Überlege: Wo begegnen dir im Alltag Wiederholungen mit einer Abbruchbedingung (z.B. Geldautomat, Passwort-Eingabe, Spiele)?</li>
+<li>Weiterführend: Offizielle Dokumentation zu Iterationsanweisungen: <a href="https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/iteration-statements">https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/iteration-statements</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dr. Andreas Fischer
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate", "content.code.copy", "content.tabs.link", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
