@@ -256,7 +256,7 @@ else
     Console.WriteLine($"Eintritt: CHF {preis}.–");
 }
 ```
-<!--
+
 ---
 
 ## Bedingungen II
@@ -378,7 +378,3 @@ anzahl ist in allen drei Fällen 2.
 
   Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
   ```
-
-  ---
-
--->

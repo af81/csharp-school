@@ -45,7 +45,7 @@ nav:
       - W6 - Bedingungen (if-else): schueler/bedingungen-handout.md
       - W7 - Bedingungen (switch): schueler/bedingungen2-handout.md
       - W8 - Schleifen (while / do-while): schueler/schleifen-handout.md
-      - W9 - Schleifen (for): schueler/schleifen2-handout.md
+   #   - W9 - Schleifen (for): schueler/schleifen2-handout.md
   # - Lehrer-Skripts:
   #     - W1 - Einführung & Setup: lehrer/einfuehrung-organisation-skript.md
   #     - W2 - Theoretische Einführung: lehrer/theoretische-einfuehrung-skript.md
