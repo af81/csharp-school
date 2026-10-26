@@ -350,31 +350,31 @@ anzahl ist in allen drei Fällen 2.
 ### Aufgabe 4 - Ostersonntag 🐣
 
 ```csharp
-  Console.Write("Jahr: ");
-  int jahr = Convert.ToInt32(Console.ReadLine());
+Console.Write("Jahr: ");
+int jahr = Convert.ToInt32(Console.ReadLine());
 
-  int m = (8 * (jahr / 100) + 13) / 25 - 2;
-  int s = jahr / 100 - jahr / 400 - 2;
-  m = (15 + s - m) % 30;
-  int n = (6 + s) % 7;
+int m = (8 * (jahr / 100) + 13) / 25 - 2;
+int s = jahr / 100 - jahr / 400 - 2;
+m = (15 + s - m) % 30;
+int n = (6 + s) % 7;
 
-  int a = jahr % 19;
-  int b = jahr % 4;
-  int c = jahr % 7;
-  int d = (19 * a + m) % 30;
-  if (d == 29)
-      d = 28;
-  else if (d == 28 && a >= 11)
-      d = 27;
-  int e = (2 * b + 4 * c + 6 * d + n) % 7;
+int a = jahr % 19;
+int b = jahr % 4;
+int c = jahr % 7;
+int d = (19 * a + m) % 30;
+if (d == 29)
+    d = 28;
+else if (d == 28 && a >= 11)
+    d = 27;
+int e = (2 * b + 4 * c + 6 * d + n) % 7;
 
-  int ostertag = 22 + d + e;
-  string monat = "März";
-  if (ostertag > 31)
-  {
-      ostertag = ostertag % 31;
-      monat = "April";
-  }
+int ostertag = 22 + d + e;
+string monat = "März";
+if (ostertag > 31)
+{
+    ostertag = ostertag % 31;
+    monat = "April";
+}
 
-  Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
-  ```
+Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
+```

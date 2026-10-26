@@ -498,29 +498,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../schueler/schleifen2-handout/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    W9 - Schleifen (for)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -897,6 +874,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#bedingungen-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bedingungen II
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bedingungen II">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1-jahreszeiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1 - Jahreszeiten 🌼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2-code-lesen_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2 - Code lesen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3-wochentag-ermitteln" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3 - Wochentag ermitteln 📅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4-ostersonntag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4 - Ostersonntag 🐣
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1128,13 +1156,9 @@
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Eintritt: CHF {preis}.–&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<!--
----
-
-## Bedingungen II
-
-### Aufgabe 1 - Jahreszeiten 🌼
-
+<hr />
+<h2 id="bedingungen-ii">Bedingungen II</h2>
+<h3 id="aufgabe-1-jahreszeiten">Aufgabe 1 - Jahreszeiten 🌼</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Monat [1-12]: &quot;</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">monat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 
@@ -1160,21 +1184,16 @@
 <span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ungültiger Monat&quot;</span><span class="p">);</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-
----
-
-### Aufgabe 2 - Code lesen
-
-anzahl ist in allen drei Fällen 2.
-
-- a) Note1 = 4.2, Note2 = 3.5: Schnitt = 3.85 → kleiner 4, note1>=4 wahr → **Typ 1**
-- b) Note1 = 5.2, Note2 = 5.8: Schnitt = 5.5 → mind. 4, durchschnitt=(int)(11.0)=11, (11+1)/2=6 → nicht 4, nicht 5 → **Typ 4**
-- c) Note1 = 3.8, Note2 = 3.3: Schnitt = 3.55 → kleiner 4, beide Noten < 4 → **Typ 0**
-
----
-
-### Aufgabe 3 - Wochentag ermitteln 📅
-
+<hr />
+<h3 id="aufgabe-2-code-lesen_1">Aufgabe 2 - Code lesen</h3>
+<p>anzahl ist in allen drei Fällen 2.</p>
+<ul>
+<li>a) Note1 = 4.2, Note2 = 3.5: Schnitt = 3.85 → kleiner 4, note1&gt;=4 wahr → <strong>Typ 1</strong></li>
+<li>b) Note1 = 5.2, Note2 = 5.8: Schnitt = 5.5 → mind. 4, durchschnitt=(int)(11.0)=11, (11+1)/2=6 → nicht 4, nicht 5 → <strong>Typ 4</strong></li>
+<li>c) Note1 = 3.8, Note2 = 3.3: Schnitt = 3.55 → kleiner 4, beide Noten &lt; 4 → <strong>Typ 0</strong></li>
+</ul>
+<hr />
+<h3 id="aufgabe-3-wochentag-ermitteln">Aufgabe 3 - Wochentag ermitteln 📅</h3>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Tag: &quot;</span><span class="p">);</span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 <span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Monat: &quot;</span><span class="p">);</span>
@@ -1214,44 +1233,33 @@ anzahl ist in allen drei Fällen 2.
 
 <span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Der &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ist ein &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">wochentag</span><span class="p">);</span>
 </code></pre></div>
-
----
-
-### Aufgabe 4 - Ostersonntag 🐣
-
-```csharp
+<hr />
+<h3 id="aufgabe-4-ostersonntag">Aufgabe 4 - Ostersonntag 🐣</h3>
+<p>```csharp
   Console.Write("Jahr: ");
-  int jahr = Convert.ToInt32(Console.ReadLine());
-
-  int m = (8 * (jahr / 100) + 13) / 25 - 2;
+  int jahr = Convert.ToInt32(Console.ReadLine());</p>
+<p>int m = (8 * (jahr / 100) + 13) / 25 - 2;
   int s = jahr / 100 - jahr / 400 - 2;
   m = (15 + s - m) % 30;
-  int n = (6 + s) % 7;
-
-  int a = jahr % 19;
+  int n = (6 + s) % 7;</p>
+<p>int a = jahr % 19;
   int b = jahr % 4;
   int c = jahr % 7;
   int d = (19 * a + m) % 30;
   if (d == 29)
       d = 28;
-  else if (d == 28 && a >= 11)
+  else if (d == 28 &amp;&amp; a &gt;= 11)
       d = 27;
-  int e = (2 * b + 4 * c + 6 * d + n) % 7;
-
-  int ostertag = 22 + d + e;
+  int e = (2 * b + 4 * c + 6 * d + n) % 7;</p>
+<p>int ostertag = 22 + d + e;
   string monat = "März";
-  if (ostertag > 31)
+  if (ostertag &gt; 31)
   {
       ostertag = ostertag % 31;
       monat = "April";
-  }
-
-  Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
-  ```
-
-  ---
-
--->
+  }</p>
+<p>Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
+  ```</p>
 
 
 
