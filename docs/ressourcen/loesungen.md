@@ -381,7 +381,7 @@ Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
 
 ---
 
-## Schleifen I
+<!-- ## Schleifen I
 
 ### Aufgabe 1 - PAP zeichnen
 
@@ -530,3 +530,37 @@ Console.WriteLine($"Tipp: {zahl1}, {zahl2}, {zahl3}, {zahl4}, {zahl5}, {zahl6}. 
 ---
 
 ### Aufgabe 8 - Josefsrappen 🪙
+
+```csharp
+int startJahr, zielJahr;
+double betrag, zinssatz, goldErden;
+
+Console.Write("Bitte gib ein Startjahr (z.B. 1934) ein: ");
+startJahr = int.Parse(Console.ReadLine());
+
+Console.Write("Bitte gib ein Zieljahr (z.B. 2045) ein: ");
+zielJahr = int.Parse(Console.ReadLine());
+
+Console.Write("Bitte gib einen Betrag in CHF ein, den du anlegen möchtest: ");
+betrag = double.Parse(Console.ReadLine());
+
+Console.Write("Bitte gib einen Zinssatz in % ein, zu dem du anlegen möchtest: ");
+zinssatz = double.Parse(Console.ReadLine());
+
+do
+{
+    betrag = betrag * (1 + zinssatz / 100);
+    startJahr++;
+}
+while (startJahr < zielJahr);
+
+Console.WriteLine($"Der Betrag im {zielJahr} beläuft sich auf CHF {betrag.ToString("E3")}.-");
+
+double wertErde = 2.09e30;
+
+goldErden = Math.Floor(betrag / wertErde);
+
+Console.WriteLine($"Für diesen Betrag könntest du dir {goldErden} Erden aus purem Gold kaufen!");
+```
+
+-->

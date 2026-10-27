@@ -1263,6 +1263,163 @@
 
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ostersonntag &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">jahr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ostertag</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;. &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">monat</span><span class="p">);</span>
 </code></pre></div>
+<hr />
+<!-- ## Schleifen I
+
+### Aufgabe 1 - PAP zeichnen
+
+![](../img/schleifen-a1.png)
+
+---
+
+### Aufgabe 2 - Code lesen
+
+a)
+
+<div class="highlight"><pre><span></span><code><span class="m">1</span>
+<span class="m">2</span>
+<span class="m">4</span>
+<span class="m">8</span>
+<span class="m">16</span>
+<span class="m">32</span>
+<span class="n">Ende</span><span class="p">:</span><span class="w"> </span><span class="m">64</span>
+</code></pre></div>
+
+b)
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="o">=</span><span class="w"> </span><span class="m">22</span>
+</code></pre></div>
+
+---
+
+### Aufgabe 3 - Countdown und Summe
+
+<div class="highlight"><pre><span></span><code><span class="c1">// Countdown von 10 bis 1</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">zaehler</span><span class="p">);</span>
+<span class="w">    </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Start!&quot;</span><span class="p">);</span>
+
+<span class="c1">// Summe von 1 bis n</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Gib eine Zahl n ein: &quot;</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">summe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">summe</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Die Summe aller Zahlen von 1 bis {n} ist {summe}.&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+---
+
+### Aufgabe 4 - Fehler finden
+
+**Fehler 1: Kompilierfehler in Zeile 02/03**
+
+zahl wird in Zeile 03 in der Bedingung zahl != 0 gelesen, hat aber noch keinen Wert. C# verlangt, dass lokale Variablen vor dem ersten Lesen zugewiesen sind, sonst bricht der Compiler mit CS0165: Verwendung der nicht zugewiesenen lokalen Variablen „zahl“ ab.
+
+F**ehler 2: Logikfehler in Zeile 07**
+
+summe =+ zahl; ist kein Additionsoperator, sondern wird als summe = +zahl; gelesen (Zuweisung mit unärem Plus). summe wird also bei jedem Durchlauf mit der aktuellen Zahl überschrieben. Da die letzte Eingabe immer 0 ist, gibt das Programm stets Summe: 0 aus. Korrekt ist der Verbundoperator +=.
+
+---
+
+### Aufgabe 5 - Eingabeprüfung
+
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Bitte gib dein Alter [in Jahren] ein: &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">120</span><span class="w"> </span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Deine Eingabe war ungültig.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">120</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Gratuliere! Du bist {age} Jahre alt.&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+---
+
+### Aufgabe 6 - Zahlenraten 🔮
+
+<div class="highlight"><pre><span></span><code><span class="n">Random</span><span class="w"> </span><span class="n">zufall</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">geheim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">101</span><span class="p">);</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">tipp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">versuche</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;An welche Zahl von 1 bis 100 denke ich? Versuche die Zahl in möglicht wenigen Versuchen zu erraten. Viel Glück!&quot;</span><span class="p">);</span>
+
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">tipp</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">geheim</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Dein Tipp: &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tipp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tipp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">geheim</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Zu hoch.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">tipp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">geheim</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Zu tief.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">versuche</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Gratulation! Du bist ein Hellseher und hast nur {versuche} Versuche gebraucht.&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+---
+
+### Aufgabe 7 - Lotto 🍀
+
+<div class="highlight"><pre><span></span><code><span class="n">Random</span><span class="w"> </span><span class="n">zufall</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Random</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">zahl1</span><span class="p">,</span><span class="w"> </span><span class="n">zahl2</span><span class="p">,</span><span class="w"> </span><span class="n">zahl3</span><span class="p">,</span><span class="w"> </span><span class="n">zahl4</span><span class="p">,</span><span class="w"> </span><span class="n">zahl5</span><span class="p">,</span><span class="w"> </span><span class="n">zahl6</span><span class="p">,</span><span class="w"> </span><span class="n">glüeckszahl</span><span class="p">;</span>
+
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">zahl1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">43</span><span class="p">);</span>
+<span class="w">    </span><span class="n">zahl2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">43</span><span class="p">);</span>
+<span class="w">    </span><span class="n">zahl3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">43</span><span class="p">);</span>
+<span class="w">    </span><span class="n">zahl4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">43</span><span class="p">);</span>
+<span class="w">    </span><span class="n">zahl5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">43</span><span class="p">);</span>
+<span class="w">    </span><span class="n">zahl6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">43</span><span class="p">);</span>
+<span class="w">    </span><span class="n">glueckszahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zufall</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zahl1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl4</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl6</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl4</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl6</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl4</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl6</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl4</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl6</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">zahl6</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Tipp: {zahl1}, {zahl2}, {zahl3}, {zahl4}, {zahl5}, {zahl6}. Glückszahl: {glueckszahl}&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+---
+
+### Aufgabe 8 - Josefsrappen 🪙
+
+```csharp
+int startJahr, zielJahr, goldErden;
+decimal betragStart, betragZiel, zins;
+
+Console.Write("Bitte gib ein Startjahr (z.B. 1934) ein: ");
+startJahr = int.Parse(Console.ReadLine());
+
+Console.Write("Bitte gib ein Zieljahr (z.B. 2045) ein: ");
+zielJahr = int.Parse(Console.ReadLine());
+
+Console.Write("Bitte gib einen Betrag in CHF ein, den du anlegen möchtest: ");
+zielJahr = int.Parse(Console.ReadLine()); -->
 
 
 
