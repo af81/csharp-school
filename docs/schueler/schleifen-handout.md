@@ -117,7 +117,7 @@ Zeichne einen PAP für: Der Benutzer gibt so lange Zahlen ein, bis er 0 eingibt.
 ---
 
 ### 2. Code lesen I
-Was gibt das Programm jeweils aus? Erstelle bei b) eine Tabelle mit den Werten von `a` und `b` nach jedem Durchlauf.
+Was gibt das Programm jeweils aus? Du darfst dir Notizen machen.
 
 a)
 ```csharp
@@ -191,8 +191,6 @@ Beispiele:
 
 - Tipp: 41, 29, 22, 36, 24, 5 · Glückszahl: 3
 - Tipp: 26, 12, 16, 25, 30, 18 · Glückszahl: 5
-
-Hinweis: Ziehe jede Zahl in einer do-while-Schleife und wiederhole die Ziehung, solange die Zahl bereits vorkommt.
 
 ---
 

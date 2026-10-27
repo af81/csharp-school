@@ -378,3 +378,155 @@ if (ostertag > 31)
 
 Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
 ```
+
+---
+
+## Schleifen I
+
+### Aufgabe 1 - PAP zeichnen
+
+![](../img/schleifen-a1.png)
+
+---
+
+### Aufgabe 2 - Code lesen
+
+a)
+
+```csharp
+1
+2
+4
+8
+16
+32
+Ende: 64
+```
+
+b)
+
+```csharp
+a = -2, b= 22
+```
+
+---
+
+### Aufgabe 3 - Countdown und Summe
+
+```csharp
+// Countdown von 10 bis 1
+int i = 10;
+while (i >= 1)
+{
+    Console.WriteLine(zaehler);
+    i--;
+}
+Console.WriteLine("Start!");
+
+// Summe von 1 bis n
+Console.Write("Gib eine Zahl n ein: ");
+int n = int.Parse(Console.ReadLine());
+
+int summe = 0;
+int i = 1;
+while (i <= n)
+{
+    summe += i;
+    i++;
+}
+
+Console.WriteLine($"Die Summe aller Zahlen von 1 bis {n} ist {summe}.");
+```
+
+---
+
+### Aufgabe 4 - Fehler finden
+
+**Fehler 1: Kompilierfehler in Zeile 02/03**
+
+zahl wird in Zeile 03 in der Bedingung zahl != 0 gelesen, hat aber noch keinen Wert. C# verlangt, dass lokale Variablen vor dem ersten Lesen zugewiesen sind, sonst bricht der Compiler mit CS0165: Verwendung der nicht zugewiesenen lokalen Variablen „zahl“ ab.
+
+F**ehler 2: Logikfehler in Zeile 07**
+
+summe =+ zahl; ist kein Additionsoperator, sondern wird als summe = +zahl; gelesen (Zuweisung mit unärem Plus). summe wird also bei jedem Durchlauf mit der aktuellen Zahl überschrieben. Da die letzte Eingabe immer 0 ist, gibt das Programm stets Summe: 0 aus. Korrekt ist der Verbundoperator +=.
+
+---
+
+### Aufgabe 5 - Eingabeprüfung
+
+```csharp
+int age = 0;
+
+do
+{
+    Console.Write("Bitte gib dein Alter [in Jahren] ein: ");
+    age = int.Parse(Console.ReadLine());
+
+    if (age < 0 || age > 120 )
+    {
+        Console.WriteLine("Deine Eingabe war ungültig.");
+    }
+}
+while (age < 0 || age > 120);
+
+Console.WriteLine($"Gratuliere! Du bist {age} Jahre alt.");
+```
+
+---
+
+### Aufgabe 6 - Zahlenraten 🔮
+
+```csharp
+Random zufall = new Random();
+int geheim = zufall.Next(1, 101);
+
+int tipp = 0;
+int versuche = 0;
+
+Console.WriteLine("An welche Zahl von 1 bis 100 denke ich? Versuche die Zahl in möglicht wenigen Versuchen zu erraten. Viel Glück!");
+
+
+while (tipp != geheim)
+{
+    Console.Write("Dein Tipp: ");
+    tipp = int.Parse(Console.ReadLine());
+
+    if (tipp > geheim)
+    {
+        Console.WriteLine("Zu hoch.");
+    }
+    else if (tipp < geheim)
+    {
+        Console.WriteLine("Zu tief.");
+    }
+    versuche++;
+}
+Console.WriteLine($"Gratulation! Du bist ein Hellseher und hast nur {versuche} Versuche gebraucht.");
+```
+
+---
+
+### Aufgabe 7 - Lotto 🍀
+
+```csharp
+Random zufall = new Random();
+int zahl1, zahl2, zahl3, zahl4, zahl5, zahl6, glüeckszahl;
+
+do
+{
+    zahl1 = zufall.Next(1, 43);
+    zahl2 = zufall.Next(1, 43);
+    zahl3 = zufall.Next(1, 43);
+    zahl4 = zufall.Next(1, 43);
+    zahl5 = zufall.Next(1, 43);
+    zahl6 = zufall.Next(1, 43);
+    glueckszahl = zufall.Next(1, 7);
+}
+while (zahl1 == zahl2 || zahl1 == zahl3 || zahl1 == zahl4 || zahl1 == zahl5 || zahl1 == zahl6 || zahl2 == zahl3 || zahl2 == zahl4 || zahl2 == zahl5 || zahl2 == zahl6 || zahl3 == zahl4 || zahl3 == zahl5 || zahl3 == zahl6 || zahl4 == zahl5 || zahl4 == zahl6 || zahl5 == zahl6);
+
+Console.WriteLine($"Tipp: {zahl1}, {zahl2}, {zahl3}, {zahl4}, {zahl5}, {zahl6}. Glückszahl: {glueckszahl}");
+```
+
+---
+
+### Aufgabe 8 - Josefsrappen 🪙
