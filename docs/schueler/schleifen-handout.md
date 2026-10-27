@@ -206,7 +206,7 @@ Hinweise:
 - Pro Jahr wächst der Betrag um den Zinssatz: `betrag = betrag * (1 + zinssatz / 100)`.
 - Sehr grosse Zahlen gibst du mit `betrag.ToString("E3")` in Exponentialschreibweise aus.
 - Der Wert einer Erde aus purem Gold beträgt ca. 2.09 · 10^30 CHF. Berechnung: Volumen der Erde 1.083 · 10^21 m³, Dichte von Gold 19'300 kg/m³, angenommener Goldpreis CHF 100'000 pro kg. In C# schreibst du das als `2.09e30`.
-- Da der Zahlenbereich von `decimal` oder `int` in dieser Aufgabe schnell gesprengt werden kann, nimm `double` für die Anzahl der Golderden.
+- Da der Zahlenbereich von `decimal` oder `int` in dieser Aufgabe schnell gesprengt werden kann, nimm `double` für Betrag, Zinssatz und die Anzahl der Golderden.
 - Teste mit Startjahr 0, Zieljahr 2026, Betrag 0.01 CHF (1 Rappen) und 5 %.
 
 ---
