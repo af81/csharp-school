@@ -1408,18 +1408,38 @@ summe =+ zahl; ist kein Additionsoperator, sondern wird als summe = +zahl; geles
 
 ### Aufgabe 8 - Josefsrappen 🪙
 
-```csharp
-int startJahr, zielJahr, goldErden;
-decimal betragStart, betragZiel, zins;
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">startJahr</span><span class="p">,</span><span class="w"> </span><span class="n">zielJahr</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">betrag</span><span class="p">,</span><span class="w"> </span><span class="n">zinssatz</span><span class="p">,</span><span class="w"> </span><span class="n">goldErden</span><span class="p">;</span>
 
-Console.Write("Bitte gib ein Startjahr (z.B. 1934) ein: ");
-startJahr = int.Parse(Console.ReadLine());
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Bitte gib ein Startjahr (z.B. 1934) ein: &quot;</span><span class="p">);</span>
+<span class="n">startJahr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 
-Console.Write("Bitte gib ein Zieljahr (z.B. 2045) ein: ");
-zielJahr = int.Parse(Console.ReadLine());
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Bitte gib ein Zieljahr (z.B. 2045) ein: &quot;</span><span class="p">);</span>
+<span class="n">zielJahr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 
-Console.Write("Bitte gib einen Betrag in CHF ein, den du anlegen möchtest: ");
-zielJahr = int.Parse(Console.ReadLine()); -->
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Bitte gib einen Betrag in CHF ein, den du anlegen möchtest: &quot;</span><span class="p">);</span>
+<span class="n">betrag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">double</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Bitte gib einen Zinssatz in % ein, zu dem du anlegen möchtest: &quot;</span><span class="p">);</span>
+<span class="n">zinssatz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">double</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">betrag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">betrag</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">zinssatz</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">100</span><span class="p">);</span>
+<span class="w">    </span><span class="n">startJahr</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">startJahr</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">zielJahr</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Der Betrag im {zielJahr} beläuft sich auf CHF {betrag.ToString(&quot;</span><span class="n">E3</span><span class="s">&quot;)}.-&quot;</span><span class="p">);</span>
+
+<span class="kt">double</span><span class="w"> </span><span class="n">wertErde</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2.09</span><span class="n">e30</span><span class="p">;</span>
+
+<span class="n">goldErden</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Floor</span><span class="p">(</span><span class="n">betrag</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">wertErde</span><span class="p">);</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Für diesen Betrag könntest du dir {goldErden} Erden aus purem Gold kaufen!&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+-->
 
 
 
