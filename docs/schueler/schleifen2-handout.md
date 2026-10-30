@@ -137,30 +137,9 @@ for (int i = 5; i > 0; i--)
 Der Benutzer gibt eine Zahl ein. Das Programm gibt das Einmaleins dieser Zahl von 1 bis 10 aus, zum Beispiel `3 x 7 = 21`.
 
 ### 3. Fakultät
-Der Benutzer gibt eine Zahl `n` ein. Das Programm berechnet `n!` (z.B. 5! = 1 · 2 · 3 · 4 · 5 = 120) und gibt das Ergebnis aus. Teste mit n = 5, n = 12 und n = 20. Wähle den Datentyp so, dass auch 20! korrekt angezeigt wird.
+Der Benutzer gibt eine Zahl `n` ein. Das Programm berechnet `n!` (z.B. 5! = 1 x 2 x 3 x 4 x 5 = 120) und gibt das Ergebnis aus. Teste mit n = 5, n = 12 und n = 20. Wähle den Datentyp so, dass auch 20! korrekt angezeigt wird.
 
-### 4. Fehler finden
-Das Programm soll das kleine 3x3-Einmaleins als Tabelle ausgeben:
-
-```text
-1 2 3
-2 4 6
-3 6 9
-```
-
-Es enthält **zwei Fehler**: einen Kompilierfehler und einen Fehler in der Ausgabe. Finde beide und korrigiere sie.
-
-```csharp
-01  for (int i = 1; i <= 3; i++)
-02  {
-03      for (int i = 1; i <= 3; i++)
-04      {
-05          Console.Write(i * j + " ");
-06      }
-07  }
-```
-
-### 5. Sternendreieck
+### 4. Sternendreieck ⭐️
 Der Benutzer gibt die Anzahl Zeilen ein. Das Programm gibt ein Dreieck aus Sternen aus. Beispiel bei 4 Zeilen:
 
 ```text
@@ -170,15 +149,12 @@ Der Benutzer gibt die Anzahl Zeilen ein. Das Programm gibt ein Dreieck aus Stern
 ****
 ```
 
-### 6. Einmaleins-Tabelle
+### 5. Einmaleins-Tabelle 🧮 (Zusatz)
 Gib das komplette kleine Einmaleins (1 bis 10) als Tabelle mit 10 Zeilen und 10 Spalten aus. Die Zahlen sollen in den Spalten untereinander stehen.
 
 Hinweis: `Console.Write(wert.ToString().PadLeft(4))` gibt einen Wert rechtsbündig in 4 Zeichen Breite aus.
 
-### 7. Primzahlen (Zusatz)
-Der Benutzer gibt eine Zahl ein. Das Programm prüft, ob es sich um eine Primzahl handelt (nur durch 1 und sich selbst teilbar). Verwende eine for-Schleife und `break`. Teste mit 1, 2, 17, 21 und 97.
-
-Erweiterung: Gib alle Primzahlen von 2 bis zu einer eingegebenen Grenze aus.
+---
 
 ## 4. Weiterführende Beispiele und Gedanken
 

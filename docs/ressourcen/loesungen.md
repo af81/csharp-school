@@ -381,7 +381,7 @@ Console.WriteLine("Ostersonntag " + jahr + ": " + ostertag + ". " + monat);
 
 ---
 
-<!-- ## Schleifen I
+## Schleifen I
 
 ### Aufgabe 1 - PAP zeichnen
 
@@ -562,5 +562,124 @@ goldErden = Math.Floor(betrag / wertErde);
 
 Console.WriteLine($"Für diesen Betrag könntest du dir {goldErden} Erden aus purem Gold kaufen!");
 ```
+
+---
+
+<!--
+
+## Schleifen II
+
+### Aufgabe 1 - Code lesen
+
+a) Die Ausgabe des Codes lautet: **1 2 4 5 7 8**
+
+Schritt-für-Schritt-Ablauf:
+
+Die Schleife läuft mit der Variable i von 1 bis 10. In jedem Durchlauf gelten zwei Bedingungen:
+
+1. if (i % 3 == 0) continue; – Wenn i durch 3 teilbar ist (3, 6, 9), springt das Programm sofort zum nächsten Schleifendurchlauf.
+2. if (i > 8) break; – Wenn i grösser als 8 ist (ab 9), wird die Schleife komplett abgebrochen.
+
+
+b) **30**
+
+Die Schleife startet bei i = 2 und erhöht i in jedem Schritt um 2 (i += 2). Es werden also nur die geraden Zahlen bis einschliesslich 10 addiert.
+
+
+c) Die Ausgabe des Codes lautet: **25,16,9,4,1,**
+
+Die Schleife zählt rückwärts von 5 runter bis 1 (i > 0). In jedem Durchlauf wird das Quadrat der Zahl (i * i) gefolgt von einem Komma ausgegeben
+
+---
+
+### Aufgabe 2 - Einmaleins
+
+```csharp
+Console.Write("Gib eine positive Ganzzahl ein: ");
+int x = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"{i} x {x} = {i*x}");
+}
+```
+
+---
+
+### Aufgabe 3 - Fakultät
+
+```csharp
+long fakultaet = 1;
+
+Console.Write("Gib eine positive Ganzzahl ein: ");
+int n = int.Parse(Console.ReadLine());
+
+Console.Write($"{n}! = ");
+for (int i = 1; i <= n; i++)
+{
+    if (i < n)
+    {
+       Console.Write($"{i} x ");
+        fakultaet *= i;
+        continue;
+    }
+
+    if (i == n)
+    {
+        fakultaet *= n;
+        Console.Write($"{n} = {fakultaet}");
+        break;
+    }
+}
+```
+
+---
+
+### Aufgabe 4 - Sternendreieck ⭐️
+
+```csharp
+Console.Write("Gib die Anzahl der Zeilen ein: ");
+int zeilen = int.Parse(Console.ReadLine());
+
+// Äussere Schleife kontrolliert die Zeilen (von 1 bis zur eingegebenen Anzahl)
+for (int i = 1; i <= zeilen; i++)
+{
+    // Innere Schleife druckt die Sterne für die aktuelle Zeile i
+    for (int j = 1; j <= i; j++)
+    {
+        Console.Write("*");
+    }
+
+    // Nach den Sternen springen wir in die nächste Zeile
+    Console.WriteLine();
+}
+```
+
+---
+
+### Aufgabe 5 - Einmaleins-Tabelle 🧮
+
+```csharp
+// Äussere Schleife kontrolliert die Zeilen (Faktor 1)
+for (int zeile = 1; zeile <= 10; zeile++)
+{
+    // Innere Schleife kontrolliert die Spalten (Faktor 2)
+    for (int spalte = 1; spalte <= 10; spalte++)
+    {
+        // Berechne das Produkt für die aktuelle Zelle
+        int produkt = zeile * spalte;
+
+        // Ausgabe des Wertes, rechtsbündig ausgerichtet auf 4 Zeichen
+                Console.Write(produkt.ToString().PadLeft(4));
+    }
+
+    // Am Ende jeder Zeile springen wir in die nächste Zeile
+    Console.WriteLine();
+}
+```
+
+---
+
+
 
 -->

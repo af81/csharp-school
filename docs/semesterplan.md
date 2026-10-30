@@ -21,7 +21,7 @@
 | **12.10. / 13.10.** | Bedingungen I | if/else, Operatoren, PAP mit Verzweigungen | [W6](schueler/bedingungen-handout.md) |
 | **19.10. / 20.10.** | Bedingungen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | [W7](schueler/bedingungen2-handout.md) |
 | **26.10. / 27.10.** | Schleifen I | for, while, PAP mit Schleifenkonstrukten | [W8](schueler/schleifen-handout.md) |
-| **2.11. / 3.11.** | Schleifen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
+| **2.11. / 3.11.** | Schleifen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | [W9](schueler/schleifen2-handout.md) |
 | **9.11. / 10.11.** | <span style="color:red;">**Prüfung 2 (schriftlich)**</span> | Bedingungen & Schleifen | - |
 | **16.11. / 17.11.** | Arrays I | Index, Iteration, Operationen, PAP mit Listenverarbeitung | - |
 | **23.11. / 24.11.** | Arrays II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
