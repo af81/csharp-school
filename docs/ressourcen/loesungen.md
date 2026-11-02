@@ -305,44 +305,45 @@ anzahl ist in allen drei Fällen 2.
 ### Aufgabe 3 - Wochentag ermitteln 📅
 
 ```csharp
-  Console.Write("Tag: ");
-  int t = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Monat: ");
-  int m = Convert.ToInt32(Console.ReadLine());
-  Console.Write("Jahr: ");
-  int j = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Tag: ");
+    int t = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Monat: ");
+    int m = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Jahr: ");
+    int j = Convert.ToInt32(Console.ReadLine());
+    string date = t + "." + m + "." + j;
 
-  if (m <= 2)
-  {
-      m += 10;
-      j -= 1;
-  }
-  else
-  {
-      m -= 2;
-  }
+    if (m <= 2)
+    {
+        m += 10;
+        j -= 1;
+    }
+    else
+    {
+        m -= 2;
+    }
 
-  int c = j / 100;
-  j = j % 100;
+    int c = j / 100;
+    j = j % 100;
 
-  int h = (((26 * m - 2) / 10) + t + j + j / 4 + c / 4 - 2 * c) % 7;
-  if (h < 0)
-      h += 7;
+    int h = (((26 * m - 2) / 10) + t + j + j / 4 + c / 4 - 2 * c) % 7;
+    if (h < 0)
+        h += 7;
 
-  string wochentag;
-  switch (h)
-  {
-      case 0: wochentag = "Sonntag"; break;
-      case 1: wochentag = "Montag"; break;
-      case 2: wochentag = "Dienstag"; break;
-      case 3: wochentag = "Mittwoch"; break;
-      case 4: wochentag = "Donnerstag"; break;
-      case 5: wochentag = "Freitag"; break;
-      case 6: wochentag = "Samstag"; break;
-      default: wochentag = "unbekannt"; break;
-  }
+    string wochentag;
+    switch (h)
+    {
+        case 0: wochentag = "Sonntag"; break;
+        case 1: wochentag = "Montag"; break;
+        case 2: wochentag = "Dienstag"; break;
+        case 3: wochentag = "Mittwoch"; break;
+        case 4: wochentag = "Donnerstag"; break;
+        case 5: wochentag = "Freitag"; break;
+        case 6: wochentag = "Samstag"; break;
+        default: wochentag = "unbekannt"; break;
+    }
 
-  Console.WriteLine("Der " + t + "." + m + "." + j + " ist ein " + wochentag);
+    Console.WriteLine("Der " + date + " ist ein " + wochentag);
 ```
 
 ---
