@@ -1035,6 +1035,66 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#schleifen-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schleifen II
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schleifen II">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1-code-lesen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1 - Code lesen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2-einmaleins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2 - Einmaleins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3-fakultat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3 - Fakultät
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4-sternendreieck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4 - Sternendreieck ⭐️
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5-einmaleins-tabelle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5 - Einmaleins-Tabelle 🧮
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1520,35 +1580,21 @@
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Für diesen Betrag könntest du dir {goldErden} Erden aus purem Gold kaufen!&quot;</span><span class="p">);</span>
 </code></pre></div>
 <hr />
-<!--
-
-## Schleifen II
-
-### Aufgabe 1 - Code lesen
-
-a) Die Ausgabe des Codes lautet: **1 2 4 5 7 8**
-
-Schritt-für-Schritt-Ablauf:
-
-Die Schleife läuft mit der Variable i von 1 bis 10. In jedem Durchlauf gelten zwei Bedingungen:
-
-1. if (i % 3 == 0) continue; – Wenn i durch 3 teilbar ist (3, 6, 9), springt das Programm sofort zum nächsten Schleifendurchlauf.
-2. if (i > 8) break; – Wenn i grösser als 8 ist (ab 9), wird die Schleife komplett abgebrochen.
-
-
-b) **30**
-
-Die Schleife startet bei i = 2 und erhöht i in jedem Schritt um 2 (i += 2). Es werden also nur die geraden Zahlen bis einschliesslich 10 addiert.
-
-
-c) Die Ausgabe des Codes lautet: **25,16,9,4,1,**
-
-Die Schleife zählt rückwärts von 5 runter bis 1 (i > 0). In jedem Durchlauf wird das Quadrat der Zahl (i * i) gefolgt von einem Komma ausgegeben
-
----
-
-### Aufgabe 2 - Einmaleins
-
+<h2 id="schleifen-ii">Schleifen II</h2>
+<h3 id="aufgabe-1-code-lesen">Aufgabe 1 - Code lesen</h3>
+<p>a) Die Ausgabe des Codes lautet: <strong>1 2 4 5 7 8</strong></p>
+<p>Schritt-für-Schritt-Ablauf:</p>
+<p>Die Schleife läuft mit der Variable i von 1 bis 10. In jedem Durchlauf gelten zwei Bedingungen:</p>
+<ol>
+<li>if (i % 3 == 0) continue; – Wenn i durch 3 teilbar ist (3, 6, 9), springt das Programm sofort zum nächsten Schleifendurchlauf.</li>
+<li>if (i &gt; 8) break; – Wenn i grösser als 8 ist (ab 9), wird die Schleife komplett abgebrochen.</li>
+</ol>
+<p>b) <strong>30</strong></p>
+<p>Die Schleife startet bei i = 2 und erhöht i in jedem Schritt um 2 (i += 2). Es werden also nur die geraden Zahlen bis einschliesslich 10 addiert.</p>
+<p>c) Die Ausgabe des Codes lautet: <strong>25,16,9,4,1,</strong></p>
+<p>Die Schleife zählt rückwärts von 5 runter bis 1 (i &gt; 0). In jedem Durchlauf wird das Quadrat der Zahl (i * i) gefolgt von einem Komma ausgegeben</p>
+<hr />
+<h3 id="aufgabe-2-einmaleins">Aufgabe 2 - Einmaleins</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Gib eine positive Ganzzahl ein: &quot;</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 
@@ -1557,11 +1603,8 @@ Die Schleife zählt rückwärts von 5 runter bis 1 (i > 0). In jedem Durchlauf w
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{i} x {x} = {i*x}&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-
----
-
-### Aufgabe 3 - Fakultät
-
+<hr />
+<h3 id="aufgabe-3-fakultat">Aufgabe 3 - Fakultät</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">long</span><span class="w"> </span><span class="n">fakultaet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
 
 <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Gib eine positive Ganzzahl ein: &quot;</span><span class="p">);</span>
@@ -1585,11 +1628,8 @@ Die Schleife zählt rückwärts von 5 runter bis 1 (i > 0). In jedem Durchlauf w
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-
----
-
-### Aufgabe 4 - Sternendreieck ⭐️
-
+<hr />
+<h3 id="aufgabe-4-sternendreieck">Aufgabe 4 - Sternendreieck ⭐️</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Gib die Anzahl der Zeilen ein: &quot;</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">zeilen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 
@@ -1606,11 +1646,8 @@ Die Schleife zählt rückwärts von 5 runter bis 1 (i > 0). In jedem Durchlauf w
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-
----
-
-### Aufgabe 5 - Einmaleins-Tabelle 🧮
-
+<hr />
+<h3 id="aufgabe-5-einmaleins-tabelle">Aufgabe 5 - Einmaleins-Tabelle 🧮</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">// Äussere Schleife kontrolliert die Zeilen (Faktor 1)</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zeile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="n">zeile</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="n">zeile</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
@@ -1628,12 +1665,6 @@ Die Schleife zählt rückwärts von 5 runter bis 1 (i > 0). In jedem Durchlauf w
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
 <span class="p">}</span>
 </code></pre></div>
-
----
-
-
-
--->
 
 
 
