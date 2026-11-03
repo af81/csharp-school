@@ -1481,7 +1481,7 @@
 <h3 id="aufgabe-4-fehler-finden">Aufgabe 4 - Fehler finden</h3>
 <p><strong>Fehler 1: Kompilierfehler in Zeile 02/03</strong></p>
 <p>zahl wird in Zeile 03 in der Bedingung zahl != 0 gelesen, hat aber noch keinen Wert. C# verlangt, dass lokale Variablen vor dem ersten Lesen zugewiesen sind, sonst bricht der Compiler mit CS0165: Verwendung der nicht zugewiesenen lokalen Variablen „zahl“ ab.</p>
-<p>F<strong>ehler 2: Logikfehler in Zeile 07</strong></p>
+<p><strong>Fehler 2: Logikfehler in Zeile 07</strong></p>
 <p>summe =+ zahl; ist kein Additionsoperator, sondern wird als summe = +zahl; gelesen (Zuweisung mit unärem Plus). summe wird also bei jedem Durchlauf mit der aktuellen Zahl überschrieben. Da die letzte Eingabe immer 0 ist, gibt das Programm stets Summe: 0 aus. Korrekt ist der Verbundoperator +=.</p>
 <hr />
 <h3 id="aufgabe-5-eingabeprufung">Aufgabe 5 - Eingabeprüfung</h3>
