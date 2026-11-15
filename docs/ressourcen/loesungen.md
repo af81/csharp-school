@@ -676,3 +676,154 @@ for (int zeile = 1; zeile <= 10; zeile++)
     Console.WriteLine();
 }
 ```
+
+---
+
+## Methoden I
+
+### Aufgabe 1 - Code lesen I
+
+a)
+```csharp
+Start
+Hallo!
+Mitte
+Hallo!
+Hallo!
+Ende
+```
+
+b)
+```csharp
+A
+2
+1
+3
+B
+```
+
+---
+
+### Aufgabe 2 - PAP
+
+![](../img/methode-task2.png)
+
+---
+
+### Aufgabe 3 -  Fehler finden I
+
+- Fehler 1 (Zeile 02): Die Methode "Gruss" hat **keine Klammern**. Korrekt wäre beim Aufrufen der Methode "Gruss()".
+- Fehler 2 (Zeile 07): Es fehlt der **Strichpunkt** am Ende der Anweisung (;).
+
+---
+
+### Aufgabe 4 -  Menü und Linie
+
+```csharp
+// Hauptprogramm
+ZeichneLinie();
+Console.WriteLine("Titel");
+ZeichneLinie();
+ZeigeMenue();
+
+
+void ZeigeMenue()
+{
+    Console.WriteLine("1) Neues Spiel");
+    Console.WriteLine("2) Einstellungen");
+    Console.WriteLine("3) Beenden");
+}
+
+void ZeichneLinie()
+{
+    int i = 0;
+
+    while (i < 20)
+    {
+        Console.Write("-");
+        i++;
+    }
+    Console.WriteLine();
+}
+```
+
+---
+
+### Aufgabe 5 - Code lesen II
+
+```csharp
+In der Methode: "10"
+5
+3 m
+10 cm
+```
+
+---
+
+### Aufgabe 6 - Fehler finden II
+
+Die Methode "Rechteck" verlangt 3 Parameter (breite, hoehe und zeichen). Im ersten Aufruf (Zeile 01) ist die Reihenfolge der Parameter falsch und im zweiten Aufruf (Zeile 02) werden nur 2 statt 3 Parameter mitgegeben.
+
+---
+
+### Aufgabe 7 - Methoden mit Parametern schreiben
+
+```csharp
+// Hauptprogramm
+ZeichneLinie(3, "*");
+Begruessung("Miro", 18);
+GibRechteckAus(8, 4);
+
+void GibRechteckAus(int breite, int hoehe)
+{
+    for (int i = 0; i < hoehe; i++)
+    {
+        ZeichneLinie(breite, "#");
+    }
+}
+
+void Begruessung(string name, int alter)
+{
+    Console.WriteLine($"Hallo {name}, du bist {alter} Jahre alt.");
+}
+
+void ZeichneLinie(int laenge, string zeichen)
+{
+    int i = 0;
+    while (i < laenge)
+    {
+        Console.Write(zeichen);
+        i++;
+    }
+    Console.WriteLine();
+}
+```
+
+---
+
+### Aufgabe 8 - Dreieck (Zusatz)
+
+```csharp
+// Hauptprogramm
+ZeichneDreieck(4);
+
+void ZeichneDreieck(int zeilen)
+{
+    for (int i = 1; i <= zeilen; i++)
+    {
+        ZeichneLinie(i, "*");
+    }
+}
+
+
+void ZeichneLinie(int laenge, string zeichen)
+{
+    int i = 0;
+    while (i < laenge)
+    {
+        Console.Write(zeichen);
+        i++;
+    }
+    Console.WriteLine();
+}
+```

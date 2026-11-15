@@ -23,14 +23,14 @@
 | **26.10. / 27.10.** | Schleifen I | for, while, PAP mit Schleifenkonstrukten | [W8](schueler/schleifen-handout.md) |
 | **2.11. / 3.11.** | Schleifen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | [W9](schueler/schleifen2-handout.md) |
 | **9.11. / 10.11.** | <span style="color:red;">**Prüfung 2 (schriftlich)**</span> | Bedingungen & Schleifen | - |
-| **16.11. / 17.11.** | Arrays I | Index, Iteration, Operationen, PAP mit Listenverarbeitung | - |
-| **23.11. / 24.11.** | Arrays II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
-| **30.11. / 01.12.** | Funktionen I | Parameter, Rückgabewerte, Scope, PAP mit Funktionsaufrufen | - |
-| **7.12. / 8.12.** | Funktionen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
-| **14.12. / 15.12.** | Funktionen III | Vertiefung: komplexere Aufgaben, Kombination mit Listen/Schleifen | - |
+| **16.11. / 17.11.** | Methoden I | Methoden definieren und aufrufen, Parameter, PAP | [W10](schueler/methoden-handout.md) |
+| **23.11. / 24.11.** | Methoden II | Methoden mit Rückgabewerten | - |
+| **30.11. / 01.12.** | Listen & Arrays I | Listen & Arrays definieren | - |
+| **7.12. / 8.12.** | Listen & Arrays II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
+| **14.12. / 15.12.** | Repetition & Prüfungsvorbereitung I | Gesamtrepetition Semester | - |
 | **21.12. / 22.12.** | Weihnachtsferien | 🎅🏻 | - | - |
 | **28.12. / 29.12.** | Weihnachtsferien | 🎅🏻 | - | - |
-| **4.1. / 5.1.** | Repetition & Prüfungsvorbereitung | Gesamtrepetition Semester | - |
+| **4.1. / 5.1.** | Repetition & Prüfungsvorbereitung II | Gesamtrepetition Semester | - |
 | **11.1. / 12.1.** | <span style="color:red;">**Prüfung 3 (schriftlich)**</span> | Gesamtprüfung, Schwerpunkt Funktionen | - |
 | **18.1. / 19.1.** | Spezialthema / Spiel | Abschluss-Special | - |
 
