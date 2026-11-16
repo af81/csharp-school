@@ -113,7 +113,7 @@ void Verdopple(int zahl)
 
 Die Funktion erhält eine Kopie des Werts. Was sie mit ihrem Parameter macht, ändert die Variable ausserhalb nicht.
 
-### F - Funktionen rufen Funktionen
+### F - Funktionen rufen Funktionen auf
 
 ```csharp
 ZeichneDreieck(3);
@@ -245,6 +245,7 @@ Schreibe folgende Funktionen und rufe jede im Hauptprogramm mindestens einmal au
 1. `ZeichneLinie(int laenge, string zeichen)` gibt eine Linie in der angegebenen Länge aus dem angegebenen Zeichen aus.
 2. `Begruesse(string name, int alter)` gibt zum Beispiel `Hallo Anna, du bist 17 Jahre alt.` aus.
 3. `GibRechteckAus(int breite, int hoehe)` gibt ein Rechteck aus `#` aus. Verwende dafür deine Funktion `ZeichneLinie`.
+
 ### 8. Dreieck (Zusatz)
 Schreibe eine Funktion `ZeichneDreieck(int zeilen)`, die ein Dreieck aus Sternen ausgibt. Beispiel für 4 Zeilen:
 

@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methoden-13" class="md-skip">
+        <a href="#funktionen-13" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -610,9 +610,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-eine-methode-definieren-und-aufrufen" class="md-nav__link">
+  <a href="#a-eine-funktion-definieren-und-aufrufen" class="md-nav__link">
     <span class="md-ellipsis">
-      A - Eine Methode definieren und aufrufen
+      A - Eine Funktion definieren und aufrufen
     </span>
   </a>
   
@@ -628,9 +628,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-wo-steht-die-methode" class="md-nav__link">
+  <a href="#c-wo-steht-die-funktion" class="md-nav__link">
     <span class="md-ellipsis">
-      C - Wo steht die Methode?
+      C - Wo steht die Funktion?
     </span>
   </a>
   
@@ -655,9 +655,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#f-methoden-rufen-methoden" class="md-nav__link">
+  <a href="#f-funktionen-rufen-funktionen" class="md-nav__link">
     <span class="md-ellipsis">
-      F - Methoden rufen Methoden
+      F - Funktionen rufen Funktionen
     </span>
   </a>
   
@@ -742,9 +742,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-methoden-mit-parametern-schreiben" class="md-nav__link">
+  <a href="#7-funktionen-mit-parametern-schreiben" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Methoden mit Parametern schreiben
+      7. Funktionen mit Parametern schreiben
     </span>
   </a>
   
@@ -942,19 +942,19 @@
 
 
 
-<h1 id="methoden-13">Methoden (1/3)</h1>
+<h1 id="funktionen-13">Funktionen (1/3)</h1>
 <h2 id="lernziel">Lernziel</h2>
-<p>Am Ende dieser Lektion definierst und rufst du Methoden auf, verstehst den Ablauf beim Aufruf, stellst Methoden im PAP dar und übergibst Werte als Parameter.</p>
+<p>Am Ende dieser Lektion definierst und rufst du Funktionen (Unterprogramme) auf, verstehst den Ablauf beim Aufruf, stellst Funktionen im PAP dar und übergibst Werte als Parameter.</p>
 <hr />
 <h2 id="1-einstieg">1. Einstieg</h2>
 <ul>
-<li>Ohne Methoden steht derselbe Code an vielen Stellen. Eine Änderung muss dann überall nachgezogen werden, und dabei entstehen Fehler. Eine Methode steht einmal im Programm und wird beliebig oft aufgerufen.</li>
-<li>Methoden zerlegen ein grosses Programm in kleine, benannte Bausteine. Ein Programm aus Methoden wie <code>ZeigeMenue()</code> und <code>ZeichneLinie()</code> liest sich fast wie ein Text.</li>
-<li>Jedes grössere Programm besteht aus Methoden. Wer sie beherrscht, kann sich in fremdem Code zurechtfinden und eigenen Code übersichtlich halten.</li>
+<li>Ohne Funktionen steht derselbe Code an vielen Stellen. Eine Änderung muss dann überall nachgezogen werden, und dabei entstehen Fehler. Eine Funktion steht einmal im Programm und wird beliebig oft aufgerufen.</li>
+<li>Funktionen zerlegen ein grosses Programm in kleine, benannte Bausteine. Ein Programm aus Funktionen wie <code>ZeigeMenue()</code> und <code>ZeichneLinie()</code> liest sich fast wie ein Text.</li>
+<li>Jedes grössere Programm besteht aus Funktionen. Wer sie beherrscht, kann sich in fremdem Code zurechtfinden und eigenen Code übersichtlich halten.</li>
 </ul>
 <hr />
 <h2 id="2-grundlagen">2. Grundlagen</h2>
-<h3 id="a-eine-methode-definieren-und-aufrufen">A - Eine Methode definieren und aufrufen</h3>
+<h3 id="a-eine-funktion-definieren-und-aufrufen">A - Eine Funktion definieren und aufrufen</h3>
 <div class="highlight"><pre><span></span><code><span class="k">void</span><span class="w"> </span><span class="nf">ZeichneLinie</span><span class="p">()</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;--------------------&quot;</span><span class="p">);</span>
@@ -964,13 +964,13 @@
 <div class="highlight"><pre><span></span><code><span class="n">ZeichneLinie</span><span class="p">();</span>
 </code></pre></div>
 <ul>
-<li><code>void</code> bedeutet: Die Methode gibt keinen Wert zurück.</li>
+<li><code>void</code> bedeutet: Die Funktion gibt keinen Wert zurück.</li>
 <li>Der Name beginnt mit einem Grossbuchstaben (PascalCase) und enthält meist ein Verb: <code>ZeichneLinie</code>, <code>ZeigeMenue</code>, <code>BerechneSumme</code>.</li>
 <li>Die Klammern <code>()</code> gehören zur Definition und zum Aufruf. Der Aufruf endet mit einem Semikolon.</li>
 </ul>
 <h3 id="b-der-ablauf-beim-aufruf">B - Der Ablauf beim Aufruf</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span><span class="w">     </span><span class="c1">// 1</span>
-<span class="n">Zwei</span><span class="p">();</span><span class="w">                     </span><span class="c1">// 2, springt in die Methode</span>
+<span class="n">Zwei</span><span class="p">();</span><span class="w">                     </span><span class="c1">// 2, springt in die Funktion</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;B&quot;</span><span class="p">);</span><span class="w">     </span><span class="c1">// 7</span>
 
 <span class="k">void</span><span class="w"> </span><span class="nf">Eins</span><span class="p">()</span>
@@ -985,12 +985,12 @@
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// 5</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Bei einem Aufruf springt das Programm in die Methode, führt sie aus und kehrt danach genau an die Stelle des Aufrufs zurück. Methoden können andere Methoden aufrufen.</p>
-<h3 id="c-wo-steht-die-methode">C - Wo steht die Methode?</h3>
+<p>Bei einem Aufruf springt das Programm in die Funktion, führt sie aus und kehrt danach genau an die Stelle des Aufrufs zurück. Funktionen können andere Funktionen aufrufen.</p>
+<h3 id="c-wo-steht-die-funktion">C - Wo steht die Funktion?</h3>
 <ul>
-<li>Das Hauptprogramm steht oben, die Methoden stehen darunter.</li>
-<li>Das Programm wird von oben nach unten ausgeführt. Eine Methode läuft erst, wenn sie aufgerufen wird. Die Definition allein führt nichts aus.</li>
-<li>Die Reihenfolge der Methoden untereinander spielt keine Rolle.</li>
+<li>Das Hauptprogramm steht oben, die Funktionen stehen darunter.</li>
+<li>Das Programm wird von oben nach unten ausgeführt. Eine Funktion läuft erst, wenn sie aufgerufen wird. Die Definition allein führt nichts aus.</li>
+<li>Die Reihenfolge der Funktionen untereinander spielt keine Rolle.</li>
 </ul>
 <h3 id="d-parameter">D - Parameter</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Begruesse</span><span class="p">(</span><span class="s">&quot;Anna&quot;</span><span class="p">);</span>
@@ -1047,8 +1047,8 @@
 <span class="w">    </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Die Methode erhält eine Kopie des Werts. Was sie mit ihrem Parameter macht, ändert die Variable ausserhalb nicht.</p>
-<h3 id="f-methoden-rufen-methoden">F - Methoden rufen Methoden</h3>
+<p>Die Funktion erhält eine Kopie des Werts. Was sie mit ihrem Parameter macht, ändert die Variable ausserhalb nicht.</p>
+<h3 id="f-funktionen-rufen-funktionen">F - Funktionen rufen Funktionen</h3>
 <div class="highlight"><pre><span></span><code><span class="n">ZeichneDreieck</span><span class="p">(</span><span class="m">3</span><span class="p">);</span>
 
 <span class="k">void</span><span class="w"> </span><span class="nf">ZeichneDreieck</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zeilen</span><span class="p">)</span>
@@ -1061,7 +1061,7 @@
 </code></pre></div>
 <p>So lassen sich grosse Aufgaben in kleine Bausteine zerlegen.</p>
 <h3 id="g-pap-das-unterprogramm">G - PAP: Das Unterprogramm</h3>
-<p>Ein Methodenaufruf wird im PAP als <strong>Rechteck mit doppelten senkrechten Seitenlinien</strong> gezeichnet (Symbol "Unterprogramm"). Die Methode selbst hat einen eigenen PAP.</p>
+<p>Ein Funktionenaufruf wird im PAP als <strong>Rechteck mit doppelten senkrechten Seitenlinien</strong> gezeichnet (Symbol "Unterprogramm"). Die Funktion selbst hat einen eigenen PAP.</p>
 <p><img alt="" src="../../img/methode-void.png" /></p>
 <hr />
 <h2 id="3-ubungen">3. Übungen</h2>
@@ -1099,7 +1099,7 @@
 <span class="p">}</span>
 </code></pre></div></p>
 <h3 id="2-pap-zeichnen">2. PAP zeichnen</h3>
-<p>Zeichne den PAP für ein Programm, das zuerst die Methode <code>ZeichneLinie</code>, dann den Text "Titel" und danach nochmals <code>ZeichneLinie</code> aufruft. Zeichne zusätzlich den PAP der Methode <code>ZeichneLinie</code> selbst, die 20 Minuszeichen mit einer Schleife ausgibt.</p>
+<p>Zeichne den PAP für ein Programm, das zuerst die Funktion <code>ZeichneLinie</code>, dann den Text "Titel" und danach nochmals <code>ZeichneLinie</code> aufruft. Zeichne zusätzlich den PAP der Funktion <code>ZeichneLinie</code> selbst, die 20 Minuszeichen mit einer Schleife ausgibt.</p>
 <h3 id="3-fehler-finden-i">3. Fehler finden I</h3>
 <p>Das Programm soll "Start", "Hallo!" und "Ende" ausgeben. Es enthält <strong>zwei Fehler</strong>, beide sind Kompilierfehler. Finde beide und korrigiere sie. Tipp: Der Compiler meldet nicht immer alle Fehler auf einmal.</p>
 <div class="highlight"><pre><span></span><code><span class="m">01</span><span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Start&quot;</span><span class="p">);</span>
@@ -1113,8 +1113,8 @@
 </code></pre></div>
 <h3 id="4-menu-und-linie-schreiben">4. Menü und Linie schreiben</h3>
 <ol>
-<li>Schreibe eine Methode <code>ZeigeMenue()</code>, die drei Zeilen ausgibt: <code>1) Neues Spiel</code>, <code>2) Einstellungen</code>, <code>0) Beenden</code>.</li>
-<li>Schreibe eine Methode <code>ZeichneLinie()</code>, die mit einer Schleife 20 Minuszeichen in einer Zeile ausgibt.</li>
+<li>Schreibe eine Funktion <code>ZeigeMenue()</code>, die drei Zeilen ausgibt: <code>1) Neues Spiel</code>, <code>2) Einstellungen</code>, <code>0) Beenden</code>.</li>
+<li>Schreibe eine Funktion <code>ZeichneLinie()</code>, die mit einer Schleife 20 Minuszeichen in einer Zeile ausgibt.</li>
 <li>Das Hauptprogramm ruft <code>ZeichneLinie()</code> auf, gibt den Text "Titel" aus, ruft nochmals <code>ZeichneLinie()</code> auf und ruft danach <code>ZeigeMenue()</code> auf.</li>
 </ol>
 <h3 id="5-code-lesen-ii">5. Code lesen II</h3>
@@ -1128,7 +1128,7 @@
 <span class="k">void</span><span class="w"> </span><span class="nf">Verdopple</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;In der Methode: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">zahl</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;In der Funktion: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">zahl</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">void</span><span class="w"> </span><span class="nf">Zeige</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">wert</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">einheit</span><span class="p">)</span>
@@ -1137,7 +1137,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="6-fehler-finden-ii">6. Fehler finden II</h3>
-<p>Die Methode <code>Rechteck</code> soll ein Rechteck aus dem angegebenen Zeichen ausgeben. Beide Aufrufe sind fehlerhaft. Finde beide Fehler, erkläre sie und korrigiere sie.</p>
+<p>Die Funktion <code>Rechteck</code> soll ein Rechteck aus dem angegebenen Zeichen ausgeben. Beide Aufrufe sind fehlerhaft. Finde beide Fehler, erkläre sie und korrigiere sie.</p>
 <div class="highlight"><pre><span></span><code><span class="m">01</span><span class="w">  </span><span class="n">Rechteck</span><span class="p">(</span><span class="s">&quot;*&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
 <span class="m">02</span><span class="w">  </span><span class="n">Rechteck</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
 <span class="m">03</span>
@@ -1151,28 +1151,28 @@
 <span class="m">11</span><span class="w">      </span><span class="p">}</span>
 <span class="m">12</span><span class="w">  </span><span class="p">}</span>
 </code></pre></div>
-<h3 id="7-methoden-mit-parametern-schreiben">7. Methoden mit Parametern schreiben</h3>
-<p>Schreibe folgende Methoden und rufe jede im Hauptprogramm mindestens einmal auf:</p>
+<h3 id="7-funktionen-mit-parametern-schreiben">7. Funktionen mit Parametern schreiben</h3>
+<p>Schreibe folgende Funktionen und rufe jede im Hauptprogramm mindestens einmal auf:</p>
 <ol>
 <li><code>ZeichneLinie(int laenge, string zeichen)</code> gibt eine Linie in der angegebenen Länge aus dem angegebenen Zeichen aus.</li>
 <li><code>Begruesse(string name, int alter)</code> gibt zum Beispiel <code>Hallo Anna, du bist 17 Jahre alt.</code> aus.</li>
-<li><code>GibRechteckAus(int breite, int hoehe)</code> gibt ein Rechteck aus <code>#</code> aus. Verwende dafür deine Methode <code>ZeichneLinie</code>.</li>
+<li><code>GibRechteckAus(int breite, int hoehe)</code> gibt ein Rechteck aus <code>#</code> aus. Verwende dafür deine Funktion <code>ZeichneLinie</code>.</li>
 </ol>
 <h3 id="8-dreieck-zusatz">8. Dreieck (Zusatz)</h3>
-<p>Schreibe eine Methode <code>ZeichneDreieck(int zeilen)</code>, die ein Dreieck aus Sternen ausgibt. Beispiel für 4 Zeilen:</p>
+<p>Schreibe eine Funktion <code>ZeichneDreieck(int zeilen)</code>, die ein Dreieck aus Sternen ausgibt. Beispiel für 4 Zeilen:</p>
 <div class="highlight"><pre><span></span><code>*
 **
 ***
 ****
 </code></pre></div>
-<p>Verwende dafür deine Methode <code>ZeichneLinie</code>.</p>
+<p>Verwende dafür deine Funktion <code>ZeichneLinie</code>.</p>
 <h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
 <ul>
-<li>Typische Stolperfalle: Die Definition einer Methode führt sie nicht aus. Ohne Aufruf passiert nichts.</li>
-<li>Nächste Lektion: Methoden mit Rückgabewert. Dann kann eine Methode ein Ergebnis zurückliefern, zum Beispiel <code>int Quadrat(int zahl)</code>.</li>
-<li>Überlege: Welche Aufgaben aus den Blöcken Bedingungen und Schleifen enthalten Code, der sich in eine Methode auslagern liesse?</li>
-<li>Hinweis: In Anleitungen im Internet siehst du oft <code>static void</code> vor dem Methodennamen und eine Klasse <code>Program</code> um den Code. Das ist die ausführlichere Schreibweise, die im nächsten Semester erklärt wird. Die Methoden funktionieren in beiden Varianten gleich.</li>
-<li>Weiterführend: Offizielle Dokumentation zu Methoden: <a href="https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods">https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods</a></li>
+<li>Typische Stolperfalle: Die Definition einer Funktion führt sie nicht aus. Ohne Aufruf passiert nichts.</li>
+<li>Nächste Lektion: Funktionen mit Rückgabewert. Dann kann eine Funktion ein Ergebnis zurückliefern, zum Beispiel <code>int Quadrat(int zahl)</code>.</li>
+<li>Überlege: Welche Aufgaben aus den Blöcken Bedingungen und Schleifen enthalten Code, der sich in eine Funktion auslagern liesse?</li>
+<li>Hinweis: In Anleitungen im Internet siehst du oft <code>static void</code> vor dem Funktionennamen und eine Klasse <code>Program</code> um den Code. Das ist die ausführlichere Schreibweise, die im nächsten Semester erklärt wird. Die Funktionen funktionieren in beiden Varianten gleich.</li>
+<li>Weiterführend: Offizielle Dokumentation zu Funktionen: <a href="https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods">https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods</a></li>
 </ul>
 
 
