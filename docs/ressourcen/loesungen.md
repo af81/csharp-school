@@ -679,7 +679,7 @@ for (int zeile = 1; zeile <= 10; zeile++)
 
 ---
 
-## Methoden I
+## Funktionen I
 
 ### Aufgabe 1 - Code lesen I
 
@@ -712,7 +712,7 @@ B
 
 ### Aufgabe 3 -  Fehler finden I
 
-- Fehler 1 (Zeile 02): Die Methode "Gruss" hat **keine Klammern**. Korrekt wäre beim Aufrufen der Methode "Gruss()".
+- Fehler 1 (Zeile 02): Die Funktion "Gruss" hat **keine Klammern**. Korrekt wäre beim Aufrufen der Funktion "Gruss()".
 - Fehler 2 (Zeile 07): Es fehlt der **Strichpunkt** am Ende der Anweisung (;).
 
 ---
@@ -752,7 +752,7 @@ void ZeichneLinie()
 ### Aufgabe 5 - Code lesen II
 
 ```csharp
-In der Methode: "10"
+In der Funktion: "10"
 5
 3 m
 10 cm
@@ -762,11 +762,11 @@ In der Methode: "10"
 
 ### Aufgabe 6 - Fehler finden II
 
-Die Methode "Rechteck" verlangt 3 Parameter (breite, hoehe und zeichen). Im ersten Aufruf (Zeile 01) ist die Reihenfolge der Parameter falsch und im zweiten Aufruf (Zeile 02) werden nur 2 statt 3 Parameter mitgegeben.
+Die Funktion "Rechteck" verlangt 3 Parameter (breite, hoehe und zeichen). Im ersten Aufruf (Zeile 01) ist die Reihenfolge der Parameter falsch und im zweiten Aufruf (Zeile 02) werden nur 2 statt 3 Parameter mitgegeben.
 
 ---
 
-### Aufgabe 7 - Methoden mit Parametern schreiben
+### Aufgabe 7 - Funktionen mit Parametern schreiben
 
 ```csharp
 // Hauptprogramm

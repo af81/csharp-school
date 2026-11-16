@@ -1,21 +1,21 @@
-# Methoden (1/3)
+# Funktionen (1/3)
 
 ## Lernziel
-Am Ende dieser Lektion definierst und rufst du Methoden auf, verstehst den Ablauf beim Aufruf, stellst Methoden im PAP dar und übergibst Werte als Parameter.
+Am Ende dieser Lektion definierst und rufst du Funktionen (Unterprogramme) auf, verstehst den Ablauf beim Aufruf, stellst Funktionen im PAP dar und übergibst Werte als Parameter.
 
 ---
 
 ## 1. Einstieg
 
-- Ohne Methoden steht derselbe Code an vielen Stellen. Eine Änderung muss dann überall nachgezogen werden, und dabei entstehen Fehler. Eine Methode steht einmal im Programm und wird beliebig oft aufgerufen.
-- Methoden zerlegen ein grosses Programm in kleine, benannte Bausteine. Ein Programm aus Methoden wie `ZeigeMenue()` und `ZeichneLinie()` liest sich fast wie ein Text.
-- Jedes grössere Programm besteht aus Methoden. Wer sie beherrscht, kann sich in fremdem Code zurechtfinden und eigenen Code übersichtlich halten.
+- Ohne Funktionen steht derselbe Code an vielen Stellen. Eine Änderung muss dann überall nachgezogen werden, und dabei entstehen Fehler. Eine Funktion steht einmal im Programm und wird beliebig oft aufgerufen.
+- Funktionen zerlegen ein grosses Programm in kleine, benannte Bausteine. Ein Programm aus Funktionen wie `ZeigeMenue()` und `ZeichneLinie()` liest sich fast wie ein Text.
+- Jedes grössere Programm besteht aus Funktionen. Wer sie beherrscht, kann sich in fremdem Code zurechtfinden und eigenen Code übersichtlich halten.
 
 ---
 
 ## 2. Grundlagen
 
-### A - Eine Methode definieren und aufrufen
+### A - Eine Funktion definieren und aufrufen
 
 ```csharp
 void ZeichneLinie()
@@ -30,14 +30,14 @@ Aufruf:
 ZeichneLinie();
 ```
 
-- `void` bedeutet: Die Methode gibt keinen Wert zurück.
+- `void` bedeutet: Die Funktion gibt keinen Wert zurück.
 - Der Name beginnt mit einem Grossbuchstaben (PascalCase) und enthält meist ein Verb: `ZeichneLinie`, `ZeigeMenue`, `BerechneSumme`.
 - Die Klammern `()` gehören zur Definition und zum Aufruf. Der Aufruf endet mit einem Semikolon.
 ### B - Der Ablauf beim Aufruf
 
 ```csharp
 Console.WriteLine("A");     // 1
-Zwei();                     // 2, springt in die Methode
+Zwei();                     // 2, springt in die Funktion
 Console.WriteLine("B");     // 7
 
 void Eins()
@@ -53,13 +53,13 @@ void Zwei()
 }
 ```
 
-Bei einem Aufruf springt das Programm in die Methode, führt sie aus und kehrt danach genau an die Stelle des Aufrufs zurück. Methoden können andere Methoden aufrufen.
+Bei einem Aufruf springt das Programm in die Funktion, führt sie aus und kehrt danach genau an die Stelle des Aufrufs zurück. Funktionen können andere Funktionen aufrufen.
 
-### C - Wo steht die Methode?
+### C - Wo steht die Funktion?
 
-- Das Hauptprogramm steht oben, die Methoden stehen darunter.
-- Das Programm wird von oben nach unten ausgeführt. Eine Methode läuft erst, wenn sie aufgerufen wird. Die Definition allein führt nichts aus.
-- Die Reihenfolge der Methoden untereinander spielt keine Rolle.
+- Das Hauptprogramm steht oben, die Funktionen stehen darunter.
+- Das Programm wird von oben nach unten ausgeführt. Eine Funktion läuft erst, wenn sie aufgerufen wird. Die Definition allein führt nichts aus.
+- Die Reihenfolge der Funktionen untereinander spielt keine Rolle.
 
 ### D - Parameter
 
@@ -111,9 +111,9 @@ void Verdopple(int zahl)
 }
 ```
 
-Die Methode erhält eine Kopie des Werts. Was sie mit ihrem Parameter macht, ändert die Variable ausserhalb nicht.
+Die Funktion erhält eine Kopie des Werts. Was sie mit ihrem Parameter macht, ändert die Variable ausserhalb nicht.
 
-### F - Methoden rufen Methoden
+### F - Funktionen rufen Funktionen
 
 ```csharp
 ZeichneDreieck(3);
@@ -131,7 +131,7 @@ So lassen sich grosse Aufgaben in kleine Bausteine zerlegen.
 
 ### G - PAP: Das Unterprogramm
 
-Ein Methodenaufruf wird im PAP als **Rechteck mit doppelten senkrechten Seitenlinien** gezeichnet (Symbol "Unterprogramm"). Die Methode selbst hat einen eigenen PAP.
+Ein Funktionenaufruf wird im PAP als **Rechteck mit doppelten senkrechten Seitenlinien** gezeichnet (Symbol "Unterprogramm"). Die Funktion selbst hat einen eigenen PAP.
 
 ![](../img/methode-void.png)
 
@@ -179,7 +179,7 @@ void Zwei()
 ```
 
 ### 2. PAP zeichnen
-Zeichne den PAP für ein Programm, das zuerst die Methode `ZeichneLinie`, dann den Text "Titel" und danach nochmals `ZeichneLinie` aufruft. Zeichne zusätzlich den PAP der Methode `ZeichneLinie` selbst, die 20 Minuszeichen mit einer Schleife ausgibt.
+Zeichne den PAP für ein Programm, das zuerst die Funktion `ZeichneLinie`, dann den Text "Titel" und danach nochmals `ZeichneLinie` aufruft. Zeichne zusätzlich den PAP der Funktion `ZeichneLinie` selbst, die 20 Minuszeichen mit einer Schleife ausgibt.
 
 ### 3. Fehler finden I
 Das Programm soll "Start", "Hallo!" und "Ende" ausgeben. Es enthält **zwei Fehler**, beide sind Kompilierfehler. Finde beide und korrigiere sie. Tipp: Der Compiler meldet nicht immer alle Fehler auf einmal.
@@ -196,8 +196,8 @@ Das Programm soll "Start", "Hallo!" und "Ende" ausgeben. Es enthält **zwei Fehl
 ```
 
 ### 4. Menü und Linie schreiben
-1. Schreibe eine Methode `ZeigeMenue()`, die drei Zeilen ausgibt: `1) Neues Spiel`, `2) Einstellungen`, `0) Beenden`.
-2. Schreibe eine Methode `ZeichneLinie()`, die mit einer Schleife 20 Minuszeichen in einer Zeile ausgibt.
+1. Schreibe eine Funktion `ZeigeMenue()`, die drei Zeilen ausgibt: `1) Neues Spiel`, `2) Einstellungen`, `0) Beenden`.
+2. Schreibe eine Funktion `ZeichneLinie()`, die mit einer Schleife 20 Minuszeichen in einer Zeile ausgibt.
 3. Das Hauptprogramm ruft `ZeichneLinie()` auf, gibt den Text "Titel" aus, ruft nochmals `ZeichneLinie()` auf und ruft danach `ZeigeMenue()` auf.
 ### 5. Code lesen II
 Was gibt das Programm aus?
@@ -212,7 +212,7 @@ Zeige(10, "cm");
 void Verdopple(int zahl)
 {
     zahl = zahl * 2;
-    Console.WriteLine("In der Methode: " + zahl);
+    Console.WriteLine("In der Funktion: " + zahl);
 }
 
 void Zeige(int wert, string einheit)
@@ -222,7 +222,7 @@ void Zeige(int wert, string einheit)
 ```
 
 ### 6. Fehler finden II
-Die Methode `Rechteck` soll ein Rechteck aus dem angegebenen Zeichen ausgeben. Beide Aufrufe sind fehlerhaft. Finde beide Fehler, erkläre sie und korrigiere sie.
+Die Funktion `Rechteck` soll ein Rechteck aus dem angegebenen Zeichen ausgeben. Beide Aufrufe sind fehlerhaft. Finde beide Fehler, erkläre sie und korrigiere sie.
 
 ```csharp
 01  Rechteck("*", 4, 2);
@@ -239,14 +239,14 @@ Die Methode `Rechteck` soll ein Rechteck aus dem angegebenen Zeichen ausgeben. B
 12  }
 ```
 
-### 7. Methoden mit Parametern schreiben
-Schreibe folgende Methoden und rufe jede im Hauptprogramm mindestens einmal auf:
+### 7. Funktionen mit Parametern schreiben
+Schreibe folgende Funktionen und rufe jede im Hauptprogramm mindestens einmal auf:
 
 1. `ZeichneLinie(int laenge, string zeichen)` gibt eine Linie in der angegebenen Länge aus dem angegebenen Zeichen aus.
 2. `Begruesse(string name, int alter)` gibt zum Beispiel `Hallo Anna, du bist 17 Jahre alt.` aus.
-3. `GibRechteckAus(int breite, int hoehe)` gibt ein Rechteck aus `#` aus. Verwende dafür deine Methode `ZeichneLinie`.
+3. `GibRechteckAus(int breite, int hoehe)` gibt ein Rechteck aus `#` aus. Verwende dafür deine Funktion `ZeichneLinie`.
 ### 8. Dreieck (Zusatz)
-Schreibe eine Methode `ZeichneDreieck(int zeilen)`, die ein Dreieck aus Sternen ausgibt. Beispiel für 4 Zeilen:
+Schreibe eine Funktion `ZeichneDreieck(int zeilen)`, die ein Dreieck aus Sternen ausgibt. Beispiel für 4 Zeilen:
 
 ```text
 *
@@ -255,12 +255,12 @@ Schreibe eine Methode `ZeichneDreieck(int zeilen)`, die ein Dreieck aus Sternen 
 ****
 ```
 
-Verwende dafür deine Methode `ZeichneLinie`.
+Verwende dafür deine Funktion `ZeichneLinie`.
 
 ## 4. Weiterführende Beispiele und Gedanken
 
-- Typische Stolperfalle: Die Definition einer Methode führt sie nicht aus. Ohne Aufruf passiert nichts.
-- Nächste Lektion: Methoden mit Rückgabewert. Dann kann eine Methode ein Ergebnis zurückliefern, zum Beispiel `int Quadrat(int zahl)`.
-- Überlege: Welche Aufgaben aus den Blöcken Bedingungen und Schleifen enthalten Code, der sich in eine Methode auslagern liesse?
-- Hinweis: In Anleitungen im Internet siehst du oft `static void` vor dem Methodennamen und eine Klasse `Program` um den Code. Das ist die ausführlichere Schreibweise, die im nächsten Semester erklärt wird. Die Methoden funktionieren in beiden Varianten gleich.
-- Weiterführend: Offizielle Dokumentation zu Methoden: [https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods)
+- Typische Stolperfalle: Die Definition einer Funktion führt sie nicht aus. Ohne Aufruf passiert nichts.
+- Nächste Lektion: Funktionen mit Rückgabewert. Dann kann eine Funktion ein Ergebnis zurückliefern, zum Beispiel `int Quadrat(int zahl)`.
+- Überlege: Welche Aufgaben aus den Blöcken Bedingungen und Schleifen enthalten Code, der sich in eine Funktion auslagern liesse?
+- Hinweis: In Anleitungen im Internet siehst du oft `static void` vor dem Funktionennamen und eine Klasse `Program` um den Code. Das ist die ausführlichere Schreibweise, die im nächsten Semester erklärt wird. Die Funktionen funktionieren in beiden Varianten gleich.
+- Weiterführend: Offizielle Dokumentation zu Funktionen: [https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods](https://learn.microsoft.com/de-de/dotnet/csharp/programming-guide/classes-and-structs/methods)
