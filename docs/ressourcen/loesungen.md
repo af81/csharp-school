@@ -827,3 +827,218 @@ void ZeichneLinie(int laenge, string zeichen)
     Console.WriteLine();
 }
 ```
+
+---
+
+## Funktionen II
+
+### Aufgabe 1
+
+```csharp
+10
+22
+True
+```
+
+---
+
+### Aufgabe 2
+
+- Fehler 1: `Quadrat(5)` wird zwar ausgeführt, aber mit dem Return-Wert passiert nichts. Er ist in der Konsole nicht ersichtlich.
+- Fehler 2: `Groesste()` liefert keinen Return-Path für `a == b`.
+
+---
+
+### Aufgabe 3
+
+a)
+```csharp
+int Maximum(int a, int b)
+{
+    if (a > b)
+        return a;
+    else if (b > a)
+        return b;
+    else
+        return a;
+}
+```
+
+b)
+```csharp
+bool IstGerade(int zahl)
+{
+    if (zahl % 2 == 0)
+        return true;
+    else
+        return false;
+}
+```
+
+c)
+```csharp
+long Fakultaet(int n)
+{
+    long f = 1;
+    int i = 1;
+    while(i < n)
+    {
+        f += f*i;
+        i++;
+    }
+    return f;
+}
+```
+
+d)
+```csharp
+long Potenz(int basis, int exponent)
+{
+    long p = 1;
+    int i = 0;
+    while(i < exponent)
+    {
+        p += basis;
+        i++;
+    }
+    return p;
+}
+```
+
+---
+
+### Aufgabe 4
+
+PAP
+
+---
+
+### Aufgabe 5
+
+```csharp
+int alter = LeseZahl("Alter", 0, 120);
+Console.WriteLine("Dein Alter: " + alter);
+int tag = LeseZahl("Tag", 1, 31);
+Console.WriteLine("Tag: " + tag);
+
+int LeseZahl(string frage, int min, int max)
+{
+    int zahl;
+    do
+    {
+        Console.Write(frage + " [" + min + " bis " + max + "]: ");
+        zahl = Convert.ToInt32(Console.ReadLine());
+        if (zahl < min || zahl > max)
+            Console.WriteLine("Ungültige Eingabe.");
+    }
+    while (zahl < min || zahl > max);
+    return zahl;
+}
+```
+
+---
+
+### Aufgabe 6
+
+```csharp
+Console.Write("Nettopreis [CHF]: ");
+double netto = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Endpreis: " + Endpreis(netto).ToString("F2") + " CHF");
+
+double MitMwst(double netto)
+{
+    return netto * 1.081;
+}
+
+double RundeAuf5Rappen(double betrag)
+{
+    return Math.Round(betrag * 20) / 20;
+}
+
+double Endpreis(double netto)
+{
+    return RundeAuf5Rappen(MitMwst(netto));
+}
+```
+
+---
+
+### Aufgabe 7
+
+```csharp
+int wahl;
+do
+{
+    ZeigeMenue();
+    wahl = LeseZahl("Auswahl", 0, 4);
+    if (wahl != 0)
+    {
+        int a = LeseZahl("Erste Zahl", -1000, 1000);
+        int b = LeseZahl("Zweite Zahl", -1000, 1000);
+        switch (wahl)
+        {
+            case 1:
+                Console.WriteLine("Ergebnis: " + Addiere(a, b));
+                break;
+            case 2:
+                Console.WriteLine("Ergebnis: " + Subtrahiere(a, b));
+                break;
+            case 3:
+                Console.WriteLine("Ergebnis: " + Multipliziere(a, b));
+                break;
+            case 4:
+                if (b == 0)
+                    Console.WriteLine("Division durch 0 ist nicht möglich.");
+                else
+                    Console.WriteLine("Ergebnis: " + Dividiere(a, b));
+                break;
+        }
+    }
+}
+while (wahl != 0);
+Console.WriteLine("Auf Wiedersehen!");
+
+void ZeigeMenue()
+{
+    Console.WriteLine();
+    Console.WriteLine("1) Addieren");
+    Console.WriteLine("2) Subtrahieren");
+    Console.WriteLine("3) Multiplizieren");
+    Console.WriteLine("4) Dividieren");
+    Console.WriteLine("0) Beenden");
+}
+
+int LeseZahl(string frage, int min, int max)
+{
+    int zahl;
+    do
+    {
+        Console.Write(frage + " [" + min + " bis " + max + "]: ");
+        zahl = Convert.ToInt32(Console.ReadLine());
+        if (zahl < min || zahl > max)
+            Console.WriteLine("Ungültige Eingabe.");
+    }
+    while (zahl < min || zahl > max);
+    return zahl;
+}
+
+int Addiere(int a, int b)
+{
+    return a + b;
+}
+
+int Subtrahiere(int a, int b)
+{
+    return a - b;
+}
+
+int Multipliziere(int a, int b)
+{
+    return a * b;
+}
+
+double Dividiere(int a, int b)
+{
+    return (double)a / b;
+}
+```

@@ -1,14 +1,14 @@
-# Methoden (2/3)
+# Funktionen (return)
 
 ## Lernziel
-Am Ende dieser Lektion schreibst du Methoden mit Rückgabewert, verwendest das Ergebnis weiter, prüfst mit `bool`-Methoden und lagerst Code durch Refactoring in Methoden aus.
+Am Ende dieser Lektion schreibst du Funktionen mit Rückgabewert, verwendest das Ergebnis weiter, prüfst mit `bool`-Funktionen und lagerst Code durch Refactoring in Funktionen aus.
 
 ---
 
 ## 1. Einstieg
 
-- Bisher haben deine Methoden etwas ausgegeben. Oft brauchst du aber das Ergebnis weiter: für eine Berechnung, eine Bedingung oder eine Anzeige an anderer Stelle. Dafür gibt eine Methode einen Wert zurück.
-- Methoden mit Rückgabewert sind die Bausteine für Berechnungen, Prüfungen und Umrechnungen. Du kennst sie bereits von Hilfsfunktionen wie `Math.Max(a, b)`.
+- Bisher haben deine Funktionen etwas ausgegeben. Oft brauchst du aber das Ergebnis weiter: für eine Berechnung, eine Bedingung oder eine Anzeige an anderer Stelle. Dafür gibt eine Funktion einen Wert zurück.
+- Funktionen mit Rückgabewert sind die Bausteine für Berechnungen, Prüfungen und Umrechnungen. Du kennst sie bereits von Hilfsfunktionen wie `Math.Max(a, b)`.
 - Refactoring heisst: Code umbauen, ohne dass sich das Verhalten ändert. Das Ziel ist ein Programm, das du auch in drei Monaten noch verstehst.
 
 ---
@@ -27,13 +27,13 @@ int Quadrat(int zahl)
 }
 ```
 
-- Statt `void` steht der Datentyp des Ergebnisses vor dem Methodennamen.
-- `return` liefert den Wert zurück und beendet die Methode sofort.
-- Der Datentyp des Werts bei `return` muss zum Datentyp der Methode passen.
+- Statt `void` steht der Datentyp des Ergebnisses vor dem Funktionennamen.
+- `return` liefert den Wert zurück und beendet die Funktion sofort.
+- Der Datentyp des Werts bei `return` muss zum Datentyp der Funktion passen.
 
 ### B - Den Rückgabewert weiterverwenden
 
-Ein Methodenaufruf mit Rückgabewert ist ein Wert. Du kannst ihn überall einsetzen, wo auch eine Zahl oder Variable stehen darf:
+Ein Funktionenaufruf mit Rückgabewert ist ein Wert. Du kannst ihn überall einsetzen, wo auch eine Zahl oder Variable stehen darf:
 
 ```csharp
 int a = Addiere(2, 3);
@@ -46,7 +46,7 @@ if (Addiere(a, 1) > 5)
 
 Ein Aufruf wie `Quadrat(5);` ohne Variable kompiliert zwar, das Ergebnis geht aber verloren.
 
-### C - bool-Methoden
+### C - bool-Funktionen
 
 ```csharp
 bool IstGerade(int zahl)
@@ -74,17 +74,17 @@ int Groesste(int a, int b)
 }
 ```
 
-Das ergibt den Fehler CS0161 ("not all code paths return a value"). Für `a == b` gibt es keinen `return`. Der Compiler prüft alle möglichen Wege durch die Methode.
+Das ergibt den Fehler CS0161 ("not all code paths return a value"). Für `a == b` gibt es keinen `return`. Der Compiler prüft alle möglichen Wege durch die Funktion.
 
-### E - PAP einer Methode mit Rückgabe
+### E - PAP einer Funktion mit Rückgabe
 
-Der PAP der Methode beginnt bei ihrem Namen. Jeder Weg endet in einem Ergebnis ("gib zurück"). Eine Methode kann mehrere Enden haben, solange jeder Weg eines hat.
+Der PAP der Funktion beginnt bei ihrem Namen. Jeder Weg endet in einem Ergebnis ("gib zurück"). Eine Funktion kann mehrere Enden haben, solange jeder Weg eines hat.
 
 ![](../img/methode-return.png)
 
 ### F - Refactoring
 
-Wenn ein Programm lang wird, lagerst du zusammengehörende Blöcke in Methoden aus:
+Wenn ein Programm lang wird, lagerst du zusammengehörende Blöcke in Funktionen aus:
 
 1. Block markieren, der eine Sache macht.
 2. Passenden Namen wählen.
@@ -92,7 +92,7 @@ Wenn ein Programm lang wird, lagerst du zusammengehörende Blöcke in Methoden a
 4. Was kommt heraus? Das wird der Rückgabewert.
 5. Block verschieben, Aufruf einsetzen und testen. Das Programm muss sich danach gleich verhalten.
 
-### G - Eingabe als Methode
+### G - Eingabe als Funktion
 
 ```csharp
 int alter = LeseZahl("Alter", 0, 120);
@@ -116,7 +116,7 @@ int LeseZahl(string frage, int min, int max)
 
 **Regeln**: Die offizielle C#-Dokumentation und Ressourcen im Netz darfst du verwenden. KI-Tools bleiben weg, damit der Lerneffekt möglichst gross ist.
 
-### 1. Code lesen III
+### 1. Code lesen I
 Was gibt das Programm aus?
 
 ```csharp
@@ -140,7 +140,7 @@ bool IstGerade(int zahl)
 
 ---
 
-### 2. Fehler finden III
+### 2. Fehler finden I
 Das Programm soll das Quadrat von 5 und die grössere von zwei Zahlen ausgeben. Es enthält einen **Kompilierfehler** und einen **Denkfehler im Hauptprogramm** (der Code läuft, tut aber nicht, was er soll). Finde beide, erkläre sie und korrigiere sie.
 
 ```csharp
@@ -163,52 +163,54 @@ Das Programm soll das Quadrat von 5 und die grössere von zwei Zahlen ausgeben. 
 
 ---
 
-### 3. Methoden schreiben
-Schreibe folgende Methoden und rufe jede im Hauptprogramm mit mindestens zwei Testwerten auf:
+### 3. Funktionen schreiben
+Schreibe folgende Funktionen und rufe jede im Hauptprogramm mit mindestens zwei Testwerten auf:
 
-a) `int Maximum(int a, int b)` gibt die grössere der beiden Zahlen zurück.
-b) `bool IstGerade(int zahl)` gibt `true` zurück, wenn die Zahl gerade ist.
-c) `long Fakultaet(int n)` berechnet n! (Beispiel: `Fakultaet(5)` ist 120). Verwende den Datentyp `long`.
-d) `long Potenz(int basis, int exponent)` berechnet die Potenz mit einer Schleife (Beispiel: `Potenz(2, 10)` ist 1024). Die Methode `Math.Pow` ist hier nicht erlaubt.
-e) **Zusatz:** `bool IstPrimzahl(int zahl)`. Testwerte: 1 (nein), 2 (ja), 17 (ja), 21 (nein), 97 (ja).
+- a) `int Maximum(int a, int b)` gibt die grössere der beiden Zahlen zurück.
+- b) `bool IstGerade(int zahl)` gibt `true` zurück, wenn die Zahl gerade ist.
+- c) `long Fakultaet(int n)` berechnet n! (Beispiel: `Fakultaet(5)` ist 120). Verwende den Datentyp `long`.
+- d) `long Potenz(int basis, int exponent)` berechnet die Potenz mit einer Schleife (Beispiel: `Potenz(2, 10)` ist 1024). Die Funktion `Math.Pow` ist hier nicht erlaubt.
 
 ---
 
 ### 4. PAP Maximum
-Zeichne den PAP der Methode `Maximum(a, b)` aus Aufgabe 3a. Markiere die Stellen, an denen ein Wert zurückgegeben wird.
+Zeichne den PAP der Funktion `Maximum(a, b)` aus Aufgabe 3a.
 
 ---
 
-### 5. Ringen 🤼
-Beim Ringen werden Sportler in Gewichtsklassen eingeteilt:
+### 5. LeseZahl
+Schreibe eine Funktion `int LeseZahl(string frage, int min, int max)`. Sie fragt so lange nach einer Zahl, bis diese zwischen `min` und `max` liegt, und gibt sie dann zurück. Bei einer ungültigen Eingabe erscheint eine Meldung. Teste sie im Hauptprogramm für ein Alter (0 bis 120) und einen Tag (1 bis 31).
 
-| | Männer | Frauen |
-|---|---|---|
-| Fliegengewicht | bis 55 kg | bis 48 kg |
-| Leichtgewicht | bis 66 kg | bis 55 kg |
-| Mittelgewicht | bis 84 kg | bis 63 kg |
-| Schwergewicht | darüber | darüber |
+---
 
-Schreibe eine Methode `string Gewichtsklasse(string geschlecht, double gewicht)`, die die Klasse als Text zurückgibt. Das Hauptprogramm liest Geschlecht (`m` oder `w`) und Gewicht ein und gibt die Klasse aus. Beispiel: `m` und `75` ergibt `Mittelgewicht`.
+### 6. Preisrechner 🇨🇭
+Schreibe ein Programm, das einen Nettopreis einliest und den Endpreis ausgibt. Verwende drei Funktionen:
 
-### 6. LeseZahl
-Schreibe eine Methode `int LeseZahl(string frage, int min, int max)`. Sie fragt so lange nach einer Zahl, bis diese zwischen `min` und `max` liegt, und gibt sie dann zurück. Bei einer ungültigen Eingabe erscheint eine Meldung. Teste sie im Hauptprogramm für ein Alter (0 bis 120) und einen Tag (1 bis 31).
+1. `double MitMwst(double netto)` addiert 8.1 % Mehrwertsteuer (`netto * 1.081`).
+2. `double RundeAuf5Rappen(double betrag)` rundet auf 5 Rappen (`Math.Round(betrag * 20) / 20`).
+3. `double Endpreis(double netto)` ruft die beiden anderen Methoden auf und gibt das Ergebnis zurück.
 
-### 7. Wochentag (Zusatz) 📅
-Schreibe eine Methode `string Wochentag(int tag, int monat, int jahr)`, die den Wochentag als Text zurückgibt (Gib den Text mit einer `switch`-Anweisung mit `return` zurück). Verwende diese Berechnung:
+Gib den Endpreis mit zwei Nachkommastellen aus (`.ToString("F2")`). Testwerte: 19.95 ergibt 21.55 CHF, 100 ergibt 108.10 CHF.
 
-```csharp
-int[] offset = { 0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4 };
-if (monat < 3) jahr = jahr - 1;
-int nr = (jahr + jahr / 4 - jahr / 100 + jahr / 400 + offset[monat - 1] + tag) % 7;
-```
+---
 
-`nr` ist 0 für Sonntag, 1 für Montag und so weiter bis 6 für Samstag. Beispiel: 25.10.2021 ergibt Montag. Überlege: Warum bleiben `tag`, `monat` und `jahr` im Hauptprogramm unverändert, obwohl die Methode `jahr` ändert?
+### 7. Taschenrechner mit Menü 🧮
+Schreibe einen Taschenrechner mit Menü:
+
+1. Das Menü zeigt `1) Addieren`, `2) Subtrahieren`, `3) Multiplizieren`, `4) Dividieren`, `0) Beenden` (Methode `ZeigeMenue`).
+2. Die Auswahl und die beiden Zahlen (von -1000 bis 1000) liest du mit `LeseZahl` ein.
+3. Jede Rechenart ist eine eigene Methode: `Addiere`, `Subtrahiere`, `Multipliziere` und `Dividiere` (Rückgabetyp `double`, damit `7 / 2` den Wert `3.5` ergibt).
+4. Bei einer Division durch 0 erscheint eine Meldung statt eines Ergebnisses.
+5. Das Programm läuft, bis der Benutzer 0 wählt, und verabschiedet sich dann.
+
+Tipp: Der Hauptteil besteht aus einer do-while-Schleife mit einem `switch`. Für das Ergebnis der Division brauchst du `(double)a / b`.
+
+---
 
 ## 4. Weiterführende Beispiele und Gedanken
 
 - Typische Stolperfalle: Der Rückgabewert wird nicht aufgefangen (`Quadrat(5);`). Es passiert nichts Sichtbares.
 - Typische Stolperfalle: Ein Weg ohne `return` (Fehler CS0161). Zeichne den PAP, dann siehst du den fehlenden Weg.
-- Faustregel: Eine Methode macht eine Sache. Wenn dein Methodenname ein "und" enthält, sind es meist zwei Methoden.
-- Überlege: Welche Methoden aus der Standardbibliothek kennst du bereits, die einen Wert zurückgeben? (`Math.Max`, `Convert.ToInt32`, `Console.ReadLine`)
+- Faustregel: Eine Funktion macht eine Sache. Wenn dein Funktionenname ein "und" enthält, sind es meist zwei Funktionen.
+- Überlege: Welche Funktionen aus der Standardbibliothek kennst du bereits, die einen Wert zurückgeben? (`Math.Max`, `Convert.ToInt32`, `Console.ReadLine`)
 - Weiterführend: Offizielle Dokumentation zur `return`-Anweisung: [https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/jump-statements](https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/jump-statements)

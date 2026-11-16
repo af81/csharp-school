@@ -1,4 +1,4 @@
-# Funktionen (1/3)
+# Funktionen (void)
 
 ## Lernziel
 Am Ende dieser Lektion definierst und rufst du Funktionen (Unterprogramme) auf, verstehst den Ablauf beim Aufruf, stellst Funktionen im PAP dar und übergibst Werte als Parameter.

@@ -24,7 +24,7 @@
 | **2.11. / 3.11.** | Schleifen II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | [W9](schueler/schleifen2-handout.md) |
 | **9.11. / 10.11.** | <span style="color:red;">**Prüfung 2 (schriftlich)**</span> | Bedingungen & Schleifen | - |
 | **16.11. / 17.11.** | Funktionen I | Lokale Funktionen definieren und aufrufen, Parameter, PAP | [W10](schueler/methoden-handout.md) |
-| **23.11. / 24.11.** | Funktionen II | Lokale Funktionen mit Rückgabewerten | - |
+| **23.11. / 24.11.** | Funktionen II | Lokale Funktionen mit Rückgabewerten | [W11](schueler/methoden2-handout.md) |
 | **30.11. / 01.12.** | Listen & Arrays I | Listen & Arrays definieren | - |
 | **7.12. / 8.12.** | Listen & Arrays II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
 | **14.12. / 15.12.** | Repetition & Prüfungsvorbereitung I | Gesamtrepetition Semester | - |
