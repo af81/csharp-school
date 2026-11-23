@@ -25,12 +25,12 @@
 | **9.11. / 10.11.** | <span style="color:red;">**Prüfung 2 (schriftlich)**</span> | Bedingungen & Schleifen | - |
 | **16.11. / 17.11.** | Funktionen I | Lokale Funktionen definieren und aufrufen, Parameter, PAP | [W10](schueler/methoden-handout.md) |
 | **23.11. / 24.11.** | Funktionen II | Lokale Funktionen mit Rückgabewerten | [W11](schueler/methoden2-handout.md) |
-| **30.11. / 01.12.** | Listen & Arrays I | Listen & Arrays definieren | - |
-| **7.12. / 8.12.** | Listen & Arrays II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | - |
+| **30.11. / 01.12.** | Listen & Arrays I | Listen & Arrays definieren | [W12](schueler/listen1-handout.md) |
+| **7.12. / 8.12.** | Listen & Arrays II | Aufgaben: PAP, Code lesen, Fehler finden, Code schreiben | [W12](schueler/listen1-handout.md) |
 | **14.12. / 15.12.** | Repetition & Prüfungsvorbereitung I | Gesamtrepetition Semester | - |
 | **21.12. / 22.12.** | Weihnachtsferien | 🎅🏻 | - | - |
 | **28.12. / 29.12.** | Weihnachtsferien | 🎅🏻 | - | - |
-| **4.1. / 5.1.** | Repetition & Prüfungsvorbereitung II | Gesamtrepetition Semester | - |
+| **4.1. / 5.1.** | Repetition & Prüfungsvorbereitung II | Gesamtrepetition Semester | [Zusatz: Dateien & CSV](schueler/csv-handout.md) |
 | **11.1. / 12.1.** | <span style="color:red;">**Prüfung 3 (schriftlich)**</span> | Gesamtprüfung, Schwerpunkt Funktionen | - |
 | **18.1. / 19.1.** | Spezialthema / Spiel | Abschluss-Special | - |
 

@@ -48,11 +48,8 @@ nav:
       - W9 - Schleifen (for): schueler/schleifen2-handout.md
       - W10 - Funktionen (void): schueler/methoden-handout.md
       - W11 - Funktionen (return): schueler/methoden2-handout.md
-  # - Lehrer-Skripts:
-  #     - W1 - Einführung & Setup: lehrer/einfuehrung-organisation-skript.md
-  #     - W2 - Theoretische Einführung: lehrer/theoretische-einfuehrung-skript.md
-  #     - W3 - Git & Github: lehrer/git-github-grundlagen-skript.md
-  #     - W4 - Variablen & Datentypen I: lehrer/variablen-1-skript.md
+      - W12 - Listen & Arrays: schueler/listen1-handout.md
+      - Zusatz - Dateien & CSV: schuler/csv-handout.md
   - Ressourcen:
       - Wichtige Terminal-Befehle: ressourcen/terminal.md
       - C#-Programm anlegen und ausführen: ressourcen/csharp-projekt.md
