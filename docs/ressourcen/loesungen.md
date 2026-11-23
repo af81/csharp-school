@@ -909,12 +909,6 @@ long Potenz(int basis, int exponent)
 
 ### Aufgabe 4
 
-PAP
-
----
-
-### Aufgabe 5
-
 ```csharp
 int alter = LeseZahl("Alter", 0, 120);
 Console.WriteLine("Dein Alter: " + alter);
@@ -938,7 +932,7 @@ int LeseZahl(string frage, int min, int max)
 
 ---
 
-### Aufgabe 6
+### Aufgabe 5
 
 ```csharp
 Console.Write("Nettopreis [CHF]: ");
@@ -963,7 +957,7 @@ double Endpreis(double netto)
 
 ---
 
-### Aufgabe 7
+### Aufgabe 6
 
 ```csharp
 int wahl;

@@ -173,17 +173,12 @@ Schreibe folgende Funktionen und rufe jede im Hauptprogramm mit mindestens zwei 
 
 ---
 
-### 4. PAP Maximum
-Zeichne den PAP der Funktion `Maximum(a, b)` aus Aufgabe 3a.
-
----
-
-### 5. LeseZahl
+### 4. LeseZahl
 Schreibe eine Funktion `int LeseZahl(string frage, int min, int max)`. Sie fragt so lange nach einer Zahl, bis diese zwischen `min` und `max` liegt, und gibt sie dann zurück. Bei einer ungültigen Eingabe erscheint eine Meldung. Teste sie im Hauptprogramm für ein Alter (0 bis 120) und einen Tag (1 bis 31).
 
 ---
 
-### 6. Preisrechner 🇨🇭
+### 5. Preisrechner 🇨🇭
 Schreibe ein Programm, das einen Nettopreis einliest und den Endpreis ausgibt. Verwende drei Funktionen:
 
 1. `double MitMwst(double netto)` addiert 8.1 % Mehrwertsteuer (`netto * 1.081`).
@@ -194,7 +189,7 @@ Gib den Endpreis mit zwei Nachkommastellen aus (`.ToString("F2")`). Testwerte: 1
 
 ---
 
-### 7. Taschenrechner mit Menü 🧮
+### 6. Taschenrechner mit Menü 🧮
 Schreibe einen Taschenrechner mit Menü:
 
 1. Das Menü zeigt `1) Addieren`, `2) Subtrahieren`, `3) Multiplizieren`, `4) Dividieren`, `0) Beenden` (Methode `ZeigeMenue`).
