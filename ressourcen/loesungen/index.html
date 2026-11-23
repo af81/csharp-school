@@ -544,6 +544,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schueler/methoden2-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W11 - Funktionen (return)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1195,6 +1218,84 @@
   <a href="#aufgabe-8-dreieck-zusatz" class="md-nav__link">
     <span class="md-ellipsis">
       Aufgabe 8 - Dreieck (Zusatz)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funktionen-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funktionen II
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funktionen II">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 7
     </span>
   </a>
   
@@ -1895,6 +1996,190 @@
 <span class="w">        </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="funktionen-ii">Funktionen II</h2>
+<h3 id="aufgabe-1_2">Aufgabe 1</h3>
+<div class="highlight"><pre><span></span><code><span class="m">10</span>
+<span class="m">22</span>
+<span class="n">True</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-2_2">Aufgabe 2</h3>
+<ul>
+<li>Fehler 1: <code>Quadrat(5)</code> wird zwar ausgeführt, aber mit dem Return-Wert passiert nichts. Er ist in der Konsole nicht ersichtlich.</li>
+<li>Fehler 2: <code>Groesste()</code> liefert keinen Return-Path für <code>a == b</code>.</li>
+</ul>
+<hr />
+<h3 id="aufgabe-3_2">Aufgabe 3</h3>
+<p>a)
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">Maximum</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>b)
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="nf">IstGerade</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>c)
+<div class="highlight"><pre><span></span><code><span class="kt">long</span><span class="w"> </span><span class="nf">Fakultaet</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">f</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">f</span><span class="o">*</span><span class="n">i</span><span class="p">;</span>
+<span class="w">        </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">f</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>d)
+<div class="highlight"><pre><span></span><code><span class="kt">long</span><span class="w"> </span><span class="nf">Potenz</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">basis</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">exponent</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">exponent</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">p</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">basis</span><span class="p">;</span>
+<span class="w">        </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h3 id="aufgabe-4_1">Aufgabe 4</h3>
+<p>PAP</p>
+<hr />
+<h3 id="aufgabe-5_1">Aufgabe 5</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Alter&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">120</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Dein Alter: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">alter</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Tag&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">31</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Tag: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tag</span><span class="p">);</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">LeseZahl</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">frage</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">frage</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bis &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
+<span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ungültige Eingabe.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-6">Aufgabe 6</h3>
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Nettopreis [CHF]: &quot;</span><span class="p">);</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">netto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToDouble</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Endpreis: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Endpreis</span><span class="p">(</span><span class="n">netto</span><span class="p">).</span><span class="n">ToString</span><span class="p">(</span><span class="s">&quot;F2&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; CHF&quot;</span><span class="p">);</span>
+
+<span class="kt">double</span><span class="w"> </span><span class="nf">MitMwst</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">netto</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">netto</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1.081</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">double</span><span class="w"> </span><span class="nf">RundeAuf5Rappen</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">betrag</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Math</span><span class="p">.</span><span class="n">Round</span><span class="p">(</span><span class="n">betrag</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">20</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">20</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">double</span><span class="w"> </span><span class="nf">Endpreis</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">netto</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nf">RundeAuf5Rappen</span><span class="p">(</span><span class="n">MitMwst</span><span class="p">(</span><span class="n">netto</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-7">Aufgabe 7</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">wahl</span><span class="p">;</span>
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">ZeigeMenue</span><span class="p">();</span>
+<span class="w">    </span><span class="n">wahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Auswahl&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">wahl</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Erste Zahl&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Zweite Zahl&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">);</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">wahl</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="m">1</span><span class="p">:</span>
+<span class="w">                </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ergebnis: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Addiere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">));</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="m">2</span><span class="p">:</span>
+<span class="w">                </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ergebnis: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Subtrahiere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">));</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="m">3</span><span class="p">:</span>
+<span class="w">                </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ergebnis: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Multipliziere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">));</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="m">4</span><span class="p">:</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<span class="w">                    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Division durch 0 ist nicht möglich.&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="k">else</span>
+<span class="w">                    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ergebnis: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Dividiere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">));</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">wahl</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Auf Wiedersehen!&quot;</span><span class="p">);</span>
+
+<span class="k">void</span><span class="w"> </span><span class="nf">ZeigeMenue</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;1) Addieren&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;2) Subtrahieren&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;3) Multiplizieren&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;4) Dividieren&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;0) Beenden&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">LeseZahl</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">frage</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">frage</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bis &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
+<span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ungültige Eingabe.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">Addiere</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">Subtrahiere</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">Multipliziere</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">double</span><span class="w"> </span><span class="nf">Dividiere</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 

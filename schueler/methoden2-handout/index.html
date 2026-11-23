@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://af81.github.io/csharp-school/schueler/methoden2-handout/">
       
       
+        <link rel="prev" href="../methoden-handout/">
+      
+      
+        <link rel="next" href="../../ressourcen/terminal/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Methoden (2/3) - Modul 319 – Programmieren Grundlagen in C#</title>
+        <title>W11 - Funktionen (return) - Modul 319 – Programmieren Grundlagen in C#</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methoden-23" class="md-skip">
+        <a href="#funktionen-return" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Methoden (2/3)
+              W11 - Funktionen (return)
             
           </span>
         </div>
@@ -278,18 +282,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -305,7 +311,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Lernstoff
@@ -542,6 +548,254 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    W11 - Funktionen (return)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    W11 - Funktionen (return)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lernziel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-einstieg" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Einstieg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-grundlagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Grundlagen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Grundlagen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-ruckgabewert-und-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      A - Rückgabewert und return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-den-ruckgabewert-weiterverwenden" class="md-nav__link">
+    <span class="md-ellipsis">
+      B - Den Rückgabewert weiterverwenden
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-bool-funktionen" class="md-nav__link">
+    <span class="md-ellipsis">
+      C - bool-Funktionen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-jeder-weg-braucht-ein-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      D - Jeder Weg braucht ein return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-pap-einer-funktion-mit-ruckgabe" class="md-nav__link">
+    <span class="md-ellipsis">
+      E - PAP einer Funktion mit Rückgabe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      F - Refactoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-eingabe-als-funktion" class="md-nav__link">
+    <span class="md-ellipsis">
+      G - Eingabe als Funktion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ubungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Übungen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Übungen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-code-lesen-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Code lesen I
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fehler-finden-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fehler finden I
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-funktionen-schreiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Funktionen schreiben
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-pap-maximum" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. PAP Maximum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-lesezahl" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. LeseZahl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-preisrechner" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Preisrechner 🇨🇭
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-taschenrechner-mit-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Taschenrechner mit Menü 🧮
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-weiterfuhrende-beispiele-und-gedanken" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Weiterführende Beispiele und Gedanken
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -702,14 +956,14 @@
 
 
 
-<h1 id="methoden-23">Methoden (2/3)</h1>
+<h1 id="funktionen-return">Funktionen (return)</h1>
 <h2 id="lernziel">Lernziel</h2>
-<p>Am Ende dieser Lektion schreibst du Methoden mit Rückgabewert, verwendest das Ergebnis weiter, prüfst mit <code>bool</code>-Methoden und lagerst Code durch Refactoring in Methoden aus.</p>
+<p>Am Ende dieser Lektion schreibst du Funktionen mit Rückgabewert, verwendest das Ergebnis weiter, prüfst mit <code>bool</code>-Funktionen und lagerst Code durch Refactoring in Funktionen aus.</p>
 <hr />
 <h2 id="1-einstieg">1. Einstieg</h2>
 <ul>
-<li>Bisher haben deine Methoden etwas ausgegeben. Oft brauchst du aber das Ergebnis weiter: für eine Berechnung, eine Bedingung oder eine Anzeige an anderer Stelle. Dafür gibt eine Methode einen Wert zurück.</li>
-<li>Methoden mit Rückgabewert sind die Bausteine für Berechnungen, Prüfungen und Umrechnungen. Du kennst sie bereits von Hilfsfunktionen wie <code>Math.Max(a, b)</code>.</li>
+<li>Bisher haben deine Funktionen etwas ausgegeben. Oft brauchst du aber das Ergebnis weiter: für eine Berechnung, eine Bedingung oder eine Anzeige an anderer Stelle. Dafür gibt eine Funktion einen Wert zurück.</li>
+<li>Funktionen mit Rückgabewert sind die Bausteine für Berechnungen, Prüfungen und Umrechnungen. Du kennst sie bereits von Hilfsfunktionen wie <code>Math.Max(a, b)</code>.</li>
 <li>Refactoring heisst: Code umbauen, ohne dass sich das Verhalten ändert. Das Ziel ist ein Programm, das du auch in drei Monaten noch verstehst.</li>
 </ul>
 <hr />
@@ -724,12 +978,12 @@
 <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li>Statt <code>void</code> steht der Datentyp des Ergebnisses vor dem Methodennamen.</li>
-<li><code>return</code> liefert den Wert zurück und beendet die Methode sofort.</li>
-<li>Der Datentyp des Werts bei <code>return</code> muss zum Datentyp der Methode passen.</li>
+<li>Statt <code>void</code> steht der Datentyp des Ergebnisses vor dem Funktionennamen.</li>
+<li><code>return</code> liefert den Wert zurück und beendet die Funktion sofort.</li>
+<li>Der Datentyp des Werts bei <code>return</code> muss zum Datentyp der Funktion passen.</li>
 </ul>
 <h3 id="b-den-ruckgabewert-weiterverwenden">B - Den Rückgabewert weiterverwenden</h3>
-<p>Ein Methodenaufruf mit Rückgabewert ist ein Wert. Du kannst ihn überall einsetzen, wo auch eine Zahl oder Variable stehen darf:</p>
+<p>Ein Funktionenaufruf mit Rückgabewert ist ein Wert. Du kannst ihn überall einsetzen, wo auch eine Zahl oder Variable stehen darf:</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Addiere</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">);</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Addiere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">);</span>
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Addiere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
@@ -738,7 +992,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>Ein Aufruf wie <code>Quadrat(5);</code> ohne Variable kompiliert zwar, das Ergebnis geht aber verloren.</p>
-<h3 id="c-bool-methoden">C - bool-Methoden</h3>
+<h3 id="c-bool-funktionen">C - bool-Funktionen</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="nf">IstGerade</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
@@ -759,12 +1013,12 @@
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Das ergibt den Fehler CS0161 ("not all code paths return a value"). Für <code>a == b</code> gibt es keinen <code>return</code>. Der Compiler prüft alle möglichen Wege durch die Methode.</p>
-<h3 id="e-pap-einer-methode-mit-ruckgabe">E - PAP einer Methode mit Rückgabe</h3>
-<p>Der PAP der Methode beginnt bei ihrem Namen. Jeder Weg endet in einem Ergebnis ("gib zurück"). Eine Methode kann mehrere Enden haben, solange jeder Weg eines hat.</p>
+<p>Das ergibt den Fehler CS0161 ("not all code paths return a value"). Für <code>a == b</code> gibt es keinen <code>return</code>. Der Compiler prüft alle möglichen Wege durch die Funktion.</p>
+<h3 id="e-pap-einer-funktion-mit-ruckgabe">E - PAP einer Funktion mit Rückgabe</h3>
+<p>Der PAP der Funktion beginnt bei ihrem Namen. Jeder Weg endet in einem Ergebnis ("gib zurück"). Eine Funktion kann mehrere Enden haben, solange jeder Weg eines hat.</p>
 <p><img alt="" src="../../img/methode-return.png" /></p>
 <h3 id="f-refactoring">F - Refactoring</h3>
-<p>Wenn ein Programm lang wird, lagerst du zusammengehörende Blöcke in Methoden aus:</p>
+<p>Wenn ein Programm lang wird, lagerst du zusammengehörende Blöcke in Funktionen aus:</p>
 <ol>
 <li>Block markieren, der eine Sache macht.</li>
 <li>Passenden Namen wählen.</li>
@@ -772,7 +1026,7 @@
 <li>Was kommt heraus? Das wird der Rückgabewert.</li>
 <li>Block verschieben, Aufruf einsetzen und testen. Das Programm muss sich danach gleich verhalten.</li>
 </ol>
-<h3 id="g-eingabe-als-methode">G - Eingabe als Methode</h3>
+<h3 id="g-eingabe-als-funktion">G - Eingabe als Funktion</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Alter&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">120</span><span class="p">);</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">LeseZahl</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">frage</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
@@ -790,7 +1044,7 @@
 <hr />
 <h2 id="3-ubungen">3. Übungen</h2>
 <p><strong>Regeln</strong>: Die offizielle C#-Dokumentation und Ressourcen im Netz darfst du verwenden. KI-Tools bleiben weg, damit der Lerneffekt möglichst gross ist.</p>
-<h3 id="1-code-lesen-iii">1. Code lesen III</h3>
+<h3 id="1-code-lesen-i">1. Code lesen I</h3>
 <p>Was gibt das Programm aus?</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Addiere</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">);</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Addiere</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">);</span>
@@ -810,7 +1064,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="2-fehler-finden-iii">2. Fehler finden III</h3>
+<h3 id="2-fehler-finden-i">2. Fehler finden I</h3>
 <p>Das Programm soll das Quadrat von 5 und die grössere von zwei Zahlen ausgeben. Es enthält einen <strong>Kompilierfehler</strong> und einen <strong>Denkfehler im Hauptprogramm</strong> (der Code läuft, tut aber nicht, was er soll). Finde beide, erkläre sie und korrigiere sie.</p>
 <div class="highlight"><pre><span></span><code><span class="m">01</span><span class="w">  </span><span class="n">Quadrat</span><span class="p">(</span><span class="m">5</span><span class="p">);</span>
 <span class="m">02</span><span class="w">  </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Groesste</span><span class="p">(</span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">));</span>
@@ -829,66 +1083,47 @@
 <span class="m">15</span><span class="w">  </span><span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="3-methoden-schreiben">3. Methoden schreiben</h3>
-<p>Schreibe folgende Methoden und rufe jede im Hauptprogramm mit mindestens zwei Testwerten auf:</p>
-<p>a) <code>int Maximum(int a, int b)</code> gibt die grössere der beiden Zahlen zurück.
-b) <code>bool IstGerade(int zahl)</code> gibt <code>true</code> zurück, wenn die Zahl gerade ist.
-c) <code>long Fakultaet(int n)</code> berechnet n! (Beispiel: <code>Fakultaet(5)</code> ist 120). Verwende den Datentyp <code>long</code>.
-d) <code>long Potenz(int basis, int exponent)</code> berechnet die Potenz mit einer Schleife (Beispiel: <code>Potenz(2, 10)</code> ist 1024). Die Methode <code>Math.Pow</code> ist hier nicht erlaubt.
-e) <strong>Zusatz:</strong> <code>bool IstPrimzahl(int zahl)</code>. Testwerte: 1 (nein), 2 (ja), 17 (ja), 21 (nein), 97 (ja).</p>
+<h3 id="3-funktionen-schreiben">3. Funktionen schreiben</h3>
+<p>Schreibe folgende Funktionen und rufe jede im Hauptprogramm mit mindestens zwei Testwerten auf:</p>
+<ul>
+<li>a) <code>int Maximum(int a, int b)</code> gibt die grössere der beiden Zahlen zurück.</li>
+<li>b) <code>bool IstGerade(int zahl)</code> gibt <code>true</code> zurück, wenn die Zahl gerade ist.</li>
+<li>c) <code>long Fakultaet(int n)</code> berechnet n! (Beispiel: <code>Fakultaet(5)</code> ist 120). Verwende den Datentyp <code>long</code>.</li>
+<li>d) <code>long Potenz(int basis, int exponent)</code> berechnet die Potenz mit einer Schleife (Beispiel: <code>Potenz(2, 10)</code> ist 1024). Die Funktion <code>Math.Pow</code> ist hier nicht erlaubt.</li>
+</ul>
 <hr />
 <h3 id="4-pap-maximum">4. PAP Maximum</h3>
-<p>Zeichne den PAP der Methode <code>Maximum(a, b)</code> aus Aufgabe 3a. Markiere die Stellen, an denen ein Wert zurückgegeben wird.</p>
+<p>Zeichne den PAP der Funktion <code>Maximum(a, b)</code> aus Aufgabe 3a.</p>
 <hr />
-<h3 id="5-ringen">5. Ringen 🤼</h3>
-<p>Beim Ringen werden Sportler in Gewichtsklassen eingeteilt:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Männer</th>
-<th>Frauen</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fliegengewicht</td>
-<td>bis 55 kg</td>
-<td>bis 48 kg</td>
-</tr>
-<tr>
-<td>Leichtgewicht</td>
-<td>bis 66 kg</td>
-<td>bis 55 kg</td>
-</tr>
-<tr>
-<td>Mittelgewicht</td>
-<td>bis 84 kg</td>
-<td>bis 63 kg</td>
-</tr>
-<tr>
-<td>Schwergewicht</td>
-<td>darüber</td>
-<td>darüber</td>
-</tr>
-</tbody>
-</table>
-<p>Schreibe eine Methode <code>string Gewichtsklasse(string geschlecht, double gewicht)</code>, die die Klasse als Text zurückgibt. Das Hauptprogramm liest Geschlecht (<code>m</code> oder <code>w</code>) und Gewicht ein und gibt die Klasse aus. Beispiel: <code>m</code> und <code>75</code> ergibt <code>Mittelgewicht</code>.</p>
-<h3 id="6-lesezahl">6. LeseZahl</h3>
-<p>Schreibe eine Methode <code>int LeseZahl(string frage, int min, int max)</code>. Sie fragt so lange nach einer Zahl, bis diese zwischen <code>min</code> und <code>max</code> liegt, und gibt sie dann zurück. Bei einer ungültigen Eingabe erscheint eine Meldung. Teste sie im Hauptprogramm für ein Alter (0 bis 120) und einen Tag (1 bis 31).</p>
-<h3 id="7-wochentag-zusatz">7. Wochentag (Zusatz) 📅</h3>
-<p>Schreibe eine Methode <code>string Wochentag(int tag, int monat, int jahr)</code>, die den Wochentag als Text zurückgibt (Gib den Text mit einer <code>switch</code>-Anweisung mit <code>return</code> zurück). Verwende diese Berechnung:</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">};</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">monat</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="n">jahr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">jahr</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">nr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">jahr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">jahr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">jahr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">jahr</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">400</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">offset</span><span class="p">[</span><span class="n">monat</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tag</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">7</span><span class="p">;</span>
-</code></pre></div>
-<p><code>nr</code> ist 0 für Sonntag, 1 für Montag und so weiter bis 6 für Samstag. Beispiel: 25.10.2021 ergibt Montag. Überlege: Warum bleiben <code>tag</code>, <code>monat</code> und <code>jahr</code> im Hauptprogramm unverändert, obwohl die Methode <code>jahr</code> ändert?</p>
+<h3 id="5-lesezahl">5. LeseZahl</h3>
+<p>Schreibe eine Funktion <code>int LeseZahl(string frage, int min, int max)</code>. Sie fragt so lange nach einer Zahl, bis diese zwischen <code>min</code> und <code>max</code> liegt, und gibt sie dann zurück. Bei einer ungültigen Eingabe erscheint eine Meldung. Teste sie im Hauptprogramm für ein Alter (0 bis 120) und einen Tag (1 bis 31).</p>
+<hr />
+<h3 id="6-preisrechner">6. Preisrechner 🇨🇭</h3>
+<p>Schreibe ein Programm, das einen Nettopreis einliest und den Endpreis ausgibt. Verwende drei Funktionen:</p>
+<ol>
+<li><code>double MitMwst(double netto)</code> addiert 8.1 % Mehrwertsteuer (<code>netto * 1.081</code>).</li>
+<li><code>double RundeAuf5Rappen(double betrag)</code> rundet auf 5 Rappen (<code>Math.Round(betrag * 20) / 20</code>).</li>
+<li><code>double Endpreis(double netto)</code> ruft die beiden anderen Methoden auf und gibt das Ergebnis zurück.</li>
+</ol>
+<p>Gib den Endpreis mit zwei Nachkommastellen aus (<code>.ToString("F2")</code>). Testwerte: 19.95 ergibt 21.55 CHF, 100 ergibt 108.10 CHF.</p>
+<hr />
+<h3 id="7-taschenrechner-mit-menu">7. Taschenrechner mit Menü 🧮</h3>
+<p>Schreibe einen Taschenrechner mit Menü:</p>
+<ol>
+<li>Das Menü zeigt <code>1) Addieren</code>, <code>2) Subtrahieren</code>, <code>3) Multiplizieren</code>, <code>4) Dividieren</code>, <code>0) Beenden</code> (Methode <code>ZeigeMenue</code>).</li>
+<li>Die Auswahl und die beiden Zahlen (von -1000 bis 1000) liest du mit <code>LeseZahl</code> ein.</li>
+<li>Jede Rechenart ist eine eigene Methode: <code>Addiere</code>, <code>Subtrahiere</code>, <code>Multipliziere</code> und <code>Dividiere</code> (Rückgabetyp <code>double</code>, damit <code>7 / 2</code> den Wert <code>3.5</code> ergibt).</li>
+<li>Bei einer Division durch 0 erscheint eine Meldung statt eines Ergebnisses.</li>
+<li>Das Programm läuft, bis der Benutzer 0 wählt, und verabschiedet sich dann.</li>
+</ol>
+<p>Tipp: Der Hauptteil besteht aus einer do-while-Schleife mit einem <code>switch</code>. Für das Ergebnis der Division brauchst du <code>(double)a / b</code>.</p>
+<hr />
 <h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
 <ul>
 <li>Typische Stolperfalle: Der Rückgabewert wird nicht aufgefangen (<code>Quadrat(5);</code>). Es passiert nichts Sichtbares.</li>
 <li>Typische Stolperfalle: Ein Weg ohne <code>return</code> (Fehler CS0161). Zeichne den PAP, dann siehst du den fehlenden Weg.</li>
-<li>Faustregel: Eine Methode macht eine Sache. Wenn dein Methodenname ein "und" enthält, sind es meist zwei Methoden.</li>
-<li>Überlege: Welche Methoden aus der Standardbibliothek kennst du bereits, die einen Wert zurückgeben? (<code>Math.Max</code>, <code>Convert.ToInt32</code>, <code>Console.ReadLine</code>)</li>
+<li>Faustregel: Eine Funktion macht eine Sache. Wenn dein Funktionenname ein "und" enthält, sind es meist zwei Funktionen.</li>
+<li>Überlege: Welche Funktionen aus der Standardbibliothek kennst du bereits, die einen Wert zurückgeben? (<code>Math.Max</code>, <code>Convert.ToInt32</code>, <code>Console.ReadLine</code>)</li>
 <li>Weiterführend: Offizielle Dokumentation zur <code>return</code>-Anweisung: <a href="https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/jump-statements">https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/statements/jump-statements</a></li>
 </ul>
 
