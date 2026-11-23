@@ -173,11 +173,6 @@ Schreibe folgende Funktionen und rufe jede im Hauptprogramm mit mindestens zwei 
 
 ---
 
-### 4. LeseZahl
-Schreibe eine Funktion `int LeseZahl(string frage, int min, int max)`. Sie fragt so lange nach einer Zahl, bis diese zwischen `min` und `max` liegt, und gibt sie dann zurück. Bei einer ungültigen Eingabe erscheint eine Meldung. Teste sie im Hauptprogramm für ein Alter (0 bis 120) und einen Tag (1 bis 31).
-
----
-
 ### 5. Preisrechner 🇨🇭
 Schreibe ein Programm, das einen Nettopreis einliest und den Endpreis ausgibt. Verwende drei Funktionen:
 

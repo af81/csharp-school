@@ -910,31 +910,6 @@ long Potenz(int basis, int exponent)
 ### Aufgabe 4
 
 ```csharp
-int alter = LeseZahl("Alter", 0, 120);
-Console.WriteLine("Dein Alter: " + alter);
-int tag = LeseZahl("Tag", 1, 31);
-Console.WriteLine("Tag: " + tag);
-
-int LeseZahl(string frage, int min, int max)
-{
-    int zahl;
-    do
-    {
-        Console.Write(frage + " [" + min + " bis " + max + "]: ");
-        zahl = Convert.ToInt32(Console.ReadLine());
-        if (zahl < min || zahl > max)
-            Console.WriteLine("Ungültige Eingabe.");
-    }
-    while (zahl < min || zahl > max);
-    return zahl;
-}
-```
-
----
-
-### Aufgabe 5
-
-```csharp
 Console.Write("Nettopreis [CHF]: ");
 double netto = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Endpreis: " + Endpreis(netto).ToString("F2") + " CHF");
@@ -957,7 +932,7 @@ double Endpreis(double netto)
 
 ---
 
-### Aufgabe 6
+### Aufgabe 5
 
 ```csharp
 int wahl;
@@ -967,8 +942,8 @@ do
     wahl = LeseZahl("Auswahl", 0, 4);
     if (wahl != 0)
     {
-        int a = LeseZahl("Erste Zahl", -1000, 1000);
-        int b = LeseZahl("Zweite Zahl", -1000, 1000);
+        int a = LeseZahl("Erste Zahl (-1000 bis 1000)", -1000, 1000);
+        int b = LeseZahl("Zweite Zahl (-1000 bis 1000)", -1000, 1000);
         switch (wahl)
         {
             case 1:
@@ -1002,12 +977,12 @@ void ZeigeMenue()
     Console.WriteLine("0) Beenden");
 }
 
-int LeseZahl(string frage, int min, int max)
+int LeseZahl(string aufforderung, int min, int max)
 {
     int zahl;
     do
     {
-        Console.Write(frage + " [" + min + " bis " + max + "]: ");
+        Console.Write(aufforderung + " [" + min + " bis " + max + "]: ");
         zahl = Convert.ToInt32(Console.ReadLine());
         if (zahl < min || zahl > max)
             Console.WriteLine("Ungültige Eingabe.");
@@ -1035,4 +1010,95 @@ double Dividiere(int a, int b)
 {
     return (double)a / b;
 }
+```
+
+---
+
+## Listen & Arrays
+
+### Aufgabe 1
+
+a)
+```csharp
+4
+42
+24
+51
+```
+
+b)
+```csharp
+3
+10 7 3
+2
+False
+```
+
+c)
+```csharp
+Cem
+4
+Eva
+Anna, Cem, Dina, Eva
+Eva
+```
+
+---
+
+### Aufgabe 2
+
+- Zeile 05: `farben.length` geht nur bei Arrays. Bei Listen braucht es `.Count`
+- Zeile 07: Der Index 3 existiert nicht -> Out of range
+
+---
+
+### Aufgabe 3
+
+```csharp
+// Hauptprogramm
+List<string> items = new List<string>();
+string item = "";
+
+Console.WriteLine("Gib so viele Gegenstaende ein, wie du möchtest. Oder beende die Erfassung mit der Eingabetaste: ");
+
+do
+{
+    item = Console.ReadLine();
+    // Nur hinzufügen, wenn die Eingabe nicht leer ist
+    if (!string.IsNullOrEmpty(item))
+    {
+        items.Add(item);
+    }
+} while (item != "");
+
+for (int i = 0; i < items.Count; i++)
+{
+    Console.WriteLine($"{i + 1}. {items[i]}");
+}
+
+Console.WriteLine();
+Console.WriteLine("Suche einen Gegenstand, den du entfernen möchtest:");
+string removable = Console.ReadLine();
+
+if (items.Remove(removable))
+{
+    Console.WriteLine("Der Gegenstand wurde entfernt.");
+}
+else
+{
+    Console.WriteLine("Dieser Gegenstand ist nicht in der Liste.");
+}
+
+Console.WriteLine();
+items.Sort();
+
+Console.WriteLine(string.Join(", ", items));
+```
+
+---
+
+### Aufgabe 4
+
+```csharp
+50
 ```
