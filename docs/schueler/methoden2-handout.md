@@ -173,7 +173,7 @@ Schreibe folgende Funktionen und rufe jede im Hauptprogramm mit mindestens zwei 
 
 ---
 
-### 5. Preisrechner 🇨🇭
+### 4. Preisrechner 🇨🇭
 Schreibe ein Programm, das einen Nettopreis einliest und den Endpreis ausgibt. Verwende drei Funktionen:
 
 1. `double MitMwst(double netto)` addiert 8.1 % Mehrwertsteuer (`netto * 1.081`).
@@ -184,7 +184,7 @@ Gib den Endpreis mit zwei Nachkommastellen aus (`.ToString("F2")`). Testwerte: 1
 
 ---
 
-### 6. Taschenrechner mit Menü 🧮
+### 5. Taschenrechner mit Menü 🧮
 Schreibe einen Taschenrechner mit Menü:
 
 1. Das Menü zeigt `1) Addieren`, `2) Subtrahieren`, `3) Multiplizieren`, `4) Dividieren`, `0) Beenden` (Methode `ZeigeMenue`).

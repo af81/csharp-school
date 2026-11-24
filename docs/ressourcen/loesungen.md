@@ -1101,4 +1101,10 @@ Console.WriteLine(string.Join(", ", items));
 
 ```csharp
 50
+40 // Die void-Funktion ErhoeheZahl gibt nichts zurück und hat keinen Einfluss auf "wert"
+115
 ```
+
+---
+
+### Aufgabe 5

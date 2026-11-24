@@ -567,6 +567,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schueler/listen1-handout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W12 - Listen & Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schuler/csv-handout.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zusatz - Dateien & CSV
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1283,10 +1329,61 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#aufgabe-6" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listen-arrays" class="md-nav__link">
     <span class="md-ellipsis">
-      Aufgabe 6
+      Listen &amp; Arrays
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Listen &amp; Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aufgabe-5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufgabe 5
     </span>
   </a>
   
@@ -2052,27 +2149,6 @@
 </code></pre></div></p>
 <hr />
 <h3 id="aufgabe-4_1">Aufgabe 4</h3>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">alter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Alter&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">120</span><span class="p">);</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Dein Alter: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">alter</span><span class="p">);</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Tag&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">31</span><span class="p">);</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Tag: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tag</span><span class="p">);</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="nf">LeseZahl</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">frage</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
-<span class="w">    </span><span class="k">do</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">frage</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bis &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]: &quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
-<span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ungültige Eingabe.&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="aufgabe-5_1">Aufgabe 5</h3>
 <div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;Nettopreis [CHF]: &quot;</span><span class="p">);</span>
 <span class="kt">double</span><span class="w"> </span><span class="n">netto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToDouble</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Endpreis: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Endpreis</span><span class="p">(</span><span class="n">netto</span><span class="p">).</span><span class="n">ToString</span><span class="p">(</span><span class="s">&quot;F2&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; CHF&quot;</span><span class="p">);</span>
@@ -2093,7 +2169,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="aufgabe-6">Aufgabe 6</h3>
+<h3 id="aufgabe-5_1">Aufgabe 5</h3>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">wahl</span><span class="p">;</span>
 <span class="k">do</span>
 <span class="p">{</span>
@@ -2101,8 +2177,8 @@
 <span class="w">    </span><span class="n">wahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Auswahl&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">);</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">wahl</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Erste Zahl&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">);</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Zweite Zahl&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Erste Zahl (-1000 bis 1000)&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">);</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LeseZahl</span><span class="p">(</span><span class="s">&quot;Zweite Zahl (-1000 bis 1000)&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">);</span>
 <span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">wahl</span><span class="p">)</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="m">1</span><span class="p">:</span>
@@ -2136,12 +2212,12 @@
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;0) Beenden&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">LeseZahl</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">frage</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">LeseZahl</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">aufforderung</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="p">;</span>
 <span class="w">    </span><span class="k">do</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">frage</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bis &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]: &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">aufforderung</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; [&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; bis &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;]: &quot;</span><span class="p">);</span>
 <span class="w">        </span><span class="n">zahl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">max</span><span class="p">)</span>
 <span class="w">            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Ungültige Eingabe.&quot;</span><span class="p">);</span>
@@ -2170,6 +2246,83 @@
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">a</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
+<hr />
+<h2 id="listen-arrays">Listen &amp; Arrays</h2>
+<h3 id="aufgabe-1_3">Aufgabe 1</h3>
+<p>a)
+<div class="highlight"><pre><span></span><code><span class="m">4</span>
+<span class="m">42</span>
+<span class="m">24</span>
+<span class="m">51</span>
+</code></pre></div></p>
+<p>b)
+<div class="highlight"><pre><span></span><code><span class="m">3</span>
+<span class="m">10</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">3</span>
+<span class="m">2</span>
+<span class="n">False</span>
+</code></pre></div></p>
+<p>c)
+<div class="highlight"><pre><span></span><code><span class="n">Cem</span>
+<span class="m">4</span>
+<span class="n">Eva</span>
+<span class="n">Anna</span><span class="p">,</span><span class="w"> </span><span class="n">Cem</span><span class="p">,</span><span class="w"> </span><span class="n">Dina</span><span class="p">,</span><span class="w"> </span><span class="n">Eva</span>
+<span class="n">Eva</span>
+</code></pre></div></p>
+<hr />
+<h3 id="aufgabe-2_3">Aufgabe 2</h3>
+<ul>
+<li>Zeile 05: <code>farben.length</code> geht nur bei Arrays. Bei Listen braucht es <code>.Count</code></li>
+<li>Zeile 07: Der Index 3 existiert nicht -&gt; Out of range</li>
+</ul>
+<hr />
+<h3 id="aufgabe-3_3">Aufgabe 3</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Hauptprogramm</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Gib so viele Gegenstaende ein, wie du möchtest. Oder beende die Erfassung mit der Eingabetaste: &quot;</span><span class="p">);</span>
+
+<span class="k">do</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">// Nur hinzufügen, wenn die Eingabe nicht leer ist</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">items</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">item</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">);</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">items</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;{i + 1}. {items[i]}&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Suche einen Gegenstand, den du entfernen möchtest:&quot;</span><span class="p">);</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">removable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">items</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="n">removable</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Der Gegenstand wurde entfernt.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Dieser Gegenstand ist nicht in der Liste.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+<span class="n">items</span><span class="p">.</span><span class="n">Sort</span><span class="p">();</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&quot;, &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">items</span><span class="p">));</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-4_2">Aufgabe 4</h3>
+<div class="highlight"><pre><span></span><code><span class="m">50</span>
+<span class="m">40</span><span class="w"> </span><span class="c1">// Die void-Funktion ErhoeheZahl gibt nichts zurück und hat keinen Einfluss auf &quot;wert&quot;</span>
+<span class="m">115</span>
+</code></pre></div>
+<hr />
+<h3 id="aufgabe-5_2">Aufgabe 5</h3>
 
 
 
