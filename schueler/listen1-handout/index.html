@@ -788,27 +788,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-fehler-finden-ii" class="md-nav__link">
+  <a href="#5-das-punktesystem-der-zaubererakademie" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Fehler finden II
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-das-punktesystem-der-zaubererakademie" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Das Punktesystem der Zaubererakademie 🧙🏼‍♀️
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-lotto-zusatz" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Lotto (Zusatz) 🎰
+      5. Das Punktesystem der Zaubererakademie 🧙🏼‍♀️
     </span>
   </a>
   
@@ -1356,29 +1338,19 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="5-fehler-finden-ii">5. Fehler finden II</h3>
-<p>Das Programm soll alle geraden Zahlen aus der Liste entfernen. Es stürzt ab. Finde die Ursache, erkläre sie und korrigiere das Programm.</p>
-<div class="highlight"><pre><span></span><code><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">zahlen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="p">};</span>
-<span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">zahl</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">zahlen</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">zahl</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
-<span class="w">        </span><span class="n">zahlen</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="n">zahl</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&quot;, &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">zahlen</span><span class="p">));</span>
-</code></pre></div>
-<p>Zusatzfrage: Warum entfernst du in der korrigierten Version rückwärts (von hinten nach vorne)?</p>
-<hr />
-<h3 id="6-das-punktesystem-der-zaubererakademie">6. Das Punktesystem der Zaubererakademie 🧙🏼‍♀️</h3>
+<h3 id="5-das-punktesystem-der-zaubererakademie">5. Das Punktesystem der Zaubererakademie 🧙🏼‍♀️</h3>
 <p>Du bist Lehrer an einer Zaubererakademie. Deine Schüler haben eine Prüfung in Magie abgelegt, und du analysierst die Punkte. Wie viele Schüler es sind, weisst du nicht, deshalb verwendest du eine Liste:</p>
 <ol>
-<li>Der Benutzer gibt die Punkte (0 bis 100) ein. Die Eingabe <code>-1</code> beendet die Eingabe. Verwende deine Funktion <code>LeseZahl</code> aus den Funktionen-Lektionen.</li>
-<li>Schreibe Funktionen, die eine <code>List&lt;int&gt;</code> entgegennehmen: <code>double Durchschnitt(List&lt;int&gt; liste)</code>, <code>int Maximum(List&lt;int&gt; liste)</code>, <code>int Minimum(List&lt;int&gt; liste)</code> und <code>int ZaehleBestanden(List&lt;int&gt; liste)</code> (Punkte &gt;= 50).</li>
-<li>Das Hauptprogramm gibt Anzahl, höchste und tiefste Punkte, Durchschnitt (eine Nachkommastelle) und die Anzahl Bestandene aus. Wurden keine Punkte erfasst, erscheint eine Meldung, und die Funktionen werden nicht aufgerufen.</li>
+<li>Der Benutzer gibt die Punkte (0 bis 100) ein. Die Eingabe <code>-1</code> beendet die Eingabe.</li>
+<li>Schreibe Funktionen, die eine <code>List&lt;int&gt;</code> entgegennehmen:<ul>
+<li><code>int Maximum(List&lt;int&gt; list)</code> (Gibt das grösste Element der Liste zurück)</li>
+<li><code>int Minimum(List&lt;int&gt; list)</code> (Gibt das kleinste Element der Liste zurück)</li>
+<li><code>double Average(List&lt;int&gt; list)</code> (Gibt den Durchschnitt der Zahlen in der Liste zurück)</li>
+<li><code>int NumberOfPassed(List&lt;int&gt; list)</code> (Gibt die Anzahl der bestandenen Prüfungen mit Punkten &gt;= 50 zurück).</li>
+</ul>
+</li>
+<li>Das Hauptprogramm gibt Anzahl, höchste und tiefste Punkte, Durchschnitt (eine Nachkommastelle) und die Anzahl Bestandene aus.</li>
 </ol>
-<p><strong>Zusatz:</strong> Schreibe die Funktion <code>List&lt;int&gt; FilterUeber(List&lt;int&gt; liste, double grenze)</code>, die eine neue Liste mit allen Punkten über der Grenze zurückgibt, und gib sie mit dem Durchschnitt als Grenze aus.</p>
-<hr />
-<h3 id="7-lotto-zusatz">7. Lotto (Zusatz) 🎰</h3>
-<p>Ziehe 6 verschiedene Zahlen von 1 bis 42 und gib sie sortiert aus. Verwende eine Liste und <code>Contains</code>, damit keine Zahl doppelt vorkommt. Eine Schleife läuft, bis die Liste 6 Zahlen enthält.</p>
 <hr />
 <h2 id="4-weiterfuhrende-beispiele-und-gedanken">4. Weiterführende Beispiele und Gedanken</h2>
 <ul>
