@@ -286,36 +286,16 @@ int Summe(List<int> liste)
 
 ---
 
-### 5. Fehler finden II
-Das Programm soll alle geraden Zahlen aus der Liste entfernen. Es stürzt ab. Finde die Ursache, erkläre sie und korrigiere das Programm.
-
-```csharp
-List<int> zahlen = new List<int> { 3, 8, 5, 10, 7 };
-foreach (int zahl in zahlen)
-{
-    if (zahl % 2 == 0)
-        zahlen.Remove(zahl);
-}
-Console.WriteLine(string.Join(", ", zahlen));
-```
-
-Zusatzfrage: Warum entfernst du in der korrigierten Version rückwärts (von hinten nach vorne)?
-
----
-
-### 6. Das Punktesystem der Zaubererakademie 🧙🏼‍♀️
+### 5. Das Punktesystem der Zaubererakademie 🧙🏼‍♀️
 Du bist Lehrer an einer Zaubererakademie. Deine Schüler haben eine Prüfung in Magie abgelegt, und du analysierst die Punkte. Wie viele Schüler es sind, weisst du nicht, deshalb verwendest du eine Liste:
 
-1. Der Benutzer gibt die Punkte (0 bis 100) ein. Die Eingabe `-1` beendet die Eingabe. Verwende deine Funktion `LeseZahl` aus den Funktionen-Lektionen.
-2. Schreibe Funktionen, die eine `List<int>` entgegennehmen: `double Durchschnitt(List<int> liste)`, `int Maximum(List<int> liste)`, `int Minimum(List<int> liste)` und `int ZaehleBestanden(List<int> liste)` (Punkte >= 50).
-3. Das Hauptprogramm gibt Anzahl, höchste und tiefste Punkte, Durchschnitt (eine Nachkommastelle) und die Anzahl Bestandene aus. Wurden keine Punkte erfasst, erscheint eine Meldung, und die Funktionen werden nicht aufgerufen.
-
-**Zusatz:** Schreibe die Funktion `List<int> FilterUeber(List<int> liste, double grenze)`, die eine neue Liste mit allen Punkten über der Grenze zurückgibt, und gib sie mit dem Durchschnitt als Grenze aus.
-
----
-
-### 7. Lotto (Zusatz) 🎰
-Ziehe 6 verschiedene Zahlen von 1 bis 42 und gib sie sortiert aus. Verwende eine Liste und `Contains`, damit keine Zahl doppelt vorkommt. Eine Schleife läuft, bis die Liste 6 Zahlen enthält.
+1. Der Benutzer gibt die Punkte (0 bis 100) ein. Die Eingabe `-1` beendet die Eingabe.
+2. Schreibe Funktionen, die eine `List<int>` entgegennehmen:
+    - `int Maximum(List<int> list)` (Gibt das grösste Element der Liste zurück)
+    - `int Minimum(List<int> list)` (Gibt das kleinste Element der Liste zurück)
+    - `double Average(List<int> list)` (Gibt den Durchschnitt der Zahlen in der Liste zurück)
+    - `int NumberOfPassed(List<int> list)` (Gibt die Anzahl der bestandenen Prüfungen mit Punkten >= 50 zurück).
+3. Das Hauptprogramm gibt Anzahl, höchste und tiefste Punkte, Durchschnitt (eine Nachkommastelle) und die Anzahl Bestandene aus.
 
 ---
 

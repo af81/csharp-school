@@ -1108,3 +1108,69 @@ Console.WriteLine(string.Join(", ", items));
 ---
 
 ### Aufgabe 5
+
+```csharp
+List<int> points = new List<int> {};
+
+// Punkte zur Liste hinzufügen
+AddPointsToList();
+
+// Anzahl Zauberschüler
+Console.WriteLine($"Anzahl Zauberschüler in der Liste: {points.Count}");
+Console.WriteLine($"Höchste erreichte Punktzahl: {Maximum(points)}");
+Console.WriteLine($"Tiefste erreichte Punktzahl: {Minimum(points)}");
+Console.WriteLine($"Durchschnittlich erreichte Punktzahl: {Average(points):F1}");
+Console.WriteLine($"Anzahl bestandene Prüfungen: {NumberOfPassed(points):F1}");
+
+// Funktionen
+void AddPointsToList()
+{
+    int p = 0;
+    int i = 1;
+    Console.WriteLine("Gib für jeden Zauberschüler die erreichte Punktzahl [0-100] ein. Mit '-1' beendest du die Eingabe.");
+    do
+    {
+        Console.Write($"Schüler {i}: ");
+        p = int.Parse(Console.ReadLine());
+        if (p < 0 || p > 100)
+            break;
+        points.Add(p);
+        i++;
+    } while (p >= 0 && p <= 100);
+}
+
+double Average(List<int> list)
+{
+    double sum = 0;
+    foreach (int e in list)
+    {
+        sum += e;
+    }
+    double average = sum / list.Count;
+    return average;
+}
+
+double Maximum(List<int> list)
+{
+    list.Sort();
+    return list[list.Count-1];
+}
+
+double Minimum(List<int> list)
+{
+    list.Sort();
+    return list[0];
+}
+
+double NumberOfPassed(List<int> list)
+{
+    list.Sort();
+    int lastIndex = list.Count-1;
+    for (int i = lastIndex; i >= 0; i--)
+    {
+        if (list[i] < 50)
+            list.RemoveAt(i);
+    }
+    return list.Count;
+}
+```
